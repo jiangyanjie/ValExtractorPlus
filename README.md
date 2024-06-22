@@ -47,16 +47,16 @@ Open Eclipse and import **Implementation/valExtractor+** into Workspace.
 
 Click `File` ... `Import`, then selected `Existing projects into Workspace`
 
-Select directory(path to **Implementation/valExtractor+**) as root and Click `Finish`
+Select directory(path to **Implementation/valExtractorPlus**) as root and Click `Finish`
 
 
 ## 4. Configure Path
 
-Open `Constrants.java`(Locate in `valextractor.utils` package) and modify `Project_Path`( **Path2Implementation/valExtractor+**), `EXP1_ROOT`(the root path of the generated result in Case Study part) and `EXP2_ROOT`(the root path of the generated result in Evaluation part) 
+Open `Constrants.java`(Locate in `valextractor.utils` package) and modify `Project_Path`( **Path2Implementation/valExtractor**), `EXP1_ROOT`(the root path of the generated result in Case Study part) and `EXP2_ROOT`(the root path of the generated result in Evaluation part) 
 ```java
 //----------- need to configure ----------- 
-public static final String Project_Path="***/ValExtractor/Implementation/ValExtractor/"; 
-public static final String EXP2_ROOT = "***/ValExtractor/Evaluation/"; 
+public static final String Project_Path="***/ValExtractorPlus/Implementation/ValExtractor/"; 
+public static final String EXP2_ROOT = "***/ValExtractorPlus/Evaluation/"; 
 //----------------------------------------- 
 ```	 
 Note: please make sure all the paths end with `/`
@@ -73,7 +73,7 @@ Run ValExtractor as an Eclipse Application
 
 We take project "Lang" as an example to show how to reproduce evaluation. The way to obtain `Lang` is to run the command:
 ```
-defects4j checkout -p Lang -v 1f -w PATH2ValExtractor/Evaluation/projects/Lang
+defects4j checkout -p Lang -v 1f -w PATH2ValExtractorPlus/Evaluation/projects/Lang
 ```
 Hint: all the projects evaluated for refactorings have the same bug number `1f`.
 
