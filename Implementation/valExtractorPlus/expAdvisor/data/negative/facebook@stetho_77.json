@@ -1,0 +1,109 @@
+{
+    "id": 77,
+    "expression": "mElement",
+    "projectName": "facebook@stetho",
+    "commitID": "969c823b3c1a2e8e1347a220013416d57fae3eb2",
+    "filePath": "stetho/src/main/java/com/facebook/stetho/inspector/elements/android/ViewGroupDescriptor.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mElement",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 8,
+                "startLineNumber": 116,
+                "startColumnNumber": 10,
+                "endLineNumber": 116,
+                "endColumnNumber": 18
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 116,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 116,
+                        "endColumnNumber": 26
+                    },
+                    "nodeContext": "mElement == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 116,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 118,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (mElement == null) {\n  return;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 640,
+                        "startLineNumber": 115,
+                        "startColumnNumber": 58,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (mElement == null) {\n    return;\n  }\n  if (mInnerListener != null) {\n    mInnerListener.onChildViewAdded(parent,child);\n  }\n  if (parent instanceof ViewGroup) {\n    final ViewGroup parentGroup=(ViewGroup)parent;\n    int childIndex=ViewGroupUtil.findChildIndex(parentGroup,child);\n    View previousChild=(childIndex == 0) ? null : parentGroup.getChildAt(childIndex - 1);\n    Object childElement=getElementForView(child);\n    Object previousElement=getElementForView(previousChild);\n    getHost().onChildInserted(parent,previousElement,childElement);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 84,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 708,
+                        "startLineNumber": 114,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public void onChildViewAdded(View parent,View child){\n  if (mElement == null) {\n    return;\n  }\n  if (mInnerListener != null) {\n    mInnerListener.onChildViewAdded(parent,child);\n  }\n  if (parent instanceof ViewGroup) {\n    final ViewGroup parentGroup=(ViewGroup)parent;\n    int childIndex=ViewGroupUtil.findChildIndex(parentGroup,child);\n    View previousChild=(childIndex == 0) ? null : parentGroup.getChildAt(childIndex - 1);\n    Object childElement=getElementForView(child);\n    Object previousElement=getElementForView(previousChild);\n    getHost().onChildInserted(parent,previousElement,childElement);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 98,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 16,
+                    "startLineNumber": 116,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 116,
+                    "endColumnNumber": 26
+                },
+                "nodeContext": "mElement == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.stetho.inspector.elements.android.ViewGroup"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 8,
+            "startLineNumber": 116,
+            "startColumnNumber": 10,
+            "endLineNumber": 116,
+            "endColumnNumber": 18
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,342 @@
+{
+    "id": 212,
+    "expression": "broker",
+    "projectName": "apache@rocketmq",
+    "commitID": "6014a039c05272de1a18fb4c00716b6c92cc7f1c",
+    "filePath": "namesrv/src/test/java/org/apache/rocketmq/namesrv/processor/DefaultRequestProcessorTest.java",
+    "occurrences": 3,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "broker",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 210,
+                "startColumnNumber": 8,
+                "endLineNumber": 210,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 30,
+                        "startLineNumber": 210,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 210,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "broker.setBrokerName(\"broker\")",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 210,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 210,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "broker.setBrokerName(\"broker\");\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1164,
+                        "startLineNumber": 190,
+                        "startColumnNumber": 53,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 142,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1324,
+                        "startLineNumber": 188,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_RegisterBrokerWithFilterServer() throws RemotingCommandException, NoSuchFieldException, IllegalAccessException {\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 154,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 31,
+                    "startLineNumber": 210,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 210,
+                    "endColumnNumber": 39
+                },
+                "nodeContext": "broker.setBrokerName(\"broker\");\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.common.protocol.route.BrokerData"
+        },
+        {
+            "nodeContext": "broker",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 211,
+                "startColumnNumber": 8,
+                "endLineNumber": 211,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 77,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 85
+                    },
+                    "nodeContext": "broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 14,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 78,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 86
+                    },
+                    "nodeContext": "broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1164,
+                        "startLineNumber": 190,
+                        "startColumnNumber": 53,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 142,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1324,
+                        "startLineNumber": 188,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_RegisterBrokerWithFilterServer() throws RemotingCommandException, NoSuchFieldException, IllegalAccessException {\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 154,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 78,
+                    "startLineNumber": 211,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 211,
+                    "endColumnNumber": 86
+                },
+                "nodeContext": "broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 15,
+                "astHeight": 7
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.common.protocol.route.BrokerData"
+        },
+        {
+            "nodeContext": "broker",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 214,
+                "startColumnNumber": 56,
+                "endLineNumber": 214,
+                "endColumnNumber": 62
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 22,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 63
+                    },
+                    "nodeContext": "new HashMap.SimpleEntry(\"broker\",broker)",
+                    "nodeType": "ClassInstanceCreation",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 110,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 64
+                    },
+                    "nodeContext": "assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 18,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 111,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 65
+                    },
+                    "nodeContext": "assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 19,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1164,
+                        "startLineNumber": 190,
+                        "startColumnNumber": 53,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 142,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1324,
+                        "startLineNumber": 188,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_RegisterBrokerWithFilterServer() throws RemotingCommandException, NoSuchFieldException, IllegalAccessException {\n  RemotingCommand request=genSampleRegisterCmd(true);\n  request.setVersion(100);\n  ChannelHandlerContext ctx=mock(ChannelHandlerContext.class);\n  when(ctx.channel()).thenReturn(null);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(ctx);\n  RemotingCommand response=defaultRequestProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  assertThat(response.getRemark()).isNull();\n  RouteInfoManager routes=namesrvController.getRouteInfoManager();\n  Field brokerAddrTable=RouteInfoManager.class.getDeclaredField(\"brokerAddrTable\");\n  brokerAddrTable.setAccessible(true);\n  BrokerData broker=new BrokerData();\n  broker.setBrokerName(\"broker\");\n  broker.setBrokerAddrs((HashMap)Maps.newHashMap(new Long(2333),\"10.10.1.1\"));\n  assertThat((Map)brokerAddrTable.get(routes)).contains(new HashMap.SimpleEntry(\"broker\",broker));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 154,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                "nodePosition": {
+                    "charLength": 41,
+                    "startLineNumber": 214,
+                    "startColumnNumber": 22,
+                    "endLineNumber": 214,
+                    "endColumnNumber": 63
+                },
+                "nodeContext": "new HashMap.SimpleEntry(\"broker\",broker)",
+                "nodeType": "ClassInstanceCreation",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.common.protocol.route.BrokerData"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 6,
+            "startLineNumber": 210,
+            "startColumnNumber": 8,
+            "endLineNumber": 210,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 6,
+            "startLineNumber": 211,
+            "startColumnNumber": 8,
+            "endLineNumber": 211,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 6,
+            "startLineNumber": 214,
+            "startColumnNumber": 56,
+            "endLineNumber": 214,
+            "endColumnNumber": 62
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 3
+        }
+    ]
+}

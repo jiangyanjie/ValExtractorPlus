@@ -1,0 +1,109 @@
+{
+    "id": 62,
+    "expression": "new WeakReference<>(toastView)",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "b0f09e2df62a8b5e40c07016bf0588e3d1eb4151",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/util/ToastUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new WeakReference<>(toastView)",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 30,
+                "startLineNumber": 66,
+                "startColumnNumber": 29,
+                "endLineNumber": 66,
+                "endColumnNumber": 59
+            },
+            "astNodeNumber": 5,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 51,
+                        "startLineNumber": 66,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 66,
+                        "endColumnNumber": 59
+                    },
+                    "nodeContext": "sViewWeakReference=new WeakReference<>(toastView)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 7,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 52,
+                        "startLineNumber": 66,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 66,
+                        "endColumnNumber": 60
+                    },
+                    "nodeContext": "sViewWeakReference=new WeakReference<>(toastView);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 274,
+                        "startLineNumber": 63,
+                        "startColumnNumber": 62,
+                        "endLineNumber": 68,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  LayoutInflater inflate=(LayoutInflater)Utils.getApp().getSystemService(Context.LAYOUT_INFLATER_SERVICE);\n  final View toastView=inflate.inflate(layoutId,null);\n  sViewWeakReference=new WeakReference<>(toastView);\n  return toastView;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 38,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 397,
+                        "startLineNumber": 58,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 68,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 设置吐司view\n * @param layoutId 视图\n */\npublic static View setView(@LayoutRes final int layoutId){\n  LayoutInflater inflate=(LayoutInflater)Utils.getApp().getSystemService(Context.LAYOUT_INFLATER_SERVICE);\n  final View toastView=inflate.inflate(layoutId,null);\n  sViewWeakReference=new WeakReference<>(toastView);\n  return toastView;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 51,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 52,
+                    "startLineNumber": 66,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 66,
+                    "endColumnNumber": 60
+                },
+                "nodeContext": "sViewWeakReference=new WeakReference<>(toastView);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 8,
+                "astHeight": 6
+            },
+            "tokenLength": 2,
+            "type": "java.lang.ref.WeakReference"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 30,
+            "startLineNumber": 66,
+            "startColumnNumber": 29,
+            "endLineNumber": 66,
+            "endColumnNumber": 59
+        }
+    ],
+    "layoutRelationDataList": []
+}

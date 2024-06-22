@@ -1,0 +1,137 @@
+{
+    "id": 43,
+    "expression": "null",
+    "projectName": "apache@shardingsphere",
+    "commitID": "897bcea9f4b0f5e33eb545470f28a35d68fccf60",
+    "filePath": "shardingsphere-features/shardingsphere-sharding/shardingsphere-sharding-distsql/shardingsphere-sharding-distsql-handler/src/main/java/org/apache/shardingsphere/sharding/distsql/handler/converter/ShardingTableRuleStatementConverter.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 135,
+                "startColumnNumber": 39,
+                "endLineNumber": 135,
+                "endColumnNumber": 43
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,expression]",
+                    "nodePosition": {
+                        "charLength": 42,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 39,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 81
+                    },
+                    "nodeContext": "null == segment.getShardingAlgorithmName()",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 196,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 39,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "null == segment.getShardingAlgorithmName() ? getTableShardingAlgorithmName(logicTable,strategyLevel,segment.getAlgorithmSegment().getName()) : segment.getShardingAlgorithmName()",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 18,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 220,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "shardingAlgorithmName=null == segment.getShardingAlgorithmName() ? getTableShardingAlgorithmName(logicTable,strategyLevel,segment.getAlgorithmSegment().getName()) : segment.getShardingAlgorithmName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 20,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 228,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "String shardingAlgorithmName=null == segment.getShardingAlgorithmName() ? getTableShardingAlgorithmName(logicTable,strategyLevel,segment.getAlgorithmSegment().getName()) : segment.getShardingAlgorithmName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 23,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 390,
+                        "startLineNumber": 134,
+                        "startColumnNumber": 124,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  String shardingAlgorithmName=null == segment.getShardingAlgorithmName() ? getTableShardingAlgorithmName(logicTable,strategyLevel,segment.getAlgorithmSegment().getName()) : segment.getShardingAlgorithmName();\n  return createStrategyConfiguration(ShardingStrategyTypeEnum.getValueOf(type).name(),segment.getShardingColumn(),shardingAlgorithmName);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 37,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 687,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "private static ShardingStrategyConfiguration createShardingStrategyConfiguration(final String logicTable,final ShardingStrategyLevelEnum strategyLevel,final String type,final ShardingStrategySegment segment){\n  String shardingAlgorithmName=null == segment.getShardingAlgorithmName() ? getTableShardingAlgorithmName(logicTable,strategyLevel,segment.getAlgorithmSegment().getName()) : segment.getShardingAlgorithmName();\n  return createStrategyConfiguration(ShardingStrategyTypeEnum.getValueOf(type).name(),segment.getShardingColumn(),shardingAlgorithmName);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 63,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,expression]",
+                "nodePosition": {
+                    "charLength": 42,
+                    "startLineNumber": 135,
+                    "startColumnNumber": 39,
+                    "endLineNumber": 135,
+                    "endColumnNumber": 81
+                },
+                "nodeContext": "null == segment.getShardingAlgorithmName()",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 135,
+            "startColumnNumber": 39,
+            "endLineNumber": 135,
+            "endColumnNumber": 43
+        }
+    ],
+    "layoutRelationDataList": []
+}

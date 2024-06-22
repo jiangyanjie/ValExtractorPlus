@@ -1,0 +1,95 @@
+{
+    "id": 58,
+    "expression": "logLevel.ordinal() >= LogLevel.HEADERS.ordinal()",
+    "projectName": "square@retrofit",
+    "commitID": "63cd5c8e26a3d2041dec6709d9a5ca3e410718d6",
+    "filePath": "retrofit/src/main/java/retrofit/RestAdapter.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "logLevel.ordinal() >= LogLevel.HEADERS.ordinal()",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 48,
+                "startLineNumber": 402,
+                "startColumnNumber": 8,
+                "endLineNumber": 402,
+                "endColumnNumber": 56
+            },
+            "astNodeNumber": 9,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 1259,
+                        "startLineNumber": 402,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 438,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (logLevel.ordinal() >= LogLevel.HEADERS.ordinal()) {\n  for (  Header header : request.getHeaders()) {\n    log.log(header.toString());\n  }\n  String bodySize=\"no\";\n  TypedOutput body=request.getBody();\n  if (body != null) {\n    String bodyMime=body.mimeType();\n    if (bodyMime != null) {\n      log.log(\"Content-Type: \" + bodyMime);\n    }\n    long bodyLength=body.length();\n    bodySize=bodyLength + \"-byte\";\n    if (bodyLength != -1) {\n      log.log(\"Content-Length: \" + bodyLength);\n    }\n    if (logLevel.ordinal() >= LogLevel.FULL.ordinal()) {\n      if (!request.getHeaders().isEmpty()) {\n        log.log(\"\");\n      }\n      if (!(body instanceof TypedByteArray)) {\n        request=Utils.readBodyToBytesIfNecessary(request);\n        body=request.getBody();\n      }\n      byte[] bodyBytes=((TypedByteArray)body).getBytes();\n      String bodyCharset=MimeUtil.parseCharset(body.mimeType());\n      log.log(new String(bodyBytes,bodyCharset));\n    }\n  }\n  log.log(String.format(\"---> END %s (%s body)\",name,bodySize));\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 180,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1381,
+                        "startLineNumber": 399,
+                        "startColumnNumber": 80,
+                        "endLineNumber": 441,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  log.log(String.format(\"---> %s %s %s\",name,request.getMethod(),request.getUrl()));\n  if (logLevel.ordinal() >= LogLevel.HEADERS.ordinal()) {\n    for (    Header header : request.getHeaders()) {\n      log.log(header.toString());\n    }\n    String bodySize=\"no\";\n    TypedOutput body=request.getBody();\n    if (body != null) {\n      String bodyMime=body.mimeType();\n      if (bodyMime != null) {\n        log.log(\"Content-Type: \" + bodyMime);\n      }\n      long bodyLength=body.length();\n      bodySize=bodyLength + \"-byte\";\n      if (bodyLength != -1) {\n        log.log(\"Content-Length: \" + bodyLength);\n      }\n      if (logLevel.ordinal() >= LogLevel.FULL.ordinal()) {\n        if (!request.getHeaders().isEmpty()) {\n          log.log(\"\");\n        }\n        if (!(body instanceof TypedByteArray)) {\n          request=Utils.readBodyToBytesIfNecessary(request);\n          body=request.getBody();\n        }\n        byte[] bodyBytes=((TypedByteArray)body).getBytes();\n        String bodyCharset=MimeUtil.parseCharset(body.mimeType());\n        log.log(new String(bodyBytes,bodyCharset));\n      }\n    }\n    log.log(String.format(\"---> END %s (%s body)\",name,bodySize));\n  }\n  return request;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 198,
+                    "astHeight": 14
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1555,
+                        "startLineNumber": 398,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 441,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Log request headers and body. Consumes request body and returns identical replacement. \n */\nRequest logAndReplaceRequest(String name,Request request) throws IOException {\n  log.log(String.format(\"---> %s %s %s\",name,request.getMethod(),request.getUrl()));\n  if (logLevel.ordinal() >= LogLevel.HEADERS.ordinal()) {\n    for (    Header header : request.getHeaders()) {\n      log.log(header.toString());\n    }\n    String bodySize=\"no\";\n    TypedOutput body=request.getBody();\n    if (body != null) {\n      String bodyMime=body.mimeType();\n      if (bodyMime != null) {\n        log.log(\"Content-Type: \" + bodyMime);\n      }\n      long bodyLength=body.length();\n      bodySize=bodyLength + \"-byte\";\n      if (bodyLength != -1) {\n        log.log(\"Content-Length: \" + bodyLength);\n      }\n      if (logLevel.ordinal() >= LogLevel.FULL.ordinal()) {\n        if (!request.getHeaders().isEmpty()) {\n          log.log(\"\");\n        }\n        if (!(body instanceof TypedByteArray)) {\n          request=Utils.readBodyToBytesIfNecessary(request);\n          body=request.getBody();\n        }\n        byte[] bodyBytes=((TypedByteArray)body).getBytes();\n        String bodyCharset=MimeUtil.parseCharset(body.mimeType());\n        log.log(new String(bodyBytes,bodyCharset));\n      }\n    }\n    log.log(String.format(\"---> END %s (%s body)\",name,bodySize));\n  }\n  return request;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 213,
+                    "astHeight": 15
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 1259,
+                    "startLineNumber": 402,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 438,
+                    "endColumnNumber": 5
+                },
+                "nodeContext": "if (logLevel.ordinal() >= LogLevel.HEADERS.ordinal()) {\n  for (  Header header : request.getHeaders()) {\n    log.log(header.toString());\n  }\n  String bodySize=\"no\";\n  TypedOutput body=request.getBody();\n  if (body != null) {\n    String bodyMime=body.mimeType();\n    if (bodyMime != null) {\n      log.log(\"Content-Type: \" + bodyMime);\n    }\n    long bodyLength=body.length();\n    bodySize=bodyLength + \"-byte\";\n    if (bodyLength != -1) {\n      log.log(\"Content-Length: \" + bodyLength);\n    }\n    if (logLevel.ordinal() >= LogLevel.FULL.ordinal()) {\n      if (!request.getHeaders().isEmpty()) {\n        log.log(\"\");\n      }\n      if (!(body instanceof TypedByteArray)) {\n        request=Utils.readBodyToBytesIfNecessary(request);\n        body=request.getBody();\n      }\n      byte[] bodyBytes=((TypedByteArray)body).getBytes();\n      String bodyCharset=MimeUtil.parseCharset(body.mimeType());\n      log.log(new String(bodyBytes,bodyCharset));\n    }\n  }\n  log.log(String.format(\"---> END %s (%s body)\",name,bodySize));\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 180,
+                "astHeight": 13
+            },
+            "tokenLength": 6,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 48,
+            "startLineNumber": 402,
+            "startColumnNumber": 8,
+            "endLineNumber": 402,
+            "endColumnNumber": 56
+        }
+    ],
+    "layoutRelationDataList": []
+}

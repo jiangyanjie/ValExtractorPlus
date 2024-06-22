@@ -1,0 +1,228 @@
+{
+    "id": 53,
+    "expression": "null",
+    "projectName": "redis@jedis",
+    "commitID": "eaa5b16af93d575cd1f340c2cd23595dc29d5638",
+    "filePath": "src/main/java/redis/clients/jedis/Jedis.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 1937,
+                "startColumnNumber": 19,
+                "endLineNumber": 1937,
+                "endColumnNumber": 23
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 15,
+                        "startLineNumber": 1937,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 1937,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "members == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 1937,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 1939,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (members == null) {\n  return null;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 243,
+                        "startLineNumber": 1933,
+                        "startColumnNumber": 41,
+                        "endLineNumber": 1941,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  checkIsInMulti();\n  client.zrangeByScore(key,min,max,offset,count);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 40,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 371,
+                        "startLineNumber": 1932,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 1941,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public Set<String> zrangeByScore(final String key,final String min,final String max,final int offset,final int count){\n  checkIsInMulti();\n  client.zrangeByScore(key,min,max,offset,count);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 71,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 15,
+                    "startLineNumber": 1937,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 1937,
+                    "endColumnNumber": 23
+                },
+                "nodeContext": "members == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        },
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 1938,
+                "startColumnNumber": 13,
+                "endLineNumber": 1938,
+                "endColumnNumber": 17
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 12,
+                        "startLineNumber": 1938,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 1938,
+                        "endColumnNumber": 18
+                    },
+                    "nodeContext": "return null;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 2,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 1937,
+                        "startColumnNumber": 25,
+                        "endLineNumber": 1939,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  return null;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 3,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 1937,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 1939,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (members == null) {\n  return null;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 243,
+                        "startLineNumber": 1933,
+                        "startColumnNumber": 41,
+                        "endLineNumber": 1941,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  checkIsInMulti();\n  client.zrangeByScore(key,min,max,offset,count);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 40,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 371,
+                        "startLineNumber": 1932,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 1941,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public Set<String> zrangeByScore(final String key,final String min,final String max,final int offset,final int count){\n  checkIsInMulti();\n  client.zrangeByScore(key,min,max,offset,count);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 71,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 12,
+                    "startLineNumber": 1938,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 1938,
+                    "endColumnNumber": 18
+                },
+                "nodeContext": "return null;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 2,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 1937,
+            "startColumnNumber": 19,
+            "endLineNumber": 1937,
+            "endColumnNumber": 23
+        },
+        {
+            "charLength": 4,
+            "startLineNumber": 1938,
+            "startColumnNumber": 13,
+            "endLineNumber": 1938,
+            "endColumnNumber": 17
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 1
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 2
+        }
+    ]
+}

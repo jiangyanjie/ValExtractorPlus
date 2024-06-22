@@ -1,0 +1,109 @@
+{
+    "id": 143,
+    "expression": "null",
+    "projectName": "google@gson",
+    "commitID": "f291c4d33ea5fcc52afcfa5713e519e663378bda",
+    "filePath": "gson/src/main/java/com/google/gson/JsonSerializationContextDefault.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 56,
+                "startColumnNumber": 15,
+                "endLineNumber": 56,
+                "endColumnNumber": 19
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 11,
+                        "startLineNumber": 56,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 56,
+                        "endColumnNumber": 19
+                    },
+                    "nodeContext": "src == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 66,
+                        "startLineNumber": 56,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 58,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (src == null) {\n  return JsonNull.createJsonNull();\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 413,
+                        "startLineNumber": 55,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 64,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (src == null) {\n    return JsonNull.createJsonNull();\n  }\n  JsonSerializationVisitor visitor=new JsonSerializationVisitor(objectNavigator,fieldNamingPolicy,serializeNulls,serializers,this,ancestors);\n  ObjectTypePair objTypePair=new ObjectTypePair(src,typeOfSrc,preserveType);\n  objectNavigator.accept(objTypePair,visitor);\n  return visitor.getJsonElement();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 45,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 485,
+                        "startLineNumber": 55,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 64,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "JsonElement serialize(Object src,Type typeOfSrc,boolean preserveType){\n  if (src == null) {\n    return JsonNull.createJsonNull();\n  }\n  JsonSerializationVisitor visitor=new JsonSerializationVisitor(objectNavigator,fieldNamingPolicy,serializeNulls,serializers,this,ancestors);\n  ObjectTypePair objTypePair=new ObjectTypePair(src,typeOfSrc,preserveType);\n  objectNavigator.accept(objTypePair,visitor);\n  return visitor.getJsonElement();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 60,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 11,
+                    "startLineNumber": 56,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 56,
+                    "endColumnNumber": 19
+                },
+                "nodeContext": "src == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 56,
+            "startColumnNumber": 15,
+            "endLineNumber": 56,
+            "endColumnNumber": 19
+        }
+    ],
+    "layoutRelationDataList": []
+}

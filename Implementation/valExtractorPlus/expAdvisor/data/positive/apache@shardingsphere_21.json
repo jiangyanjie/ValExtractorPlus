@@ -1,0 +1,105 @@
+{
+  "id" : 21,
+  "expression" : "AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()",
+  "projectName" : "apache@shardingsphere",
+  "commitID" : "ae8bf1a8962caef11b4382b3e974724b65037497",
+  "filePath" : "shardingsphere-test/shardingsphere-pipeline-test/src/test/java/org/apache/shardingsphere/data/pipeline/scenario/rulealtered/IdleRuleAlteredJobCompletionDetectAlgorithmTest.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 111,
+      "startLineNumber" : 100,
+      "startColumnNumber" : 70,
+      "endLineNumber" : 100,
+      "endColumnNumber" : 181
+    },
+    "astNodeNumber" : 12,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 162,
+        "startLineNumber" : 100,
+        "startColumnNumber" : 20,
+        "endLineNumber" : 100,
+        "endColumnNumber" : 182
+      },
+      "nodeContext" : "detectAlgorithm.allIncrementalTasksAlmostFinished(AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 175,
+        "startLineNumber" : 100,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 100,
+        "endColumnNumber" : 183
+      },
+      "nodeContext" : "assertFalse(detectAlgorithm.allIncrementalTasksAlmostFinished(AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 17,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 177,
+        "startLineNumber" : 100,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 100,
+        "endColumnNumber" : 185
+      },
+      "nodeContext" : "assertFalse(detectAlgorithm.allIncrementalTasksAlmostFinished(AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 18,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 453,
+        "startLineNumber" : 98,
+        "startColumnNumber" : 58,
+        "endLineNumber" : 101,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  AllIncrementalTasksAlmostFinishedParameter AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()=AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build();\n  assertFalse(detectAlgorithm.allIncrementalTasksAlmostFinished(AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 512,
+        "startLineNumber" : 97,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 101,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Test public void assertFalseOnFewPendingIncrementalTasks(){\n  AllIncrementalTasksAlmostFinishedParameter AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()=AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build();\n  assertFalse(detectAlgorithm.allIncrementalTasksAlmostFinished(AllIncrementalTasksAlmostFinishedParameter.builder().incrementalTaskIdleMinutes(Arrays.asList(10L,50L)).build()));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 42,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 8,
+    "type" : "org.apache.shardingsphere.data.pipeline.api.detect.AllIncrementalTasksAlmostFinishedParameter"
+  } ],
+  "positionList" : [ {
+    "charLength" : 111,
+    "startLineNumber" : 100,
+    "startColumnNumber" : 70,
+    "endLineNumber" : 100,
+    "endColumnNumber" : 181
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "parameter",
+  "nodePosition" : {
+    "charLength" : 9,
+    "startLineNumber" : 99,
+    "startColumnNumber" : 51,
+    "endLineNumber" : 99,
+    "endColumnNumber" : 60
+  }
+}

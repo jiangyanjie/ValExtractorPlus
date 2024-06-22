@@ -1,0 +1,123 @@
+{
+    "id": 111,
+    "expression": "currentWidth > width",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "51af44f843ceaa58c55860fb35a30a5524887904",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/field/FlowLayoutTextField.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "currentWidth > width",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 20,
+                "startLineNumber": 97,
+                "startColumnNumber": 7,
+                "endLineNumber": 97,
+                "endColumnNumber": 27
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 93,
+                        "startLineNumber": 97,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 100,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (currentWidth > width) {\n  int count=i - start;\n  return Math.max(count,1);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 18,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 194,
+                        "startLineNumber": 94,
+                        "startColumnNumber": 48,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  FieldElement element=elements.get(i);\n  currentWidth+=element.getStringWidth();\n  if (currentWidth > width) {\n    int count=i - start;\n    return Math.max(count,1);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 34,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 240,
+                        "startLineNumber": 94,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=start; i < elements.size(); i++) {\n  FieldElement element=elements.get(i);\n  currentWidth+=element.getStringWidth();\n  if (currentWidth > width) {\n    int count=i - start;\n    return Math.max(count,1);\n  }\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 47,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 311,
+                        "startLineNumber": 91,
+                        "startColumnNumber": 14,
+                        "endLineNumber": 103,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int currentWidth=0;\n  for (int i=start; i < elements.size(); i++) {\n    FieldElement element=elements.get(i);\n    currentWidth+=element.getStringWidth();\n    if (currentWidth > width) {\n      int count=i - start;\n      return Math.max(count,1);\n    }\n  }\n  return elements.size() - start;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 59,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 412,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 103,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private static int getNumberOfElementsPerLine(List<FieldElement> elements,int start,int width){\n  int currentWidth=0;\n  for (int i=start; i < elements.size(); i++) {\n    FieldElement element=elements.get(i);\n    currentWidth+=element.getStringWidth();\n    if (currentWidth > width) {\n      int count=i - start;\n      return Math.max(count,1);\n    }\n  }\n  return elements.size() - start;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 77,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 93,
+                    "startLineNumber": 97,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 100,
+                    "endColumnNumber": 4
+                },
+                "nodeContext": "if (currentWidth > width) {\n  int count=i - start;\n  return Math.max(count,1);\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 18,
+                "astHeight": 6
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 20,
+            "startLineNumber": 97,
+            "startColumnNumber": 7,
+            "endLineNumber": 97,
+            "endColumnNumber": 27
+        }
+    ],
+    "layoutRelationDataList": []
+}

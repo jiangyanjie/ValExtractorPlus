@@ -1,0 +1,312 @@
+{
+    "id": 165,
+    "expression": "configurable",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "fc115e715ea77735693947da35d04e6c2ed93235",
+    "filePath": "Ghidra/Debug/Debugger/src/main/java/ghidra/app/plugin/core/debug/gui/objects/DebuggerObjectsProvider.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "configurable",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 12,
+                "startLineNumber": 1531,
+                "startColumnNumber": 4,
+                "endLineNumber": 1531,
+                "endColumnNumber": 16
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 1531,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 1531,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "configurable.getConfigParameters()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 58,
+                        "startLineNumber": 1530,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 1531,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "configParameters=configurable.getConfigParameters()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 96,
+                        "startLineNumber": 1530,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 1531,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+                    "nodePosition": {
+                        "charLength": 429,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 68,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 445,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 58,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "configurable -> {\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "LambdaExpression",
+                    "astNodeNumber": 71,
+                    "astHeight": 12
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                "nodePosition": {
+                    "charLength": 34,
+                    "startLineNumber": 1531,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 1531,
+                    "endColumnNumber": 38
+                },
+                "nodeContext": "configurable.getConfigParameters()",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "ghidra.dbg.target.TargetConfigurable"
+        },
+        {
+            "nodeContext": "configurable",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 12,
+                "startLineNumber": 1536,
+                "startColumnNumber": 6,
+                "endLineNumber": 1536,
+                "endColumnNumber": 18
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 1536,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 1536,
+                        "endColumnNumber": 77
+                    },
+                    "nodeContext": "configurable.writeConfigurationOption(entry.getKey(),entry.getValue())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 9,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 1536,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 1536,
+                        "endColumnNumber": 78
+                    },
+                    "nodeContext": "configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 89,
+                        "startLineNumber": 1535,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 1537,
+                        "endColumnNumber": 6
+                    },
+                    "nodeContext": "{\n  configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 136,
+                        "startLineNumber": 1535,
+                        "startColumnNumber": 5,
+                        "endLineNumber": 1537,
+                        "endColumnNumber": 6
+                    },
+                    "nodeContext": "for (Entry<String,?> entry : args.entrySet()) {\n  configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 23,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 151,
+                        "startLineNumber": 1534,
+                        "startColumnNumber": 22,
+                        "endLineNumber": 1538,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  for (  Entry<String,?> entry : args.entrySet()) {\n    configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 24,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 169,
+                        "startLineNumber": 1534,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 1538,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (args != null) {\n  for (  Entry<String,?> entry : args.entrySet()) {\n    configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 28,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 257,
+                        "startLineNumber": 1532,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 1539,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "{\n  Map<String,?> args=configDialog.promptArguments(configParameters);\n  if (args != null) {\n    for (    Entry<String,?> entry : args.entrySet()) {\n      configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 290,
+                        "startLineNumber": 1532,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 1539,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (configParameters.size() > 0) {\n  Map<String,?> args=configDialog.promptArguments(configParameters);\n  if (args != null) {\n    for (    Entry<String,?> entry : args.entrySet()) {\n      configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n    }\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 48,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+                    "nodePosition": {
+                        "charLength": 429,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 68,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 445,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 58,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "configurable -> {\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "LambdaExpression",
+                    "astNodeNumber": 71,
+                    "astHeight": 12
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 72,
+                    "startLineNumber": 1536,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 1536,
+                    "endColumnNumber": 78
+                },
+                "nodeContext": "configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "ghidra.dbg.target.TargetConfigurable"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 12,
+            "startLineNumber": 1531,
+            "startColumnNumber": 4,
+            "endLineNumber": 1531,
+            "endColumnNumber": 16
+        },
+        {
+            "charLength": 12,
+            "startLineNumber": 1536,
+            "startColumnNumber": 6,
+            "endLineNumber": 1536,
+            "endColumnNumber": 18
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 8
+        }
+    ]
+}

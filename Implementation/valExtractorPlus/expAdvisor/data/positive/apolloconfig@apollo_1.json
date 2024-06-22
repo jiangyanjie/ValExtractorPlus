@@ -1,0 +1,105 @@
+{
+  "id" : 1,
+  "expression" : "StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy()",
+  "projectName" : "apolloconfig@apollo",
+  "commitID" : "7b7d753f78e444f9cf97b0f238f7e33f585cb277",
+  "filePath" : "apollo-portal/src/main/java/com/ctrip/framework/apollo/portal/service/ReleaseService.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy()",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 103,
+      "startLineNumber" : 54,
+      "startColumnNumber" : 10,
+      "endLineNumber" : 54,
+      "endColumnNumber" : 113
+    },
+    "astNodeNumber" : 15,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 215,
+        "startLineNumber" : 52,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 54,
+        "endColumnNumber" : 20
+      },
+      "nodeContext" : "releaseAPI.createRelease(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 28,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 226,
+        "startLineNumber" : 52,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 54,
+        "endColumnNumber" : 20
+      },
+      "nodeContext" : "releaseDTO=releaseAPI.createRelease(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy())",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 30,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 239,
+        "startLineNumber" : 52,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 54,
+        "endColumnNumber" : 21
+      },
+      "nodeContext" : "ReleaseDTO releaseDTO=releaseAPI.createRelease(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy());\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 33,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 750,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 62,
+        "endLineNumber" : 58,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  String appId=model.getAppId();\n  Env env=model.getEnv();\n  String clusterName=model.getClusterName();\n  String namespaceName=model.getNamespaceName();\n  String StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy()=StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy();\n  ReleaseDTO releaseDTO=releaseAPI.createRelease(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy());\n  Cat.logEvent(CatEventType.RELEASE_NAMESPACE,String.format(\"%s+%s+%s+%s\",appId,env,clusterName,namespaceName));\n  return releaseDTO;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 103,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 810,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 58,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ReleaseDTO createRelease(NamespaceReleaseModel model){\n  String appId=model.getAppId();\n  Env env=model.getEnv();\n  String clusterName=model.getClusterName();\n  String namespaceName=model.getNamespaceName();\n  String StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy()=StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy();\n  ReleaseDTO releaseDTO=releaseAPI.createRelease(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),StringUtils.isEmpty(model.getReleaseBy()) ? userInfoHolder.getUser().getUserId() : model.getReleaseBy());\n  Cat.logEvent(CatEventType.RELEASE_NAMESPACE,String.format(\"%s+%s+%s+%s\",appId,env,clusterName,namespaceName));\n  return releaseDTO;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 112,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 9,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 103,
+    "startLineNumber" : 54,
+    "startColumnNumber" : 10,
+    "endLineNumber" : 54,
+    "endColumnNumber" : 113
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "releaseBy",
+  "nodePosition" : {
+    "charLength" : 9,
+    "startLineNumber" : 49,
+    "startColumnNumber" : 9,
+    "endLineNumber" : 49,
+    "endColumnNumber" : 18
+  }
+}

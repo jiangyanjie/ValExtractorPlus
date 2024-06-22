@@ -1,0 +1,109 @@
+{
+    "id": 5,
+    "expression": "Vertx.currentContext()",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "c91b634567db7e16a00e32da6816011359ccf0cf",
+    "filePath": "src/test/java/io/vertx/test/core/Http2TestBase.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "Vertx.currentContext()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 22,
+                "startLineNumber": 61,
+                "startColumnNumber": 22,
+                "endLineNumber": 61,
+                "endColumnNumber": 44
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 61,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 61,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "current=Vertx.currentContext()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 61,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 61,
+                        "endColumnNumber": 45
+                    },
+                    "nodeContext": "Context current=Vertx.currentContext();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 302,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 352,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "protected void assertOnIOContext(Context context){\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 50,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 41,
+                    "startLineNumber": 61,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 61,
+                    "endColumnNumber": 45
+                },
+                "nodeContext": "Context current=Vertx.currentContext();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "io.vertx.core.Context"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 22,
+            "startLineNumber": 61,
+            "startColumnNumber": 22,
+            "endLineNumber": 61,
+            "endColumnNumber": 44
+        }
+    ],
+    "layoutRelationDataList": []
+}

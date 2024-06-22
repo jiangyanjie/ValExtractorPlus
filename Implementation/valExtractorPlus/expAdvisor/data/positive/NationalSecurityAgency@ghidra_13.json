@@ -1,0 +1,191 @@
+{
+  "id" : 13,
+  "expression" : "addrMap.getKey(addr,true)",
+  "projectName" : "NationalSecurityAgency@ghidra",
+  "commitID" : "e5df6fdd7bbc13dadc918bafa0f4f5767e74e1a7",
+  "filePath" : "Ghidra/Framework/SoftwareModeling/src/main/java/ghidra/program/database/symbol/SymbolManager.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "addrMap.getKey(addr,true)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 25,
+      "startLineNumber" : 550,
+      "startColumnNumber" : 58,
+      "endLineNumber" : 550,
+      "endColumnNumber" : 83
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 81,
+        "startLineNumber" : 550,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 83
+      },
+      "nodeContext" : "rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 550,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 85
+      },
+      "nodeContext" : "rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 825,
+        "startLineNumber" : 539,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 559,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addrMap.getKey(addr,true)=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true));\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 108,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1009,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 559,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void addSymbolRecord(long symbolID,Address addr,Namespace namespace,String name,boolean isPrimary,SymbolType type,SourceType source) throws DuplicateNameException, IOException {\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addrMap.getKey(addr,true)=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true));\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 142,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 4,
+    "type" : "long"
+  }, {
+    "nodeContext" : "addrMap.getKey(addr,true)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 25,
+      "startLineNumber" : 554,
+      "startColumnNumber" : 62,
+      "endLineNumber" : 554,
+      "endColumnNumber" : 87
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 84,
+        "startLineNumber" : 554,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 554,
+        "endColumnNumber" : 87
+      },
+      "nodeContext" : "rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 86,
+        "startLineNumber" : 554,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 554,
+        "endColumnNumber" : 89
+      },
+      "nodeContext" : "rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 92,
+        "startLineNumber" : 553,
+        "startColumnNumber" : 17,
+        "endLineNumber" : 555,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 107,
+        "startLineNumber" : 553,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 555,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (isPrimary) {\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 825,
+        "startLineNumber" : 539,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 559,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addrMap.getKey(addr,true)=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true));\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 108,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1009,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 559,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void addSymbolRecord(long symbolID,Address addr,Namespace namespace,String name,boolean isPrimary,SymbolType type,SourceType source) throws DuplicateNameException, IOException {\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addrMap.getKey(addr,true)=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addrMap.getKey(addr,true));\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addrMap.getKey(addr,true));\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 142,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 4,
+    "type" : "long"
+  } ],
+  "positionList" : [ {
+    "charLength" : 25,
+    "startLineNumber" : 550,
+    "startColumnNumber" : 58,
+    "endLineNumber" : 550,
+    "endColumnNumber" : 83
+  }, {
+    "charLength" : 25,
+    "startLineNumber" : 554,
+    "startColumnNumber" : 62,
+    "endLineNumber" : 554,
+    "endColumnNumber" : 87
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "addressKey",
+  "nodePosition" : {
+    "charLength" : 10,
+    "startLineNumber" : 549,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 549,
+    "endColumnNumber" : 17
+  }
+}

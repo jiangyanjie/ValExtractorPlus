@@ -1,0 +1,137 @@
+{
+    "id": 16,
+    "expression": "0",
+    "projectName": "material-components@material-components-android",
+    "commitID": "b241ff5785463453bcd3176b22e783ddb103835c",
+    "filePath": "lib/src/android/support/design/widget/Snackbar.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "0",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 157,
+                "startColumnNumber": 93,
+                "endLineNumber": 157,
+                "endColumnNumber": 94
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.CastExpression,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 76,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 95
+                    },
+                    "nodeContext": "mView.getChildAt(0)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 95
+                    },
+                    "nodeContext": "(SnackbarContentLayout)mView.getChildAt(0)",
+                    "nodeType": "CastExpression",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 59,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 95
+                    },
+                    "nodeContext": "contentLayout=(SnackbarContentLayout)mView.getChildAt(0)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 88,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 96
+                    },
+                    "nodeContext": "final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 214,
+                        "startLineNumber": 156,
+                        "startColumnNumber": 59,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 30,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 430,
+                        "startLineNumber": 150,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Update the text in this  {@link Snackbar}.\n * @param message The new text for this {@link BaseTransientBottomBar}.\n */\n@NonNull public Snackbar setText(@NonNull CharSequence message){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 44,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 88,
+                    "startLineNumber": 157,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 157,
+                    "endColumnNumber": 96
+                },
+                "nodeContext": "final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 13,
+                "astHeight": 5
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 157,
+            "startColumnNumber": 93,
+            "endLineNumber": 157,
+            "endColumnNumber": 94
+        }
+    ],
+    "layoutRelationDataList": []
+}

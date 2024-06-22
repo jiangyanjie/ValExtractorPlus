@@ -1,0 +1,123 @@
+{
+    "id": 55,
+    "expression": "2",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "bb611d1145f61548dd99d9ce1f37a6405ed79082",
+    "filePath": "src/main/java/io/vertx/core/net/impl/ConnectionBase.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "2",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 136,
+                "startColumnNumber": 24,
+                "endLineNumber": 136,
+                "endColumnNumber": 25
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 8,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 17,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 25
+                    },
+                    "nodeContext": "size / 2",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 17,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 25
+                    },
+                    "nodeContext": "newLow=size / 2",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 22,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 26
+                    },
+                    "nodeContext": "int newLow=size / 2;\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 399,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 47,
+                        "endLineNumber": 145,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  ChannelConfig config=channel.config();\n  int high=config.getWriteBufferHighWaterMark();\n  int newLow=size / 2;\n  int newHigh=size;\n  if (newLow >= high) {\n    config.setWriteBufferHighWaterMark(newHigh);\n    config.setWriteBufferLowWaterMark(newLow);\n  }\n else {\n    config.setWriteBufferLowWaterMark(newLow);\n    config.setWriteBufferHighWaterMark(newHigh);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 54,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 444,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 145,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public void doSetWriteQueueMaxSize(int size){\n  ChannelConfig config=channel.config();\n  int high=config.getWriteBufferHighWaterMark();\n  int newLow=size / 2;\n  int newHigh=size;\n  if (newLow >= high) {\n    config.setWriteBufferHighWaterMark(newHigh);\n    config.setWriteBufferLowWaterMark(newLow);\n  }\n else {\n    config.setWriteBufferLowWaterMark(newLow);\n    config.setWriteBufferHighWaterMark(newHigh);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 61,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 22,
+                    "startLineNumber": 136,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 136,
+                    "endColumnNumber": 26
+                },
+                "nodeContext": "int newLow=size / 2;\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 136,
+            "startColumnNumber": 24,
+            "endLineNumber": 136,
+            "endColumnNumber": 25
+        }
+    ],
+    "layoutRelationDataList": []
+}

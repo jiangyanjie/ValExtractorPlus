@@ -1,0 +1,191 @@
+{
+  "id" : 1,
+  "expression" : "headers.method().toString()",
+  "projectName" : "eclipse-vertx@vert.x",
+  "commitID" : "665e20a715caff0cbaa72adfd1bb374c543281f0",
+  "filePath" : "src/main/java/io/vertx/core/http/impl/Http2ClientConnection.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "headers.method().toString()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 27,
+      "startLineNumber" : 124,
+      "startColumnNumber" : 54,
+      "endLineNumber" : 124,
+      "endColumnNumber" : 81
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 52,
+        "startLineNumber" : 124,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 124,
+        "endColumnNumber" : 82
+      },
+      "nodeContext" : "HttpUtils.toVertxMethod(headers.method().toString())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 124,
+        "startColumnNumber" : 21,
+        "endLineNumber" : 124,
+        "endColumnNumber" : 80
+      },
+      "nodeContext" : "method=HttpUtils.toVertxMethod(headers.method().toString())",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 10,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 72,
+        "startLineNumber" : 124,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 124,
+        "endColumnNumber" : 82
+      },
+      "nodeContext" : "HttpMethod method=HttpUtils.toVertxMethod(headers.method().toString());\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+      "nodePosition" : {
+        "charLength" : 773,
+        "startLineNumber" : 122,
+        "startColumnNumber" : 36,
+        "endLineNumber" : 135,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  String headers.method().toString()=headers.method().toString();\n  HttpMethod method=HttpUtils.toVertxMethod(headers.method().toString());\n  String uri=headers.path().toString();\n  String host=headers.authority() != null ? headers.authority().toString() : null;\n  MultiMap headersMap=new Http2HeadersAdaptor(headers);\n  Http2Stream promisedStream=handler.connection().stream(promisedStreamId);\n  HttpClientRequestPushPromise pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap);\n  if (metrics.isEnabled()) {\n    pushReq.metric(metrics.responsePushed(metric,localAddress(),remoteAddress(),pushReq));\n  }\n  streams.put(promisedStreamId,pushReq.getStream());\n  pushHandler.handle(pushReq);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 120,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 779,
+        "startLineNumber" : 122,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 135,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "() -> {\n  String headers.method().toString()=headers.method().toString();\n  HttpMethod method=HttpUtils.toVertxMethod(headers.method().toString());\n  String uri=headers.path().toString();\n  String host=headers.authority() != null ? headers.authority().toString() : null;\n  MultiMap headersMap=new Http2HeadersAdaptor(headers);\n  Http2Stream promisedStream=handler.connection().stream(promisedStreamId);\n  HttpClientRequestPushPromise pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap);\n  if (metrics.isEnabled()) {\n    pushReq.metric(metrics.responsePushed(metric,localAddress(),remoteAddress(),pushReq));\n  }\n  streams.put(promisedStreamId,pushReq.getStream());\n  pushHandler.handle(pushReq);\n}\n",
+      "nodeType" : "LambdaExpression",
+      "astNodeNumber" : 121,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "headers.method().toString()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 27,
+      "startLineNumber" : 129,
+      "startColumnNumber" : 130,
+      "endLineNumber" : 129,
+      "endColumnNumber" : 157
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 125,
+        "startLineNumber" : 129,
+        "startColumnNumber" : 49,
+        "endLineNumber" : 129,
+        "endColumnNumber" : 174
+      },
+      "nodeContext" : "new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap)",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 17,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 133,
+        "startLineNumber" : 129,
+        "startColumnNumber" : 39,
+        "endLineNumber" : 129,
+        "endColumnNumber" : 172
+      },
+      "nodeContext" : "pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap)",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 19,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 164,
+        "startLineNumber" : 129,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 129,
+        "endColumnNumber" : 174
+      },
+      "nodeContext" : "HttpClientRequestPushPromise pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap);\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 22,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+      "nodePosition" : {
+        "charLength" : 773,
+        "startLineNumber" : 122,
+        "startColumnNumber" : 36,
+        "endLineNumber" : 135,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  String headers.method().toString()=headers.method().toString();\n  HttpMethod method=HttpUtils.toVertxMethod(headers.method().toString());\n  String uri=headers.path().toString();\n  String host=headers.authority() != null ? headers.authority().toString() : null;\n  MultiMap headersMap=new Http2HeadersAdaptor(headers);\n  Http2Stream promisedStream=handler.connection().stream(promisedStreamId);\n  HttpClientRequestPushPromise pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap);\n  if (metrics.isEnabled()) {\n    pushReq.metric(metrics.responsePushed(metric,localAddress(),remoteAddress(),pushReq));\n  }\n  streams.put(promisedStreamId,pushReq.getStream());\n  pushHandler.handle(pushReq);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 120,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 779,
+        "startLineNumber" : 122,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 135,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "() -> {\n  String headers.method().toString()=headers.method().toString();\n  HttpMethod method=HttpUtils.toVertxMethod(headers.method().toString());\n  String uri=headers.path().toString();\n  String host=headers.authority() != null ? headers.authority().toString() : null;\n  MultiMap headersMap=new Http2HeadersAdaptor(headers);\n  Http2Stream promisedStream=handler.connection().stream(promisedStreamId);\n  HttpClientRequestPushPromise pushReq=new HttpClientRequestPushPromise(this,promisedStream,http2Pool.client,method,headers.method().toString(),uri,host,headersMap);\n  if (metrics.isEnabled()) {\n    pushReq.metric(metrics.responsePushed(metric,localAddress(),remoteAddress(),pushReq));\n  }\n  streams.put(promisedStreamId,pushReq.getStream());\n  pushHandler.handle(pushReq);\n}\n",
+      "nodeType" : "LambdaExpression",
+      "astNodeNumber" : 121,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 27,
+    "startLineNumber" : 124,
+    "startColumnNumber" : 54,
+    "endLineNumber" : 124,
+    "endColumnNumber" : 81
+  }, {
+    "charLength" : 27,
+    "startLineNumber" : 129,
+    "startColumnNumber" : 130,
+    "endLineNumber" : 129,
+    "endColumnNumber" : 157
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "rawMethod",
+  "nodePosition" : {
+    "charLength" : 9,
+    "startLineNumber" : 123,
+    "startColumnNumber" : 17,
+    "endLineNumber" : 123,
+    "endColumnNumber" : 26
+  }
+}

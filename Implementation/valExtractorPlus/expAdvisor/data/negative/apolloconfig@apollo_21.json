@@ -1,0 +1,109 @@
+{
+    "id": 21,
+    "expression": "model.getClusterName()",
+    "projectName": "apolloconfig@apollo",
+    "commitID": "b2b9dcd0a214056d8c1e2ca3791941f19f73904e",
+    "filePath": "apollo-portal/src/main/java/com/ctrip/framework/apollo/portal/service/ReleaseService.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "model.getClusterName()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 22,
+                "startLineNumber": 38,
+                "startColumnNumber": 25,
+                "endLineNumber": 38,
+                "endColumnNumber": 47
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 36,
+                        "startLineNumber": 38,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 38,
+                        "endColumnNumber": 47
+                    },
+                    "nodeContext": "clusterName=model.getClusterName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 44,
+                        "startLineNumber": 38,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 38,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "String clusterName=model.getClusterName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 516,
+                        "startLineNumber": 35,
+                        "startColumnNumber": 63,
+                        "endLineNumber": 45,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  String appId=model.getAppId();\n  Env env=model.getEnv();\n  String clusterName=model.getClusterName();\n  String namespaceName=model.getNamespaceName();\n  ReleaseDTO releaseDTO=releaseAPI.release(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),userInfoHolder.getUser().getUserId());\n  Cat.logEvent(CatEventType.RELEASE_NAMESPACE,String.format(\"%s+%s+%s+%s\",appId,env,clusterName,namespaceName));\n  return releaseDTO;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 73,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 577,
+                        "startLineNumber": 35,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 45,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public ReleaseDTO createRelease(NamespaceReleaseModel model){\n  String appId=model.getAppId();\n  Env env=model.getEnv();\n  String clusterName=model.getClusterName();\n  String namespaceName=model.getNamespaceName();\n  ReleaseDTO releaseDTO=releaseAPI.release(appId,env,clusterName,namespaceName,model.getReleaseTitle(),model.getReleaseComment(),userInfoHolder.getUser().getUserId());\n  Cat.logEvent(CatEventType.RELEASE_NAMESPACE,String.format(\"%s+%s+%s+%s\",appId,env,clusterName,namespaceName));\n  return releaseDTO;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 82,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 44,
+                    "startLineNumber": 38,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 38,
+                    "endColumnNumber": 48
+                },
+                "nodeContext": "String clusterName=model.getClusterName();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 22,
+            "startLineNumber": 38,
+            "startColumnNumber": 25,
+            "endLineNumber": 38,
+            "endColumnNumber": 47
+        }
+    ],
+    "layoutRelationDataList": []
+}

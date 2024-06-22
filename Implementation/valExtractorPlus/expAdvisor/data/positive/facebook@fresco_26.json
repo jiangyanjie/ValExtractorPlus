@@ -1,0 +1,92 @@
+{
+  "id" : 26,
+  "expression" : "mImageTranscoderFactory.createImageTranscoder(true)",
+  "projectName" : "facebook@fresco",
+  "commitID" : "3c9d23d4fabd8b28acb46d42bc78876077ef6589",
+  "filePath" : "imagepipeline/src/main/java/com/facebook/imagepipeline/core/ProducerSequenceFactory.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "mImageTranscoderFactory.createImageTranscoder(true)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 51,
+      "startLineNumber" : 687,
+      "startColumnNumber" : 80,
+      "endLineNumber" : 687,
+      "endColumnNumber" : 131
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 120,
+        "startLineNumber" : 687,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 131
+      },
+      "nodeContext" : "mProducerFactory.newResizeAndRotateProducer(thumbnailBranchProducer,mImageTranscoderFactory.createImageTranscoder(true))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 129,
+        "startLineNumber" : 687,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 133
+      },
+      "nodeContext" : "return mProducerFactory.newResizeAndRotateProducer(thumbnailBranchProducer,mImageTranscoderFactory.createImageTranscoder(true));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 373,
+        "startLineNumber" : 683,
+        "startColumnNumber" : 60,
+        "endLineNumber" : 688,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  ThumbnailBranchProducer thumbnailBranchProducer=mProducerFactory.newThumbnailBranchProducer(thumbnailProducers);\n  ImageTranscoder mImageTranscoderFactory.createImageTranscoder(true)=mImageTranscoderFactory.createImageTranscoder(true);\n  return mProducerFactory.newResizeAndRotateProducer(thumbnailBranchProducer,mImageTranscoderFactory.createImageTranscoder(true));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 28,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 483,
+        "startLineNumber" : 682,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 688,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "private Producer<EncodedImage> newLocalThumbnailProducer(ThumbnailProducer<EncodedImage>[] thumbnailProducers){\n  ThumbnailBranchProducer thumbnailBranchProducer=mProducerFactory.newThumbnailBranchProducer(thumbnailProducers);\n  ImageTranscoder mImageTranscoderFactory.createImageTranscoder(true)=mImageTranscoderFactory.createImageTranscoder(true);\n  return mProducerFactory.newResizeAndRotateProducer(thumbnailBranchProducer,mImageTranscoderFactory.createImageTranscoder(true));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 45,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 3,
+    "type" : "com.facebook.imagepipeline.transcoder.ImageTranscoder"
+  } ],
+  "positionList" : [ {
+    "charLength" : 51,
+    "startLineNumber" : 687,
+    "startColumnNumber" : 80,
+    "endLineNumber" : 687,
+    "endColumnNumber" : 131
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "imageTranscoder",
+  "nodePosition" : {
+    "charLength" : 15,
+    "startLineNumber" : 686,
+    "startColumnNumber" : 20,
+    "endLineNumber" : 686,
+    "endColumnNumber" : 35
+  }
+}

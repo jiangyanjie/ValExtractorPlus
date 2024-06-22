@@ -1,0 +1,165 @@
+{
+    "id": 27,
+    "expression": "null",
+    "projectName": "google@gson",
+    "commitID": "c25278b4d6036a0e0ae758b13194813936d9e911",
+    "filePath": "gson/src/main/java/com/google/gson/Gson.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 808,
+                "startColumnNumber": 15,
+                "endLineNumber": 808,
+                "endColumnNumber": 19
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 12,
+                        "startLineNumber": 808,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 808,
+                        "endColumnNumber": 20
+                    },
+                    "nodeContext": "return null;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 2,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 30,
+                        "startLineNumber": 807,
+                        "startColumnNumber": 19,
+                        "endLineNumber": 809,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  return null;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 3,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 807,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 809,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (isEmpty) {\n  return null;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.CatchClause,body]",
+                    "nodePosition": {
+                        "charLength": 235,
+                        "startLineNumber": 802,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 811,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (isEmpty) {\n    return null;\n  }\n  throw new JsonSyntaxException(e);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TryStatement,catchClauses]",
+                    "nodePosition": {
+                        "charLength": 258,
+                        "startLineNumber": 802,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 811,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "catch (EOFException e) {\n  if (isEmpty) {\n    return null;\n  }\n  throw new JsonSyntaxException(e);\n}\n",
+                    "nodeType": "CatchClause",
+                    "astNodeNumber": 16,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 877,
+                        "startLineNumber": 794,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 818,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  reader.peek();\n  isEmpty=false;\n  TypeToken<T> typeToken=(TypeToken<T>)TypeToken.get(typeOfT);\n  TypeAdapter<T> typeAdapter=(TypeAdapter<T>)getAdapter(typeToken);\n  T object=typeAdapter.read(reader);\n  invokeInterceptorIfNeeded(object,typeToken);\n  return object;\n}\n catch (EOFException e) {\n  if (isEmpty) {\n    return null;\n  }\n  throw new JsonSyntaxException(e);\n}\ncatch (IllegalStateException e) {\n  throw new JsonSyntaxException(e);\n}\ncatch (IOException e) {\n  throw new JsonSyntaxException(e);\n}\n finally {\n  reader.setLenient(oldLenient);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 105,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 989,
+                        "startLineNumber": 790,
+                        "startColumnNumber": 101,
+                        "endLineNumber": 819,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  boolean isEmpty=true;\n  boolean oldLenient=reader.isLenient();\n  reader.setLenient(true);\n  try {\n    reader.peek();\n    isEmpty=false;\n    TypeToken<T> typeToken=(TypeToken<T>)TypeToken.get(typeOfT);\n    TypeAdapter<T> typeAdapter=(TypeAdapter<T>)getAdapter(typeToken);\n    T object=typeAdapter.read(reader);\n    invokeInterceptorIfNeeded(object,typeToken);\n    return object;\n  }\n catch (  EOFException e) {\n    if (isEmpty) {\n      return null;\n    }\n    throw new JsonSyntaxException(e);\n  }\ncatch (  IllegalStateException e) {\n    throw new JsonSyntaxException(e);\n  }\ncatch (  IOException e) {\n    throw new JsonSyntaxException(e);\n  }\n finally {\n    reader.setLenient(oldLenient);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 123,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1513,
+                        "startLineNumber": 781,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 819,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Reads the next JSON value from  {@code reader} and convert it to an objectof type  {@code typeOfT}. Since Type is not parameterized by T, this method is type unsafe and should be used carefully\n * @throws JsonIOException if there was a problem writing to the Reader\n * @throws JsonSyntaxException if json is not a valid representation for an object of type\n */\n@SuppressWarnings(\"unchecked\") public <T>T fromJson(JsonReader reader,Type typeOfT) throws JsonIOException, JsonSyntaxException {\n  boolean isEmpty=true;\n  boolean oldLenient=reader.isLenient();\n  reader.setLenient(true);\n  try {\n    reader.peek();\n    isEmpty=false;\n    TypeToken<T> typeToken=(TypeToken<T>)TypeToken.get(typeOfT);\n    TypeAdapter<T> typeAdapter=(TypeAdapter<T>)getAdapter(typeToken);\n    T object=typeAdapter.read(reader);\n    invokeInterceptorIfNeeded(object,typeToken);\n    return object;\n  }\n catch (  EOFException e) {\n    if (isEmpty) {\n      return null;\n    }\n    throw new JsonSyntaxException(e);\n  }\ncatch (  IllegalStateException e) {\n    throw new JsonSyntaxException(e);\n  }\ncatch (  IOException e) {\n    throw new JsonSyntaxException(e);\n  }\n finally {\n    reader.setLenient(oldLenient);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 146,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 12,
+                    "startLineNumber": 808,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 808,
+                    "endColumnNumber": 20
+                },
+                "nodeContext": "return null;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 2,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 808,
+            "startColumnNumber": 15,
+            "endLineNumber": 808,
+            "endColumnNumber": 19
+        }
+    ],
+    "layoutRelationDataList": []
+}

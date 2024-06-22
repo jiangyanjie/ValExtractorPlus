@@ -1,0 +1,109 @@
+{
+    "id": 142,
+    "expression": "getFileForLastModifiedCheck()",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "cf3635b42df3a8a0a14c5f12f2b2846155ce4bb1",
+    "filePath": "spring-core/src/main/java/org/springframework/core/io/AbstractResource.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "getFileForLastModifiedCheck()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 29,
+                "startLineNumber": 172,
+                "startColumnNumber": 21,
+                "endLineNumber": 172,
+                "endColumnNumber": 50
+            },
+            "astNodeNumber": 2,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 172,
+                        "startColumnNumber": 7,
+                        "endLineNumber": 172,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "fileToCheck=getFileForLastModifiedCheck()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 49,
+                        "startLineNumber": 172,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 172,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "File fileToCheck=getFileForLastModifiedCheck();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 329,
+                        "startLineNumber": 171,
+                        "startColumnNumber": 47,
+                        "endLineNumber": 179,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  File fileToCheck=getFileForLastModifiedCheck();\n  long lastModified=fileToCheck.lastModified();\n  if (lastModified == 0L && !fileToCheck.exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 35,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 523,
+                        "startLineNumber": 165,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 179,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * This implementation checks the timestamp of the underlying File, if available.\n * @see #getFileForLastModifiedCheck()\n */\n@Override public long lastModified() throws IOException {\n  File fileToCheck=getFileForLastModifiedCheck();\n  long lastModified=fileToCheck.lastModified();\n  if (lastModified == 0L && !fileToCheck.exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 44,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 49,
+                    "startLineNumber": 172,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 172,
+                    "endColumnNumber": 51
+                },
+                "nodeContext": "File fileToCheck=getFileForLastModifiedCheck();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.io.File"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 29,
+            "startLineNumber": 172,
+            "startColumnNumber": 21,
+            "endLineNumber": 172,
+            "endColumnNumber": 50
+        }
+    ],
+    "layoutRelationDataList": []
+}

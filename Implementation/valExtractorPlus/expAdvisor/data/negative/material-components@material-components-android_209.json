@@ -1,0 +1,123 @@
+{
+    "id": 209,
+    "expression": "VERSION_CODES",
+    "projectName": "material-components@material-components-android",
+    "commitID": "79bf9d0e8e62eea9c2f2620d4e1a0a2ca0e12017",
+    "filePath": "lib/java/com/google/android/material/chip/Chip.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "VERSION_CODES",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 13,
+                "startLineNumber": 664,
+                "startColumnNumber": 29,
+                "endLineNumber": 664,
+                "endColumnNumber": 42
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+                    "nodePosition": {
+                        "charLength": 15,
+                        "startLineNumber": 664,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 664,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "VERSION_CODES.M",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 664,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 664,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "VERSION.SDK_INT >= VERSION_CODES.M",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 269,
+                        "startLineNumber": 664,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 670,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (VERSION.SDK_INT >= VERSION_CODES.M) {\n  node.setText(chipText);\n}\n else {\n  node.setContentDescription(chipText);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 20,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 493,
+                        "startLineNumber": 660,
+                        "startColumnNumber": 75,
+                        "endLineNumber": 671,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipText=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipText);\n  }\n else {\n    node.setContentDescription(chipText);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 54,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 578,
+                        "startLineNumber": 659,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 671,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override protected void onPopulateNodeForHost(AccessibilityNodeInfoCompat node){\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipText=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipText);\n  }\n else {\n    node.setContentDescription(chipText);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 64,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 34,
+                    "startLineNumber": 664,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 664,
+                    "endColumnNumber": 44
+                },
+                "nodeContext": "VERSION.SDK_INT >= VERSION_CODES.M",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 7,
+                "astHeight": 3
+            },
+            "tokenLength": 2,
+            "type": null
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 13,
+            "startLineNumber": 664,
+            "startColumnNumber": 29,
+            "endLineNumber": 664,
+            "endColumnNumber": 42
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,123 @@
+{
+    "id": 85,
+    "expression": "brokerController.getTopicConfigManager()",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/PullMessageProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "brokerController.getTopicConfigManager()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 40,
+                "startLineNumber": 100,
+                "startColumnNumber": 8,
+                "endLineNumber": 100,
+                "endColumnNumber": 48
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 62,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 100,
+                        "endColumnNumber": 70
+                    },
+                    "nodeContext": "brokerController.getTopicConfigManager().getTopicConfigTable()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 76,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 100,
+                        "endColumnNumber": 84
+                    },
+                    "nodeContext": "brokerController.getTopicConfigManager().getTopicConfigTable().remove(topic)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 77,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 100,
+                        "endColumnNumber": 85
+                    },
+                    "nodeContext": "brokerController.getTopicConfigManager().getTopicConfigTable().remove(topic);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 617,
+                        "startLineNumber": 99,
+                        "startColumnNumber": 83,
+                        "endLineNumber": 107,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  brokerController.getTopicConfigManager().getTopicConfigTable().remove(topic);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.TOPIC_NOT_EXIST);\n  assertThat(response.getRemark()).contains(\"topic[\" + topic + \"] not exist\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 69,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 706,
+                        "startLineNumber": 98,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 107,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_TopicNotExist() throws RemotingCommandException {\n  brokerController.getTopicConfigManager().getTopicConfigTable().remove(topic);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.TOPIC_NOT_EXIST);\n  assertThat(response.getRemark()).contains(\"topic[\" + topic + \"] not exist\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 77,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 77,
+                    "startLineNumber": 100,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 100,
+                    "endColumnNumber": 85
+                },
+                "nodeContext": "brokerController.getTopicConfigManager().getTopicConfigTable().remove(topic);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 5
+            },
+            "tokenLength": 2,
+            "type": "org.apache.rocketmq.broker.topic.TopicConfigManager"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 40,
+            "startLineNumber": 100,
+            "startColumnNumber": 8,
+            "endLineNumber": 100,
+            "endColumnNumber": 48
+        }
+    ],
+    "layoutRelationDataList": []
+}

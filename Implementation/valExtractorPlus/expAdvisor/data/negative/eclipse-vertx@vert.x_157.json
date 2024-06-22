@@ -1,0 +1,109 @@
+{
+    "id": 157,
+    "expression": "6",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "20b88641281362abf17c8a215efb2031a62b0ba2",
+    "filePath": "src/main/java/io/vertx/core/http/impl/HttpUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "6",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 158,
+                "startColumnNumber": 16,
+                "endLineNumber": 158,
+                "endColumnNumber": 17
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 7,
+                        "startLineNumber": 158,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 158,
+                        "endColumnNumber": 17
+                    },
+                    "nodeContext": "key > 6",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 158,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 160,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (key > 6) {\n  converted.put(key,value);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 37,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (key > 6) {\n    converted.put(key,value);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 87,
+                        "startLineNumber": 157,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "(key,value) -> {\n  if (key > 6) {\n    converted.put(key,value);\n  }\n}\n",
+                    "nodeType": "LambdaExpression",
+                    "astNodeNumber": 17,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 7,
+                    "startLineNumber": 158,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 158,
+                    "endColumnNumber": 17
+                },
+                "nodeContext": "key > 6",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 158,
+            "startColumnNumber": 16,
+            "endLineNumber": 158,
+            "endColumnNumber": 17
+        }
+    ],
+    "layoutRelationDataList": []
+}

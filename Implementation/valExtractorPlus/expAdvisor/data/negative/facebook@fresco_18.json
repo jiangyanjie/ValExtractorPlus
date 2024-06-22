@@ -1,0 +1,95 @@
+{
+    "id": 18,
+    "expression": "widthReduction > mRadius",
+    "projectName": "facebook@fresco",
+    "commitID": "20c4c2ac4ce025e834bf6cd1805b33b952757d05",
+    "filePath": "vito/core/src/main/java/com/facebook/fresco/vito/drawable/CircularBorderBitmapDrawable.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "widthReduction > mRadius",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 24,
+                "startLineNumber": 47,
+                "startColumnNumber": 8,
+                "endLineNumber": 47,
+                "endColumnNumber": 32
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 37,
+                        "startLineNumber": 47,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 47,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "if (widthReduction > mRadius) return;\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 891,
+                        "startLineNumber": 34,
+                        "startColumnNumber": 34,
+                        "endLineNumber": 65,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (mRadius == 0)   return;\n  if (mBorderOptions == null || mBorderOptions.padding < 0.0f || mBorderOptions.width < 0.0f) {\n    super.draw(canvas);\n    return;\n  }\n  float widthReduction=mBorderOptions.scaleDownInsideBorders ? mBorderOptions.width + mBorderOptions.padding : mBorderOptions.padding;\n  if (widthReduction > mRadius)   return;\n  float centerX=getBounds().exactCenterX();\n  float centerY=getBounds().exactCenterY();\n  if (widthReduction > 0.0f) {\n    float scale=(mRadius - widthReduction) / mRadius;\n    canvas.save();\n    canvas.scale(scale,scale,centerX,centerY);\n    super.draw(canvas);\n    canvas.restore();\n  }\n else {\n    super.draw(canvas);\n  }\n  if (mBorderOptions.width > 0.0f) {\n    canvas.drawCircle(centerX,centerY,mRadius - mBorderOptions.width / 2,mBorderPaint);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 128,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 935,
+                        "startLineNumber": 33,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 65,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override public void draw(Canvas canvas){\n  if (mRadius == 0)   return;\n  if (mBorderOptions == null || mBorderOptions.padding < 0.0f || mBorderOptions.width < 0.0f) {\n    super.draw(canvas);\n    return;\n  }\n  float widthReduction=mBorderOptions.scaleDownInsideBorders ? mBorderOptions.width + mBorderOptions.padding : mBorderOptions.padding;\n  if (widthReduction > mRadius)   return;\n  float centerX=getBounds().exactCenterX();\n  float centerY=getBounds().exactCenterY();\n  if (widthReduction > 0.0f) {\n    float scale=(mRadius - widthReduction) / mRadius;\n    canvas.save();\n    canvas.scale(scale,scale,centerX,centerY);\n    super.draw(canvas);\n    canvas.restore();\n  }\n else {\n    super.draw(canvas);\n  }\n  if (mBorderOptions.width > 0.0f) {\n    canvas.drawCircle(centerX,centerY,mRadius - mBorderOptions.width / 2,mBorderPaint);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 138,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 37,
+                    "startLineNumber": 47,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 47,
+                    "endColumnNumber": 41
+                },
+                "nodeContext": "if (widthReduction > mRadius) return;\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 24,
+            "startLineNumber": 47,
+            "startColumnNumber": 8,
+            "endLineNumber": 47,
+            "endColumnNumber": 32
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,270 @@
+{
+    "id": 13,
+    "expression": "inOrder1",
+    "projectName": "ReactiveX@RxAndroid",
+    "commitID": "6b7cfe2a0acb8903ea10014d2f66386954a37813",
+    "filePath": "src/test/java/rx/android/operators/OperatorAdapterViewOnItemClickTest.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "inOrder1",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 8,
+                "startLineNumber": 342,
+                "startColumnNumber": 8,
+                "endLineNumber": 342,
+                "endColumnNumber": 16
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 342,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 342,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 342,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 342,
+                        "endColumnNumber": 79
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 342,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 342,
+                        "endColumnNumber": 80
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1277,
+                        "startLineNumber": 330,
+                        "startColumnNumber": 147,
+                        "endLineNumber": 354,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Adapter adapter=adapterView.getAdapter();\n  Assert.assertNotNull(adapter);\n  final Observable<OnItemClickEvent> observable=ViewObservable.itemClicks(adapterView);\n  final Observer<OnItemClickEvent> observer1=mock(Observer.class);\n  final Observer<OnItemClickEvent> observer2=mock(Observer.class);\n  final Subscription subscription1=observable.subscribe(new TestObserver<OnItemClickEvent>(observer1));\n  final Subscription subscription2=observable.subscribe(new TestObserver<OnItemClickEvent>(observer2));\n  final InOrder inOrder1=inOrder(observer1);\n  final InOrder inOrder2=inOrder(observer2);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,never()).onNext(any(OnItemClickEvent.class));\n  subscription1.unsubscribe();\n  final int count=adapter.getCount();\n  for (int i=0; i < count; i++) {\n    adapterView.performItemClick(any(View.class),i,i);\n    inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n    inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n  }\n  subscription2.unsubscribe();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 207,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1455,
+                        "startLineNumber": 329,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 354,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@SuppressWarnings(\"unchecked\") private void performTestAdapterViewMultipleSubscriptionsClickAllViewsEmitAllEventsForOneSubscriber(AdapterView<? extends Adapter> adapterView){\n  Adapter adapter=adapterView.getAdapter();\n  Assert.assertNotNull(adapter);\n  final Observable<OnItemClickEvent> observable=ViewObservable.itemClicks(adapterView);\n  final Observer<OnItemClickEvent> observer1=mock(Observer.class);\n  final Observer<OnItemClickEvent> observer2=mock(Observer.class);\n  final Subscription subscription1=observable.subscribe(new TestObserver<OnItemClickEvent>(observer1));\n  final Subscription subscription2=observable.subscribe(new TestObserver<OnItemClickEvent>(observer2));\n  final InOrder inOrder1=inOrder(observer1);\n  final InOrder inOrder2=inOrder(observer2);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,never()).onNext(any(OnItemClickEvent.class));\n  subscription1.unsubscribe();\n  final int count=adapter.getCount();\n  for (int i=0; i < count; i++) {\n    adapterView.performItemClick(any(View.class),i,i);\n    inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n    inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n  }\n  subscription2.unsubscribe();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 222,
+                    "astHeight": 11
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 72,
+                    "startLineNumber": 342,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 342,
+                    "endColumnNumber": 80
+                },
+                "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 14,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "rx.android.operators.InOrder"
+        },
+        {
+            "nodeContext": "inOrder1",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 8,
+                "startLineNumber": 350,
+                "startColumnNumber": 12,
+                "endLineNumber": 350,
+                "endColumnNumber": 20
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 350,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 350,
+                        "endColumnNumber": 47
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 350,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 350,
+                        "endColumnNumber": 83
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 350,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 350,
+                        "endColumnNumber": 84
+                    },
+                    "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 276,
+                        "startLineNumber": 348,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 352,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  adapterView.performItemClick(any(View.class),i,i);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 47,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 308,
+                        "startLineNumber": 348,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 352,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "for (int i=0; i < count; i++) {\n  adapterView.performItemClick(any(View.class),i,i);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 58,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1277,
+                        "startLineNumber": 330,
+                        "startColumnNumber": 147,
+                        "endLineNumber": 354,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Adapter adapter=adapterView.getAdapter();\n  Assert.assertNotNull(adapter);\n  final Observable<OnItemClickEvent> observable=ViewObservable.itemClicks(adapterView);\n  final Observer<OnItemClickEvent> observer1=mock(Observer.class);\n  final Observer<OnItemClickEvent> observer2=mock(Observer.class);\n  final Subscription subscription1=observable.subscribe(new TestObserver<OnItemClickEvent>(observer1));\n  final Subscription subscription2=observable.subscribe(new TestObserver<OnItemClickEvent>(observer2));\n  final InOrder inOrder1=inOrder(observer1);\n  final InOrder inOrder2=inOrder(observer2);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,never()).onNext(any(OnItemClickEvent.class));\n  subscription1.unsubscribe();\n  final int count=adapter.getCount();\n  for (int i=0; i < count; i++) {\n    adapterView.performItemClick(any(View.class),i,i);\n    inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n    inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n  }\n  subscription2.unsubscribe();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 207,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1455,
+                        "startLineNumber": 329,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 354,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@SuppressWarnings(\"unchecked\") private void performTestAdapterViewMultipleSubscriptionsClickAllViewsEmitAllEventsForOneSubscriber(AdapterView<? extends Adapter> adapterView){\n  Adapter adapter=adapterView.getAdapter();\n  Assert.assertNotNull(adapter);\n  final Observable<OnItemClickEvent> observable=ViewObservable.itemClicks(adapterView);\n  final Observer<OnItemClickEvent> observer1=mock(Observer.class);\n  final Observer<OnItemClickEvent> observer2=mock(Observer.class);\n  final Subscription subscription1=observable.subscribe(new TestObserver<OnItemClickEvent>(observer1));\n  final Subscription subscription2=observable.subscribe(new TestObserver<OnItemClickEvent>(observer2));\n  final InOrder inOrder1=inOrder(observer1);\n  final InOrder inOrder2=inOrder(observer2);\n  inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n  inOrder2.verify(observer2,never()).onNext(any(OnItemClickEvent.class));\n  subscription1.unsubscribe();\n  final int count=adapter.getCount();\n  for (int i=0; i < count; i++) {\n    adapterView.performItemClick(any(View.class),i,i);\n    inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n    inOrder2.verify(observer2,times(1)).onNext(new OnItemClickEvent(adapterView,any(View.class),i,i));\n  }\n  subscription2.unsubscribe();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 222,
+                    "astHeight": 11
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 72,
+                    "startLineNumber": 350,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 350,
+                    "endColumnNumber": 84
+                },
+                "nodeContext": "inOrder1.verify(observer1,never()).onNext(any(OnItemClickEvent.class));\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 14,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "rx.android.operators.InOrder"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 8,
+            "startLineNumber": 342,
+            "startColumnNumber": 8,
+            "endLineNumber": 342,
+            "endColumnNumber": 16
+        },
+        {
+            "charLength": 8,
+            "startLineNumber": 350,
+            "startColumnNumber": 12,
+            "endLineNumber": 350,
+            "endColumnNumber": 20
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 5
+        }
+    ]
+}

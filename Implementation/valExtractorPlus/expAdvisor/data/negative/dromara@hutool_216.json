@@ -1,0 +1,95 @@
+{
+    "id": 216,
+    "expression": "null != weight",
+    "projectName": "dromara@hutool",
+    "commitID": "dbcca73dc2de3b60155933e1f71066907a0d4a60",
+    "filePath": "hutool-core/src/main/java/cn/hutool/core/lang/tree/Tree.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null != weight",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 14,
+                "startLineNumber": 115,
+                "startColumnNumber": 6,
+                "endLineNumber": 115,
+                "endColumnNumber": 20
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 118,
+                        "startLineNumber": 115,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 118,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "if (null != weight) {\n  final Comparable weightOther=tree.getWeight();\n  return weight.compareTo(weightOther);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 19,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 183,
+                        "startLineNumber": 113,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 120,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  final Comparable weight=this.getWeight();\n  if (null != weight) {\n    final Comparable weightOther=tree.getWeight();\n    return weight.compareTo(weightOther);\n  }\n  return 0;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 31,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 295,
+                        "startLineNumber": 111,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 120,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@SuppressWarnings({\"rawtypes\",\"unchecked\",\"NullableProblems\"}) @Override public int compareTo(Tree<T> tree){\n  final Comparable weight=this.getWeight();\n  if (null != weight) {\n    final Comparable weightOther=tree.getWeight();\n    return weight.compareTo(weightOther);\n  }\n  return 0;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 50,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 118,
+                    "startLineNumber": 115,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 118,
+                    "endColumnNumber": 3
+                },
+                "nodeContext": "if (null != weight) {\n  final Comparable weightOther=tree.getWeight();\n  return weight.compareTo(weightOther);\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 19,
+                "astHeight": 6
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 14,
+            "startLineNumber": 115,
+            "startColumnNumber": 6,
+            "endLineNumber": 115,
+            "endColumnNumber": 20
+        }
+    ],
+    "layoutRelationDataList": []
+}

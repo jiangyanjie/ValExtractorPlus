@@ -1,0 +1,92 @@
+{
+  "id" : 8,
+  "expression" : "gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class)",
+  "projectName" : "google@gson",
+  "commitID" : "14f16e2d0c3c60338d69a3e0f653b8b876fdc1be",
+  "filePath" : "gson/src/test/java/com/google/gson/functional/DefaultTypeAdaptersTest.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 56,
+      "startLineNumber" : 599,
+      "startColumnNumber" : 25,
+      "endLineNumber" : 599,
+      "endColumnNumber" : 81
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 77,
+        "startLineNumber" : 599,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 599,
+        "endColumnNumber" : 81
+      },
+      "nodeContext" : "assertEquals(object,gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 79,
+        "startLineNumber" : 599,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 599,
+        "endColumnNumber" : 83
+      },
+      "nodeContext" : "assertEquals(object,gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 336,
+        "startLineNumber" : 593,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 600,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  JsonObject object=new JsonObject();\n  object.add(\"foo\",new JsonPrimitive(1));\n  object.add(\"bar\",new JsonPrimitive(2));\n  JsonElement gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class)=gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class);\n  assertEquals(object,gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 50,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 379,
+        "startLineNumber" : 593,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 600,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "public void testJsonObjectDeserialization(){\n  JsonObject object=new JsonObject();\n  object.add(\"foo\",new JsonPrimitive(1));\n  object.add(\"bar\",new JsonPrimitive(2));\n  JsonElement gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class)=gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class);\n  assertEquals(object,gson.fromJson(\"{\\\"foo\\\":1,\\\"bar\\\":2}\",JsonElement.class));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 54,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 7,
+    "type" : "com.google.gson.JsonElement"
+  } ],
+  "positionList" : [ {
+    "charLength" : 56,
+    "startLineNumber" : 599,
+    "startColumnNumber" : 25,
+    "endLineNumber" : 599,
+    "endColumnNumber" : 81
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "actual",
+  "nodePosition" : {
+    "charLength" : 6,
+    "startLineNumber" : 598,
+    "startColumnNumber" : 16,
+    "endLineNumber" : 598,
+    "endColumnNumber" : 22
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id" : 35,
+  "expression" : "expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()",
+  "projectName" : "apache@shardingsphere",
+  "commitID" : "2ea140b2e9b64670ae550ec45358f49f16c69cb2",
+  "filePath" : "shardingsphere-infra/shardingsphere-infra-federation/shardingsphere-infra-federation-optimizer/src/main/java/org/apache/shardingsphere/infra/federation/optimizer/converter/segment/projection/impl/ExpressionProjectionConverter.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 114,
+      "startLineNumber" : 71,
+      "startColumnNumber" : 110,
+      "endLineNumber" : 71,
+      "endColumnNumber" : 224
+    },
+    "astNodeNumber" : 15,
+    "astHeight" : 6,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 210,
+        "startLineNumber" : 71,
+        "startColumnNumber" : 31,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 241
+      },
+      "nodeContext" : "new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment)",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 25,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 223,
+        "startLineNumber" : 71,
+        "startColumnNumber" : 19,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 242
+      },
+      "nodeContext" : "Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 28,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 232,
+        "startLineNumber" : 71,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 244
+      },
+      "nodeContext" : "return Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 29,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 1411,
+        "startLineNumber" : 58,
+        "startColumnNumber" : 45,
+        "endLineNumber" : 72,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  SqlBasicCall sqlBasicCall=(SqlBasicCall)sqlNode;\n  if (SqlKind.AS == sqlBasicCall.getOperator().getKind() && sqlBasicCall.getOperandList().get(0) instanceof SqlNumericLiteral) {\n    SqlNode exprSqlNode=sqlBasicCall.getOperandList().get(0);\n    SqlNode aliasSqlNode=sqlBasicCall.getOperandList().get(1);\n    ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(exprSqlNode).orElse(null);\n    ExpressionProjectionSegment expressionProjectionSegment=new ExpressionProjectionSegment(getStartIndex(sqlBasicCall),getStopIndex(sqlBasicCall),exprSqlNode.toString(),expressionSegment);\n    expressionProjectionSegment.setAlias(new AliasSegment(getStartIndex(aliasSqlNode),getStopIndex(aliasSqlNode),new IdentifierValue(aliasSqlNode.toString())));\n    return Optional.of(expressionProjectionSegment);\n  }\n  ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(sqlNode).orElse(null);\n  String expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()=expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString();\n  return Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 172,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 1448,
+        "startLineNumber" : 58,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 72,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (sqlNode instanceof SqlBasicCall) {\n  SqlBasicCall sqlBasicCall=(SqlBasicCall)sqlNode;\n  if (SqlKind.AS == sqlBasicCall.getOperator().getKind() && sqlBasicCall.getOperandList().get(0) instanceof SqlNumericLiteral) {\n    SqlNode exprSqlNode=sqlBasicCall.getOperandList().get(0);\n    SqlNode aliasSqlNode=sqlBasicCall.getOperandList().get(1);\n    ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(exprSqlNode).orElse(null);\n    ExpressionProjectionSegment expressionProjectionSegment=new ExpressionProjectionSegment(getStartIndex(sqlBasicCall),getStopIndex(sqlBasicCall),exprSqlNode.toString(),expressionSegment);\n    expressionProjectionSegment.setAlias(new AliasSegment(getStartIndex(aliasSqlNode),getStopIndex(aliasSqlNode),new IdentifierValue(aliasSqlNode.toString())));\n    return Optional.of(expressionProjectionSegment);\n  }\n  ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(sqlNode).orElse(null);\n  String expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()=expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString();\n  return Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 177,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1507,
+        "startLineNumber" : 57,
+        "startColumnNumber" : 92,
+        "endLineNumber" : 74,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (sqlNode instanceof SqlBasicCall) {\n    SqlBasicCall sqlBasicCall=(SqlBasicCall)sqlNode;\n    if (SqlKind.AS == sqlBasicCall.getOperator().getKind() && sqlBasicCall.getOperandList().get(0) instanceof SqlNumericLiteral) {\n      SqlNode exprSqlNode=sqlBasicCall.getOperandList().get(0);\n      SqlNode aliasSqlNode=sqlBasicCall.getOperandList().get(1);\n      ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(exprSqlNode).orElse(null);\n      ExpressionProjectionSegment expressionProjectionSegment=new ExpressionProjectionSegment(getStartIndex(sqlBasicCall),getStopIndex(sqlBasicCall),exprSqlNode.toString(),expressionSegment);\n      expressionProjectionSegment.setAlias(new AliasSegment(getStartIndex(aliasSqlNode),getStopIndex(aliasSqlNode),new IdentifierValue(aliasSqlNode.toString())));\n      return Optional.of(expressionProjectionSegment);\n    }\n    ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(sqlNode).orElse(null);\n    String expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()=expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString();\n    return Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment));\n  }\n  return Optional.empty();\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 182,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1604,
+        "startLineNumber" : 56,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 74,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public Optional<ExpressionProjectionSegment> convertToSQLSegment(final SqlNode sqlNode){\n  if (sqlNode instanceof SqlBasicCall) {\n    SqlBasicCall sqlBasicCall=(SqlBasicCall)sqlNode;\n    if (SqlKind.AS == sqlBasicCall.getOperator().getKind() && sqlBasicCall.getOperandList().get(0) instanceof SqlNumericLiteral) {\n      SqlNode exprSqlNode=sqlBasicCall.getOperandList().get(0);\n      SqlNode aliasSqlNode=sqlBasicCall.getOperandList().get(1);\n      ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(exprSqlNode).orElse(null);\n      ExpressionProjectionSegment expressionProjectionSegment=new ExpressionProjectionSegment(getStartIndex(sqlBasicCall),getStopIndex(sqlBasicCall),exprSqlNode.toString(),expressionSegment);\n      expressionProjectionSegment.setAlias(new AliasSegment(getStartIndex(aliasSqlNode),getStopIndex(aliasSqlNode),new IdentifierValue(aliasSqlNode.toString())));\n      return Optional.of(expressionProjectionSegment);\n    }\n    ExpressionSegment expressionSegment=new ExpressionConverter().convertToSQLSegment(sqlNode).orElse(null);\n    String expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString()=expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString();\n    return Optional.of(new ExpressionProjectionSegment(getStartIndex(sqlNode),getStopIndex(sqlNode),expressionSegment instanceof FunctionSegment ? ((FunctionSegment)expressionSegment).getText() : sqlNode.toString(),expressionSegment));\n  }\n  return Optional.empty();\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 197,
+      "astHeight" : 13
+    } ],
+    "tokenLength" : 7,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 114,
+    "startLineNumber" : 71,
+    "startColumnNumber" : 110,
+    "endLineNumber" : 71,
+    "endColumnNumber" : 224
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "text",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 70,
+    "startColumnNumber" : 19,
+    "endLineNumber" : 70,
+    "endColumnNumber" : 23
+  }
+}

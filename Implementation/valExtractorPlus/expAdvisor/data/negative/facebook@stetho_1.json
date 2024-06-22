@@ -1,0 +1,151 @@
+{
+    "id": 1,
+    "expression": "new RuntimeException(\"Prefs change detected for unknown key=\" + key)",
+    "projectName": "facebook@stetho",
+    "commitID": "79adeccba349bd3c90aae027833fc0f3ef3e6f9f",
+    "filePath": "stetho/src/main/java/com/facebook/stetho/inspector/domstorage/DOMStoragePeerManager.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new RuntimeException(\"Prefs change detected for unknown key=\" + key)",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 68,
+                "startLineNumber": 136,
+                "startColumnNumber": 14,
+                "endLineNumber": 136,
+                "endColumnNumber": 82
+            },
+            "astNodeNumber": 6,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 75,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 83
+                    },
+                    "nodeContext": "throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n",
+                    "nodeType": "ThrowStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 93,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 8,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 285,
+                        "startLineNumber": 129,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (existsNow) {\n  signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else {\n  throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 26,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 390,
+                        "startLineNumber": 126,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (existedBefore) {\n  signalItemRemoved(mStorageId,key);\n  mCopy.remove(key);\n}\n else if (existsNow) {\n  signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else {\n  throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 39,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 668,
+                        "startLineNumber": 119,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (existedBefore && existsNow) {\n  signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else if (existedBefore) {\n  signalItemRemoved(mStorageId,key);\n  mCopy.remove(key);\n}\n else if (existsNow) {\n  signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else {\n  throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 66,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 908,
+                        "startLineNumber": 114,
+                        "startColumnNumber": 91,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Map<String,?> entries=sharedPreferences.getAll();\n  boolean existedBefore=mCopy.containsKey(key);\n  boolean existsNow=entries.containsKey(key);\n  Object newValue=existsNow ? entries.get(key) : null;\n  if (existedBefore && existsNow) {\n    signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else   if (existedBefore) {\n    signalItemRemoved(mStorageId,key);\n    mCopy.remove(key);\n  }\n else   if (existsNow) {\n    signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else {\n    throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 107,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1009,
+                        "startLineNumber": 113,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,String key){\n  Map<String,?> entries=sharedPreferences.getAll();\n  boolean existedBefore=mCopy.containsKey(key);\n  boolean existsNow=entries.containsKey(key);\n  Object newValue=existsNow ? entries.get(key) : null;\n  if (existedBefore && existsNow) {\n    signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else   if (existedBefore) {\n    signalItemRemoved(mStorageId,key);\n    mCopy.remove(key);\n  }\n else   if (existsNow) {\n    signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else {\n    throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 121,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 75,
+                    "startLineNumber": 136,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 136,
+                    "endColumnNumber": 83
+                },
+                "nodeContext": "throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n",
+                "nodeType": "ThrowStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 8,
+            "type": "java.lang.RuntimeException"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 68,
+            "startLineNumber": 136,
+            "startColumnNumber": 14,
+            "endLineNumber": 136,
+            "endColumnNumber": 82
+        }
+    ],
+    "layoutRelationDataList": []
+}

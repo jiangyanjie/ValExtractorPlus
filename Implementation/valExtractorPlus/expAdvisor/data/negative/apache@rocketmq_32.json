@@ -1,0 +1,123 @@
+{
+    "id": 32,
+    "expression": "request",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/PullMessageProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "request",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 7,
+                "startLineNumber": 140,
+                "startColumnNumber": 99,
+                "endLineNumber": 140,
+                "endColumnNumber": 106
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 140,
+                        "startColumnNumber": 35,
+                        "endLineNumber": 140,
+                        "endColumnNumber": 107
+                    },
+                    "nodeContext": "pullMessageProcessor.processRequest(nettyChannelHandlerContext,request)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 83,
+                        "startLineNumber": 140,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 140,
+                        "endColumnNumber": 107
+                    },
+                    "nodeContext": "response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 100,
+                        "startLineNumber": 140,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 140,
+                        "endColumnNumber": 108
+                    },
+                    "nodeContext": "RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 671,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 75,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  GetMessageResult getMessageResult=createGetMessageResult();\n  when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 79,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 752,
+                        "startLineNumber": 132,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_Found() throws RemotingCommandException {\n  GetMessageResult getMessageResult=createGetMessageResult();\n  when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 100,
+                    "startLineNumber": 140,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 140,
+                    "endColumnNumber": 108
+                },
+                "nodeContext": "RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.remoting.protocol.RemotingCommand"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 7,
+            "startLineNumber": 140,
+            "startColumnNumber": 99,
+            "endLineNumber": 140,
+            "endColumnNumber": 106
+        }
+    ],
+    "layoutRelationDataList": []
+}

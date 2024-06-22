@@ -1,0 +1,230 @@
+{
+  "id" : 34,
+  "expression" : "getTypeTestMethod(\"a\")",
+  "projectName" : "square@retrofit",
+  "commitID" : "eea6cc6fd33f50607302593bc20f12db642f489e",
+  "filePath" : "http/src/test/java/retrofit/http/RestAdapterTest.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getTypeTestMethod(\"a\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 22,
+      "startLineNumber" : 244,
+      "startColumnNumber" : 60,
+      "endLineNumber" : 244,
+      "endColumnNumber" : 82
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 84,
+        "startLineNumber" : 244,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 244,
+        "endColumnNumber" : 99
+      },
+      "nodeContext" : "RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 96,
+        "startLineNumber" : 244,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 244,
+        "endColumnNumber" : 100
+      },
+      "nodeContext" : "assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\")))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 106,
+        "startLineNumber" : 244,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 244,
+        "endColumnNumber" : 110
+      },
+      "nodeContext" : "assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 108,
+        "startLineNumber" : 244,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 244,
+        "endColumnNumber" : 112
+      },
+      "nodeContext" : "assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse();\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 309,
+        "startLineNumber" : 241,
+        "startColumnNumber" : 48,
+        "endLineNumber" : 246,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  Type expected=Response.class;\n  Method getTypeTestMethod(\"a\")=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 42,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 354,
+        "startLineNumber" : 241,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 246,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Test public void testConcreteCallbackTypes(){\n  Type expected=Response.class;\n  Method getTypeTestMethod(\"a\")=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 48,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.reflect.Method"
+  }, {
+    "nodeContext" : "getTypeTestMethod(\"a\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 22,
+      "startLineNumber" : 245,
+      "startColumnNumber" : 49,
+      "endLineNumber" : 245,
+      "endColumnNumber" : 71
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 63,
+        "startLineNumber" : 245,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 245,
+        "endColumnNumber" : 78
+      },
+      "nodeContext" : "RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 7,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 75,
+        "startLineNumber" : 245,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 245,
+        "endColumnNumber" : 79
+      },
+      "nodeContext" : "assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 245,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 245,
+        "endColumnNumber" : 87
+      },
+      "nodeContext" : "assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 103,
+        "startLineNumber" : 245,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 245,
+        "endColumnNumber" : 107
+      },
+      "nodeContext" : "assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 105,
+        "startLineNumber" : 245,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 245,
+        "endColumnNumber" : 109
+      },
+      "nodeContext" : "assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 16,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 309,
+        "startLineNumber" : 241,
+        "startColumnNumber" : 48,
+        "endLineNumber" : 246,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  Type expected=Response.class;\n  Method getTypeTestMethod(\"a\")=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 42,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 354,
+        "startLineNumber" : 241,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 246,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Test public void testConcreteCallbackTypes(){\n  Type expected=Response.class;\n  Method getTypeTestMethod(\"a\")=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.getTypeTestMethod(\"a\")WantsSynchronousInvocation(getTypeTestMethod(\"a\"))).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(getTypeTestMethod(\"a\"),false)).as(\"a\").isEqualTo(expected);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 48,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.reflect.Method"
+  } ],
+  "positionList" : [ {
+    "charLength" : 22,
+    "startLineNumber" : 244,
+    "startColumnNumber" : 60,
+    "endLineNumber" : 244,
+    "endColumnNumber" : 82
+  }, {
+    "charLength" : 22,
+    "startLineNumber" : 245,
+    "startColumnNumber" : 49,
+    "endLineNumber" : 245,
+    "endColumnNumber" : 71
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "method",
+  "nodePosition" : {
+    "charLength" : 6,
+    "startLineNumber" : 243,
+    "startColumnNumber" : 11,
+    "endLineNumber" : 243,
+    "endColumnNumber" : 17
+  }
+}

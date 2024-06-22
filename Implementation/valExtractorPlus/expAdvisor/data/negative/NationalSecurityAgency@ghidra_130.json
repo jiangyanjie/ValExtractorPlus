@@ -1,0 +1,123 @@
+{
+    "id": 130,
+    "expression": "fieldRows.size()",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "51af44f843ceaa58c55860fb35a30a5524887904",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/field/CompositeVerticalLayoutTextField.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "fieldRows.size()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 16,
+                "startLineNumber": 355,
+                "startColumnNumber": 23,
+                "endLineNumber": 355,
+                "endColumnNumber": 39
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 355,
+                        "startColumnNumber": 23,
+                        "endLineNumber": 355,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "fieldRows.size() - 1",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 355,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 355,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "fieldRows.get(fieldRows.size() - 1)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 355,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 355,
+                        "endColumnNumber": 45
+                    },
+                    "nodeContext": "return fieldRows.get(fieldRows.size() - 1);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 255,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 54,
+                        "endLineNumber": 356,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int currentRow=0;\n  for (  FieldRow row : fieldRows) {\n    int length=row.field.getNumDataRows();\n    if (currentRow + length > dataRow) {\n      return row;\n    }\n    currentRow+=length;\n  }\n  return fieldRows.get(fieldRows.size() - 1);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 44,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 308,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 356,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private FieldRow getFieldRowFromDataRow(int dataRow){\n  int currentRow=0;\n  for (  FieldRow row : fieldRows) {\n    int length=row.field.getNumDataRows();\n    if (currentRow + length > dataRow) {\n      return row;\n    }\n    currentRow+=length;\n  }\n  return fieldRows.get(fieldRows.size() - 1);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 52,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 43,
+                    "startLineNumber": 355,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 355,
+                    "endColumnNumber": 45
+                },
+                "nodeContext": "return fieldRows.get(fieldRows.size() - 1);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 9,
+                "astHeight": 5
+            },
+            "tokenLength": 2,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 16,
+            "startLineNumber": 355,
+            "startColumnNumber": 23,
+            "endLineNumber": 355,
+            "endColumnNumber": 39
+        }
+    ],
+    "layoutRelationDataList": []
+}

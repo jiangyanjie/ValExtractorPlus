@@ -1,0 +1,109 @@
+{
+    "id": 283,
+    "expression": "getSymbol(symbolID)",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "e5df6fdd7bbc13dadc918bafa0f4f5767e74e1a7",
+    "filePath": "Ghidra/Framework/SoftwareModeling/src/main/java/ghidra/program/database/symbol/SymbolManager.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "getSymbol(symbolID)",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 19,
+                "startLineNumber": 541,
+                "startColumnNumber": 6,
+                "endLineNumber": 541,
+                "endColumnNumber": 25
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 541,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 541,
+                        "endColumnNumber": 33
+                    },
+                    "nodeContext": "getSymbol(symbolID) != null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 132,
+                        "startLineNumber": 541,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 544,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "if (getSymbol(symbolID) != null) {\n  throw new IllegalArgumentException(\"Duplicate symbol ID\");\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 845,
+                        "startLineNumber": 539,
+                        "startColumnNumber": 46,
+                        "endLineNumber": 559,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addressKey=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addressKey);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addressKey);\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 104,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1043,
+                        "startLineNumber": 537,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 559,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private void addSymbolRecord(long symbolID,Address addr,Namespace namespace,String name,boolean isPrimary,SymbolType type,SourceType source) throws DuplicateNameException, IOException {\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addressKey=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addressKey);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addressKey);\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 138,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 27,
+                    "startLineNumber": 541,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 541,
+                    "endColumnNumber": 33
+                },
+                "nodeContext": "getSymbol(symbolID) != null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 2,
+            "type": "ghidra.program.model.symbol.Symbol"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 19,
+            "startLineNumber": 541,
+            "startColumnNumber": 6,
+            "endLineNumber": 541,
+            "endColumnNumber": 25
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,178 @@
+{
+  "id" : 6,
+  "expression" : "getName(key)",
+  "projectName" : "redisson@redisson",
+  "commitID" : "62b5e68c05b7475e1e0f98b4161aacb35d376b97",
+  "filePath" : "redisson/src/main/java/org/redisson/RedissonMap.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 640,
+      "startColumnNumber" : 46,
+      "endLineNumber" : 640,
+      "endColumnNumber" : 58
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 341,
+        "startLineNumber" : 640,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 647,
+        "endColumnNumber" : 119
+      },
+      "nodeContext" : "commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 30,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 350,
+        "startLineNumber" : 640,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 647,
+        "endColumnNumber" : 120
+      },
+      "nodeContext" : "return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 31,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 392,
+        "startLineNumber" : 638,
+        "startColumnNumber" : 84,
+        "endLineNumber" : 648,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 40,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 638,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 648,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<Boolean> replaceOperationAsync(K key,V oldValue,V newValue){\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 60,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 647,
+      "startColumnNumber" : 42,
+      "endLineNumber" : 647,
+      "endColumnNumber" : 54
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 39,
+        "startLineNumber" : 647,
+        "startColumnNumber" : 16,
+        "endLineNumber" : 647,
+        "endColumnNumber" : 55
+      },
+      "nodeContext" : "Collections.singletonList(getName(key))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 341,
+        "startLineNumber" : 640,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 647,
+        "endColumnNumber" : 119
+      },
+      "nodeContext" : "commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 30,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 350,
+        "startLineNumber" : 640,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 647,
+        "endColumnNumber" : 120
+      },
+      "nodeContext" : "return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 31,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 392,
+        "startLineNumber" : 638,
+        "startColumnNumber" : 84,
+        "endLineNumber" : 648,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 40,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 638,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 648,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<Boolean> replaceOperationAsync(K key,V oldValue,V newValue){\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_BOOLEAN,\"if redis.call('hget', KEYS[1], ARGV[1]) == ARGV[2] then \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[3]); \" + \"return 1; \"+ \"else \"+ \"return 0; \"+ \"end\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(oldValue),encodeMapValue(newValue));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 60,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 12,
+    "startLineNumber" : 640,
+    "startColumnNumber" : 46,
+    "endLineNumber" : 640,
+    "endColumnNumber" : 58
+  }, {
+    "charLength" : 12,
+    "startLineNumber" : 647,
+    "startColumnNumber" : 42,
+    "endLineNumber" : 647,
+    "endColumnNumber" : 54
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "name",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 639,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 639,
+    "endColumnNumber" : 19
+  }
+}

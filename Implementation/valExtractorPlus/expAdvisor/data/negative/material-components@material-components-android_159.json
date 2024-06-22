@@ -1,0 +1,109 @@
+{
+    "id": 159,
+    "expression": "chipText",
+    "projectName": "material-components@material-components-android",
+    "commitID": "663e1cd1cb3bbe75094e9f4baaae94f44a469798",
+    "filePath": "lib/src/android/support/design/chip/ChipDrawable.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "chipText",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 8,
+                "startLineNumber": 617,
+                "startColumnNumber": 8,
+                "endLineNumber": 617,
+                "endColumnNumber": 16
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 617,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 617,
+                        "endColumnNumber": 24
+                    },
+                    "nodeContext": "chipText != null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 496,
+                        "startLineNumber": 617,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 630,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (chipText != null) {\n  float offsetFromStart=chipStrokeWidth / 2f + chipStartPadding + calculateChipIconWidth() + textStartPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    pointF.x=bounds.left + offsetFromStart;\n    align=Align.LEFT;\n  }\n else {\n    pointF.x=bounds.right - offsetFromStart;\n    align=Align.RIGHT;\n  }\n  pointF.y=bounds.centerY() - calculateChipTextCenterFromBaseline();\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 73,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 572,
+                        "startLineNumber": 613,
+                        "startColumnNumber": 68,
+                        "endLineNumber": 633,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  pointF.set(0,0);\n  Align align=null;\n  if (chipText != null) {\n    float offsetFromStart=chipStrokeWidth / 2f + chipStartPadding + calculateChipIconWidth() + textStartPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      pointF.x=bounds.left + offsetFromStart;\n      align=Align.LEFT;\n    }\n else {\n      pointF.x=bounds.right - offsetFromStart;\n      align=Align.RIGHT;\n    }\n    pointF.y=bounds.centerY() - calculateChipTextCenterFromBaseline();\n  }\n  return align;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 88,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 814,
+                        "startLineNumber": 609,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 633,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Calculates the chip text's drawable-absolute origin point (top-left is <code>[bounds.left, bounds.top]</code>). Returns the text alignment at the origin.\n */\nprivate Align calculateChipTextOrigin(Rect bounds,PointF pointF){\n  pointF.set(0,0);\n  Align align=null;\n  if (chipText != null) {\n    float offsetFromStart=chipStrokeWidth / 2f + chipStartPadding + calculateChipIconWidth() + textStartPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      pointF.x=bounds.left + offsetFromStart;\n      align=Align.LEFT;\n    }\n else {\n      pointF.x=bounds.right - offsetFromStart;\n      align=Align.RIGHT;\n    }\n    pointF.y=bounds.centerY() - calculateChipTextCenterFromBaseline();\n  }\n  return align;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 102,
+                    "astHeight": 11
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 16,
+                    "startLineNumber": 617,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 617,
+                    "endColumnNumber": 24
+                },
+                "nodeContext": "chipText != null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "java.lang.CharSequence"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 8,
+            "startLineNumber": 617,
+            "startColumnNumber": 8,
+            "endLineNumber": 617,
+            "endColumnNumber": 16
+        }
+    ],
+    "layoutRelationDataList": []
+}

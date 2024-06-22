@@ -1,0 +1,151 @@
+{
+    "id": 7,
+    "expression": "elt",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "c91b634567db7e16a00e32da6816011359ccf0cf",
+    "filePath": "src/test/java/io/vertx/test/core/Http2TestBase.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "elt",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 65,
+                "startColumnNumber": 10,
+                "endLineNumber": 65,
+                "endColumnNumber": 13
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 65,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 65,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "elt.getMethodName()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 65,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 65,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "elt.getMethodName().equals(\"executeFromIO\")",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 74,
+                        "startLineNumber": 65,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 67,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (elt.getMethodName().equals(\"executeFromIO\")) {\n  return;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 88,
+                        "startLineNumber": 64,
+                        "startColumnNumber": 73,
+                        "endLineNumber": 68,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (elt.getMethodName().equals(\"executeFromIO\")) {\n    return;\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 157,
+                        "startLineNumber": 64,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 68,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "for (StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n  if (elt.getMethodName().equals(\"executeFromIO\")) {\n    return;\n  }\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 20,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 302,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 352,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "protected void assertOnIOContext(Context context){\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 50,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 43,
+                    "startLineNumber": 65,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 65,
+                    "endColumnNumber": 53
+                },
+                "nodeContext": "elt.getMethodName().equals(\"executeFromIO\")",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 6,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "java.lang.StackTraceElement"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 3,
+            "startLineNumber": 65,
+            "startColumnNumber": 10,
+            "endLineNumber": 65,
+            "endColumnNumber": 13
+        }
+    ],
+    "layoutRelationDataList": []
+}

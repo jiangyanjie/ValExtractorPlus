@@ -1,0 +1,123 @@
+{
+    "id": 150,
+    "expression": "endTransactionProcessor",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/EndTransactionProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "endTransactionProcessor",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 23,
+                "startLineNumber": 96,
+                "startColumnNumber": 35,
+                "endLineNumber": 96,
+                "endColumnNumber": 58
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 75,
+                        "startLineNumber": 96,
+                        "startColumnNumber": 35,
+                        "endLineNumber": 96,
+                        "endColumnNumber": 110
+                    },
+                    "nodeContext": "endTransactionProcessor.processRequest(nettyChannelHandlerContext,request)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 86,
+                        "startLineNumber": 96,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 96,
+                        "endColumnNumber": 110
+                    },
+                    "nodeContext": "response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 103,
+                        "startLineNumber": 96,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 96,
+                        "endColumnNumber": 111
+                    },
+                    "nodeContext": "RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 762,
+                        "startLineNumber": 89,
+                        "startColumnNumber": 69,
+                        "endLineNumber": 98,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n  when(messageStore.putMessage(any(MessageExtBrokerInner.class))).thenReturn(new PutMessageResult(PutMessageStatus.PUT_OK,new AppendMessageResult(AppendMessageStatus.PUT_OK)));\n  RemotingCommand request=createEndTransactionMsgCommand(MessageSysFlag.TRANSACTION_COMMIT_TYPE,false);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 85,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 837,
+                        "startLineNumber": 88,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 98,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest() throws RemotingCommandException {\n  when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n  when(messageStore.putMessage(any(MessageExtBrokerInner.class))).thenReturn(new PutMessageResult(PutMessageStatus.PUT_OK,new AppendMessageResult(AppendMessageStatus.PUT_OK)));\n  RemotingCommand request=createEndTransactionMsgCommand(MessageSysFlag.TRANSACTION_COMMIT_TYPE,false);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 93,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 103,
+                    "startLineNumber": 96,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 96,
+                    "endColumnNumber": 111
+                },
+                "nodeContext": "RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.broker.processor.EndTransactionProcessor"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 23,
+            "startLineNumber": 96,
+            "startColumnNumber": 35,
+            "endLineNumber": 96,
+            "endColumnNumber": 58
+        }
+    ],
+    "layoutRelationDataList": []
+}

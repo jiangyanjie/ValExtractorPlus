@@ -1,0 +1,295 @@
+{
+  "id" : 20,
+  "expression" : "chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "663e1cd1cb3bbe75094e9f4baaae94f44a469798",
+  "filePath" : "lib/src/android/support/design/chip/ChipDrawable.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 116,
+      "startLineNumber" : 682,
+      "startColumnNumber" : 41,
+      "endLineNumber" : 682,
+      "endColumnNumber" : 157
+    },
+    "astNodeNumber" : 13,
+    "astHeight" : 7,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+      "nodePosition" : {
+        "charLength" : 131,
+        "startLineNumber" : 682,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 682,
+        "endColumnNumber" : 157
+      },
+      "nodeContext" : "bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 17,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 147,
+        "startLineNumber" : 682,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 682,
+        "endColumnNumber" : 155
+      },
+      "nodeContext" : "outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 21,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 149,
+        "startLineNumber" : 682,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 682,
+        "endColumnNumber" : 157
+      },
+      "nodeContext" : "outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 22,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 155,
+        "startLineNumber" : 681,
+        "startColumnNumber" : 80,
+        "endLineNumber" : 683,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 23,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 388,
+        "startLineNumber" : 681,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 685,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n  outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n else {\n  outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 43,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 645,
+        "startLineNumber" : 672,
+        "startColumnNumber" : 27,
+        "endLineNumber" : 686,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n else {\n    outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 668,
+        "startLineNumber" : 672,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 686,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (closeIcon != null) {\n  float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n else {\n    outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 65,
+      "astHeight" : 14
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 713,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 70,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n else {\n      outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 71,
+      "astHeight" : 15
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 779,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "private void calculateChipTouchBounds(Rect bounds,RectF outBounds){\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n else {\n      outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 83,
+      "astHeight" : 16
+    } ],
+    "tokenLength" : 13,
+    "type" : "float"
+  }, {
+    "nodeContext" : "chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 116,
+      "startLineNumber" : 684,
+      "startColumnNumber" : 39,
+      "endLineNumber" : 684,
+      "endColumnNumber" : 155
+    },
+    "astNodeNumber" : 13,
+    "astHeight" : 7,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+      "nodePosition" : {
+        "charLength" : 130,
+        "startLineNumber" : 684,
+        "startColumnNumber" : 25,
+        "endLineNumber" : 684,
+        "endColumnNumber" : 155
+      },
+      "nodeContext" : "bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 17,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 145,
+        "startLineNumber" : 684,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 684,
+        "endColumnNumber" : 153
+      },
+      "nodeContext" : "outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 21,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 147,
+        "startLineNumber" : 684,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 684,
+        "endColumnNumber" : 155
+      },
+      "nodeContext" : "outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 22,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 153,
+        "startLineNumber" : 683,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 685,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 23,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 388,
+        "startLineNumber" : 681,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 685,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n  outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n else {\n  outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 43,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 645,
+        "startLineNumber" : 672,
+        "startColumnNumber" : 27,
+        "endLineNumber" : 686,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n else {\n    outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 668,
+        "startLineNumber" : 672,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 686,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (closeIcon != null) {\n  float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n else {\n    outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 65,
+      "astHeight" : 14
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 713,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 70,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n else {\n      outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 71,
+      "astHeight" : 15
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 779,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 687,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "private void calculateChipTouchBounds(Rect bounds,RectF outBounds){\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n else {\n      outBounds.left=bounds.left + chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    }\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 83,
+      "astHeight" : 16
+    } ],
+    "tokenLength" : 13,
+    "type" : "float"
+  } ],
+  "positionList" : [ {
+    "charLength" : 116,
+    "startLineNumber" : 682,
+    "startColumnNumber" : 41,
+    "endLineNumber" : 682,
+    "endColumnNumber" : 157
+  }, {
+    "charLength" : 116,
+    "startLineNumber" : 684,
+    "startColumnNumber" : 39,
+    "endLineNumber" : 684,
+    "endColumnNumber" : 155
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "offsetFromEnd",
+  "nodePosition" : {
+    "charLength" : 13,
+    "startLineNumber" : 673,
+    "startColumnNumber" : 12,
+    "endLineNumber" : 673,
+    "endColumnNumber" : 25
+  }
+}

@@ -1,0 +1,137 @@
+{
+    "id": 185,
+    "expression": "f.getHeight()",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "f24e969c2a5d168b6df3303d1f91ad0e695b2a72",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/field/VerticalLayoutTextField.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "f.getHeight()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 13,
+                "startLineNumber": 245,
+                "startColumnNumber": 8,
+                "endLineNumber": 245,
+                "endColumnNumber": 21
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 18,
+                        "startLineNumber": 245,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 245,
+                        "endColumnNumber": 21
+                    },
+                    "nodeContext": "y+=f.getHeight()",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 245,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 245,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "y+=f.getHeight();\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 243,
+                        "startColumnNumber": 30,
+                        "endLineNumber": 246,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Field f=getField(i);\n  y+=f.getHeight();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 15,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 85,
+                        "startLineNumber": 243,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 246,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < n; i++) {\n  Field f=getField(i);\n  y+=f.getHeight();\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 26,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 208,
+                        "startLineNumber": 238,
+                        "startColumnNumber": 26,
+                        "endLineNumber": 249,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int startY=-heightAbove;\n  int y=startY;\n  int n=Math.min(row,subFields.size() - 1);\n  for (int i=0; i < n; i++) {\n    Field f=getField(i);\n    y+=f.getHeight();\n  }\n  return y;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 53,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 245,
+                        "startLineNumber": 237,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 249,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int getY(int row){\n  int startY=-heightAbove;\n  int y=startY;\n  int n=Math.min(row,subFields.size() - 1);\n  for (int i=0; i < n; i++) {\n    Field f=getField(i);\n    y+=f.getHeight();\n  }\n  return y;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 62,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 19,
+                    "startLineNumber": 245,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 245,
+                    "endColumnNumber": 22
+                },
+                "nodeContext": "y+=f.getHeight();\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 6,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 13,
+            "startLineNumber": 245,
+            "startColumnNumber": 8,
+            "endLineNumber": 245,
+            "endColumnNumber": 21
+        }
+    ],
+    "layoutRelationDataList": []
+}

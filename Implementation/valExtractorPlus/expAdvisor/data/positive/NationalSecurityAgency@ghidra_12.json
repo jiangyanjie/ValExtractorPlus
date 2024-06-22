@@ -1,0 +1,230 @@
+{
+  "id" : 12,
+  "expression" : "record.getIntValue(V1_SYMBOL_DATA2_COL)",
+  "projectName" : "NationalSecurityAgency@ghidra",
+  "commitID" : "e5df6fdd7bbc13dadc918bafa0f4f5767e74e1a7",
+  "filePath" : "Ghidra/Framework/SoftwareModeling/src/main/java/ghidra/program/database/symbol/SymbolDatabaseAdapterV1.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "record.getIntValue(V1_SYMBOL_DATA2_COL)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 39,
+      "startLineNumber" : 153,
+      "startColumnNumber" : 7,
+      "endLineNumber" : 153,
+      "endColumnNumber" : 46
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 44,
+        "startLineNumber" : 153,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 153,
+        "endColumnNumber" : 51
+      },
+      "nodeContext" : "record.getIntValue(V1_SYMBOL_DATA2_COL) == 1",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 130,
+        "startLineNumber" : 153,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 155,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 16,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 140,
+        "startLineNumber" : 152,
+        "startColumnNumber" : 37,
+        "endLineNumber" : 156,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 17,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 364,
+        "startLineNumber" : 152,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (SymbolType.LABEL.equals(type)) {\n  if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n}\n else if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n  rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 47,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2130,
+        "startLineNumber" : 112,
+        "startColumnNumber" : 51,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (record == null) {\n    return null;\n  }\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(record.getKey());\n  String symbolName=record.getString(V1_SYMBOL_NAME_COL);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,symbolName);\n  long symbolAddrKey=record.getLongValue(V1_SYMBOL_ADDR_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,symbolAddrKey);\n  long namespaceId=record.getLongValue(V1_SYMBOL_PARENT_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespaceId);\n  byte symbolTypeId=record.getByteValue(V1_SYMBOL_TYPE_COL);\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,symbolTypeId);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_STRING_DATA_COL,record.getString(V1_SYMBOL_COMMENT_COL));\n  SourceType source=SourceType.USER_DEFINED;\n  if (symbolTypeId == SymbolType.FUNCTION.getID()) {\n    Address symbolAddress=addrMap.decodeAddress(symbolAddrKey);\n    String defaultName=SymbolUtilities.getDefaultFunctionName(symbolAddress);\n    if (symbolName.equals(defaultName)) {\n      source=SourceType.DEFAULT;\n    }\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  long dataTypeId=record.getLongValue(V1_SYMBOL_DATA1_COL);\n  if (dataTypeId != -1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_DATATYPE_COL,dataTypeId);\n  }\n  SymbolType type=SymbolType.getSymbolType(symbolTypeId);\n  int record.getIntValue(V1_SYMBOL_DATA2_COL)=record.getIntValue(V1_SYMBOL_DATA2_COL);\n  if (SymbolType.LABEL.equals(type)) {\n    if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n      rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n    }\n  }\n else   if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n    rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n  }\n  if (SymbolType.FUNCTION.equals(type)) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n  Field hash=computeLocatorHash(symbolName,namespaceId,symbolAddrKey);\n  rec.setField(SymbolDatabaseAdapter.SYMBOL_HASH_COL,hash);\n  return rec;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 278,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2367,
+        "startLineNumber" : 107,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Returns a record matching the current data base schema from the version 1 record.\n * @param recV1 the record matching the version 1 schema.\n * @return a current symbol record.\n */\nprivate DBRecord convertV1Record(DBRecord record){\n  if (record == null) {\n    return null;\n  }\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(record.getKey());\n  String symbolName=record.getString(V1_SYMBOL_NAME_COL);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,symbolName);\n  long symbolAddrKey=record.getLongValue(V1_SYMBOL_ADDR_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,symbolAddrKey);\n  long namespaceId=record.getLongValue(V1_SYMBOL_PARENT_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespaceId);\n  byte symbolTypeId=record.getByteValue(V1_SYMBOL_TYPE_COL);\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,symbolTypeId);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_STRING_DATA_COL,record.getString(V1_SYMBOL_COMMENT_COL));\n  SourceType source=SourceType.USER_DEFINED;\n  if (symbolTypeId == SymbolType.FUNCTION.getID()) {\n    Address symbolAddress=addrMap.decodeAddress(symbolAddrKey);\n    String defaultName=SymbolUtilities.getDefaultFunctionName(symbolAddress);\n    if (symbolName.equals(defaultName)) {\n      source=SourceType.DEFAULT;\n    }\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  long dataTypeId=record.getLongValue(V1_SYMBOL_DATA1_COL);\n  if (dataTypeId != -1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_DATATYPE_COL,dataTypeId);\n  }\n  SymbolType type=SymbolType.getSymbolType(symbolTypeId);\n  int record.getIntValue(V1_SYMBOL_DATA2_COL)=record.getIntValue(V1_SYMBOL_DATA2_COL);\n  if (SymbolType.LABEL.equals(type)) {\n    if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n      rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n    }\n  }\n else   if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n    rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n  }\n  if (SymbolType.FUNCTION.equals(type)) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n  Field hash=computeLocatorHash(symbolName,namespaceId,symbolAddrKey);\n  rec.setField(SymbolDatabaseAdapter.SYMBOL_HASH_COL,hash);\n  return rec;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 288,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 6,
+    "type" : "int"
+  }, {
+    "nodeContext" : "record.getIntValue(V1_SYMBOL_DATA2_COL)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 39,
+      "startLineNumber" : 158,
+      "startColumnNumber" : 63,
+      "endLineNumber" : 158,
+      "endColumnNumber" : 102
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 99,
+        "startLineNumber" : 158,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 158,
+        "endColumnNumber" : 102
+      },
+      "nodeContext" : "rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 101,
+        "startLineNumber" : 158,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 158,
+        "endColumnNumber" : 104
+      },
+      "nodeContext" : "rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 107,
+        "startLineNumber" : 157,
+        "startColumnNumber" : 83,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 183,
+        "startLineNumber" : 157,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n  rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 26,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 364,
+        "startLineNumber" : 152,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (SymbolType.LABEL.equals(type)) {\n  if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n}\n else if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n  rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 47,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2130,
+        "startLineNumber" : 112,
+        "startColumnNumber" : 51,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (record == null) {\n    return null;\n  }\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(record.getKey());\n  String symbolName=record.getString(V1_SYMBOL_NAME_COL);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,symbolName);\n  long symbolAddrKey=record.getLongValue(V1_SYMBOL_ADDR_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,symbolAddrKey);\n  long namespaceId=record.getLongValue(V1_SYMBOL_PARENT_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespaceId);\n  byte symbolTypeId=record.getByteValue(V1_SYMBOL_TYPE_COL);\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,symbolTypeId);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_STRING_DATA_COL,record.getString(V1_SYMBOL_COMMENT_COL));\n  SourceType source=SourceType.USER_DEFINED;\n  if (symbolTypeId == SymbolType.FUNCTION.getID()) {\n    Address symbolAddress=addrMap.decodeAddress(symbolAddrKey);\n    String defaultName=SymbolUtilities.getDefaultFunctionName(symbolAddress);\n    if (symbolName.equals(defaultName)) {\n      source=SourceType.DEFAULT;\n    }\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  long dataTypeId=record.getLongValue(V1_SYMBOL_DATA1_COL);\n  if (dataTypeId != -1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_DATATYPE_COL,dataTypeId);\n  }\n  SymbolType type=SymbolType.getSymbolType(symbolTypeId);\n  int record.getIntValue(V1_SYMBOL_DATA2_COL)=record.getIntValue(V1_SYMBOL_DATA2_COL);\n  if (SymbolType.LABEL.equals(type)) {\n    if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n      rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n    }\n  }\n else   if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n    rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n  }\n  if (SymbolType.FUNCTION.equals(type)) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n  Field hash=computeLocatorHash(symbolName,namespaceId,symbolAddrKey);\n  rec.setField(SymbolDatabaseAdapter.SYMBOL_HASH_COL,hash);\n  return rec;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 278,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2367,
+        "startLineNumber" : 107,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Returns a record matching the current data base schema from the version 1 record.\n * @param recV1 the record matching the version 1 schema.\n * @return a current symbol record.\n */\nprivate DBRecord convertV1Record(DBRecord record){\n  if (record == null) {\n    return null;\n  }\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(record.getKey());\n  String symbolName=record.getString(V1_SYMBOL_NAME_COL);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,symbolName);\n  long symbolAddrKey=record.getLongValue(V1_SYMBOL_ADDR_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,symbolAddrKey);\n  long namespaceId=record.getLongValue(V1_SYMBOL_PARENT_COL);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespaceId);\n  byte symbolTypeId=record.getByteValue(V1_SYMBOL_TYPE_COL);\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,symbolTypeId);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_STRING_DATA_COL,record.getString(V1_SYMBOL_COMMENT_COL));\n  SourceType source=SourceType.USER_DEFINED;\n  if (symbolTypeId == SymbolType.FUNCTION.getID()) {\n    Address symbolAddress=addrMap.decodeAddress(symbolAddrKey);\n    String defaultName=SymbolUtilities.getDefaultFunctionName(symbolAddress);\n    if (symbolName.equals(defaultName)) {\n      source=SourceType.DEFAULT;\n    }\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  long dataTypeId=record.getLongValue(V1_SYMBOL_DATA1_COL);\n  if (dataTypeId != -1) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_DATATYPE_COL,dataTypeId);\n  }\n  SymbolType type=SymbolType.getSymbolType(symbolTypeId);\n  int record.getIntValue(V1_SYMBOL_DATA2_COL)=record.getIntValue(V1_SYMBOL_DATA2_COL);\n  if (SymbolType.LABEL.equals(type)) {\n    if (record.getIntValue(V1_SYMBOL_DATA2_COL) == 1) {\n      rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n    }\n  }\n else   if (SymbolType.PARAMETER.equals(type) || SymbolType.LOCAL_VAR.equals(type)) {\n    rec.setIntValue(SymbolDatabaseAdapter.SYMBOL_VAROFFSET_COL,record.getIntValue(V1_SYMBOL_DATA2_COL));\n  }\n  if (SymbolType.FUNCTION.equals(type)) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,symbolAddrKey);\n  }\n  Field hash=computeLocatorHash(symbolName,namespaceId,symbolAddrKey);\n  rec.setField(SymbolDatabaseAdapter.SYMBOL_HASH_COL,hash);\n  return rec;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 288,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 6,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 39,
+    "startLineNumber" : 153,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 153,
+    "endColumnNumber" : 46
+  }, {
+    "charLength" : 39,
+    "startLineNumber" : 158,
+    "startColumnNumber" : 63,
+    "endLineNumber" : 158,
+    "endColumnNumber" : 102
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "data2",
+  "nodePosition" : {
+    "charLength" : 5,
+    "startLineNumber" : 148,
+    "startColumnNumber" : 6,
+    "endLineNumber" : 148,
+    "endColumnNumber" : 11
+  }
+}

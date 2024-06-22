@@ -1,0 +1,527 @@
+{
+  "id" : 6,
+  "expression" : "Objects.toString(this.endpoint,\"\")",
+  "projectName" : "alibaba@spring-cloud-alibaba",
+  "commitID" : "7cc5a13260e7e50ebf47413cb66f5fa09561b77b",
+  "filePath" : "spring-cloud-alibaba-nacos-config/src/main/java/org/springframework/cloud/alibaba/nacos/NacosConfigProperties.java",
+  "occurrences" : 5,
+  "expressionList" : [ {
+    "nodeContext" : "Objects.toString(this.endpoint,\"\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 34,
+      "startLineNumber" : 333,
+      "startColumnNumber" : 6,
+      "endLineNumber" : 333,
+      "endColumnNumber" : 40
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 48,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 333,
+        "endColumnNumber" : 54
+      },
+      "nodeContext" : "Objects.toString(this.endpoint,\"\").contains(\":\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 363,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n else {\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1273,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 186,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1317,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 191,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Objects.toString(this.endpoint,\"\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 34,
+      "startLineNumber" : 334,
+      "startColumnNumber" : 15,
+      "endLineNumber" : 334,
+      "endColumnNumber" : 49
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 47,
+        "startLineNumber" : 334,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 334,
+        "endColumnNumber" : 62
+      },
+      "nodeContext" : "Objects.toString(this.endpoint,\"\").indexOf(\":\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 53,
+        "startLineNumber" : 334,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 334,
+        "endColumnNumber" : 60
+      },
+      "nodeContext" : "index=Objects.toString(this.endpoint,\"\").indexOf(\":\")",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 334,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 334,
+        "endColumnNumber" : 62
+      },
+      "nodeContext" : "int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 236,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 337,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 363,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n else {\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1273,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 186,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1317,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 191,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Objects.toString(this.endpoint,\"\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 34,
+      "startLineNumber" : 335,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 335,
+      "endColumnNumber" : 62
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 53,
+        "startLineNumber" : 335,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 335,
+        "endColumnNumber" : 81
+      },
+      "nodeContext" : "Objects.toString(this.endpoint,\"\").substring(0,index)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 78,
+        "startLineNumber" : 335,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 335,
+        "endColumnNumber" : 81
+      },
+      "nodeContext" : "properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 80,
+        "startLineNumber" : 335,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 335,
+        "endColumnNumber" : 83
+      },
+      "nodeContext" : "properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 16,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 236,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 337,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 363,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n else {\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1273,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 186,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1317,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 191,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Objects.toString(this.endpoint,\"\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 34,
+      "startLineNumber" : 336,
+      "startColumnNumber" : 33,
+      "endLineNumber" : 336,
+      "endColumnNumber" : 67
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 55,
+        "startLineNumber" : 336,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 336,
+        "endColumnNumber" : 88
+      },
+      "nodeContext" : "Objects.toString(this.endpoint,\"\").substring(index + 1)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 12,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 85,
+        "startLineNumber" : 336,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 336,
+        "endColumnNumber" : 88
+      },
+      "nodeContext" : "properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 16,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 87,
+        "startLineNumber" : 336,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 336,
+        "endColumnNumber" : 90
+      },
+      "nodeContext" : "properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 17,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 236,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 30,
+        "endLineNumber" : 337,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 363,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n else {\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1273,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 186,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1317,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 191,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Objects.toString(this.endpoint,\"\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 34,
+      "startLineNumber" : 339,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 339,
+      "endColumnNumber" : 62
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 339,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 339,
+        "endColumnNumber" : 62
+      },
+      "nodeContext" : "properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 61,
+        "startLineNumber" : 339,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 339,
+        "endColumnNumber" : 64
+      },
+      "nodeContext" : "properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 67,
+        "startLineNumber" : 338,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 363,
+        "startLineNumber" : 333,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 340,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n  int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n  properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n}\n else {\n  properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1273,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 186,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1317,
+        "startLineNumber" : 317,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String Objects.toString(this.endpoint,\"\")=Objects.toString(this.Objects.toString(this.endpoint,\"\"),\"\");\n  if (Objects.toString(this.endpoint,\"\").contains(\":\")) {\n    int index=Objects.toString(this.endpoint,\"\").indexOf(\":\");\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\").substring(0,index));\n    properties.put(ENDPOINT_PORT,Objects.toString(this.endpoint,\"\").substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,Objects.toString(this.endpoint,\"\"));\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 191,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 3,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 34,
+    "startLineNumber" : 333,
+    "startColumnNumber" : 6,
+    "endLineNumber" : 333,
+    "endColumnNumber" : 40
+  }, {
+    "charLength" : 34,
+    "startLineNumber" : 334,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 334,
+    "endColumnNumber" : 49
+  }, {
+    "charLength" : 34,
+    "startLineNumber" : 335,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 335,
+    "endColumnNumber" : 62
+  }, {
+    "charLength" : 34,
+    "startLineNumber" : 336,
+    "startColumnNumber" : 33,
+    "endLineNumber" : 336,
+    "endColumnNumber" : 67
+  }, {
+    "charLength" : 34,
+    "startLineNumber" : 339,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 339,
+    "endColumnNumber" : 62
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "endpoint",
+  "nodePosition" : {
+    "charLength" : 8,
+    "startLineNumber" : 332,
+    "startColumnNumber" : 9,
+    "endLineNumber" : 332,
+    "endColumnNumber" : 17
+  }
+}

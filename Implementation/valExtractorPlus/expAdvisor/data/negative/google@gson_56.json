@@ -1,0 +1,123 @@
+{
+    "id": 56,
+    "expression": "cart",
+    "projectName": "google@gson",
+    "commitID": "4d873d5dd7fc33487eaa6cf5edf24e31cd1204f7",
+    "filePath": "wsexample/client/src/main/java/com/google/gson/example/rest/client/OrderClient.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "cart",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 69,
+                "startColumnNumber": 36,
+                "endLineNumber": 69,
+                "endColumnNumber": 40
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "client.placeOrder(cart)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "order=client.placeOrder(cart)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 42
+                    },
+                    "nodeContext": "Order order=client.placeOrder(cart);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 507,
+                        "startLineNumber": 63,
+                        "startColumnNumber": 41,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  OrderClient client=new OrderClient();\n  List<LineItem> lineItems=new ArrayList<LineItem>();\n  String itemName=\"item1\";\n  lineItems.add(new LineItem(itemName,2,1000000L,\"USD\"));\n  Cart cart=new Cart(lineItems,\"first last\",\"4111-1111-1111-1111\");\n  Order order=client.placeOrder(cart);\n  System.out.println(\"Placed order: \" + order);\n  List<Order> queriedOrder=client.query(itemName);\n  System.out.println(\"Queried order by item name ( \" + itemName + \"): \"+ order);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 546,
+                        "startLineNumber": 63,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static void main(String[] args){\n  OrderClient client=new OrderClient();\n  List<LineItem> lineItems=new ArrayList<LineItem>();\n  String itemName=\"item1\";\n  lineItems.add(new LineItem(itemName,2,1000000L,\"USD\"));\n  Cart cart=new Cart(lineItems,\"first last\",\"4111-1111-1111-1111\");\n  Order order=client.placeOrder(cart);\n  System.out.println(\"Placed order: \" + order);\n  List<Order> queriedOrder=client.query(itemName);\n  System.out.println(\"Queried order by item name ( \" + itemName + \"): \"+ order);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 103,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 38,
+                    "startLineNumber": 69,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 69,
+                    "endColumnNumber": 42
+                },
+                "nodeContext": "Order order=client.placeOrder(cart);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "com.google.gson.example.model.Cart"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 69,
+            "startColumnNumber": 36,
+            "endLineNumber": 69,
+            "endColumnNumber": 40
+        }
+    ],
+    "layoutRelationDataList": []
+}

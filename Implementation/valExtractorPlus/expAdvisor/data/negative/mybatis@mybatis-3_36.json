@@ -1,0 +1,256 @@
+{
+    "id": 36,
+    "expression": "builderAssistant",
+    "projectName": "mybatis@mybatis-3",
+    "commitID": "ac7953c5a27ee8b0ac983cd27485c8b5baf3764f",
+    "filePath": "src/main/java/org/apache/ibatis/builder/xml/XMLMapperBuilder.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "builderAssistant",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 16,
+                "startLineNumber": 73,
+                "startColumnNumber": 23,
+                "endLineNumber": 73,
+                "endColumnNumber": 39
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 23,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 61
+                    },
+                    "nodeContext": "builderAssistant.getCurrentNamespace()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 50,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 61
+                    },
+                    "nodeContext": "namespace=builderAssistant.getCurrentNamespace()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 58,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 62
+                    },
+                    "nodeContext": "String namespace=builderAssistant.getCurrentNamespace();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 675,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 22,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  XNode context=parser.evalNode(\"/mapper\");\n  String namespace=builderAssistant.getCurrentNamespace();\n  if (namespace == null) {\n    namespace=context.getStringAttribute(\"namespace\");\n    builderAssistant.setCurrentNamespace(namespace);\n  }\n  if (!configuration.isResourceLoaded(namespace)) {\n    configurationElement(context);\n    configuration.addLoadedResource(namespace);\n    bindMapperForNamespace();\n    parsePendingChacheRefs();\n    parsePendingStatements();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 60,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 695,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public void parse(){\n  XNode context=parser.evalNode(\"/mapper\");\n  String namespace=builderAssistant.getCurrentNamespace();\n  if (namespace == null) {\n    namespace=context.getStringAttribute(\"namespace\");\n    builderAssistant.setCurrentNamespace(namespace);\n  }\n  if (!configuration.isResourceLoaded(namespace)) {\n    configurationElement(context);\n    configuration.addLoadedResource(namespace);\n    bindMapperForNamespace();\n    parsePendingChacheRefs();\n    parsePendingStatements();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 64,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 58,
+                    "startLineNumber": 73,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 73,
+                    "endColumnNumber": 62
+                },
+                "nodeContext": "String namespace=builderAssistant.getCurrentNamespace();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.ibatis.builder.MapperBuilderAssistant"
+        },
+        {
+            "nodeContext": "builderAssistant",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 16,
+                "startLineNumber": 76,
+                "startColumnNumber": 6,
+                "endLineNumber": 76,
+                "endColumnNumber": 22
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 76,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 76,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "builderAssistant.setCurrentNamespace(namespace)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 76,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 76,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "builderAssistant.setCurrentNamespace(namespace);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 124,
+                        "startLineNumber": 74,
+                        "startColumnNumber": 27,
+                        "endLineNumber": 77,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  namespace=context.getStringAttribute(\"namespace\");\n  builderAssistant.setCurrentNamespace(namespace);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 147,
+                        "startLineNumber": 74,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 77,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (namespace == null) {\n  namespace=context.getStringAttribute(\"namespace\");\n  builderAssistant.setCurrentNamespace(namespace);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 675,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 22,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  XNode context=parser.evalNode(\"/mapper\");\n  String namespace=builderAssistant.getCurrentNamespace();\n  if (namespace == null) {\n    namespace=context.getStringAttribute(\"namespace\");\n    builderAssistant.setCurrentNamespace(namespace);\n  }\n  if (!configuration.isResourceLoaded(namespace)) {\n    configurationElement(context);\n    configuration.addLoadedResource(namespace);\n    bindMapperForNamespace();\n    parsePendingChacheRefs();\n    parsePendingStatements();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 60,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 695,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public void parse(){\n  XNode context=parser.evalNode(\"/mapper\");\n  String namespace=builderAssistant.getCurrentNamespace();\n  if (namespace == null) {\n    namespace=context.getStringAttribute(\"namespace\");\n    builderAssistant.setCurrentNamespace(namespace);\n  }\n  if (!configuration.isResourceLoaded(namespace)) {\n    configurationElement(context);\n    configuration.addLoadedResource(namespace);\n    bindMapperForNamespace();\n    parsePendingChacheRefs();\n    parsePendingStatements();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 64,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 48,
+                    "startLineNumber": 76,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 76,
+                    "endColumnNumber": 54
+                },
+                "nodeContext": "builderAssistant.setCurrentNamespace(namespace);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "org.apache.ibatis.builder.MapperBuilderAssistant"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 16,
+            "startLineNumber": 73,
+            "startColumnNumber": 23,
+            "endLineNumber": 73,
+            "endColumnNumber": 39
+        },
+        {
+            "charLength": 16,
+            "startLineNumber": 76,
+            "startColumnNumber": 6,
+            "endLineNumber": 76,
+            "endColumnNumber": 22
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 4
+        }
+    ]
+}

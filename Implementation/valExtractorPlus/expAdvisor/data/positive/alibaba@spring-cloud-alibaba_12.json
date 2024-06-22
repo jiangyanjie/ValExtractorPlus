@@ -1,0 +1,441 @@
+{
+  "id" : 12,
+  "expression" : "Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+  "projectName" : "alibaba@spring-cloud-alibaba",
+  "commitID" : "b059e1f8e3cdeae8b05de679e9132509e20375a3",
+  "filePath" : "spring-cloud-alibaba-sentinel/src/main/java/org/springframework/cloud/alibaba/sentinel/custom/SentinelBeanPostProcessor.java",
+  "occurrences" : 4,
+  "expressionList" : [ {
+    "nodeContext" : "Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 82,
+      "startLineNumber" : 122,
+      "startColumnNumber" : 56,
+      "endLineNumber" : 122,
+      "endColumnNumber" : 138
+    },
+    "astNodeNumber" : 17,
+    "astHeight" : 6,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 287,
+        "startLineNumber" : 120,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 122,
+        "endColumnNumber" : 64
+      },
+      "nodeContext" : "logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 289,
+        "startLineNumber" : 120,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 122,
+        "endColumnNumber" : 65
+      },
+      "nodeContext" : "logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 28,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 617,
+        "startLineNumber" : 119,
+        "startColumnNumber" : 27,
+        "endLineNumber" : 128,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 45,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 642,
+        "startLineNumber" : 119,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 128,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (foundMethod == null) {\n  logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 49,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2566,
+        "startLineNumber" : 96,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 243,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2670,
+        "startLineNumber" : 95,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void checkBlock4RestTemplate(Class<?> blockClass,String blockMethod,String beanName,String type){\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 265,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 11,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 82,
+      "startLineNumber" : 126,
+      "startColumnNumber" : 21,
+      "endLineNumber" : 126,
+      "endColumnNumber" : 103
+    },
+    "astNodeNumber" : 17,
+    "astHeight" : 6,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.ClassInstanceCreation,arguments]",
+      "nodePosition" : {
+        "charLength" : 282,
+        "startLineNumber" : 123,
+        "startColumnNumber" : 38,
+        "endLineNumber" : 127,
+        "endColumnNumber" : 66
+      },
+      "nodeContext" : "type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\"",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 28,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ThrowStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 312,
+        "startLineNumber" : 123,
+        "startColumnNumber" : 9,
+        "endLineNumber" : 127,
+        "endColumnNumber" : 67
+      },
+      "nodeContext" : "new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\")",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 31,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 320,
+        "startLineNumber" : 123,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 127,
+        "endColumnNumber" : 68
+      },
+      "nodeContext" : "throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n",
+      "nodeType" : "ThrowStatement",
+      "astNodeNumber" : 32,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 617,
+        "startLineNumber" : 119,
+        "startColumnNumber" : 27,
+        "endLineNumber" : 128,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 45,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 642,
+        "startLineNumber" : 119,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 128,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (foundMethod == null) {\n  logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 49,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2566,
+        "startLineNumber" : 96,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 243,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2670,
+        "startLineNumber" : 95,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void checkBlock4RestTemplate(Class<?> blockClass,String blockMethod,String beanName,String type){\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 265,
+      "astHeight" : 13
+    } ],
+    "tokenLength" : 11,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 82,
+      "startLineNumber" : 133,
+      "startColumnNumber" : 56,
+      "endLineNumber" : 133,
+      "endColumnNumber" : 138
+    },
+    "astNodeNumber" : 17,
+    "astHeight" : 6,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 215,
+        "startLineNumber" : 131,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 133,
+        "endColumnNumber" : 64
+      },
+      "nodeContext" : "logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 217,
+        "startLineNumber" : 131,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 133,
+        "endColumnNumber" : 65
+      },
+      "nodeContext" : "logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 28,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 130,
+        "startColumnNumber" : 79,
+        "endLineNumber" : 137,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 44,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 546,
+        "startLineNumber" : 130,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 137,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n  logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 54,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2566,
+        "startLineNumber" : 96,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 243,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2670,
+        "startLineNumber" : 95,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void checkBlock4RestTemplate(Class<?> blockClass,String blockMethod,String beanName,String type){\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 265,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 11,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 82,
+      "startLineNumber" : 136,
+      "startColumnNumber" : 27,
+      "endLineNumber" : 136,
+      "endColumnNumber" : 109
+    },
+    "astNodeNumber" : 17,
+    "astHeight" : 6,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.ClassInstanceCreation,arguments]",
+      "nodePosition" : {
+        "charLength" : 206,
+        "startLineNumber" : 134,
+        "startColumnNumber" : 38,
+        "endLineNumber" : 136,
+        "endColumnNumber" : 34
+      },
+      "nodeContext" : "type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ThrowStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 236,
+        "startLineNumber" : 134,
+        "startColumnNumber" : 9,
+        "endLineNumber" : 136,
+        "endColumnNumber" : 35
+      },
+      "nodeContext" : "new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()))",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 30,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 244,
+        "startLineNumber" : 134,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 136,
+        "endColumnNumber" : 36
+      },
+      "nodeContext" : "throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n",
+      "nodeType" : "ThrowStatement",
+      "astNodeNumber" : 31,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 130,
+        "startColumnNumber" : 79,
+        "endLineNumber" : 137,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 44,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 546,
+        "startLineNumber" : 130,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 137,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n  logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 54,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 2566,
+        "startLineNumber" : 96,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 243,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 2670,
+        "startLineNumber" : 95,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 145,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "private void checkBlock4RestTemplate(Class<?> blockClass,String blockMethod,String beanName,String type){\n  if (blockClass == void.class && StringUtils.isEmpty(blockMethod)) {\n    return;\n  }\n  if (blockClass != void.class && StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} class attribute exists but {} method attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" class attribute exists but \" + type+ \" method attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n else   if (blockClass == void.class && !StringUtils.isEmpty(blockMethod)) {\n    logger.error(\"{} method attribute exists but {} class attribute is not exists in bean[{}]\",type,type,beanName);\n    throw new IllegalArgumentException(type + \" method attribute exists but \" + type+ \" class attribute is not exists in bean[\"+ beanName+ \"]\");\n  }\n  Class[] args=new Class[]{HttpRequest.class,byte[].class,ClientHttpRequestExecution.class,BlockException.class};\n  String Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())=Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray());\n  Method foundMethod=ClassUtils.getStaticMethod(blockClass,blockMethod,args);\n  if (foundMethod == null) {\n    logger.error(\"{} static method can not be found in bean[{}]. The right method signature is {}#{}{}, please check your class name, method name and arguments\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" static method can not be found in bean[\" + beanName+ \"]. The right method signature is \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray())+ \", please check your class name, method name and arguments\");\n  }\n  if (!ClientHttpResponse.class.isAssignableFrom(foundMethod.getReturnType())) {\n    logger.error(\"{} method return value in bean[{}] is not ClientHttpResponse: {}#{}{}\",type,beanName,blockClass.getName(),blockMethod,Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n    throw new IllegalArgumentException(type + \" method return value in bean[\" + beanName+ \"] is not ClientHttpResponse: \"+ blockClass.getName()+ \"#\"+ blockMethod+ Arrays.toString(Arrays.stream(args).map(clazz -> clazz.getSimpleName()).toArray()));\n  }\n  if (type.equals(SentinelConstants.BLOCK_TYPE)) {\n    BlockClassRegistry.updateBlockHandlerFor(blockClass,blockMethod,foundMethod);\n  }\n else {\n    BlockClassRegistry.updateFallbackFor(blockClass,blockMethod,foundMethod);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 265,
+      "astHeight" : 13
+    } ],
+    "tokenLength" : 11,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 82,
+    "startLineNumber" : 122,
+    "startColumnNumber" : 56,
+    "endLineNumber" : 122,
+    "endColumnNumber" : 138
+  }, {
+    "charLength" : 82,
+    "startLineNumber" : 126,
+    "startColumnNumber" : 21,
+    "endLineNumber" : 126,
+    "endColumnNumber" : 103
+  }, {
+    "charLength" : 82,
+    "startLineNumber" : 133,
+    "startColumnNumber" : 56,
+    "endLineNumber" : 133,
+    "endColumnNumber" : 138
+  }, {
+    "charLength" : 82,
+    "startLineNumber" : 136,
+    "startColumnNumber" : 27,
+    "endLineNumber" : 136,
+    "endColumnNumber" : 109
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "argsStr",
+  "nodePosition" : {
+    "charLength" : 7,
+    "startLineNumber" : 116,
+    "startColumnNumber" : 9,
+    "endLineNumber" : 116,
+    "endColumnNumber" : 16
+  }
+}

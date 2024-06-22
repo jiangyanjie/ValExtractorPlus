@@ -1,0 +1,109 @@
+{
+    "id": 134,
+    "expression": "0",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "51af44f843ceaa58c55860fb35a30a5524887904",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/field/CompositeVerticalLayoutTextField.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "0",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 346,
+                "startColumnNumber": 19,
+                "endLineNumber": 346,
+                "endColumnNumber": 20
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 346,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 346,
+                        "endColumnNumber": 20
+                    },
+                    "nodeContext": "currentRow=0",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 346,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 346,
+                        "endColumnNumber": 21
+                    },
+                    "nodeContext": "int currentRow=0;\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 255,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 54,
+                        "endLineNumber": 356,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int currentRow=0;\n  for (  FieldRow row : fieldRows) {\n    int length=row.field.getNumDataRows();\n    if (currentRow + length > dataRow) {\n      return row;\n    }\n    currentRow+=length;\n  }\n  return fieldRows.get(fieldRows.size() - 1);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 44,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 308,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 356,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private FieldRow getFieldRowFromDataRow(int dataRow){\n  int currentRow=0;\n  for (  FieldRow row : fieldRows) {\n    int length=row.field.getNumDataRows();\n    if (currentRow + length > dataRow) {\n      return row;\n    }\n    currentRow+=length;\n  }\n  return fieldRows.get(fieldRows.size() - 1);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 52,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 19,
+                    "startLineNumber": 346,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 346,
+                    "endColumnNumber": 21
+                },
+                "nodeContext": "int currentRow=0;\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 346,
+            "startColumnNumber": 19,
+            "endLineNumber": 346,
+            "endColumnNumber": 20
+        }
+    ],
+    "layoutRelationDataList": []
+}

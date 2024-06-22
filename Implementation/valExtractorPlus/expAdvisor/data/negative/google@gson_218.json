@@ -1,0 +1,109 @@
+{
+    "id": 218,
+    "expression": "stack.size()",
+    "projectName": "google@gson",
+    "commitID": "2c8bec27d48d0d9ba9d99ff5fb7a9bae36906c48",
+    "filePath": "gson/src/main/java/com/google/gson/stream/JsonWriter.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "stack.size()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 12,
+                "startLineNumber": 317,
+                "startColumnNumber": 15,
+                "endLineNumber": 317,
+                "endColumnNumber": 27
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 317,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 317,
+                        "endColumnNumber": 27
+                    },
+                    "nodeContext": "size=stack.size()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 317,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 317,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "int size=stack.size();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 157,
+                        "startLineNumber": 316,
+                        "startColumnNumber": 27,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  int size=stack.size();\n  if (size == 0) {\n    throw new IllegalStateException(\"JsonWriter is closed.\");\n  }\n  return stack.get(size - 1);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 25,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 242,
+                        "startLineNumber": 313,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Returns the value on the top of the stack.\n */\nprivate JsonScope peek(){\n  int size=stack.size();\n  if (size == 0) {\n    throw new IllegalStateException(\"JsonWriter is closed.\");\n  }\n  return stack.get(size - 1);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 31,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 24,
+                    "startLineNumber": 317,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 317,
+                    "endColumnNumber": 28
+                },
+                "nodeContext": "int size=stack.size();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 12,
+            "startLineNumber": 317,
+            "startColumnNumber": 15,
+            "endLineNumber": 317,
+            "endColumnNumber": 27
+        }
+    ],
+    "layoutRelationDataList": []
+}

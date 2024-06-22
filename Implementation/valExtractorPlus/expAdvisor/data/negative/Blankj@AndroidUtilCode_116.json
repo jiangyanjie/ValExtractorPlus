@@ -1,0 +1,123 @@
+{
+    "id": 116,
+    "expression": "0",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "8abb3627185decb67f5a4384f75822d7b99a27e6",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/utils/AppUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "0",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 528,
+                "startColumnNumber": 70,
+                "endLineNumber": 528,
+                "endColumnNumber": 71
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 528,
+                        "startColumnNumber": 46,
+                        "endLineNumber": 528,
+                        "endColumnNumber": 72
+                    },
+                    "nodeContext": "pm.getInstalledPackages(0)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 46,
+                        "startLineNumber": 528,
+                        "startColumnNumber": 26,
+                        "endLineNumber": 528,
+                        "endColumnNumber": 72
+                    },
+                    "nodeContext": "installedPackages=pm.getInstalledPackages(0)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 65,
+                        "startLineNumber": 528,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 528,
+                        "endColumnNumber": 73
+                    },
+                    "nodeContext": "List<PackageInfo> installedPackages=pm.getInstalledPackages(0);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 400,
+                        "startLineNumber": 524,
+                        "startColumnNumber": 64,
+                        "endLineNumber": 535,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  List<AppInfo> list=new ArrayList<>();\n  PackageManager pm=context.getPackageManager();\n  List<PackageInfo> installedPackages=pm.getInstalledPackages(0);\n  for (  PackageInfo pi : installedPackages) {\n    AppInfo ai=getBean(pm,pi);\n    if (ai == null)     continue;\n    list.add(ai);\n  }\n  return list;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 61,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 681,
+                        "startLineNumber": 516,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 535,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 获取所有已安装App信息 <p> {@link #getBean(PackageManager,PackageInfo)}（名称，图标，包名，包路径，版本号，版本Code，是否系统应用）</p> <p>依赖上面的getBean方法</p>\n * @param context 上下文\n * @return 所有已安装的AppInfo列表\n */\npublic static List<AppInfo> getAllAppsInfo(Context context){\n  List<AppInfo> list=new ArrayList<>();\n  PackageManager pm=context.getPackageManager();\n  List<PackageInfo> installedPackages=pm.getInstalledPackages(0);\n  for (  PackageInfo pi : installedPackages) {\n    AppInfo ai=getBean(pm,pi);\n    if (ai == null)     continue;\n    list.add(ai);\n  }\n  return list;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 75,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 65,
+                    "startLineNumber": 528,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 528,
+                    "endColumnNumber": 73
+                },
+                "nodeContext": "List<PackageInfo> installedPackages=pm.getInstalledPackages(0);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 12,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 528,
+            "startColumnNumber": 70,
+            "endLineNumber": 528,
+            "endColumnNumber": 71
+        }
+    ],
+    "layoutRelationDataList": []
+}

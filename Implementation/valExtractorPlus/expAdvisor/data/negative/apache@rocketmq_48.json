@@ -1,0 +1,109 @@
+{
+    "id": 48,
+    "expression": "\"subscription not latest\"",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/PullMessageProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "\"subscription not latest\"",
+            "nodeType": "StringLiteral",
+            "nodePosition": {
+                "charLength": 25,
+                "startLineNumber": 129,
+                "startColumnNumber": 50,
+                "endLineNumber": 129,
+                "endColumnNumber": 75
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 68,
+                        "startLineNumber": 129,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 129,
+                        "endColumnNumber": 76
+                    },
+                    "nodeContext": "assertThat(response.getRemark()).contains(\"subscription not latest\")",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 69,
+                        "startLineNumber": 129,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 129,
+                        "endColumnNumber": 77
+                    },
+                    "nodeContext": "assertThat(response.getRemark()).contains(\"subscription not latest\");\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 596,
+                        "startLineNumber": 122,
+                        "startColumnNumber": 82,
+                        "endLineNumber": 130,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  request.addExtField(\"subVersion\",String.valueOf(101));\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUBSCRIPTION_NOT_LATEST);\n  assertThat(response.getRemark()).contains(\"subscription not latest\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 66,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 684,
+                        "startLineNumber": 121,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 130,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_SubNotLatest() throws RemotingCommandException {\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  request.addExtField(\"subVersion\",String.valueOf(101));\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUBSCRIPTION_NOT_LATEST);\n  assertThat(response.getRemark()).contains(\"subscription not latest\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 74,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 69,
+                    "startLineNumber": 129,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 129,
+                    "endColumnNumber": 77
+                },
+                "nodeContext": "assertThat(response.getRemark()).contains(\"subscription not latest\");\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 5
+            },
+            "tokenLength": 3,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 25,
+            "startLineNumber": 129,
+            "startColumnNumber": 50,
+            "endLineNumber": 129,
+            "endColumnNumber": 75
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,123 @@
+{
+    "id": 273,
+    "expression": "new IllegalArgumentException(\"Duplicate symbol ID\")",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "e5df6fdd7bbc13dadc918bafa0f4f5767e74e1a7",
+    "filePath": "Ghidra/Framework/SoftwareModeling/src/main/java/ghidra/program/database/symbol/SymbolManager.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new IllegalArgumentException(\"Duplicate symbol ID\")",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 51,
+                "startLineNumber": 543,
+                "startColumnNumber": 9,
+                "endLineNumber": 543,
+                "endColumnNumber": 60
+            },
+            "astNodeNumber": 4,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 58,
+                        "startLineNumber": 543,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 543,
+                        "endColumnNumber": 61
+                    },
+                    "nodeContext": "throw new IllegalArgumentException(\"Duplicate symbol ID\");\n",
+                    "nodeType": "ThrowStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 99,
+                        "startLineNumber": 541,
+                        "startColumnNumber": 35,
+                        "endLineNumber": 544,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  throw new IllegalArgumentException(\"Duplicate symbol ID\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 6,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 132,
+                        "startLineNumber": 541,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 544,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "if (getSymbol(symbolID) != null) {\n  throw new IllegalArgumentException(\"Duplicate symbol ID\");\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 845,
+                        "startLineNumber": 539,
+                        "startColumnNumber": 46,
+                        "endLineNumber": 559,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addressKey=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addressKey);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addressKey);\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 104,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1043,
+                        "startLineNumber": 537,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 559,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private void addSymbolRecord(long symbolID,Address addr,Namespace namespace,String name,boolean isPrimary,SymbolType type,SourceType source) throws DuplicateNameException, IOException {\n  if (getSymbol(symbolID) != null) {\n    throw new IllegalArgumentException(\"Duplicate symbol ID\");\n  }\n  checkDuplicateSymbolName(addr,name,namespace,type);\n  DBRecord rec=SymbolDatabaseAdapter.SYMBOL_SCHEMA.createRecord(symbolID);\n  rec.setString(SymbolDatabaseAdapter.SYMBOL_NAME_COL,name);\n  long addressKey=addrMap.getKey(addr,true);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_ADDR_COL,addressKey);\n  rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PARENT_COL,namespace.getID());\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_TYPE_COL,type.getID());\n  if (isPrimary) {\n    rec.setLongValue(SymbolDatabaseAdapter.SYMBOL_PRIMARY_COL,addressKey);\n  }\n  rec.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL,(byte)source.ordinal());\n  adapter.updateSymbolRecord(rec);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 138,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 58,
+                    "startLineNumber": 543,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 543,
+                    "endColumnNumber": 61
+                },
+                "nodeContext": "throw new IllegalArgumentException(\"Duplicate symbol ID\");\n",
+                "nodeType": "ThrowStatement",
+                "astNodeNumber": 5,
+                "astHeight": 4
+            },
+            "tokenLength": 4,
+            "type": "java.lang.IllegalArgumentException"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 51,
+            "startLineNumber": 543,
+            "startColumnNumber": 9,
+            "endLineNumber": 543,
+            "endColumnNumber": 60
+        }
+    ],
+    "layoutRelationDataList": []
+}

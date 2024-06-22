@@ -1,0 +1,355 @@
+{
+  "id" : 7,
+  "expression" : "(int)fc.size()",
+  "projectName" : "Blankj@AndroidUtilCode",
+  "commitID" : "c1bad4d11e13e88bd40a03463c96d3266c2fd957",
+  "filePath" : "utilcode/src/main/java/com/blankj/utilcode/util/CacheUtils.java",
+  "occurrences" : 3,
+  "expressionList" : [ {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 190,
+      "startColumnNumber" : 83,
+      "endLineNumber" : 190,
+      "endColumnNumber" : 97
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 54,
+        "startLineNumber" : 190,
+        "startColumnNumber" : 42,
+        "endLineNumber" : 190,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 61,
+        "startLineNumber" : 190,
+        "startColumnNumber" : 42,
+        "endLineNumber" : 190,
+        "endColumnNumber" : 103
+      },
+      "nodeContext" : "fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 16,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 72,
+        "startLineNumber" : 190,
+        "startColumnNumber" : 29,
+        "endLineNumber" : 190,
+        "endColumnNumber" : 101
+      },
+      "nodeContext" : "byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 18,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 91,
+        "startLineNumber" : 190,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 190,
+        "endColumnNumber" : 103
+      },
+      "nodeContext" : "MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 21,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 408,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 198,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 77,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 501,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 202,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n catch (IOException e) {\n  e.printStackTrace();\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 94,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 654,
+        "startLineNumber" : 183,
+        "startColumnNumber" : 39,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 119,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 742,
+        "startLineNumber" : 177,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 缓存中读取字节数组\n * @param key 键\n * @return 字节数组\n */\npublic byte[] getBytes(String key){\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 130,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  }, {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 191,
+      "startColumnNumber" : 35,
+      "endLineNumber" : 191,
+      "endColumnNumber" : 49
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 24,
+        "startLineNumber" : 191,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 191,
+        "endColumnNumber" : 50
+      },
+      "nodeContext" : "new byte[(int)fc.size()]",
+      "nodeType" : "ArrayCreation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 29,
+        "startLineNumber" : 191,
+        "startColumnNumber" : 19,
+        "endLineNumber" : 191,
+        "endColumnNumber" : 48
+      },
+      "nodeContext" : "data=new byte[(int)fc.size()]",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 38,
+        "startLineNumber" : 191,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 191,
+        "endColumnNumber" : 50
+      },
+      "nodeContext" : "byte[] data=new byte[(int)fc.size()];\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 408,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 198,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 77,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 501,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 202,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n catch (IOException e) {\n  e.printStackTrace();\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 94,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 654,
+        "startLineNumber" : 183,
+        "startColumnNumber" : 39,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 119,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 742,
+        "startLineNumber" : 177,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 缓存中读取字节数组\n * @param key 键\n * @return 字节数组\n */\npublic byte[] getBytes(String key){\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 130,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  }, {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 192,
+      "startColumnNumber" : 36,
+      "endLineNumber" : 192,
+      "endColumnNumber" : 50
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 37,
+        "startLineNumber" : 192,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 192,
+        "endColumnNumber" : 49
+      },
+      "nodeContext" : "byteBuffer.get(data,0,(int)fc.size())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 39,
+        "startLineNumber" : 192,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 192,
+        "endColumnNumber" : 51
+      },
+      "nodeContext" : "byteBuffer.get(data,0,(int)fc.size());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 408,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 198,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 77,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 501,
+        "startLineNumber" : 187,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 202,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] data=new byte[(int)fc.size()];\n  byteBuffer.get(data,0,(int)fc.size());\n  if (!CacheHelper.isDue(data)) {\n    return CacheHelper.getDataWithoutDueTime(data);\n  }\n else {\n    mCacheManager.remove(key);\n  }\n}\n catch (IOException e) {\n  e.printStackTrace();\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 94,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 654,
+        "startLineNumber" : 183,
+        "startColumnNumber" : 39,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 119,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 742,
+        "startLineNumber" : 177,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 204,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 缓存中读取字节数组\n * @param key 键\n * @return 字节数组\n */\npublic byte[] getBytes(String key){\n  File file=mCacheManager.getFile(key);\n  if (!file.exists())   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer byteBuffer=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] data=new byte[(int)fc.size()];\n    byteBuffer.get(data,0,(int)fc.size());\n    if (!CacheHelper.isDue(data)) {\n      return CacheHelper.getDataWithoutDueTime(data);\n    }\n else {\n      mCacheManager.remove(key);\n    }\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n  return null;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 130,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 14,
+    "startLineNumber" : 190,
+    "startColumnNumber" : 83,
+    "endLineNumber" : 190,
+    "endColumnNumber" : 97
+  }, {
+    "charLength" : 14,
+    "startLineNumber" : 191,
+    "startColumnNumber" : 35,
+    "endLineNumber" : 191,
+    "endColumnNumber" : 49
+  }, {
+    "charLength" : 14,
+    "startLineNumber" : 192,
+    "startColumnNumber" : 36,
+    "endLineNumber" : 192,
+    "endColumnNumber" : 50
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "size",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 189,
+    "startColumnNumber" : 16,
+    "endLineNumber" : 189,
+    "endColumnNumber" : 20
+  }
+}

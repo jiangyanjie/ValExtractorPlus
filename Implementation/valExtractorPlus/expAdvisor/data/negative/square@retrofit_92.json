@@ -1,0 +1,95 @@
+{
+    "id": 92,
+    "expression": "declaredMethods.length == 1",
+    "projectName": "square@retrofit",
+    "commitID": "46598adb1da0f6d2498d9f8b815b170bf95fe1f8",
+    "filePath": "retrofit/src/test/java/retrofit/TestingUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "declaredMethods.length == 1",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 27,
+                "startLineNumber": 16,
+                "startColumnNumber": 8,
+                "endLineNumber": 16,
+                "endColumnNumber": 35
+            },
+            "astNodeNumber": 5,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 73,
+                        "startLineNumber": 16,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 18,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (declaredMethods.length == 1) {\n  return declaredMethods[0];\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 212,
+                        "startLineNumber": 14,
+                        "startColumnNumber": 43,
+                        "endLineNumber": 20,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Method[] declaredMethods=c.getDeclaredMethods();\n  if (declaredMethods.length == 1) {\n    return declaredMethods[0];\n  }\n  throw new IllegalArgumentException(\"More than one method declared.\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 27,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 253,
+                        "startLineNumber": 14,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 20,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static Method onlyMethod(Class c){\n  Method[] declaredMethods=c.getDeclaredMethods();\n  if (declaredMethods.length == 1) {\n    return declaredMethods[0];\n  }\n  throw new IllegalArgumentException(\"More than one method declared.\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 37,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 73,
+                    "startLineNumber": 16,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 18,
+                    "endColumnNumber": 5
+                },
+                "nodeContext": "if (declaredMethods.length == 1) {\n  return declaredMethods[0];\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 11,
+                "astHeight": 5
+            },
+            "tokenLength": 4,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 27,
+            "startLineNumber": 16,
+            "startColumnNumber": 8,
+            "endLineNumber": 16,
+            "endColumnNumber": 35
+        }
+    ],
+    "layoutRelationDataList": []
+}

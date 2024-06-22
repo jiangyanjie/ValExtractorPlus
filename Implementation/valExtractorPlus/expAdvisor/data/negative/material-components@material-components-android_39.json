@@ -1,0 +1,109 @@
+{
+    "id": 39,
+    "expression": "colors",
+    "projectName": "material-components@material-components-android",
+    "commitID": "b241ff5785463453bcd3176b22e783ddb103835c",
+    "filePath": "lib/src/android/support/design/widget/Snackbar.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "colors",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 221,
+                "startColumnNumber": 24,
+                "endLineNumber": 221,
+                "endColumnNumber": 30
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 221,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 221,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "tv.setTextColor(colors)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 221,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 221,
+                        "endColumnNumber": 32
+                    },
+                    "nodeContext": "tv.setTextColor(colors);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 217,
+                        "startLineNumber": 218,
+                        "startColumnNumber": 62,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  tv.setTextColor(colors);\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 30,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 421,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Sets the text color of the action specified in {@link #setAction(CharSequence,View.OnClickListener)}.\n */\n@NonNull public Snackbar setActionTextColor(ColorStateList colors){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  tv.setTextColor(colors);\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 42,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 24,
+                    "startLineNumber": 221,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 221,
+                    "endColumnNumber": 32
+                },
+                "nodeContext": "tv.setTextColor(colors);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.ColorStateList"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 6,
+            "startLineNumber": 221,
+            "startColumnNumber": 24,
+            "endLineNumber": 221,
+            "endColumnNumber": 30
+        }
+    ],
+    "layoutRelationDataList": []
+}

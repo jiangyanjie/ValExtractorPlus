@@ -1,0 +1,137 @@
+{
+    "id": 16,
+    "expression": "SharedPreferencesHelper.valueToString(mCopy.get(key))",
+    "projectName": "facebook@stetho",
+    "commitID": "79adeccba349bd3c90aae027833fc0f3ef3e6f9f",
+    "filePath": "stetho/src/main/java/com/facebook/stetho/inspector/domstorage/DOMStoragePeerManager.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "SharedPreferencesHelper.valueToString(mCopy.get(key))",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 53,
+                "startLineNumber": 123,
+                "startColumnNumber": 12,
+                "endLineNumber": 123,
+                "endColumnNumber": 65
+            },
+            "astNodeNumber": 7,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 187,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 60
+                    },
+                    "nodeContext": "signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 15,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 188,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 61
+                    },
+                    "nodeContext": "signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 16,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 240,
+                        "startLineNumber": 119,
+                        "startColumnNumber": 38,
+                        "endLineNumber": 126,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 23,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 668,
+                        "startLineNumber": 119,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (existedBefore && existsNow) {\n  signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else if (existedBefore) {\n  signalItemRemoved(mStorageId,key);\n  mCopy.remove(key);\n}\n else if (existsNow) {\n  signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n  mCopy.put(key,newValue);\n}\n else {\n  throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 66,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 908,
+                        "startLineNumber": 114,
+                        "startColumnNumber": 91,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Map<String,?> entries=sharedPreferences.getAll();\n  boolean existedBefore=mCopy.containsKey(key);\n  boolean existsNow=entries.containsKey(key);\n  Object newValue=existsNow ? entries.get(key) : null;\n  if (existedBefore && existsNow) {\n    signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else   if (existedBefore) {\n    signalItemRemoved(mStorageId,key);\n    mCopy.remove(key);\n  }\n else   if (existsNow) {\n    signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else {\n    throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 107,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1009,
+                        "startLineNumber": 113,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,String key){\n  Map<String,?> entries=sharedPreferences.getAll();\n  boolean existedBefore=mCopy.containsKey(key);\n  boolean existsNow=entries.containsKey(key);\n  Object newValue=existsNow ? entries.get(key) : null;\n  if (existedBefore && existsNow) {\n    signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else   if (existedBefore) {\n    signalItemRemoved(mStorageId,key);\n    mCopy.remove(key);\n  }\n else   if (existsNow) {\n    signalItemAdded(mStorageId,key,SharedPreferencesHelper.valueToString(newValue));\n    mCopy.put(key,newValue);\n  }\n else {\n    throw new RuntimeException(\"Prefs change detected for unknown key=\" + key);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 121,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                "nodePosition": {
+                    "charLength": 187,
+                    "startLineNumber": 120,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 124,
+                    "endColumnNumber": 60
+                },
+                "nodeContext": "signalItemUpdated(mStorageId,key,SharedPreferencesHelper.valueToString(mCopy.get(key)),SharedPreferencesHelper.valueToString(newValue))",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 15,
+                "astHeight": 4
+            },
+            "tokenLength": 5,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 53,
+            "startLineNumber": 123,
+            "startColumnNumber": 12,
+            "endLineNumber": 123,
+            "endColumnNumber": 65
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,123 @@
+{
+    "id": 220,
+    "expression": "o instanceof Entry",
+    "projectName": "google@gson",
+    "commitID": "751c69c655c9317a7169e24e452d3931ec956761",
+    "filePath": "gson/src/main/java/com/google/gson/internal/StringMap.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "o instanceof Entry",
+            "nodeType": "InstanceofExpression",
+            "nodePosition": {
+                "charLength": 18,
+                "startLineNumber": 322,
+                "startColumnNumber": 12,
+                "endLineNumber": 322,
+                "endColumnNumber": 30
+            },
+            "astNodeNumber": 4,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.PrefixExpression,operand]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 322,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "(o instanceof Entry)",
+                    "nodeType": "ParenthesizedExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 21,
+                        "startLineNumber": 322,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "!(o instanceof Entry)",
+                    "nodeType": "PrefixExpression",
+                    "astNodeNumber": 6,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 58,
+                        "startLineNumber": 322,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 324,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (!(o instanceof Entry)) {\n  return false;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 253,
+                        "startLineNumber": 321,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 329,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (!(o instanceof Entry)) {\n    return false;\n  }\n  Entry<?,?> e=(Entry<?,?>)o;\n  Object eValue=e.getValue();\n  return key.equals(e.getKey()) && (value == null ? eValue == null : value.equals(eValue));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 54,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 301,
+                        "startLineNumber": 321,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 329,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public final boolean equals(Object o){\n  if (!(o instanceof Entry)) {\n    return false;\n  }\n  Entry<?,?> e=(Entry<?,?>)o;\n  Object eValue=e.getValue();\n  return key.equals(e.getKey()) && (value == null ? eValue == null : value.equals(eValue));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 65,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 21,
+                    "startLineNumber": 322,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 322,
+                    "endColumnNumber": 31
+                },
+                "nodeContext": "!(o instanceof Entry)",
+                "nodeType": "PrefixExpression",
+                "astNodeNumber": 6,
+                "astHeight": 5
+            },
+            "tokenLength": 2,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 18,
+            "startLineNumber": 322,
+            "startColumnNumber": 12,
+            "endLineNumber": 322,
+            "endColumnNumber": 30
+        }
+    ],
+    "layoutRelationDataList": []
+}

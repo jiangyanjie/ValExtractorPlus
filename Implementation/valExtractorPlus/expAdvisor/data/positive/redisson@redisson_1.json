@@ -1,0 +1,165 @@
+{
+  "id" : 1,
+  "expression" : "getName(key)",
+  "projectName" : "redisson@redisson",
+  "commitID" : "62b5e68c05b7475e1e0f98b4161aacb35d376b97",
+  "filePath" : "redisson/src/main/java/org/redisson/RedissonMap.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 170,
+      "startColumnNumber" : 41,
+      "endLineNumber" : 170,
+      "endColumnNumber" : 53
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 98,
+        "startLineNumber" : 170,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 170,
+        "endColumnNumber" : 113
+      },
+      "nodeContext" : "commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 107,
+        "startLineNumber" : 170,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 170,
+        "endColumnNumber" : 115
+      },
+      "nodeContext" : "return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 166,
+        "startLineNumber" : 166,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  checkKey(key);\n  String getName(key)=getName(key);\n  return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 28,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 221,
+        "startLineNumber" : 165,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public RFuture<Integer> valueSizeAsync(K key){\n  checkKey(key);\n  String getName(key)=getName(key);\n  return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 42,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 170,
+      "startColumnNumber" : 77,
+      "endLineNumber" : 170,
+      "endColumnNumber" : 89
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 98,
+        "startLineNumber" : 170,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 170,
+        "endColumnNumber" : 113
+      },
+      "nodeContext" : "commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 107,
+        "startLineNumber" : 170,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 170,
+        "endColumnNumber" : 115
+      },
+      "nodeContext" : "return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 166,
+        "startLineNumber" : 166,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  checkKey(key);\n  String getName(key)=getName(key);\n  return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 28,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 221,
+        "startLineNumber" : 165,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public RFuture<Integer> valueSizeAsync(K key){\n  checkKey(key);\n  String getName(key)=getName(key);\n  return commandExecutor.readAsync(getName(key),codec,RedisCommands.HSTRLEN,getName(key),encodeMapKey(key));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 42,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 12,
+    "startLineNumber" : 170,
+    "startColumnNumber" : 41,
+    "endLineNumber" : 170,
+    "endColumnNumber" : 53
+  }, {
+    "charLength" : 12,
+    "startLineNumber" : 170,
+    "startColumnNumber" : 77,
+    "endLineNumber" : 170,
+    "endColumnNumber" : 89
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "name",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 169,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 169,
+    "endColumnNumber" : 19
+  }
+}

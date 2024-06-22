@@ -1,0 +1,207 @@
+{
+    "id": 24,
+    "expression": "expectedPossiblePrefix.equals(cause.getMessage())",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "8965822c11828b4e69baee911f315901c2e073ec",
+    "filePath": "src/test/java/io/vertx/test/core/HttpTLSTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "expectedPossiblePrefix.equals(cause.getMessage())",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 49,
+                "startLineNumber": 569,
+                "startColumnNumber": 16,
+                "endLineNumber": 569,
+                "endColumnNumber": 65
+            },
+            "astNodeNumber": 6,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 55,
+                        "startLineNumber": 569,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 569,
+                        "endColumnNumber": 65
+                    },
+                    "nodeContext": "ok|=expectedPossiblePrefix.equals(cause.getMessage())",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 56,
+                        "startLineNumber": 569,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 569,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "ok|=expectedPossiblePrefix.equals(cause.getMessage());\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 78,
+                        "startLineNumber": 568,
+                        "startColumnNumber": 71,
+                        "endLineNumber": 570,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  ok|=expectedPossiblePrefix.equals(cause.getMessage());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 10,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 141,
+                        "startLineNumber": 568,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 570,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "for (String expectedPossiblePrefix : expectedPossiblePrefixes) {\n  ok|=expectedPossiblePrefix.equals(cause.getMessage());\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 16,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 359,
+                        "startLineNumber": 566,
+                        "startColumnNumber": 33,
+                        "endLineNumber": 574,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  boolean ok=expectedPossiblePrefixes.isEmpty();\n  for (  String expectedPossiblePrefix : expectedPossiblePrefixes) {\n    ok|=expectedPossiblePrefix.equals(cause.getMessage());\n  }\n  if (!ok) {\n    fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 38,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 818,
+                        "startLineNumber": 566,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 583,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (expectedSuffix == null) {\n  boolean ok=expectedPossiblePrefixes.isEmpty();\n  for (  String expectedPossiblePrefix : expectedPossiblePrefixes) {\n    ok|=expectedPossiblePrefix.equals(cause.getMessage());\n  }\n  if (!ok) {\n    fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n  }\n}\n else {\n  boolean ok=expectedPossiblePrefixes.isEmpty();\n  for (  String expectedPossiblePrefix : expectedPossiblePrefixes) {\n    ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n  }\n  if (!ok) {\n    fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n  }\n  assertTrue(cause.getMessage().endsWith(expectedSuffix));\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 85,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.CatchClause,body]",
+                    "nodePosition": {
+                        "charLength": 870,
+                        "startLineNumber": 564,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 584,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Throwable cause=e.getCause();\n  if (expectedSuffix == null) {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=expectedPossiblePrefix.equals(cause.getMessage());\n    }\n    if (!ok) {\n      fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n    }\n  }\n else {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n    }\n    if (!ok) {\n      fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n    }\n    assertTrue(cause.getMessage().endsWith(expectedSuffix));\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 94,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TryStatement,catchClauses]",
+                    "nodePosition": {
+                        "charLength": 895,
+                        "startLineNumber": 564,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 584,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "catch (VertxException e) {\n  Throwable cause=e.getCause();\n  if (expectedSuffix == null) {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=expectedPossiblePrefix.equals(cause.getMessage());\n    }\n    if (!ok) {\n      fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n    }\n  }\n else {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n    }\n    if (!ok) {\n      fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n    }\n    assertTrue(cause.getMessage().endsWith(expectedSuffix));\n  }\n}\n",
+                    "nodeType": "CatchClause",
+                    "astNodeNumber": 99,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 969,
+                        "startLineNumber": 561,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 584,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  server.listen();\n  fail(\"Was expecting a failure\");\n}\n catch (VertxException e) {\n  Throwable cause=e.getCause();\n  if (expectedSuffix == null) {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=expectedPossiblePrefix.equals(cause.getMessage());\n    }\n    if (!ok) {\n      fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n    }\n  }\n else {\n    boolean ok=expectedPossiblePrefixes.isEmpty();\n    for (    String expectedPossiblePrefix : expectedPossiblePrefixes) {\n      ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n    }\n    if (!ok) {\n      fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n    }\n    assertTrue(cause.getMessage().endsWith(expectedSuffix));\n  }\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 109,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1150,
+                        "startLineNumber": 555,
+                        "startColumnNumber": 120,
+                        "endLineNumber": 585,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  serverOptions.setSsl(true);\n  serverOptions.setPort(4043);\n  HttpServer server=vertx.createHttpServer(serverOptions);\n  server.requestHandler(req -> {\n  }\n);\n  try {\n    server.listen();\n    fail(\"Was expecting a failure\");\n  }\n catch (  VertxException e) {\n    Throwable cause=e.getCause();\n    if (expectedSuffix == null) {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=expectedPossiblePrefix.equals(cause.getMessage());\n      }\n      if (!ok) {\n        fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n      }\n    }\n else {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n      }\n      if (!ok) {\n        fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n      }\n      assertTrue(cause.getMessage().endsWith(expectedSuffix));\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 137,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1268,
+                        "startLineNumber": 555,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 585,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void testStore(HttpServerOptions serverOptions,List<String> expectedPossiblePrefixes,String expectedSuffix){\n  serverOptions.setSsl(true);\n  serverOptions.setPort(4043);\n  HttpServer server=vertx.createHttpServer(serverOptions);\n  server.requestHandler(req -> {\n  }\n);\n  try {\n    server.listen();\n    fail(\"Was expecting a failure\");\n  }\n catch (  VertxException e) {\n    Throwable cause=e.getCause();\n    if (expectedSuffix == null) {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=expectedPossiblePrefix.equals(cause.getMessage());\n      }\n      if (!ok) {\n        fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n      }\n    }\n else {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n      }\n      if (!ok) {\n        fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n      }\n      assertTrue(cause.getMessage().endsWith(expectedSuffix));\n    }\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 156,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 56,
+                    "startLineNumber": 569,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 569,
+                    "endColumnNumber": 66
+                },
+                "nodeContext": "ok|=expectedPossiblePrefix.equals(cause.getMessage());\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 5
+            },
+            "tokenLength": 4,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 49,
+            "startLineNumber": 569,
+            "startColumnNumber": 16,
+            "endLineNumber": 569,
+            "endColumnNumber": 65
+        }
+    ],
+    "layoutRelationDataList": []
+}

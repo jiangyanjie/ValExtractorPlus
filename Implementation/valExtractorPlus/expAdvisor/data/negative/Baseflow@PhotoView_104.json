@@ -1,0 +1,109 @@
+{
+    "id": 104,
+    "expression": "null",
+    "projectName": "Baseflow@PhotoView",
+    "commitID": "8d1b662b5b148f67f6ff5267b55d2db320cb1547",
+    "filePath": "library/src/uk/co/senab/photoview/PhotoViewAttacher.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 137,
+                "startColumnNumber": 12,
+                "endLineNumber": 137,
+                "endColumnNumber": 16
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 137,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "null != observer",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 75,
+                        "startLineNumber": 137,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 138,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "if (null != observer) observer.addOnGlobalLayoutListener(this);\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1237,
+                        "startLineNumber": 131,
+                        "startColumnNumber": 50,
+                        "endLineNumber": 164,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  mImageView=new WeakReference<ImageView>(imageView);\n  imageView.setOnTouchListener(this);\n  ViewTreeObserver observer=imageView.getViewTreeObserver();\n  if (null != observer)   observer.addOnGlobalLayoutListener(this);\n  setImageViewScaleTypeMatrix(imageView);\n  if (!imageView.isInEditMode()) {\n    mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n    mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n      @Override public void onLongPress(      MotionEvent e){\n        if (null != mLongClickListener) {\n          mLongClickListener.onLongClick(mImageView.get());\n        }\n      }\n    }\n);\n    mGestureDetector.setOnDoubleTapListener(this);\n    setZoomable(true);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 100,
+                    "astHeight": 16
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1283,
+                        "startLineNumber": 131,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 164,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "public PhotoViewAttacher(ImageView imageView){\n  mImageView=new WeakReference<ImageView>(imageView);\n  imageView.setOnTouchListener(this);\n  ViewTreeObserver observer=imageView.getViewTreeObserver();\n  if (null != observer)   observer.addOnGlobalLayoutListener(this);\n  setImageViewScaleTypeMatrix(imageView);\n  if (!imageView.isInEditMode()) {\n    mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n    mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n      @Override public void onLongPress(      MotionEvent e){\n        if (null != mLongClickListener) {\n          mLongClickListener.onLongClick(mImageView.get());\n        }\n      }\n    }\n);\n    mGestureDetector.setOnDoubleTapListener(this);\n    setZoomable(true);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 107,
+                    "astHeight": 17
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 16,
+                    "startLineNumber": 137,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 137,
+                    "endColumnNumber": 28
+                },
+                "nodeContext": "null != observer",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 137,
+            "startColumnNumber": 12,
+            "endLineNumber": 137,
+            "endColumnNumber": 16
+        }
+    ],
+    "layoutRelationDataList": []
+}

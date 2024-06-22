@@ -1,0 +1,118 @@
+{
+  "id" : 31,
+  "expression" : "method.getParameters()[0].getType()",
+  "projectName" : "eclipse-vertx@vert.x",
+  "commitID" : "a8abdfa1eb21c4ce8218e8bd279eac5b33dc8d1c",
+  "filePath" : "src/main/java/io/vertx/core/cli/annotations/CLIConfigurator.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "method.getParameters()[0].getType()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 35,
+      "startLineNumber" : 163,
+      "startColumnNumber" : 18,
+      "endLineNumber" : 163,
+      "endColumnNumber" : 53
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 48,
+        "startLineNumber" : 163,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 163,
+        "endColumnNumber" : 54
+      },
+      "nodeContext" : "arg.setType(method.getParameters()[0].getType())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 50,
+        "startLineNumber" : 163,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 163,
+        "endColumnNumber" : 56
+      },
+      "nodeContext" : "arg.setType(method.getParameters()[0].getType());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 146,
+        "startLineNumber" : 161,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 164,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final Class<?> method.getParameters()[0].getType()=method.getParameters()[0].getType();\n  arg.setType(method.getParameters()[0].getType());\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 293,
+        "startLineNumber" : 157,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 164,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (ReflectionUtils.isMultiple(method)) {\n  arg.setType(ReflectionUtils.getComponentType(method.getParameters()[0])).setMultiValued(true);\n}\n else {\n  final Class<?> method.getParameters()[0].getType()=method.getParameters()[0].getType();\n  arg.setType(method.getParameters()[0].getType());\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 48,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1107,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 74,
+        "endLineNumber" : 183,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  TypedArgument arg=new TypedArgument();\n  Argument argument=method.getAnnotation(Argument.class);\n  arg.setIndex(argument.index());\n  arg.setArgName(argument.argName());\n  arg.setRequired(argument.required());\n  Description description=method.getAnnotation(Description.class);\n  if (description != null) {\n    arg.setDescription(description.value());\n  }\n  if (ReflectionUtils.isMultiple(method)) {\n    arg.setType(ReflectionUtils.getComponentType(method.getParameters()[0])).setMultiValued(true);\n  }\n else {\n    final Class<?> method.getParameters()[0].getType()=method.getParameters()[0].getType();\n    arg.setType(method.getParameters()[0].getType());\n  }\n  Hidden hidden=method.getAnnotation(Hidden.class);\n  if (hidden != null) {\n    arg.setHidden(true);\n  }\n  ConvertedBy convertedBy=method.getAnnotation(ConvertedBy.class);\n  if (convertedBy != null) {\n    arg.setConverter(ReflectionUtils.newInstance(convertedBy.value()));\n  }\n  DefaultValue defaultValue=method.getAnnotation(DefaultValue.class);\n  if (defaultValue != null) {\n    arg.setDefaultValue(defaultValue.value());\n  }\n  return arg;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 184,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1209,
+        "startLineNumber" : 141,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 183,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@SuppressWarnings(\"unchecked\") private static io.vertx.core.cli.Argument createArgument(Method method){\n  TypedArgument arg=new TypedArgument();\n  Argument argument=method.getAnnotation(Argument.class);\n  arg.setIndex(argument.index());\n  arg.setArgName(argument.argName());\n  arg.setRequired(argument.required());\n  Description description=method.getAnnotation(Description.class);\n  if (description != null) {\n    arg.setDescription(description.value());\n  }\n  if (ReflectionUtils.isMultiple(method)) {\n    arg.setType(ReflectionUtils.getComponentType(method.getParameters()[0])).setMultiValued(true);\n  }\n else {\n    final Class<?> method.getParameters()[0].getType()=method.getParameters()[0].getType();\n    arg.setType(method.getParameters()[0].getType());\n  }\n  Hidden hidden=method.getAnnotation(Hidden.class);\n  if (hidden != null) {\n    arg.setHidden(true);\n  }\n  ConvertedBy convertedBy=method.getAnnotation(ConvertedBy.class);\n  if (convertedBy != null) {\n    arg.setConverter(ReflectionUtils.newInstance(convertedBy.value()));\n  }\n  DefaultValue defaultValue=method.getAnnotation(DefaultValue.class);\n  if (defaultValue != null) {\n    arg.setDefaultValue(defaultValue.value());\n  }\n  return arg;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 205,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 4,
+    "type" : "java.lang.Class<>"
+  } ],
+  "positionList" : [ {
+    "charLength" : 35,
+    "startLineNumber" : 163,
+    "startColumnNumber" : 18,
+    "endLineNumber" : 163,
+    "endColumnNumber" : 53
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "type",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 162,
+    "startColumnNumber" : 21,
+    "endLineNumber" : 162,
+    "endColumnNumber" : 25
+  }
+}

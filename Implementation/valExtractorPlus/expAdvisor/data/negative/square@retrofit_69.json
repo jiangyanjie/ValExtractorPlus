@@ -1,0 +1,454 @@
+{
+    "id": 69,
+    "expression": "value",
+    "projectName": "square@retrofit",
+    "commitID": "5795931d159f0a591e5dad3d9de6f8d0e9785413",
+    "filePath": "retrofit/src/main/java/retrofit/mime/MultipartTypedOutput.java",
+    "occurrences": 3,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "value",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 177,
+                "startColumnNumber": 24,
+                "endLineNumber": 177,
+                "endColumnNumber": 29
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 177,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 177,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "value.fileName()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 177,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 177,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "fileName=value.fileName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 177,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 177,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "String fileName=value.fileName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 813,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 196,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 922,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 198,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n catch (IOException ex) {\n  throw new RuntimeException(\"Unable to write multipart header\",ex);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 111,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 932,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 112,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1023,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private static byte[] buildHeader(String name,String transferEncoding,TypedOutput value){\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 131,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 35,
+                    "startLineNumber": 177,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 177,
+                    "endColumnNumber": 41
+                },
+                "nodeContext": "String fileName=value.fileName();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "retrofit.mime.TypedOutput"
+        },
+        {
+            "nodeContext": "value",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 184,
+                "startColumnNumber": 21,
+                "endLineNumber": 184,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 184,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "value.mimeType()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 184,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "headers.append(value.mimeType())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 33,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 184,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "headers.append(value.mimeType());\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 813,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 196,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 922,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 198,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n catch (IOException ex) {\n  throw new RuntimeException(\"Unable to write multipart header\",ex);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 111,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 932,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 112,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1023,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private static byte[] buildHeader(String name,String transferEncoding,TypedOutput value){\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 131,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 33,
+                    "startLineNumber": 184,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 184,
+                    "endColumnNumber": 39
+                },
+                "nodeContext": "headers.append(value.mimeType());\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "retrofit.mime.TypedOutput"
+        },
+        {
+            "nodeContext": "value",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 186,
+                "startColumnNumber": 20,
+                "endLineNumber": 186,
+                "endColumnNumber": 25
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 186,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 186,
+                        "endColumnNumber": 34
+                    },
+                    "nodeContext": "value.length()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 186,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 186,
+                        "endColumnNumber": 34
+                    },
+                    "nodeContext": "length=value.length()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 186,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 186,
+                        "endColumnNumber": 35
+                    },
+                    "nodeContext": "long length=value.length();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 813,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 196,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 922,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 198,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  StringBuilder headers=new StringBuilder(128);\n  headers.append(\"Content-Disposition: form-data; name=\\\"\");\n  headers.append(name);\n  String fileName=value.fileName();\n  if (fileName != null) {\n    headers.append(\"\\\"; filename=\\\"\");\n    headers.append(fileName);\n  }\n  headers.append(\"\\\"\\r\\nContent-Type: \");\n  headers.append(value.mimeType());\n  long length=value.length();\n  if (length != -1) {\n    headers.append(\"\\r\\nContent-Length: \").append(length);\n  }\n  headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n  headers.append(transferEncoding);\n  headers.append(\"\\r\\n\\r\\n\");\n  return headers.toString().getBytes(\"UTF-8\");\n}\n catch (IOException ex) {\n  throw new RuntimeException(\"Unable to write multipart header\",ex);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 111,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 932,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 112,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1023,
+                        "startLineNumber": 169,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private static byte[] buildHeader(String name,String transferEncoding,TypedOutput value){\n  try {\n    StringBuilder headers=new StringBuilder(128);\n    headers.append(\"Content-Disposition: form-data; name=\\\"\");\n    headers.append(name);\n    String fileName=value.fileName();\n    if (fileName != null) {\n      headers.append(\"\\\"; filename=\\\"\");\n      headers.append(fileName);\n    }\n    headers.append(\"\\\"\\r\\nContent-Type: \");\n    headers.append(value.mimeType());\n    long length=value.length();\n    if (length != -1) {\n      headers.append(\"\\r\\nContent-Length: \").append(length);\n    }\n    headers.append(\"\\r\\nContent-Transfer-Encoding: \");\n    headers.append(transferEncoding);\n    headers.append(\"\\r\\n\\r\\n\");\n    return headers.toString().getBytes(\"UTF-8\");\n  }\n catch (  IOException ex) {\n    throw new RuntimeException(\"Unable to write multipart header\",ex);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 131,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 29,
+                    "startLineNumber": 186,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 186,
+                    "endColumnNumber": 35
+                },
+                "nodeContext": "long length=value.length();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "retrofit.mime.TypedOutput"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 5,
+            "startLineNumber": 177,
+            "startColumnNumber": 24,
+            "endLineNumber": 177,
+            "endColumnNumber": 29
+        },
+        {
+            "charLength": 5,
+            "startLineNumber": 184,
+            "startColumnNumber": 21,
+            "endLineNumber": 184,
+            "endColumnNumber": 26
+        },
+        {
+            "charLength": 5,
+            "startLineNumber": 186,
+            "startColumnNumber": 20,
+            "endLineNumber": 186,
+            "endColumnNumber": 25
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 3
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "id": 121,
+    "expression": "0",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "51af44f843ceaa58c55860fb35a30a5524887904",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/field/FlowLayoutTextField.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "0",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 93,
+                "startColumnNumber": 21,
+                "endLineNumber": 93,
+                "endColumnNumber": 22
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 93,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 93,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "currentWidth=0",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 21,
+                        "startLineNumber": 93,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 93,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "int currentWidth=0;\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 311,
+                        "startLineNumber": 91,
+                        "startColumnNumber": 14,
+                        "endLineNumber": 103,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int currentWidth=0;\n  for (int i=start; i < elements.size(); i++) {\n    FieldElement element=elements.get(i);\n    currentWidth+=element.getStringWidth();\n    if (currentWidth > width) {\n      int count=i - start;\n      return Math.max(count,1);\n    }\n  }\n  return elements.size() - start;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 59,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 412,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 103,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private static int getNumberOfElementsPerLine(List<FieldElement> elements,int start,int width){\n  int currentWidth=0;\n  for (int i=start; i < elements.size(); i++) {\n    FieldElement element=elements.get(i);\n    currentWidth+=element.getStringWidth();\n    if (currentWidth > width) {\n      int count=i - start;\n      return Math.max(count,1);\n    }\n  }\n  return elements.size() - start;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 77,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 21,
+                    "startLineNumber": 93,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 93,
+                    "endColumnNumber": 23
+                },
+                "nodeContext": "int currentWidth=0;\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 93,
+            "startColumnNumber": 21,
+            "endLineNumber": 93,
+            "endColumnNumber": 22
+        }
+    ],
+    "layoutRelationDataList": []
+}

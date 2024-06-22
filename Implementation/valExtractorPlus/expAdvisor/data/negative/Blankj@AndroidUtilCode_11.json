@@ -1,0 +1,95 @@
+{
+    "id": 11,
+    "expression": "bytes == null",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "c1bad4d11e13e88bd40a03463c96d3266c2fd957",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/util/CacheUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "bytes == null",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 13,
+                "startLineNumber": 239,
+                "startColumnNumber": 12,
+                "endLineNumber": 239,
+                "endColumnNumber": 25
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 239,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 239,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "if (bytes == null) return null;\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 119,
+                        "startLineNumber": 237,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 241,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  byte[] bytes=getBytes(key);\n  if (bytes == null)   return null;\n  return new String(bytes);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 21,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 239,
+                        "startLineNumber": 231,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 241,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 缓存中读取String\n * @param key 键\n * @return String\n */\npublic String getString(String key){\n  byte[] bytes=getBytes(key);\n  if (bytes == null)   return null;\n  return new String(bytes);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 31,
+                    "astHeight": 6
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 31,
+                    "startLineNumber": 239,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 239,
+                    "endColumnNumber": 39
+                },
+                "nodeContext": "if (bytes == null) return null;\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 6,
+                "astHeight": 3
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 13,
+            "startLineNumber": 239,
+            "startColumnNumber": 12,
+            "endLineNumber": 239,
+            "endColumnNumber": 25
+        }
+    ],
+    "layoutRelationDataList": []
+}

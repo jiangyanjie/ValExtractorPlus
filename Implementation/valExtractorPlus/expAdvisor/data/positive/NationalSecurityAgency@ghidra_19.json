@@ -1,0 +1,105 @@
+{
+  "id" : 19,
+  "expression" : "y - heightAbove",
+  "projectName" : "NationalSecurityAgency@ghidra",
+  "commitID" : "f24e969c2a5d168b6df3303d1f91ad0e695b2a72",
+  "filePath" : "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/support/RowLayout.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "y - heightAbove",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 15,
+      "startLineNumber" : 212,
+      "startColumnNumber" : 31,
+      "endLineNumber" : 212,
+      "endColumnNumber" : 46
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+      "nodePosition" : {
+        "charLength" : 29,
+        "startLineNumber" : 212,
+        "startColumnNumber" : 18,
+        "endLineNumber" : 212,
+        "endColumnNumber" : 47
+      },
+      "nodeContext" : "field.getRow(y - heightAbove)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 43,
+        "startLineNumber" : 212,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 212,
+        "endColumnNumber" : 45
+      },
+      "nodeContext" : "cursorLoc.row=field.getRow(y - heightAbove)",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 45,
+        "startLineNumber" : 212,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 212,
+        "endColumnNumber" : 47
+      },
+      "nodeContext" : "cursorLoc.row=field.getRow(y - heightAbove);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 329,
+        "startLineNumber" : 198,
+        "startColumnNumber" : 61,
+        "endLineNumber" : 215,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int y - heightAbove=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(y - heightAbove);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 73,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 396,
+        "startLineNumber" : 197,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 215,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int y - heightAbove=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(y - heightAbove);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 89,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 3,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 15,
+    "startLineNumber" : 212,
+    "startColumnNumber" : 31,
+    "endLineNumber" : 212,
+    "endColumnNumber" : 46
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "offsetY",
+  "nodePosition" : {
+    "charLength" : 7,
+    "startLineNumber" : 210,
+    "startColumnNumber" : 6,
+    "endLineNumber" : 210,
+    "endColumnNumber" : 13
+  }
+}

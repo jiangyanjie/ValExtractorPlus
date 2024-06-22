@@ -1,0 +1,606 @@
+{
+    "id": 231,
+    "expression": "1",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "59ed3e1cc9aea1a3aeebfdf4dae108c905985dc1",
+    "filePath": "Ghidra/Features/Base/src/test.slow/java/ghidra/app/plugin/core/stackeditor/StackEditorDnDTest.java",
+    "occurrences": 4,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "1",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 380,
+                "startColumnNumber": 44,
+                "endLineNumber": 380,
+                "endColumnNumber": 45
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 380,
+                        "startColumnNumber": 32,
+                        "endLineNumber": 380,
+                        "endColumnNumber": 46
+                    },
+                    "nodeContext": "getDataType(1)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 380,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 380,
+                        "endColumnNumber": 46
+                    },
+                    "nodeContext": "existingStackType=getDataType(1)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 44,
+                        "startLineNumber": 380,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 380,
+                        "endColumnNumber": 47
+                    },
+                    "nodeContext": "DataType existingStackType=getDataType(1);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 688,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 391,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 725,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 394,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "try {\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n  finally {\n  cleanup();\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 97,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 734,
+                        "startLineNumber": 371,
+                        "startColumnNumber": 60,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 801,
+                        "startLineNumber": 370,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Test public void testDragNDropAddLargerNoFit() throws Exception {\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 106,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 44,
+                    "startLineNumber": 380,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 380,
+                    "endColumnNumber": 47
+                },
+                "nodeContext": "DataType existingStackType=getDataType(1);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        },
+        {
+            "nodeContext": "1",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 381,
+                "startColumnNumber": 41,
+                "endLineNumber": 381,
+                "endColumnNumber": 42
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 381,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 381,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "getDataTypeAtRow(1)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 381,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 381,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "tableType=getDataTypeAtRow(1)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 381,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 381,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "DataType tableType=getDataTypeAtRow(1);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 688,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 391,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 725,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 394,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "try {\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n  finally {\n  cleanup();\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 97,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 734,
+                        "startLineNumber": 371,
+                        "startColumnNumber": 60,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 801,
+                        "startLineNumber": 370,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Test public void testDragNDropAddLargerNoFit() throws Exception {\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 106,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 41,
+                    "startLineNumber": 381,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 381,
+                    "endColumnNumber": 44
+                },
+                "nodeContext": "DataType tableType=getDataTypeAtRow(1);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        },
+        {
+            "nodeContext": "1",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 384,
+                "startColumnNumber": 23,
+                "endLineNumber": 384,
+                "endColumnNumber": 24
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 25,
+                        "startLineNumber": 384,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 384,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "addAtPoint(newType,1,0)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 384,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 384,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "addAtPoint(newType,1,0);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 688,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 391,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 725,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 394,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "try {\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n  finally {\n  cleanup();\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 97,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 734,
+                        "startLineNumber": 371,
+                        "startColumnNumber": 60,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 801,
+                        "startLineNumber": 370,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Test public void testDragNDropAddLargerNoFit() throws Exception {\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 106,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 26,
+                    "startLineNumber": 384,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 384,
+                    "endColumnNumber": 29
+                },
+                "nodeContext": "addAtPoint(newType,1,0);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 6,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "int"
+        },
+        {
+            "nodeContext": "1",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 388,
+                "startColumnNumber": 39,
+                "endLineNumber": 388,
+                "endColumnNumber": 40
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 388,
+                        "startColumnNumber": 27,
+                        "endLineNumber": 388,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "getDataType(1)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 388,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 388,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "newStackType=getDataType(1)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 39,
+                        "startLineNumber": 388,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 388,
+                        "endColumnNumber": 42
+                    },
+                    "nodeContext": "DataType newStackType=getDataType(1);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 688,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 391,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 725,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 394,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "try {\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newType=programDTM.getDataType(\"/double\");\n  assertNotNull(newType);\n  DataType existingStackType=getDataType(1);\n  DataType tableType=getDataTypeAtRow(1);\n  assertTrue(existingStackType.isEquivalent(tableType));\n  addAtPoint(newType,1,0);\n  assertEquals(20,model.getNumComponents());\n  assertEquals(0x1e,model.getLength());\n  DataType newStackType=getDataType(1);\n  assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n  assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n}\n  finally {\n  cleanup();\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 97,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 734,
+                        "startLineNumber": 371,
+                        "startColumnNumber": 60,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 98,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 801,
+                        "startLineNumber": 370,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 395,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Test public void testDragNDropAddLargerNoFit() throws Exception {\n  try {\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newType=programDTM.getDataType(\"/double\");\n    assertNotNull(newType);\n    DataType existingStackType=getDataType(1);\n    DataType tableType=getDataTypeAtRow(1);\n    assertTrue(existingStackType.isEquivalent(tableType));\n    addAtPoint(newType,1,0);\n    assertEquals(20,model.getNumComponents());\n    assertEquals(0x1e,model.getLength());\n    DataType newStackType=getDataType(1);\n    assertSame(\"Type should not have been replaced\",existingStackType,newStackType);\n    assertEquals(\"double doesn't fit within 4 bytes, need 8 bytes\",model.getStatus());\n  }\n  finally {\n    cleanup();\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 106,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 39,
+                    "startLineNumber": 388,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 388,
+                    "endColumnNumber": 42
+                },
+                "nodeContext": "DataType newStackType=getDataType(1);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 380,
+            "startColumnNumber": 44,
+            "endLineNumber": 380,
+            "endColumnNumber": 45
+        },
+        {
+            "charLength": 1,
+            "startLineNumber": 381,
+            "startColumnNumber": 41,
+            "endLineNumber": 381,
+            "endColumnNumber": 42
+        },
+        {
+            "charLength": 1,
+            "startLineNumber": 384,
+            "startColumnNumber": 23,
+            "endLineNumber": 384,
+            "endColumnNumber": 24
+        },
+        {
+            "charLength": 1,
+            "startLineNumber": 388,
+            "startColumnNumber": 39,
+            "endLineNumber": 388,
+            "endColumnNumber": 40
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 2
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 3,
+            "layout": 2
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 2,
+            "layout": 3
+        }
+    ]
+}

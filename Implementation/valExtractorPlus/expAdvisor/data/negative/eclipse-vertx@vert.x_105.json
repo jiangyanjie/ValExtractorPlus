@@ -1,0 +1,200 @@
+{
+    "id": 105,
+    "expression": "method",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "94437f43219bbbad0c3da48887211587ac635460",
+    "filePath": "src/main/java/io/vertx/core/http/impl/HttpServerRequestImpl.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "method",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 124,
+                "startColumnNumber": 8,
+                "endLineNumber": 124,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "method == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 330,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 132,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (method == null) {\n  String sMethod=request.getMethod().toString();\n  try {\n    method=io.vertx.core.http.HttpMethod.valueOf(sMethod);\n  }\n catch (  IllegalArgumentException e) {\n    sendNotImplementedAndClose();\n    throw new IllegalStateException(\"Unsupported HTTP method: \" + sMethod);\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 48,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 359,
+                        "startLineNumber": 123,
+                        "startColumnNumber": 48,
+                        "endLineNumber": 134,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (method == null) {\n    String sMethod=request.getMethod().toString();\n    try {\n      method=io.vertx.core.http.HttpMethod.valueOf(sMethod);\n    }\n catch (    IllegalArgumentException e) {\n      sendNotImplementedAndClose();\n      throw new IllegalStateException(\"Unsupported HTTP method: \" + sMethod);\n    }\n  }\n  return method;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 51,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 417,
+                        "startLineNumber": 122,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 134,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override public io.vertx.core.http.HttpMethod method(){\n  if (method == null) {\n    String sMethod=request.getMethod().toString();\n    try {\n      method=io.vertx.core.http.HttpMethod.valueOf(sMethod);\n    }\n catch (    IllegalArgumentException e) {\n      sendNotImplementedAndClose();\n      throw new IllegalStateException(\"Unsupported HTTP method: \" + sMethod);\n    }\n  }\n  return method;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 66,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 14,
+                    "startLineNumber": 124,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 124,
+                    "endColumnNumber": 22
+                },
+                "nodeContext": "method == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "io.vertx.core.http.HttpMethod"
+        },
+        {
+            "nodeContext": "method",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 133,
+                "startColumnNumber": 11,
+                "endLineNumber": 133,
+                "endColumnNumber": 17
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 133,
+                        "endColumnNumber": 18
+                    },
+                    "nodeContext": "return method;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 2,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 359,
+                        "startLineNumber": 123,
+                        "startColumnNumber": 48,
+                        "endLineNumber": 134,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (method == null) {\n    String sMethod=request.getMethod().toString();\n    try {\n      method=io.vertx.core.http.HttpMethod.valueOf(sMethod);\n    }\n catch (    IllegalArgumentException e) {\n      sendNotImplementedAndClose();\n      throw new IllegalStateException(\"Unsupported HTTP method: \" + sMethod);\n    }\n  }\n  return method;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 51,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 417,
+                        "startLineNumber": 122,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 134,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override public io.vertx.core.http.HttpMethod method(){\n  if (method == null) {\n    String sMethod=request.getMethod().toString();\n    try {\n      method=io.vertx.core.http.HttpMethod.valueOf(sMethod);\n    }\n catch (    IllegalArgumentException e) {\n      sendNotImplementedAndClose();\n      throw new IllegalStateException(\"Unsupported HTTP method: \" + sMethod);\n    }\n  }\n  return method;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 66,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 14,
+                    "startLineNumber": 133,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 133,
+                    "endColumnNumber": 18
+                },
+                "nodeContext": "return method;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 2,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "io.vertx.core.http.HttpMethod"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 6,
+            "startLineNumber": 124,
+            "startColumnNumber": 8,
+            "endLineNumber": 124,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 6,
+            "startLineNumber": 133,
+            "startColumnNumber": 11,
+            "endLineNumber": 133,
+            "endColumnNumber": 17
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 1
+        }
+    ]
+}

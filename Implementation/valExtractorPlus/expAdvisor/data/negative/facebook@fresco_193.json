@@ -1,0 +1,109 @@
+{
+    "id": 193,
+    "expression": "frame.getYOffset()",
+    "projectName": "facebook@fresco",
+    "commitID": "d5a49eda5e57981c0a97e977a971401199682dc7",
+    "filePath": "animated-gif-lite/src/main/java/com/facebook/animated/giflite/draw/MovieAnimatedImage.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "frame.getYOffset()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 18,
+                "startLineNumber": 89,
+                "startColumnNumber": 8,
+                "endLineNumber": 89,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 278,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 93,
+                        "endColumnNumber": 47
+                    },
+                    "nodeContext": "new AnimatedDrawableFrameInfo(frameNumber,frame.getXOffset(),frame.getYOffset(),frame.getWidth(),frame.getHeight(),AnimatedDrawableFrameInfo.BlendOperation.BLEND_WITH_PREVIOUS,mFrames[frameNumber].getDisposalMode())",
+                    "nodeType": "ClassInstanceCreation",
+                    "astNodeNumber": 26,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 286,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 93,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "return new AnimatedDrawableFrameInfo(frameNumber,frame.getXOffset(),frame.getYOffset(),frame.getWidth(),frame.getHeight(),AnimatedDrawableFrameInfo.BlendOperation.BLEND_WITH_PREVIOUS,mFrames[frameNumber].getDisposalMode());\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 27,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 341,
+                        "startLineNumber": 84,
+                        "startColumnNumber": 65,
+                        "endLineNumber": 94,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  MovieFrame frame=mFrames[frameNumber];\n  return new AnimatedDrawableFrameInfo(frameNumber,frame.getXOffset(),frame.getYOffset(),frame.getWidth(),frame.getHeight(),AnimatedDrawableFrameInfo.BlendOperation.BLEND_WITH_PREVIOUS,mFrames[frameNumber].getDisposalMode());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 36,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 416,
+                        "startLineNumber": 83,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 94,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override public AnimatedDrawableFrameInfo getFrameInfo(int frameNumber){\n  MovieFrame frame=mFrames[frameNumber];\n  return new AnimatedDrawableFrameInfo(frameNumber,frame.getXOffset(),frame.getYOffset(),frame.getWidth(),frame.getHeight(),AnimatedDrawableFrameInfo.BlendOperation.BLEND_WITH_PREVIOUS,mFrames[frameNumber].getDisposalMode());\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 46,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                "nodePosition": {
+                    "charLength": 278,
+                    "startLineNumber": 86,
+                    "startColumnNumber": 11,
+                    "endLineNumber": 93,
+                    "endColumnNumber": 47
+                },
+                "nodeContext": "new AnimatedDrawableFrameInfo(frameNumber,frame.getXOffset(),frame.getYOffset(),frame.getWidth(),frame.getHeight(),AnimatedDrawableFrameInfo.BlendOperation.BLEND_WITH_PREVIOUS,mFrames[frameNumber].getDisposalMode())",
+                "nodeType": "ClassInstanceCreation",
+                "astNodeNumber": 26,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 18,
+            "startLineNumber": 89,
+            "startColumnNumber": 8,
+            "endLineNumber": 89,
+            "endColumnNumber": 26
+        }
+    ],
+    "layoutRelationDataList": []
+}

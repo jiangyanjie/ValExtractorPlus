@@ -1,0 +1,137 @@
+{
+    "id": 151,
+    "expression": "RESULT_NONE",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "4ee704cedfb6c7e02843bde24cf75f630f6b64b6",
+    "filePath": "spring-web/src/main/java/org/springframework/web/context/request/async/DeferredResult.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "RESULT_NONE",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 11,
+                "startLineNumber": 298,
+                "startColumnNumber": 18,
+                "endLineNumber": 298,
+                "endColumnNumber": 29
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 298,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 298,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "value != RESULT_NONE",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 218,
+                        "startLineNumber": 298,
+                        "startColumnNumber": 5,
+                        "endLineNumber": 306,
+                        "endColumnNumber": 6
+                    },
+                    "nodeContext": "if (value != RESULT_NONE) {\n  continueProcessing=false;\n  try {\n    setResultInternal(value);\n  }\n catch (  Throwable ex) {\n    logger.debug(\"Failed to handle timeout result\",ex);\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 27,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,finally]",
+                    "nodePosition": {
+                        "charLength": 272,
+                        "startLineNumber": 296,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 307,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Object value=timeoutResult.get();\n  if (value != RESULT_NONE) {\n    continueProcessing=false;\n    try {\n      setResultInternal(value);\n    }\n catch (    Throwable ex) {\n      logger.debug(\"Failed to handle timeout result\",ex);\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 36,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 368,
+                        "startLineNumber": 291,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 307,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  if (timeoutCallback != null) {\n    timeoutCallback.run();\n  }\n}\n  finally {\n  Object value=timeoutResult.get();\n  if (value != RESULT_NONE) {\n    continueProcessing=false;\n    try {\n      setResultInternal(value);\n    }\n catch (    Throwable ex) {\n      logger.debug(\"Failed to handle timeout result\",ex);\n    }\n  }\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 47,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 449,
+                        "startLineNumber": 289,
+                        "startColumnNumber": 96,
+                        "endLineNumber": 309,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "{\n  boolean continueProcessing=true;\n  try {\n    if (timeoutCallback != null) {\n      timeoutCallback.run();\n    }\n  }\n  finally {\n    Object value=timeoutResult.get();\n    if (value != RESULT_NONE) {\n      continueProcessing=false;\n      try {\n        setResultInternal(value);\n      }\n catch (      Throwable ex) {\n        logger.debug(\"Failed to handle timeout result\",ex);\n      }\n    }\n  }\n  return continueProcessing;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 55,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 555,
+                        "startLineNumber": 288,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 309,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "@Override public <S>boolean handleTimeout(NativeWebRequest request,DeferredResult<S> deferredResult){\n  boolean continueProcessing=true;\n  try {\n    if (timeoutCallback != null) {\n      timeoutCallback.run();\n    }\n  }\n  finally {\n    Object value=timeoutResult.get();\n    if (value != RESULT_NONE) {\n      continueProcessing=false;\n      try {\n        setResultInternal(value);\n      }\n catch (      Throwable ex) {\n        logger.debug(\"Failed to handle timeout result\",ex);\n      }\n    }\n  }\n  return continueProcessing;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 74,
+                    "astHeight": 12
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 20,
+                    "startLineNumber": 298,
+                    "startColumnNumber": 9,
+                    "endLineNumber": 298,
+                    "endColumnNumber": 29
+                },
+                "nodeContext": "value != RESULT_NONE",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 2,
+            "type": "java.lang.Object"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 11,
+            "startLineNumber": 298,
+            "startColumnNumber": 18,
+            "endLineNumber": 298,
+            "endColumnNumber": 29
+        }
+    ],
+    "layoutRelationDataList": []
+}

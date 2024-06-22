@@ -1,0 +1,191 @@
+{
+  "id" : 4,
+  "expression" : "entity.getId()",
+  "projectName" : "greenrobot@greenDAO",
+  "commitID" : "deda725c502c83303e88b6d1ff9556193a6a5a60",
+  "filePath" : "DaoTest/src-gen/de/greenrobot/testdao/TestEntitySimpleDao.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "entity.getId()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 69,
+      "startColumnNumber" : 11,
+      "endLineNumber" : 69,
+      "endColumnNumber" : 25
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 22,
+        "startLineNumber" : 69,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 69,
+        "endColumnNumber" : 33
+      },
+      "nodeContext" : "entity.getId() != null",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 5,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 67,
+        "startLineNumber" : 69,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (entity.getId() != null) {\n  stmt.bindLong(1,entity.getId());\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 627,
+        "startLineNumber" : 66,
+        "startColumnNumber" : 77,
+        "endLineNumber" : 87,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  stmt.clearBindings();\n  Integer entity.getId()=entity.getId();\n  if (entity.getId() != null) {\n    stmt.bindLong(1,entity.getId());\n  }\n  Integer simpleInt=entity.getSimpleInt();\n  if (simpleInt != null) {\n    stmt.bindLong(2,simpleInt);\n  }\n  stmt.bindLong(3,entity.getSimpleIntNotNull());\n  Long simpleLong=entity.getSimpleLong();\n  if (simpleLong != null) {\n    stmt.bindLong(4,simpleLong);\n  }\n  stmt.bindLong(5,entity.getSimpleLongNotNull());\n  String simpleString=entity.getSimpleString();\n  if (simpleString != null) {\n    stmt.bindString(6,simpleString);\n  }\n  stmt.bindString(7,entity.getSimpleStringNotNull());\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 107,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 64,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 87,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * @inheritdoc \n */\n@Overrentity.getId()e protected voentity.getId() bindValues(SQLiteStatement stmt,TestEntitySimple entity){\n  stmt.clearBindings();\n  Integer entity.getId()=entity.getId();\n  if (entity.getId() != null) {\n    stmt.bindLong(1,entity.getId());\n  }\n  Integer simpleInt=entity.getSimpleInt();\n  if (simpleInt != null) {\n    stmt.bindLong(2,simpleInt);\n  }\n  stmt.bindLong(3,entity.getSimpleIntNotNull());\n  Long simpleLong=entity.getSimpleLong();\n  if (simpleLong != null) {\n    stmt.bindLong(4,simpleLong);\n  }\n  stmt.bindLong(5,entity.getSimpleLongNotNull());\n  String simpleString=entity.getSimpleString();\n  if (simpleString != null) {\n    stmt.bindString(6,simpleString);\n  }\n  stmt.bindString(7,entity.getSimpleStringNotNull());\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 122,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.Integer"
+  }, {
+    "nodeContext" : "entity.getId()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 70,
+      "startColumnNumber" : 29,
+      "endLineNumber" : 70,
+      "endColumnNumber" : 43
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 31,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 43
+      },
+      "nodeContext" : "stmt.bindLong(1,entity.getId())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 7,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 33,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 45
+      },
+      "nodeContext" : "stmt.bindLong(1,entity.getId());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 8,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 39,
+        "startLineNumber" : 69,
+        "startColumnNumber" : 23,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  stmt.bindLong(1,entity.getId());\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 9,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 67,
+        "startLineNumber" : 69,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (entity.getId() != null) {\n  stmt.bindLong(1,entity.getId());\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 627,
+        "startLineNumber" : 66,
+        "startColumnNumber" : 77,
+        "endLineNumber" : 87,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  stmt.clearBindings();\n  Integer entity.getId()=entity.getId();\n  if (entity.getId() != null) {\n    stmt.bindLong(1,entity.getId());\n  }\n  Integer simpleInt=entity.getSimpleInt();\n  if (simpleInt != null) {\n    stmt.bindLong(2,simpleInt);\n  }\n  stmt.bindLong(3,entity.getSimpleIntNotNull());\n  Long simpleLong=entity.getSimpleLong();\n  if (simpleLong != null) {\n    stmt.bindLong(4,simpleLong);\n  }\n  stmt.bindLong(5,entity.getSimpleLongNotNull());\n  String simpleString=entity.getSimpleString();\n  if (simpleString != null) {\n    stmt.bindString(6,simpleString);\n  }\n  stmt.bindString(7,entity.getSimpleStringNotNull());\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 107,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 64,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 87,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * @inheritdoc \n */\n@Overrentity.getId()e protected voentity.getId() bindValues(SQLiteStatement stmt,TestEntitySimple entity){\n  stmt.clearBindings();\n  Integer entity.getId()=entity.getId();\n  if (entity.getId() != null) {\n    stmt.bindLong(1,entity.getId());\n  }\n  Integer simpleInt=entity.getSimpleInt();\n  if (simpleInt != null) {\n    stmt.bindLong(2,simpleInt);\n  }\n  stmt.bindLong(3,entity.getSimpleIntNotNull());\n  Long simpleLong=entity.getSimpleLong();\n  if (simpleLong != null) {\n    stmt.bindLong(4,simpleLong);\n  }\n  stmt.bindLong(5,entity.getSimpleLongNotNull());\n  String simpleString=entity.getSimpleString();\n  if (simpleString != null) {\n    stmt.bindString(6,simpleString);\n  }\n  stmt.bindString(7,entity.getSimpleStringNotNull());\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 122,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.Integer"
+  } ],
+  "positionList" : [ {
+    "charLength" : 14,
+    "startLineNumber" : 69,
+    "startColumnNumber" : 11,
+    "endLineNumber" : 69,
+    "endColumnNumber" : 25
+  }, {
+    "charLength" : 14,
+    "startLineNumber" : 70,
+    "startColumnNumber" : 29,
+    "endLineNumber" : 70,
+    "endColumnNumber" : 43
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "id",
+  "nodePosition" : {
+    "charLength" : 2,
+    "startLineNumber" : 68,
+    "startColumnNumber" : 16,
+    "endLineNumber" : 68,
+    "endColumnNumber" : 18
+  }
+}

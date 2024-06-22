@@ -1,0 +1,726 @@
+{
+    "id": 40,
+    "expression": "tv",
+    "projectName": "material-components@material-components-android",
+    "commitID": "b241ff5785463453bcd3176b22e783ddb103835c",
+    "filePath": "lib/src/android/support/design/widget/Snackbar.java",
+    "occurrences": 5,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 196,
+                "startColumnNumber": 12,
+                "endLineNumber": 196,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 196,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 196,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "tv.setVisibility(View.GONE)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 196,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 196,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "tv.setVisibility(View.GONE);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 93,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 57,
+                        "endLineNumber": 198,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 28,
+                    "startLineNumber": 196,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 196,
+                    "endColumnNumber": 40
+                },
+                "nodeContext": "tv.setVisibility(View.GONE);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        },
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 197,
+                "startColumnNumber": 12,
+                "endLineNumber": 197,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 197,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "tv.setOnClickListener(null)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 197,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "tv.setOnClickListener(null);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 93,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 57,
+                        "endLineNumber": 198,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 28,
+                    "startLineNumber": 197,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 197,
+                    "endColumnNumber": 40
+                },
+                "nodeContext": "tv.setOnClickListener(null);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        },
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 199,
+                "startColumnNumber": 12,
+                "endLineNumber": 199,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 30,
+                        "startLineNumber": 199,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 42
+                    },
+                    "nodeContext": "tv.setVisibility(View.VISIBLE)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 199,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 199,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "tv.setVisibility(View.VISIBLE);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 421,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 45,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 31,
+                    "startLineNumber": 199,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 199,
+                    "endColumnNumber": 43
+                },
+                "nodeContext": "tv.setVisibility(View.VISIBLE);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        },
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 200,
+                "startColumnNumber": 12,
+                "endLineNumber": 200,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 200,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 200,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "tv.setText(text)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 17,
+                        "startLineNumber": 200,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 200,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "tv.setText(text);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 421,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 45,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 17,
+                    "startLineNumber": 200,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 200,
+                    "endColumnNumber": 29
+                },
+                "nodeContext": "tv.setText(text);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        },
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 201,
+                "startColumnNumber": 12,
+                "endLineNumber": 201,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 322,
+                        "startLineNumber": 201,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 208,
+                        "endColumnNumber": 14
+                    },
+                    "nodeContext": "tv.setOnClickListener(new View.OnClickListener(){\n  @Override public void onClick(  View view){\n    listener.onClick(view);\n    dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n  }\n}\n)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 31,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 323,
+                        "startLineNumber": 201,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 208,
+                        "endColumnNumber": 15
+                    },
+                    "nodeContext": "tv.setOnClickListener(new View.OnClickListener(){\n  @Override public void onClick(  View view){\n    listener.onClick(view);\n    dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n  }\n}\n);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 32,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 421,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 45,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                "nodePosition": {
+                    "charLength": 322,
+                    "startLineNumber": 201,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 208,
+                    "endColumnNumber": 14
+                },
+                "nodeContext": "tv.setOnClickListener(new View.OnClickListener(){\n  @Override public void onClick(  View view){\n    listener.onClick(view);\n    dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n  }\n}\n)",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 31,
+                "astHeight": 9
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 2,
+            "startLineNumber": 196,
+            "startColumnNumber": 12,
+            "endLineNumber": 196,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 2,
+            "startLineNumber": 197,
+            "startColumnNumber": 12,
+            "endLineNumber": 197,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 2,
+            "startLineNumber": 199,
+            "startColumnNumber": 12,
+            "endLineNumber": 199,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 2,
+            "startLineNumber": 200,
+            "startColumnNumber": 12,
+            "endLineNumber": 200,
+            "endColumnNumber": 14
+        },
+        {
+            "charLength": 2,
+            "startLineNumber": 201,
+            "startColumnNumber": 12,
+            "endLineNumber": 201,
+            "endColumnNumber": 14
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 4,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 4,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 3,
+            "layout": 2
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 4,
+            "layout": 2
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 4,
+            "layout": 2
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 3,
+            "layout": 2
+        }
+    ]
+}

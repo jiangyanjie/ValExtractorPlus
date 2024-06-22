@@ -1,0 +1,109 @@
+{
+    "id": 85,
+    "expression": "data[len - 1]",
+    "projectName": "antlr@antlr4",
+    "commitID": "8108b342ad688e4ccffe509b23de82fdd624dfd5",
+    "filePath": "tool-testsuite/test/org/antlr/v4/test/tool/TestUnbufferedCharStream.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "data[len - 1]",
+            "nodeType": "ArrayAccess",
+            "nodePosition": {
+                "charLength": 11,
+                "startLineNumber": 379,
+                "startColumnNumber": 7,
+                "endLineNumber": 379,
+                "endColumnNumber": 18
+            },
+            "astNodeNumber": 5,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 379,
+                        "startColumnNumber": 7,
+                        "endLineNumber": 379,
+                        "endColumnNumber": 35
+                    },
+                    "nodeContext": "data[len - 1] == IntStream.EOF",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 178,
+                        "startLineNumber": 379,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 384,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (data[len - 1] == IntStream.EOF) {\n  return new String(data,0,len - 1) + \"\\uFFFF\";\n}\n else {\n  return new String(data,0,len);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 30,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 271,
+                        "startLineNumber": 375,
+                        "startColumnNumber": 28,
+                        "endLineNumber": 385,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (n == 0)   return \"\";\n  int len=n;\n  if (data[len - 1] == IntStream.EOF) {\n    return new String(data,0,len - 1) + \"\\uFFFF\";\n  }\n else {\n    return new String(data,0,len);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 412,
+                        "startLineNumber": 372,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 385,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * For testing.  What's in moving window buffer into data stream. From 0..p-1 have been consume.\n */\npublic String getBuffer(){\n  if (n == 0)   return \"\";\n  int len=n;\n  if (data[len - 1] == IntStream.EOF) {\n    return new String(data,0,len - 1) + \"\\uFFFF\";\n  }\n else {\n    return new String(data,0,len);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 48,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 28,
+                    "startLineNumber": 379,
+                    "startColumnNumber": 7,
+                    "endLineNumber": 379,
+                    "endColumnNumber": 35
+                },
+                "nodeContext": "data[len - 1] == IntStream.EOF",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 4,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 11,
+            "startLineNumber": 379,
+            "startColumnNumber": 7,
+            "endLineNumber": 379,
+            "endColumnNumber": 18
+        }
+    ],
+    "layoutRelationDataList": []
+}

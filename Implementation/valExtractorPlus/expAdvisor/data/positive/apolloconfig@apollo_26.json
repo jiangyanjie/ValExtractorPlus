@@ -1,0 +1,217 @@
+{
+  "id" : 26,
+  "expression" : "Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))",
+  "projectName" : "apolloconfig@apollo",
+  "commitID" : "668ac9017f26f99c7d015a687cccf471d2158c05",
+  "filePath" : "apollo-biz/src/main/java/com/ctrip/apollo/biz/customize/TomcatContainerCustomizer.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 64,
+      "startLineNumber" : 43,
+      "startColumnNumber" : 26,
+      "endLineNumber" : 43,
+      "endColumnNumber" : 90
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 81,
+        "startLineNumber" : 43,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 43,
+        "endColumnNumber" : 91
+      },
+      "nodeContext" : "http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 43,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 43,
+        "endColumnNumber" : 93
+      },
+      "nodeContext" : "http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 396,
+        "startLineNumber" : 40,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  Http11NioProtocol http=(Http11NioProtocol)handler;\n  int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n  http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 38,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 438,
+        "startLineNumber" : 40,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (handler instanceof Http11NioProtocol) {\n  Http11NioProtocol http=(Http11NioProtocol)handler;\n  int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n  http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 43,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 512,
+        "startLineNumber" : 38,
+        "startColumnNumber" : 49,
+        "endLineNumber" : 47,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  ProtocolHandler handler=connector.getProtocolHandler();\n  if (handler instanceof Http11NioProtocol) {\n    Http11NioProtocol http=(Http11NioProtocol)handler;\n    int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n    http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n    logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 52,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 564,
+        "startLineNumber" : 37,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 47,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "@Override public void customize(Connector connector){\n  ProtocolHandler handler=connector.getProtocolHandler();\n  if (handler instanceof Http11NioProtocol) {\n    Http11NioProtocol http=(Http11NioProtocol)handler;\n    int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n    http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n    logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 62,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 7,
+    "type" : "int"
+  }, {
+    "nodeContext" : "Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 64,
+      "startLineNumber" : 44,
+      "startColumnNumber" : 59,
+      "endLineNumber" : 44,
+      "endColumnNumber" : 123
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 113,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 44,
+        "endColumnNumber" : 123
+      },
+      "nodeContext" : "logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 115,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 44,
+        "endColumnNumber" : 125
+      },
+      "nodeContext" : "logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 396,
+        "startLineNumber" : 40,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  Http11NioProtocol http=(Http11NioProtocol)handler;\n  int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n  http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 38,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 438,
+        "startLineNumber" : 40,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (handler instanceof Http11NioProtocol) {\n  Http11NioProtocol http=(Http11NioProtocol)handler;\n  int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n  http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 43,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 512,
+        "startLineNumber" : 38,
+        "startColumnNumber" : 49,
+        "endLineNumber" : 47,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  ProtocolHandler handler=connector.getProtocolHandler();\n  if (handler instanceof Http11NioProtocol) {\n    Http11NioProtocol http=(Http11NioProtocol)handler;\n    int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n    http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n    logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 52,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 564,
+        "startLineNumber" : 37,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 47,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "@Override public void customize(Connector connector){\n  ProtocolHandler handler=connector.getProtocolHandler();\n  if (handler instanceof Http11NioProtocol) {\n    Http11NioProtocol http=(Http11NioProtocol)handler;\n    int Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT))=Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT));\n    http.setBacklog(Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n    logger.info(\"Setting tomcat accept count to {}\",Integer.parseInt(environment.getProperty(TOMCAT_ACCEPTOR_COUNT)));\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 62,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 7,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 64,
+    "startLineNumber" : 43,
+    "startColumnNumber" : 26,
+    "endLineNumber" : 43,
+    "endColumnNumber" : 90
+  }, {
+    "charLength" : 64,
+    "startLineNumber" : 44,
+    "startColumnNumber" : 59,
+    "endLineNumber" : 44,
+    "endColumnNumber" : 123
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "acceptCount",
+  "nodePosition" : {
+    "charLength" : 11,
+    "startLineNumber" : 42,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 42,
+    "endColumnNumber" : 25
+  }
+}

@@ -1,0 +1,137 @@
+{
+    "id": 95,
+    "expression": "len - p",
+    "projectName": "antlr@antlr4",
+    "commitID": "8108b342ad688e4ccffe509b23de82fdd624dfd5",
+    "filePath": "tool-testsuite/test/org/antlr/v4/test/tool/TestUnbufferedCharStream.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "len - p",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 368,
+                "startColumnNumber": 29,
+                "endLineNumber": 368,
+                "endColumnNumber": 34
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 368,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 368,
+                        "endColumnNumber": 35
+                    },
+                    "nodeContext": "new String(data,p,len - p)",
+                    "nodeType": "ClassInstanceCreation",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 368,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 368,
+                        "endColumnNumber": 36
+                    },
+                    "nodeContext": "return new String(data,p,len - p);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+                    "nodePosition": {
+                        "charLength": 45,
+                        "startLineNumber": 367,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 369,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "{\n  return new String(data,p,len - p);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 182,
+                        "startLineNumber": 364,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 369,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (data[len - 1] == IntStream.EOF) {\n  return new String(data,p,len - p - 1) + \"\\uFFFF\";\n}\n else {\n  return new String(data,p,len - p);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 33,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 237,
+                        "startLineNumber": 361,
+                        "startColumnNumber": 37,
+                        "endLineNumber": 370,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (n == 0)   return \"\";\n  int len=n;\n  if (data[len - 1] == IntStream.EOF) {\n    return new String(data,p,len - p - 1) + \"\\uFFFF\";\n  }\n else {\n    return new String(data,p,len - p);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 45,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 404,
+                        "startLineNumber": 358,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 370,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * For testing.  What's in moving window into data stream from current index, LA(1) or data[p], to end of buffer?\n */\npublic String getRemainingBuffer(){\n  if (n == 0)   return \"\";\n  int len=n;\n  if (data[len - 1] == IntStream.EOF) {\n    return new String(data,p,len - p - 1) + \"\\uFFFF\";\n  }\n else {\n    return new String(data,p,len - p);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 51,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 32,
+                    "startLineNumber": 368,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 368,
+                    "endColumnNumber": 36
+                },
+                "nodeContext": "return new String(data,p,len - p);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 3,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 5,
+            "startLineNumber": 368,
+            "startColumnNumber": 29,
+            "endLineNumber": 368,
+            "endColumnNumber": 34
+        }
+    ],
+    "layoutRelationDataList": []
+}

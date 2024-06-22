@@ -1,0 +1,105 @@
+{
+  "id" : 13,
+  "expression" : "new NettyChannelHandlerContextImpl(handlerContext)",
+  "projectName" : "apache@rocketmq",
+  "commitID" : "f84239ef03d057a6f309187c21c3097d3ccb504e",
+  "filePath" : "broker/src/test/java/org/apache/rocketmq/broker/processor/ClientManageProcessorTest.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "new NettyChannelHandlerContextImpl(handlerContext)",
+    "nodeType" : "ClassInstanceCreation",
+    "nodePosition" : {
+      "charLength" : 50,
+      "startLineNumber" : 91,
+      "startColumnNumber" : 72,
+      "endLineNumber" : 91,
+      "endColumnNumber" : 122
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 96,
+        "startLineNumber" : 91,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 91,
+        "endColumnNumber" : 131
+      },
+      "nodeContext" : "clientManageProcessor.processRequest(new NettyChannelHandlerContextImpl(handlerContext),request)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 105,
+        "startLineNumber" : 91,
+        "startColumnNumber" : 24,
+        "endLineNumber" : 91,
+        "endColumnNumber" : 129
+      },
+      "nodeContext" : "response=clientManageProcessor.processRequest(new NettyChannelHandlerContextImpl(handlerContext),request)",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 10,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 123,
+        "startLineNumber" : 91,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 91,
+        "endColumnNumber" : 131
+      },
+      "nodeContext" : "RemotingCommand response=clientManageProcessor.processRequest(new NettyChannelHandlerContextImpl(handlerContext),request);\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 867,
+        "startLineNumber" : 83,
+        "startColumnNumber" : 69,
+        "endLineNumber" : 97,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  brokerController.getProducerManager().registerProducer(group,clientChannelInfo);\n  HashMap<RemotingChannel,ClientChannelInfo> channelMap=brokerController.getProducerManager().getGroupChannelTable().get(group);\n  assertThat(channelMap).isNotNull();\n  assertThat(channelMap.get(channel)).isEqualTo(clientChannelInfo);\n  RemotingCommand request=createUnRegisterProducerCommand();\n  NettyChannelHandlerContextImpl new NettyChannelHandlerContextImpl(handlerContext)=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(new NettyChannelHandlerContextImpl(handlerContext),request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  channelMap=brokerController.getProducerManager().getGroupChannelTable().get(group);\n  assertThat(channelMap).isNull();\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 106,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 938,
+        "startLineNumber" : 82,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 97,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Test public void processRequest_UnRegisterProducer() throws Exception {\n  brokerController.getProducerManager().registerProducer(group,clientChannelInfo);\n  HashMap<RemotingChannel,ClientChannelInfo> channelMap=brokerController.getProducerManager().getGroupChannelTable().get(group);\n  assertThat(channelMap).isNotNull();\n  assertThat(channelMap.get(channel)).isEqualTo(clientChannelInfo);\n  RemotingCommand request=createUnRegisterProducerCommand();\n  NettyChannelHandlerContextImpl new NettyChannelHandlerContextImpl(handlerContext)=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(new NettyChannelHandlerContextImpl(handlerContext),request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  channelMap=brokerController.getProducerManager().getGroupChannelTable().get(group);\n  assertThat(channelMap).isNull();\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 114,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 2,
+    "type" : "org.apache.rocketmq.remoting.netty.NettyChannelHandlerContextImpl"
+  } ],
+  "positionList" : [ {
+    "charLength" : 50,
+    "startLineNumber" : 91,
+    "startColumnNumber" : 72,
+    "endLineNumber" : 91,
+    "endColumnNumber" : 122
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "nettyChannelHandlerContext",
+  "nodePosition" : {
+    "charLength" : 26,
+    "startLineNumber" : 90,
+    "startColumnNumber" : 39,
+    "endLineNumber" : 90,
+    "endColumnNumber" : 65
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id" : 21,
+  "expression" : "format.parse(reader.nextString()).getTime()",
+  "projectName" : "google@gson",
+  "commitID" : "3f261441651fe6a5f57cf4e6aa655f9661dc606a",
+  "filePath" : "gson/src/main/java/com/google/gson/internal/bind/SqlDateTypeAdapter.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "format.parse(reader.nextString()).getTime()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 43,
+      "startLineNumber" : 49,
+      "startColumnNumber" : 31,
+      "endLineNumber" : 49,
+      "endColumnNumber" : 74
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 62,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 49,
+        "endColumnNumber" : 75
+      },
+      "nodeContext" : "new java.sql.Date(format.parse(reader.nextString()).getTime())",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 71,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 49,
+        "endColumnNumber" : 77
+      },
+      "nodeContext" : "return new java.sql.Date(format.parse(reader.nextString()).getTime());\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 16,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 179,
+        "startLineNumber" : 47,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 50,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final long format.parse(reader.nextString()).getTime()=format.parse(reader.nextString()).getTime();\n  return new java.sql.Date(format.parse(reader.nextString()).getTime());\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 30,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 249,
+        "startLineNumber" : 47,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 52,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "try {\n  final long format.parse(reader.nextString()).getTime()=format.parse(reader.nextString()).getTime();\n  return new java.sql.Date(format.parse(reader.nextString()).getTime());\n}\n catch (ParseException e) {\n  throw new JsonSyntaxException(e);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 42,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 267,
+        "startLineNumber" : 46,
+        "startColumnNumber" : 79,
+        "endLineNumber" : 53,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  try {\n    final long format.parse(reader.nextString()).getTime()=format.parse(reader.nextString()).getTime();\n    return new java.sql.Date(format.parse(reader.nextString()).getTime());\n  }\n catch (  ParseException e) {\n    throw new JsonSyntaxException(e);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 43,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 354,
+        "startLineNumber" : 45,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 53,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Override public synchronized java.sql.Date read(JsonReader reader) throws IOException {\n  try {\n    final long format.parse(reader.nextString()).getTime()=format.parse(reader.nextString()).getTime();\n    return new java.sql.Date(format.parse(reader.nextString()).getTime());\n  }\n catch (  ParseException e) {\n    throw new JsonSyntaxException(e);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 61,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 5,
+    "type" : "long"
+  } ],
+  "positionList" : [ {
+    "charLength" : 43,
+    "startLineNumber" : 49,
+    "startColumnNumber" : 31,
+    "endLineNumber" : 49,
+    "endColumnNumber" : 74
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "utilDate",
+  "nodePosition" : {
+    "charLength" : 8,
+    "startLineNumber" : 48,
+    "startColumnNumber" : 17,
+    "endLineNumber" : 48,
+    "endColumnNumber" : 25
+  }
+}

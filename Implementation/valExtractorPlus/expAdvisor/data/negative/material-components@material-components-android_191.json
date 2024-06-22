@@ -1,0 +1,109 @@
+{
+    "id": 191,
+    "expression": "null",
+    "projectName": "material-components@material-components-android",
+    "commitID": "663e1cd1cb3bbe75094e9f4baaae94f44a469798",
+    "filePath": "lib/src/android/support/design/chip/ChipDrawable.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 672,
+                "startColumnNumber": 21,
+                "endLineNumber": 672,
+                "endColumnNumber": 25
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 17,
+                        "startLineNumber": 672,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 672,
+                        "endColumnNumber": 25
+                    },
+                    "nodeContext": "closeIcon != null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 472,
+                        "startLineNumber": 672,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 686,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (closeIcon != null) {\n  float offsetFromEnd=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n  if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n    outBounds.right=bounds.right - offsetFromEnd;\n  }\n else {\n    outBounds.left=bounds.left + offsetFromEnd;\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 53,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 510,
+                        "startLineNumber": 669,
+                        "startColumnNumber": 70,
+                        "endLineNumber": 687,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float offsetFromEnd=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - offsetFromEnd;\n    }\n else {\n      outBounds.left=bounds.left + offsetFromEnd;\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 59,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 578,
+                        "startLineNumber": 669,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 687,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void calculateChipTouchBounds(Rect bounds,RectF outBounds){\n  outBounds.set(bounds);\n  if (closeIcon != null) {\n    float offsetFromEnd=chipStrokeWidth / 2f + chipEndPadding + closeIconEndPadding + closeIconSize + closeIconStartPadding + textEndPadding;\n    if (DrawableCompat.getLayoutDirection(this) == View.LAYOUT_DIRECTION_LTR) {\n      outBounds.right=bounds.right - offsetFromEnd;\n    }\n else {\n      outBounds.left=bounds.left + offsetFromEnd;\n    }\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 71,
+                    "astHeight": 13
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 17,
+                    "startLineNumber": 672,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 672,
+                    "endColumnNumber": 25
+                },
+                "nodeContext": "closeIcon != null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 672,
+            "startColumnNumber": 21,
+            "endLineNumber": 672,
+            "endColumnNumber": 25
+        }
+    ],
+    "layoutRelationDataList": []
+}

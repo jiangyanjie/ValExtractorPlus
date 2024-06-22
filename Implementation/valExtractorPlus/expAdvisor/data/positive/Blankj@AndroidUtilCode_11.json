@@ -1,0 +1,355 @@
+{
+  "id" : 11,
+  "expression" : "(int)fc.size()",
+  "projectName" : "Blankj@AndroidUtilCode",
+  "commitID" : "c1bad4d11e13e88bd40a03463c96d3266c2fd957",
+  "filePath" : "utilcode/src/main/java/com/blankj/utilcode/util/FileIOUtils.java",
+  "occurrences" : 3,
+  "expressionList" : [ {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 618,
+      "startColumnNumber" : 76,
+      "endLineNumber" : 618,
+      "endColumnNumber" : 90
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 54,
+        "startLineNumber" : 618,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 618,
+        "endColumnNumber" : 89
+      },
+      "nodeContext" : "fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 61,
+        "startLineNumber" : 618,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 618,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 16,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 65,
+        "startLineNumber" : 618,
+        "startColumnNumber" : 29,
+        "endLineNumber" : 618,
+        "endColumnNumber" : 94
+      },
+      "nodeContext" : "mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 18,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 84,
+        "startLineNumber" : 618,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 618,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 21,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 282,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 622,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 390,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 627,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n catch (IOException e) {\n  e.printStackTrace();\n  return null;\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 80,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 497,
+        "startLineNumber" : 612,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 95,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 605,
+        "startLineNumber" : 606,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 读取文件到字节数组中\n * @param file 文件\n * @return 字符数组\n */\npublic static byte[] readFile2BytesByMap(File file){\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 107,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  }, {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 619,
+      "startColumnNumber" : 37,
+      "endLineNumber" : 619,
+      "endColumnNumber" : 51
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 24,
+        "startLineNumber" : 619,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 619,
+        "endColumnNumber" : 52
+      },
+      "nodeContext" : "new byte[(int)fc.size()]",
+      "nodeType" : "ArrayCreation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 31,
+        "startLineNumber" : 619,
+        "startColumnNumber" : 19,
+        "endLineNumber" : 619,
+        "endColumnNumber" : 50
+      },
+      "nodeContext" : "result=new byte[(int)fc.size()]",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 40,
+        "startLineNumber" : 619,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 619,
+        "endColumnNumber" : 52
+      },
+      "nodeContext" : "byte[] result=new byte[(int)fc.size()];\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 282,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 622,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 390,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 627,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n catch (IOException e) {\n  e.printStackTrace();\n  return null;\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 80,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 497,
+        "startLineNumber" : 612,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 95,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 605,
+        "startLineNumber" : 606,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 读取文件到字节数组中\n * @param file 文件\n * @return 字符数组\n */\npublic static byte[] readFile2BytesByMap(File file){\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 107,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  }, {
+    "nodeContext" : "(int)fc.size()",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 14,
+      "startLineNumber" : 620,
+      "startColumnNumber" : 31,
+      "endLineNumber" : 620,
+      "endColumnNumber" : 45
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 32,
+        "startLineNumber" : 620,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 620,
+        "endColumnNumber" : 44
+      },
+      "nodeContext" : "mbb.get(result,0,(int)fc.size())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 34,
+        "startLineNumber" : 620,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 620,
+        "endColumnNumber" : 46
+      },
+      "nodeContext" : "mbb.get(result,0,(int)fc.size());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 282,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 622,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 390,
+        "startLineNumber" : 615,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 627,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "try {\n  fc=new RandomAccessFile(file,\"r\").getChannel();\n  int (int)fc.size()=(int)fc.(int)fc.size()();\n  MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n  byte[] result=new byte[(int)fc.size()];\n  mbb.get(result,0,(int)fc.size());\n  return result;\n}\n catch (IOException e) {\n  e.printStackTrace();\n  return null;\n}\n finally {\n  CloseUtils.closeIO(fc);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 80,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 497,
+        "startLineNumber" : 612,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 95,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 605,
+        "startLineNumber" : 606,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 628,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * 读取文件到字节数组中\n * @param file 文件\n * @return 字符数组\n */\npublic static byte[] readFile2BytesByMap(File file){\n  if (!FileUtils.isFileExists(file))   return null;\n  FileChannel fc=null;\n  try {\n    fc=new RandomAccessFile(file,\"r\").getChannel();\n    int (int)fc.size()=(int)fc.(int)fc.size()();\n    MappedByteBuffer mbb=fc.map(FileChannel.MapMode.READ_ONLY,0,(int)fc.size()).load();\n    byte[] result=new byte[(int)fc.size()];\n    mbb.get(result,0,(int)fc.size());\n    return result;\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n    return null;\n  }\n finally {\n    CloseUtils.closeIO(fc);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 107,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 14,
+    "startLineNumber" : 618,
+    "startColumnNumber" : 76,
+    "endLineNumber" : 618,
+    "endColumnNumber" : 90
+  }, {
+    "charLength" : 14,
+    "startLineNumber" : 619,
+    "startColumnNumber" : 37,
+    "endLineNumber" : 619,
+    "endColumnNumber" : 51
+  }, {
+    "charLength" : 14,
+    "startLineNumber" : 620,
+    "startColumnNumber" : 31,
+    "endLineNumber" : 620,
+    "endColumnNumber" : 45
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "size",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 617,
+    "startColumnNumber" : 16,
+    "endLineNumber" : 617,
+    "endColumnNumber" : 20
+  }
+}

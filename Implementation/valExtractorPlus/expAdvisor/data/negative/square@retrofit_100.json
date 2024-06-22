@@ -1,0 +1,109 @@
+{
+    "id": 100,
+    "expression": "Response.class",
+    "projectName": "square@retrofit",
+    "commitID": "eea6cc6fd33f50607302593bc20f12db642f489e",
+    "filePath": "http/src/test/java/retrofit/http/RestAdapterTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "Response.class",
+            "nodeType": "TypeLiteral",
+            "nodePosition": {
+                "charLength": 14,
+                "startLineNumber": 242,
+                "startColumnNumber": 20,
+                "endLineNumber": 242,
+                "endColumnNumber": 34
+            },
+            "astNodeNumber": 3,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 25,
+                        "startLineNumber": 242,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 242,
+                        "endColumnNumber": 34
+                    },
+                    "nodeContext": "expected=Response.class",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 242,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 242,
+                        "endColumnNumber": 35
+                    },
+                    "nodeContext": "Type expected=Response.class;\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 259,
+                        "startLineNumber": 241,
+                        "startColumnNumber": 48,
+                        "endLineNumber": 246,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Type expected=Response.class;\n  Method method=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.methodWantsSynchronousInvocation(method)).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(method,false)).as(\"a\").isEqualTo(expected);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 40,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 305,
+                        "startLineNumber": 241,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 246,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Test public void testConcreteCallbackTypes(){\n  Type expected=Response.class;\n  Method method=getTypeTestMethod(\"a\");\n  assertThat(RestAdapter.methodWantsSynchronousInvocation(method)).isFalse();\n  assertThat(RestAdapter.getResponseObjectType(method,false)).as(\"a\").isEqualTo(expected);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 46,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 31,
+                    "startLineNumber": 242,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 242,
+                    "endColumnNumber": 35
+                },
+                "nodeContext": "Type expected=Response.class;\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 5
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<retrofit.http.RestAdapterTest.Response>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 14,
+            "startLineNumber": 242,
+            "startColumnNumber": 20,
+            "endLineNumber": 242,
+            "endColumnNumber": 34
+        }
+    ],
+    "layoutRelationDataList": []
+}

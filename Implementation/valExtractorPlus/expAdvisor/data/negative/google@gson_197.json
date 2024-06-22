@@ -1,0 +1,214 @@
+{
+    "id": 197,
+    "expression": "map",
+    "projectName": "google@gson",
+    "commitID": "25c6ae177b1ca56db7f3c29eb574bdd032a06165",
+    "filePath": "gson/src/main/java/com/google/gson/internal/bind/MapTypeAdapterFactory.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "map",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 87,
+                "startColumnNumber": 10,
+                "endLineNumber": 87,
+                "endColumnNumber": 13
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 11,
+                        "startLineNumber": 87,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 87,
+                        "endColumnNumber": 21
+                    },
+                    "nodeContext": "map == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 99,
+                        "startLineNumber": 87,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (map == null) {\n  writer.nullValue();\n  return;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 366,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 75,
+                        "endLineNumber": 99,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (map == null) {\n    writer.nullValue();\n    return;\n  }\n  writer.beginObject();\n  for (  Map.Entry<?,V> entry : map.entrySet()) {\n    String key=String.valueOf(entry.getKey());\n    writer.name(key);\n    valueTypeAdapter.write(writer,entry.getValue());\n  }\n  writer.endObject();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 58,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 437,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 99,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "public void write(JsonWriter writer,Map<?,V> map) throws IOException {\n  if (map == null) {\n    writer.nullValue();\n    return;\n  }\n  writer.beginObject();\n  for (  Map.Entry<?,V> entry : map.entrySet()) {\n    String key=String.valueOf(entry.getKey());\n    writer.name(key);\n    valueTypeAdapter.write(writer,entry.getValue());\n  }\n  writer.endObject();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 11,
+                    "startLineNumber": 87,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 87,
+                    "endColumnNumber": 21
+                },
+                "nodeContext": "map == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "java.util.Map<,V>"
+        },
+        {
+            "nodeContext": "map",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 93,
+                "startColumnNumber": 35,
+                "endLineNumber": 93,
+                "endColumnNumber": 38
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 93,
+                        "startColumnNumber": 35,
+                        "endLineNumber": 93,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "map.entrySet()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 191,
+                        "startLineNumber": 93,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 97,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "for (Map.Entry<?,V> entry : map.entrySet()) {\n  String key=String.valueOf(entry.getKey());\n  writer.name(key);\n  valueTypeAdapter.write(writer,entry.getValue());\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 39,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 366,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 75,
+                        "endLineNumber": 99,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (map == null) {\n    writer.nullValue();\n    return;\n  }\n  writer.beginObject();\n  for (  Map.Entry<?,V> entry : map.entrySet()) {\n    String key=String.valueOf(entry.getKey());\n    writer.name(key);\n    valueTypeAdapter.write(writer,entry.getValue());\n  }\n  writer.endObject();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 58,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 437,
+                        "startLineNumber": 86,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 99,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "public void write(JsonWriter writer,Map<?,V> map) throws IOException {\n  if (map == null) {\n    writer.nullValue();\n    return;\n  }\n  writer.beginObject();\n  for (  Map.Entry<?,V> entry : map.entrySet()) {\n    String key=String.valueOf(entry.getKey());\n    writer.name(key);\n    valueTypeAdapter.write(writer,entry.getValue());\n  }\n  writer.endObject();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,expression]",
+                "nodePosition": {
+                    "charLength": 14,
+                    "startLineNumber": 93,
+                    "startColumnNumber": 35,
+                    "endLineNumber": 93,
+                    "endColumnNumber": 49
+                },
+                "nodeContext": "map.entrySet()",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "java.util.Map<,V>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 3,
+            "startLineNumber": 87,
+            "startColumnNumber": 10,
+            "endLineNumber": 87,
+            "endColumnNumber": 13
+        },
+        {
+            "charLength": 3,
+            "startLineNumber": 93,
+            "startColumnNumber": 35,
+            "endLineNumber": 93,
+            "endColumnNumber": 38
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 2
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "id": 215,
+    "expression": "mIsPrefetchEnabledSupplier.get()",
+    "projectName": "facebook@fresco",
+    "commitID": "6ca0fa9ea5efe4dca1ad41e252f8d0af36f2c2b2",
+    "filePath": "imagepipeline/src/main/java/com/facebook/imagepipeline/core/ImagePipeline.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mIsPrefetchEnabledSupplier.get()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 32,
+                "startLineNumber": 349,
+                "startColumnNumber": 9,
+                "endLineNumber": 349,
+                "endColumnNumber": 41
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 33,
+                        "startLineNumber": 349,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 349,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "!mIsPrefetchEnabledSupplier.get()",
+                    "nodeType": "PrefixExpression",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 118,
+                        "startLineNumber": 349,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 351,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (!mIsPrefetchEnabledSupplier.get()) {\n  return DataSources.immediateFailedDataSource(PREFETCH_EXCEPTION);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1053,
+                        "startLineNumber": 348,
+                        "startColumnNumber": 28,
+                        "endLineNumber": 372,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  if (!mIsPrefetchEnabledSupplier.get()) {\n    return DataSources.immediateFailedDataSource(PREFETCH_EXCEPTION);\n  }\n  try {\n    final Boolean shouldDecodePrefetches=imageRequest.shouldDecodePrefetches();\n    final boolean skipBitmapCache=shouldDecodePrefetches != null ? !shouldDecodePrefetches : mSuppressBitmapPrefetchingSupplier.get();\n    Producer<Void> producerSequence=skipBitmapCache ? mProducerSequenceFactory.getEncodedImagePrefetchProducerSequence(imageRequest) : mProducerSequenceFactory.getDecodedImagePrefetchProducerSequence(imageRequest);\n    return submitPrefetchRequest(producerSequence,imageRequest,ImageRequest.RequestLevel.FULL_FETCH,callerContext,Priority.MEDIUM);\n  }\n catch (  Exception exception) {\n    return DataSources.immediateFailedDataSource(exception);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 80,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1502,
+                        "startLineNumber": 337,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 372,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Submits a request for prefetching to the bitmap cache. <p> Beware that if your network fetcher doesn't support priorities prefetch requests may slow down images which are immediately required on screen.\n * @param imageRequest the request to submit\n * @return a DataSource that can safely be ignored.\n */\npublic DataSource<Void> prefetchToBitmapCache(ImageRequest imageRequest,Object callerContext){\n  if (!mIsPrefetchEnabledSupplier.get()) {\n    return DataSources.immediateFailedDataSource(PREFETCH_EXCEPTION);\n  }\n  try {\n    final Boolean shouldDecodePrefetches=imageRequest.shouldDecodePrefetches();\n    final boolean skipBitmapCache=shouldDecodePrefetches != null ? !shouldDecodePrefetches : mSuppressBitmapPrefetchingSupplier.get();\n    Producer<Void> producerSequence=skipBitmapCache ? mProducerSequenceFactory.getEncodedImagePrefetchProducerSequence(imageRequest) : mProducerSequenceFactory.getDecodedImagePrefetchProducerSequence(imageRequest);\n    return submitPrefetchRequest(producerSequence,imageRequest,ImageRequest.RequestLevel.FULL_FETCH,callerContext,Priority.MEDIUM);\n  }\n catch (  Exception exception) {\n    return DataSources.immediateFailedDataSource(exception);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 97,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 33,
+                    "startLineNumber": 349,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 349,
+                    "endColumnNumber": 41
+                },
+                "nodeContext": "!mIsPrefetchEnabledSupplier.get()",
+                "nodeType": "PrefixExpression",
+                "astNodeNumber": 4,
+                "astHeight": 3
+            },
+            "tokenLength": 2,
+            "type": "java.lang.Boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 32,
+            "startLineNumber": 349,
+            "startColumnNumber": 9,
+            "endLineNumber": 349,
+            "endColumnNumber": 41
+        }
+    ],
+    "layoutRelationDataList": []
+}

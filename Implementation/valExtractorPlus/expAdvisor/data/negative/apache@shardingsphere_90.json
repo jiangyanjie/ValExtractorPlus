@@ -1,0 +1,242 @@
+{
+    "id": 90,
+    "expression": "rateLimitAlgorithm",
+    "projectName": "apache@shardingsphere",
+    "commitID": "f8e48c8be63adac2b7a2a25d9e6723703dd84311",
+    "filePath": "shardingsphere-kernel/shardingsphere-data-pipeline/shardingsphere-data-pipeline-core/src/main/java/org/apache/shardingsphere/data/pipeline/core/ingest/dumper/AbstractInventoryDumper.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "rateLimitAlgorithm",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 18,
+                "startLineNumber": 121,
+                "startColumnNumber": 20,
+                "endLineNumber": 121,
+                "endColumnNumber": 38
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 121,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 121,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "null != rateLimitAlgorithm",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 85,
+                        "startLineNumber": 121,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 123,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (null != rateLimitAlgorithm) {\n  rateLimitAlgorithm.onQuery();\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1815,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 128,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 198,
+                    "astHeight": 16
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1939,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "private Optional<Number> dump0(final Connection conn,final String sql,final Number startPrimaryValue) throws SQLException {\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 223,
+                    "astHeight": 17
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 26,
+                    "startLineNumber": 121,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 121,
+                    "endColumnNumber": 38
+                },
+                "nodeContext": "null != rateLimitAlgorithm",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "org.apache.shardingsphere.data.pipeline.spi.ratelimit.JobRateLimitAlgorithm"
+        },
+        {
+            "nodeContext": "rateLimitAlgorithm",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 18,
+                "startLineNumber": 122,
+                "startColumnNumber": 12,
+                "endLineNumber": 122,
+                "endColumnNumber": 30
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 122,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 122,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "rateLimitAlgorithm.onQuery()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 122,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 122,
+                        "endColumnNumber": 41
+                    },
+                    "nodeContext": "rateLimitAlgorithm.onQuery();\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 53,
+                        "startLineNumber": 121,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 123,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  rateLimitAlgorithm.onQuery();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 85,
+                        "startLineNumber": 121,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 123,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (null != rateLimitAlgorithm) {\n  rateLimitAlgorithm.onQuery();\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1815,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 128,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 198,
+                    "astHeight": 16
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1939,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "private Optional<Number> dump0(final Connection conn,final String sql,final Number startPrimaryValue) throws SQLException {\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 223,
+                    "astHeight": 17
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 29,
+                    "startLineNumber": 122,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 122,
+                    "endColumnNumber": 41
+                },
+                "nodeContext": "rateLimitAlgorithm.onQuery();\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 4,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "org.apache.shardingsphere.data.pipeline.spi.ratelimit.JobRateLimitAlgorithm"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 18,
+            "startLineNumber": 121,
+            "startColumnNumber": 20,
+            "endLineNumber": 121,
+            "endColumnNumber": 38
+        },
+        {
+            "charLength": 18,
+            "startLineNumber": 122,
+            "startColumnNumber": 12,
+            "endLineNumber": 122,
+            "endColumnNumber": 30
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 1
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        }
+    ]
+}

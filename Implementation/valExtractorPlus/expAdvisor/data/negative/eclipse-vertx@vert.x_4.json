@@ -1,0 +1,109 @@
+{
+    "id": 4,
+    "expression": "\"Not from IO\"",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "c91b634567db7e16a00e32da6816011359ccf0cf",
+    "filePath": "src/test/java/io/vertx/test/core/Http2TestBase.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "\"Not from IO\"",
+            "nodeType": "StringLiteral",
+            "nodePosition": {
+                "charLength": 13,
+                "startLineNumber": 69,
+                "startColumnNumber": 9,
+                "endLineNumber": 69,
+                "endColumnNumber": 22
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "fail(\"Not from IO\")",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 24
+                    },
+                    "nodeContext": "fail(\"Not from IO\");\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 302,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 352,
+                        "startLineNumber": 60,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "protected void assertOnIOContext(Context context){\n  Context current=Vertx.currentContext();\n  assertNotNull(current);\n  assertEquals(context,current);\n  for (  StackTraceElement elt : Thread.currentThread().getStackTrace()) {\n    if (elt.getMethodName().equals(\"executeFromIO\")) {\n      return;\n    }\n  }\n  fail(\"Not from IO\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 50,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 20,
+                    "startLineNumber": 69,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 69,
+                    "endColumnNumber": 24
+                },
+                "nodeContext": "fail(\"Not from IO\");\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 4,
+                "astHeight": 3
+            },
+            "tokenLength": 3,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 13,
+            "startLineNumber": 69,
+            "startColumnNumber": 9,
+            "endLineNumber": 69,
+            "endColumnNumber": 22
+        }
+    ],
+    "layoutRelationDataList": []
+}

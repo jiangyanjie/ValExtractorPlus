@@ -1,0 +1,109 @@
+{
+    "id": 100,
+    "expression": "Config.Agent.FORCE_TLS",
+    "projectName": "apache@skywalking",
+    "commitID": "e739ca22906479ce1cd2a2a99678a20da3be9399",
+    "filePath": "apm-sniffer/apm-agent-core/src/main/java/org/apache/skywalking/apm/agent/core/remote/TLSChannelBuilder.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "Config.Agent.FORCE_TLS",
+            "nodeType": "QualifiedName",
+            "nodePosition": {
+                "charLength": 22,
+                "startLineNumber": 43,
+                "startColumnNumber": 12,
+                "endLineNumber": 43,
+                "endColumnNumber": 34
+            },
+            "astNodeNumber": 5,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 39,
+                        "startLineNumber": 43,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 43,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "Config.Agent.FORCE_TLS || isCAFileExist",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 400,
+                        "startLineNumber": 43,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 50,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (Config.Agent.FORCE_TLS || isCAFileExist) {\n  SslContextBuilder builder=GrpcSslContexts.forClient();\n  if (isCAFileExist) {\n    builder.trustManager(caFile);\n  }\n  managedChannelBuilder=managedChannelBuilder.negotiationType(NegotiationType.TLS).sslContext(builder.build());\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 39,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 596,
+                        "startLineNumber": 40,
+                        "startColumnNumber": 102,
+                        "endLineNumber": 52,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  File caFile=new File(AgentPackagePath.getPath(),CA_FILE_NAME);\n  boolean isCAFileExist=caFile.exists() && caFile.isFile();\n  if (Config.Agent.FORCE_TLS || isCAFileExist) {\n    SslContextBuilder builder=GrpcSslContexts.forClient();\n    if (isCAFileExist) {\n      builder.trustManager(caFile);\n    }\n    managedChannelBuilder=managedChannelBuilder.negotiationType(NegotiationType.TLS).sslContext(builder.build());\n  }\n  return managedChannelBuilder;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 65,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 746,
+                        "startLineNumber": 38,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 52,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public NettyChannelBuilder build(NettyChannelBuilder managedChannelBuilder) throws AgentPackageNotFoundException, SSLException {\n  File caFile=new File(AgentPackagePath.getPath(),CA_FILE_NAME);\n  boolean isCAFileExist=caFile.exists() && caFile.isFile();\n  if (Config.Agent.FORCE_TLS || isCAFileExist) {\n    SslContextBuilder builder=GrpcSslContexts.forClient();\n    if (isCAFileExist) {\n      builder.trustManager(caFile);\n    }\n    managedChannelBuilder=managedChannelBuilder.negotiationType(NegotiationType.TLS).sslContext(builder.build());\n  }\n  return managedChannelBuilder;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 80,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 39,
+                    "startLineNumber": 43,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 43,
+                    "endColumnNumber": 51
+                },
+                "nodeContext": "Config.Agent.FORCE_TLS || isCAFileExist",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 4,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 22,
+            "startLineNumber": 43,
+            "startColumnNumber": 12,
+            "endLineNumber": 43,
+            "endColumnNumber": 34
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,92 @@
+{
+  "id" : 25,
+  "expression" : "rect.bottom - mEditText.getCompoundPaddingBottom()",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "84d3d9ef92cf8313c4e3260f7ccbc28fadd27ac6",
+  "filePath" : "lib/src/android/support/design/widget/TextInputLayout.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "rect.bottom - mEditText.getCompoundPaddingBottom()",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 50,
+      "startLineNumber" : 1347,
+      "startColumnNumber" : 63,
+      "endLineNumber" : 1347,
+      "endColumnNumber" : 113
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 107,
+        "startLineNumber" : 1347,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 1347,
+        "endColumnNumber" : 111
+      },
+      "nodeContext" : "mCollapsingTextHelper.setExpandedBounds(l,expandedTop,r,rect.bottom - mEditText.getCompoundPaddingBottom())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 109,
+        "startLineNumber" : 1347,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 1347,
+        "endColumnNumber" : 113
+      },
+      "nodeContext" : "mCollapsingTextHelper.setExpandedBounds(l,expandedTop,r,rect.bottom - mEditText.getCompoundPaddingBottom());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 897,
+        "startLineNumber" : 1325,
+        "startColumnNumber" : 85,
+        "endLineNumber" : 1351,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  super.onLayout(changed,left,top,right,bottom);\n  if (mTextInputBoxBackground != null) {\n    updateTextInputBoxBounds();\n  }\n  if (!mHintEnabled || mEditText == null) {\n    return;\n  }\n  final Rect rect=mTmpRect;\n  ViewGroupUtils.getDescendantRect(this,mEditText,rect);\n  final int l=rect.left + mEditText.getCompoundPaddingLeft();\n  final int r=rect.right - mEditText.getCompoundPaddingRight();\n  final int collapsedTop=mEditText.getPaddingTop() / 2;\n  final int collapsedBottom=bottom - top - getPaddingBottom();\n  final int expandedTop=rect.top;\n  final int rect.bottom - mEditText.getCompoundPaddingBottom()=rect.bottom - mEditText.getCompoundPaddingBottom();\n  mCollapsingTextHelper.setExpandedBounds(l,expandedTop,r,rect.bottom - mEditText.getCompoundPaddingBottom());\n  mCollapsingTextHelper.setCollapsedBounds(l,collapsedTop,r,collapsedBottom);\n  mCollapsingTextHelper.recalculate();\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 130,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 985,
+        "startLineNumber" : 1324,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 1351,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Override protected void onLayout(boolean changed,int left,int top,int right,int bottom){\n  super.onLayout(changed,left,top,right,bottom);\n  if (mTextInputBoxBackground != null) {\n    updateTextInputBoxBounds();\n  }\n  if (!mHintEnabled || mEditText == null) {\n    return;\n  }\n  final Rect rect=mTmpRect;\n  ViewGroupUtils.getDescendantRect(this,mEditText,rect);\n  final int l=rect.left + mEditText.getCompoundPaddingLeft();\n  final int r=rect.right - mEditText.getCompoundPaddingRight();\n  final int collapsedTop=mEditText.getPaddingTop() / 2;\n  final int collapsedBottom=bottom - top - getPaddingBottom();\n  final int expandedTop=rect.top;\n  final int rect.bottom - mEditText.getCompoundPaddingBottom()=rect.bottom - mEditText.getCompoundPaddingBottom();\n  mCollapsingTextHelper.setExpandedBounds(l,expandedTop,r,rect.bottom - mEditText.getCompoundPaddingBottom());\n  mCollapsingTextHelper.setCollapsedBounds(l,collapsedTop,r,collapsedBottom);\n  mCollapsingTextHelper.recalculate();\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 151,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 5,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 50,
+    "startLineNumber" : 1347,
+    "startColumnNumber" : 63,
+    "endLineNumber" : 1347,
+    "endColumnNumber" : 113
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "expandedBottom",
+  "nodePosition" : {
+    "charLength" : 14,
+    "startLineNumber" : 1345,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 1345,
+    "endColumnNumber" : 28
+  }
+}

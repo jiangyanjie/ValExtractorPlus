@@ -1,0 +1,95 @@
+{
+    "id": 33,
+    "expression": "members == null",
+    "projectName": "redis@jedis",
+    "commitID": "eaa5b16af93d575cd1f340c2cd23595dc29d5638",
+    "filePath": "src/main/java/redis/clients/jedis/Jedis.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "members == null",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 2095,
+                "startColumnNumber": 8,
+                "endLineNumber": 2095,
+                "endColumnNumber": 23
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 2095,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 2097,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (members == null) {\n  return null;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 231,
+                        "startLineNumber": 2091,
+                        "startColumnNumber": 92,
+                        "endLineNumber": 2099,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  checkIsInMulti();\n  client.zrevrangeByScore(key,max,min);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 38,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 321,
+                        "startLineNumber": 2091,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 2099,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public Set<String> zrevrangeByScore(final String key,final String max,final String min){\n  checkIsInMulti();\n  client.zrevrangeByScore(key,max,min);\n  final List<String> members=client.getMultiBulkReply();\n  if (members == null) {\n    return null;\n  }\n  return new LinkedHashSet<String>(members);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 61,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 47,
+                    "startLineNumber": 2095,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 2097,
+                    "endColumnNumber": 5
+                },
+                "nodeContext": "if (members == null) {\n  return null;\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 15,
+            "startLineNumber": 2095,
+            "startColumnNumber": 8,
+            "endLineNumber": 2095,
+            "endColumnNumber": 23
+        }
+    ],
+    "layoutRelationDataList": []
+}

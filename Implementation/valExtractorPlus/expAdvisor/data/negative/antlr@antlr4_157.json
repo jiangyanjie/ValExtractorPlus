@@ -1,0 +1,109 @@
+{
+    "id": 157,
+    "expression": "hex",
+    "projectName": "antlr@antlr4",
+    "commitID": "815856bdf0410be1a101630b87247256f373a850",
+    "filePath": "tool/src/org/antlr/v4/codegen/target/CppTarget.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "hex",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 194,
+                "startColumnNumber": 17,
+                "endLineNumber": 194,
+                "endColumnNumber": 20
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 11,
+                        "startLineNumber": 194,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 194,
+                        "endColumnNumber": 20
+                    },
+                    "nodeContext": "\"\\\\u\" + hex",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 194,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 194,
+                        "endColumnNumber": 21
+                    },
+                    "nodeContext": "return \"\\\\u\" + hex;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 598,
+                        "startLineNumber": 175,
+                        "startColumnNumber": 44,
+                        "endLineNumber": 195,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (v < Character.MIN_VALUE || v > Character.MAX_VALUE) {\n    throw new IllegalArgumentException(String.format(\"Cannot encode the specified value: %d\",v));\n  }\n  if (v >= 0 && v < targetCharValueEscape.length && targetCharValueEscape[v] != null) {\n    return targetCharValueEscape[v];\n  }\n  if (v >= 0x20 && v < 127 && (!Character.isDigit(v) || v == '8' || v == '9')) {\n    return String.valueOf((char)v);\n  }\n  if (v >= 0 && v <= 127) {\n    String oct=Integer.toOctalString(v);\n    return \"\\\\\" + oct;\n  }\n  String hex=Integer.toHexString(v | 0x10000).substring(1,5);\n  return \"\\\\u\" + hex;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 116,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 652,
+                        "startLineNumber": 174,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 195,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public String encodeIntAsCharEscape(int v){\n  if (v < Character.MIN_VALUE || v > Character.MAX_VALUE) {\n    throw new IllegalArgumentException(String.format(\"Cannot encode the specified value: %d\",v));\n  }\n  if (v >= 0 && v < targetCharValueEscape.length && targetCharValueEscape[v] != null) {\n    return targetCharValueEscape[v];\n  }\n  if (v >= 0x20 && v < 127 && (!Character.isDigit(v) || v == '8' || v == '9')) {\n    return String.valueOf((char)v);\n  }\n  if (v >= 0 && v <= 127) {\n    String oct=Integer.toOctalString(v);\n    return \"\\\\\" + oct;\n  }\n  String hex=Integer.toHexString(v | 0x10000).substring(1,5);\n  return \"\\\\u\" + hex;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 126,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 19,
+                    "startLineNumber": 194,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 194,
+                    "endColumnNumber": 21
+                },
+                "nodeContext": "return \"\\\\u\" + hex;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 4,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 3,
+            "startLineNumber": 194,
+            "startColumnNumber": 17,
+            "endLineNumber": 194,
+            "endColumnNumber": 20
+        }
+    ],
+    "layoutRelationDataList": []
+}

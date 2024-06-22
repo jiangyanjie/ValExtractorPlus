@@ -1,0 +1,191 @@
+{
+  "id" : 11,
+  "expression" : "frescoState.getImageOrigin()",
+  "projectName" : "facebook@fresco",
+  "commitID" : "7d4cca68df770cced221fd8940c4bc459610e1fb",
+  "filePath" : "vito/core/src/main/java/com/facebook/fresco/vito/core/debug/DefaultDebugOverlayFactory.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "frescoState.getImageOrigin()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 28,
+      "startLineNumber" : 37,
+      "startColumnNumber" : 34,
+      "endLineNumber" : 37,
+      "endColumnNumber" : 62
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 55,
+        "startLineNumber" : 37,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 37,
+        "endColumnNumber" : 63
+      },
+      "nodeContext" : "ImageOriginUtils.toString(frescoState.getImageOrigin())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 188,
+        "startLineNumber" : 35,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 38,
+        "endColumnNumber" : 65
+      },
+      "nodeContext" : "drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 190,
+        "startLineNumber" : 35,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 38,
+        "endColumnNumber" : 66
+      },
+      "nodeContext" : "drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 841,
+        "startLineNumber" : 28,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 51,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (!mDebugOverlayEnabled.get()) {\n    return null;\n  }\n  DebugOverlayDrawable drawable=new DebugOverlayDrawable(\"Vito\");\n  drawable.addDebugData(\"ID\",\"\" + frescoState.getStringId());\n  final int frescoState.getImageOrigin()=frescoState.getImageOrigin();\n  drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n  drawable.addDebugData(\"URI\",\"\" + frescoState.getUri());\n  drawable.addDebugData(\"D\",String.format(Locale.US,\"%dx%d\",frescoState.getTargetHeightPx(),frescoState.getTargetWidthPx()));\n  if (frescoState.getImageOptions().getActualImageScaleType() != null) {\n    drawable.addDebugData(\"scale\",String.valueOf(frescoState.getImageOptions().getActualImageScaleType()));\n  }\n  return drawable;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 103,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 908,
+        "startLineNumber" : 26,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 51,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Override @Nullable public Drawable create(FrescoState frescoState){\n  if (!mDebugOverlayEnabled.get()) {\n    return null;\n  }\n  DebugOverlayDrawable drawable=new DebugOverlayDrawable(\"Vito\");\n  drawable.addDebugData(\"ID\",\"\" + frescoState.getStringId());\n  final int frescoState.getImageOrigin()=frescoState.getImageOrigin();\n  drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n  drawable.addDebugData(\"URI\",\"\" + frescoState.getUri());\n  drawable.addDebugData(\"D\",String.format(Locale.US,\"%dx%d\",frescoState.getTargetHeightPx(),frescoState.getTargetWidthPx()));\n  if (frescoState.getImageOptions().getActualImageScaleType() != null) {\n    drawable.addDebugData(\"scale\",String.valueOf(frescoState.getImageOptions().getActualImageScaleType()));\n  }\n  return drawable;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 116,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  }, {
+    "nodeContext" : "frescoState.getImageOrigin()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 28,
+      "startLineNumber" : 38,
+      "startColumnNumber" : 57,
+      "endLineNumber" : 38,
+      "endColumnNumber" : 85
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 78,
+        "startLineNumber" : 38,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 38,
+        "endColumnNumber" : 86
+      },
+      "nodeContext" : "DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 188,
+        "startLineNumber" : 35,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 38,
+        "endColumnNumber" : 65
+      },
+      "nodeContext" : "drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 14,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 190,
+        "startLineNumber" : 35,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 38,
+        "endColumnNumber" : 66
+      },
+      "nodeContext" : "drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 841,
+        "startLineNumber" : 28,
+        "startColumnNumber" : 50,
+        "endLineNumber" : 51,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (!mDebugOverlayEnabled.get()) {\n    return null;\n  }\n  DebugOverlayDrawable drawable=new DebugOverlayDrawable(\"Vito\");\n  drawable.addDebugData(\"ID\",\"\" + frescoState.getStringId());\n  final int frescoState.getImageOrigin()=frescoState.getImageOrigin();\n  drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n  drawable.addDebugData(\"URI\",\"\" + frescoState.getUri());\n  drawable.addDebugData(\"D\",String.format(Locale.US,\"%dx%d\",frescoState.getTargetHeightPx(),frescoState.getTargetWidthPx()));\n  if (frescoState.getImageOptions().getActualImageScaleType() != null) {\n    drawable.addDebugData(\"scale\",String.valueOf(frescoState.getImageOptions().getActualImageScaleType()));\n  }\n  return drawable;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 103,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 908,
+        "startLineNumber" : 26,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 51,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Override @Nullable public Drawable create(FrescoState frescoState){\n  if (!mDebugOverlayEnabled.get()) {\n    return null;\n  }\n  DebugOverlayDrawable drawable=new DebugOverlayDrawable(\"Vito\");\n  drawable.addDebugData(\"ID\",\"\" + frescoState.getStringId());\n  final int frescoState.getImageOrigin()=frescoState.getImageOrigin();\n  drawable.addDebugData(\"frescoState.getImageOrigin()\",ImageOriginUtils.toString(frescoState.getImageOrigin()),DebugOverlayImageOriginColor.getImageOriginColor(frescoState.getImageOrigin()));\n  drawable.addDebugData(\"URI\",\"\" + frescoState.getUri());\n  drawable.addDebugData(\"D\",String.format(Locale.US,\"%dx%d\",frescoState.getTargetHeightPx(),frescoState.getTargetWidthPx()));\n  if (frescoState.getImageOptions().getActualImageScaleType() != null) {\n    drawable.addDebugData(\"scale\",String.valueOf(frescoState.getImageOptions().getActualImageScaleType()));\n  }\n  return drawable;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 116,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 2,
+    "type" : "int"
+  } ],
+  "positionList" : [ {
+    "charLength" : 28,
+    "startLineNumber" : 37,
+    "startColumnNumber" : 34,
+    "endLineNumber" : 37,
+    "endColumnNumber" : 62
+  }, {
+    "charLength" : 28,
+    "startLineNumber" : 38,
+    "startColumnNumber" : 57,
+    "endLineNumber" : 38,
+    "endColumnNumber" : 85
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "origin",
+  "nodePosition" : {
+    "charLength" : 6,
+    "startLineNumber" : 34,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 34,
+    "endColumnNumber" : 20
+  }
+}

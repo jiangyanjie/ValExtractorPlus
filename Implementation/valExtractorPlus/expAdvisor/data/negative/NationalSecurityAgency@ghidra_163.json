@@ -1,0 +1,123 @@
+{
+    "id": 163,
+    "expression": "args != null",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "fc115e715ea77735693947da35d04e6c2ed93235",
+    "filePath": "Ghidra/Debug/Debugger/src/main/java/ghidra/app/plugin/core/debug/gui/objects/DebuggerObjectsProvider.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "args != null",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 12,
+                "startLineNumber": 1534,
+                "startColumnNumber": 8,
+                "endLineNumber": 1534,
+                "endColumnNumber": 20
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 169,
+                        "startLineNumber": 1534,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 1538,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (args != null) {\n  for (  Entry<String,?> entry : args.entrySet()) {\n    configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 28,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 257,
+                        "startLineNumber": 1532,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 1539,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "{\n  Map<String,?> args=configDialog.promptArguments(configParameters);\n  if (args != null) {\n    for (    Entry<String,?> entry : args.entrySet()) {\n      configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 290,
+                        "startLineNumber": 1532,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 1539,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (configParameters.size() > 0) {\n  Map<String,?> args=configDialog.promptArguments(configParameters);\n  if (args != null) {\n    for (    Entry<String,?> entry : args.entrySet()) {\n      configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n    }\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 48,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+                    "nodePosition": {
+                        "charLength": 429,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 68,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 445,
+                        "startLineNumber": 1529,
+                        "startColumnNumber": 58,
+                        "endLineNumber": 1541,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "configurable -> {\n  Map<String,ParameterDescription<?>> configParameters=configurable.getConfigParameters();\n  if (configParameters.size() > 0) {\n    Map<String,?> args=configDialog.promptArguments(configParameters);\n    if (args != null) {\n      for (      Entry<String,?> entry : args.entrySet()) {\n        configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n      }\n    }\n  }\n  return AsyncUtils.NIL;\n}\n",
+                    "nodeType": "LambdaExpression",
+                    "astNodeNumber": 71,
+                    "astHeight": 12
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 169,
+                    "startLineNumber": 1534,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 1538,
+                    "endColumnNumber": 5
+                },
+                "nodeContext": "if (args != null) {\n  for (  Entry<String,?> entry : args.entrySet()) {\n    configurable.writeConfigurationOption(entry.getKey(),entry.getValue());\n  }\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 28,
+                "astHeight": 8
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 12,
+            "startLineNumber": 1534,
+            "startColumnNumber": 8,
+            "endLineNumber": 1534,
+            "endColumnNumber": 20
+        }
+    ],
+    "layoutRelationDataList": []
+}

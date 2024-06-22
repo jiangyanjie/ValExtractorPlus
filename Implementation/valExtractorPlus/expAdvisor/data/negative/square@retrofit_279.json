@@ -1,0 +1,137 @@
+{
+    "id": 279,
+    "expression": "HEADER_CONTENT_TYPE",
+    "projectName": "square@retrofit",
+    "commitID": "fe43ab0b5c3541fb33b8fddc6a1db60260ff52b3",
+    "filePath": "retrofit/src/main/java/retrofit/http/client/ApacheClient.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "HEADER_CONTENT_TYPE",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 19,
+                "startLineNumber": 81,
+                "startColumnNumber": 32,
+                "endLineNumber": 81,
+                "endColumnNumber": 51
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 42,
+                        "startLineNumber": 81,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 81,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "name.equalsIgnoreCase(HEADER_CONTENT_TYPE)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 86,
+                        "startLineNumber": 81,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 83,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n  contentType=value;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 222,
+                        "startLineNumber": 78,
+                        "startColumnNumber": 67,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  String name=header.getName();\n  String value=header.getValue();\n  if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n    contentType=value;\n  }\n  headers.add(new Header(name,value));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 36,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 285,
+                        "startLineNumber": 78,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "for (org.apache.http.Header header : response.getAllHeaders()) {\n  String name=header.getName();\n  String value=header.getValue();\n  if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n    contentType=value;\n  }\n  headers.add(new Header(name,value));\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 50,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 825,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 139,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 897,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "static Response parseResponse(HttpResponse response) throws IOException {\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 150,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 42,
+                    "startLineNumber": 81,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 81,
+                    "endColumnNumber": 52
+                },
+                "nodeContext": "name.equalsIgnoreCase(HEADER_CONTENT_TYPE)",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 4,
+                "astHeight": 2
+            },
+            "tokenLength": 3,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 19,
+            "startLineNumber": 81,
+            "startColumnNumber": 32,
+            "endLineNumber": 81,
+            "endColumnNumber": 51
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,118 @@
+{
+  "id" : 14,
+  "expression" : "buffer.readableByteCount() + (int)remainder",
+  "projectName" : "spring-projects@spring-framework",
+  "commitID" : "149d416e8e7a256838c4e0a2b65c9023e31a5e3b",
+  "filePath" : "spring-core/src/main/java/org/springframework/core/io/buffer/DataBufferUtils.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "buffer.readableByteCount() + (int)remainder",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 43,
+      "startLineNumber" : 345,
+      "startColumnNumber" : 30,
+      "endLineNumber" : 345,
+      "endColumnNumber" : 73
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 345,
+        "startColumnNumber" : 14,
+        "endLineNumber" : 345,
+        "endColumnNumber" : 73
+      },
+      "nodeContext" : "buffer.slice(0,buffer.readableByteCount() + (int)remainder)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 68,
+        "startLineNumber" : 345,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 345,
+        "endColumnNumber" : 75
+      },
+      "nodeContext" : "return buffer.slice(0,buffer.readableByteCount() + (int)remainder);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 169,
+        "startLineNumber" : 343,
+        "startColumnNumber" : 25,
+        "endLineNumber" : 346,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  int buffer.readableByteCount() + (int)remainder=buffer.readableByteCount() + (int)remainder;\n  return buffer.slice(0,buffer.readableByteCount() + (int)remainder);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 24,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 215,
+        "startLineNumber" : 343,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 349,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (remainder < 0) {\n  int buffer.readableByteCount() + (int)remainder=buffer.readableByteCount() + (int)remainder;\n  return buffer.slice(0,buffer.readableByteCount() + (int)remainder);\n}\n else {\n  return buffer;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 31,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+      "nodePosition" : {
+        "charLength" : 298,
+        "startLineNumber" : 341,
+        "startColumnNumber" : 20,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 6
+      },
+      "nodeContext" : "{\n  long remainder=countDown.addAndGet(-buffer.readableByteCount());\n  if (remainder < 0) {\n    int buffer.readableByteCount() + (int)remainder=buffer.readableByteCount() + (int)remainder;\n    return buffer.slice(0,buffer.readableByteCount() + (int)remainder);\n  }\n else {\n    return buffer;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 43,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 308,
+        "startLineNumber" : 341,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 6
+      },
+      "nodeContext" : "buffer -> {\n  long remainder=countDown.addAndGet(-buffer.readableByteCount());\n  if (remainder < 0) {\n    int buffer.readableByteCount() + (int)remainder=buffer.readableByteCount() + (int)remainder;\n    return buffer.slice(0,buffer.readableByteCount() + (int)remainder);\n  }\n else {\n    return buffer;\n  }\n}\n",
+      "nodeType" : "LambdaExpression",
+      "astNodeNumber" : 46,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 4,
+    "type" : null
+  } ],
+  "positionList" : [ {
+    "charLength" : 43,
+    "startLineNumber" : 345,
+    "startColumnNumber" : 30,
+    "endLineNumber" : 345,
+    "endColumnNumber" : 73
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "length",
+  "nodePosition" : {
+    "charLength" : 6,
+    "startLineNumber" : 344,
+    "startColumnNumber" : 11,
+    "endLineNumber" : 344,
+    "endColumnNumber" : 17
+  }
+}

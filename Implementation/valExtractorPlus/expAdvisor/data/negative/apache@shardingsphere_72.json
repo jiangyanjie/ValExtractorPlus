@@ -1,0 +1,137 @@
+{
+    "id": 72,
+    "expression": "conn",
+    "projectName": "apache@shardingsphere",
+    "commitID": "f8e48c8be63adac2b7a2a25d9e6723703dd84311",
+    "filePath": "shardingsphere-kernel/shardingsphere-data-pipeline/shardingsphere-data-pipeline-core/src/main/java/org/apache/shardingsphere/data/pipeline/core/ingest/dumper/AbstractInventoryDumper.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "conn",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 124,
+                "startColumnNumber": 75,
+                "endLineNumber": 124,
+                "endColumnNumber": 79
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 51,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 85
+                    },
+                    "nodeContext": "createPreparedStatement(conn,sql)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationExpression,fragments]",
+                    "nodePosition": {
+                        "charLength": 54,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 85
+                    },
+                    "nodeContext": "preparedStatement=createPreparedStatement(conn,sql)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TryStatement,resources]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 124,
+                        "endColumnNumber": 85
+                    },
+                    "nodeContext": "PreparedStatement preparedStatement=createPreparedStatement(conn,sql)",
+                    "nodeType": "VariableDeclarationExpression",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 1705,
+                        "startLineNumber": 124,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 151,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n  preparedStatement.setObject(1,startPrimaryValue);\n  preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n  preparedStatement.setInt(3,readBatchSize);\n  try (ResultSet resultSet=preparedStatement.executeQuery()){\n    ResultSetMetaData metaData=resultSet.getMetaData();\n    int rowCount=0;\n    Number maxPrimaryValue=null;\n    while (isRunning() && resultSet.next()) {\n      DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n      record.setType(IngestDataChangeType.INSERT);\n      record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n      for (int i=1; i <= metaData.getColumnCount(); i++) {\n        boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n        Object value=readValue(resultSet,i);\n        if (isPrimaryKey) {\n          maxPrimaryValue=(Number)value;\n        }\n        record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n      }\n      pushRecord(record);\n      rowCount++;\n    }\n    log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n    pushRecord(new FinishedRecord(new FinishedPosition()));\n    return Optional.ofNullable(maxPrimaryValue);\n  }\n }\n ",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 188,
+                    "astHeight": 15
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1815,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 128,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 198,
+                    "astHeight": 16
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1939,
+                        "startLineNumber": 120,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 152,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "private Optional<Number> dump0(final Connection conn,final String sql,final Number startPrimaryValue) throws SQLException {\n  if (null != rateLimitAlgorithm) {\n    rateLimitAlgorithm.onQuery();\n  }\n  try (PreparedStatement preparedStatement=createPreparedStatement(conn,sql)){\n    preparedStatement.setObject(1,startPrimaryValue);\n    preparedStatement.setObject(2,getPositionEndValue(inventoryDumperConfig.getPosition()));\n    preparedStatement.setInt(3,readBatchSize);\n    try (ResultSet resultSet=preparedStatement.executeQuery()){\n      ResultSetMetaData metaData=resultSet.getMetaData();\n      int rowCount=0;\n      Number maxPrimaryValue=null;\n      while (isRunning() && resultSet.next()) {\n        DataRecord record=new DataRecord(newPosition(resultSet),metaData.getColumnCount());\n        record.setType(IngestDataChangeType.INSERT);\n        record.setTableName(inventoryDumperConfig.getTableNameMap().get(inventoryDumperConfig.getTableName()));\n        for (int i=1; i <= metaData.getColumnCount(); i++) {\n          boolean isPrimaryKey=tableMetaData.isPrimaryKey(i - 1);\n          Object value=readValue(resultSet,i);\n          if (isPrimaryKey) {\n            maxPrimaryValue=(Number)value;\n          }\n          record.addColumn(new Column(metaData.getColumnName(i),value,true,isPrimaryKey));\n        }\n        pushRecord(record);\n        rowCount++;\n      }\n      log.info(\"dump, rowCount={}, maxPrimaryValue={}\",rowCount,maxPrimaryValue);\n      pushRecord(new FinishedRecord(new FinishedPosition()));\n      return Optional.ofNullable(maxPrimaryValue);\n    }\n   }\n }\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 223,
+                    "astHeight": 17
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TryStatement,resources]",
+                "nodePosition": {
+                    "charLength": 72,
+                    "startLineNumber": 124,
+                    "startColumnNumber": 13,
+                    "endLineNumber": 124,
+                    "endColumnNumber": 85
+                },
+                "nodeContext": "PreparedStatement preparedStatement=createPreparedStatement(conn,sql)",
+                "nodeType": "VariableDeclarationExpression",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.sql.Connection"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 124,
+            "startColumnNumber": 75,
+            "endLineNumber": 124,
+            "endColumnNumber": 79
+        }
+    ],
+    "layoutRelationDataList": []
+}

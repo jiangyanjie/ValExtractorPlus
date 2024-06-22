@@ -1,0 +1,620 @@
+{
+    "id": 92,
+    "expression": "mRenderedBounds",
+    "projectName": "facebook@fresco",
+    "commitID": "086fd1dfc4ee6d772ea50cba7731461120dd95c5",
+    "filePath": "animated-base/src/main/java/com/facebook/imagepipeline/animated/impl/AnimatedDrawableBackendImpl.java",
+    "occurrences": 4,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mRenderedBounds",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 203,
+                "startColumnNumber": 29,
+                "endLineNumber": 203,
+                "endColumnNumber": 44
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.CastExpression,expression]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 203,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "mRenderedBounds.width()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,leftOperand]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 203,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "(double)mRenderedBounds.width()",
+                    "nodeType": "CastExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 69,
+                        "startLineNumber": 203,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 89
+                    },
+                    "nodeContext": "(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth()",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 78,
+                        "startLineNumber": 203,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 89
+                    },
+                    "nodeContext": "xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 86,
+                        "startLineNumber": 203,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 90
+                    },
+                    "nodeContext": "double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1096,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 83,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 140,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1177,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void renderImageSupportsScaling(Canvas canvas,AnimatedImageFrame frame){\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 152,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 86,
+                    "startLineNumber": 203,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 203,
+                    "endColumnNumber": 90
+                },
+                "nodeContext": "double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 15,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.imagepipeline.animated.impl.Rect"
+        },
+        {
+            "nodeContext": "mRenderedBounds",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 204,
+                "startColumnNumber": 29,
+                "endLineNumber": 204,
+                "endColumnNumber": 44
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.CastExpression,expression]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 204,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 204,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "mRenderedBounds.height()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,leftOperand]",
+                    "nodePosition": {
+                        "charLength": 33,
+                        "startLineNumber": 204,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 204,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "(double)mRenderedBounds.height()",
+                    "nodeType": "CastExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 204,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 204,
+                        "endColumnNumber": 91
+                    },
+                    "nodeContext": "(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight()",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 80,
+                        "startLineNumber": 204,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 204,
+                        "endColumnNumber": 91
+                    },
+                    "nodeContext": "yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 88,
+                        "startLineNumber": 204,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 204,
+                        "endColumnNumber": 92
+                    },
+                    "nodeContext": "double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1096,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 83,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 140,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1177,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void renderImageSupportsScaling(Canvas canvas,AnimatedImageFrame frame){\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 152,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 88,
+                    "startLineNumber": 204,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 204,
+                    "endColumnNumber": 92
+                },
+                "nodeContext": "double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 15,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.imagepipeline.animated.impl.Rect"
+        },
+        {
+            "nodeContext": "mRenderedBounds",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 212,
+                "startColumnNumber": 26,
+                "endLineNumber": 212,
+                "endColumnNumber": 41
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 26,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "mRenderedBounds.width()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 39,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "renderedWidth=mRenderedBounds.width()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 44,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "int renderedWidth=mRenderedBounds.width();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.SynchronizedStatement,body]",
+                    "nodePosition": {
+                        "charLength": 636,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 222,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  int renderedWidth=mRenderedBounds.width();\n  int renderedHeight=mRenderedBounds.height();\n  prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n  frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n  mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n  mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n  canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 55,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 656,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 222,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "synchronized (this) {\n  int renderedWidth=mRenderedBounds.width();\n  int renderedHeight=mRenderedBounds.height();\n  prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n  frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n  mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n  mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n  canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n}\n",
+                    "nodeType": "SynchronizedStatement",
+                    "astNodeNumber": 57,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1096,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 83,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 140,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1177,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void renderImageSupportsScaling(Canvas canvas,AnimatedImageFrame frame){\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 152,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 44,
+                    "startLineNumber": 212,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 212,
+                    "endColumnNumber": 50
+                },
+                "nodeContext": "int renderedWidth=mRenderedBounds.width();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.imagepipeline.animated.impl.Rect"
+        },
+        {
+            "nodeContext": "mRenderedBounds",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 213,
+                "startColumnNumber": 27,
+                "endLineNumber": 213,
+                "endColumnNumber": 42
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 27,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "mRenderedBounds.height()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "renderedHeight=mRenderedBounds.height()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 46,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "int renderedHeight=mRenderedBounds.height();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.SynchronizedStatement,body]",
+                    "nodePosition": {
+                        "charLength": 636,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 222,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  int renderedWidth=mRenderedBounds.width();\n  int renderedHeight=mRenderedBounds.height();\n  prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n  frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n  mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n  mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n  canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 55,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 656,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 222,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "synchronized (this) {\n  int renderedWidth=mRenderedBounds.width();\n  int renderedHeight=mRenderedBounds.height();\n  prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n  frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n  mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n  mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n  canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n}\n",
+                    "nodeType": "SynchronizedStatement",
+                    "astNodeNumber": 57,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1096,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 83,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 140,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1177,
+                        "startLineNumber": 202,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 223,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void renderImageSupportsScaling(Canvas canvas,AnimatedImageFrame frame){\n  double xScale=(double)mRenderedBounds.width() / (double)mAnimatedImage.getWidth();\n  double yScale=(double)mRenderedBounds.height() / (double)mAnimatedImage.getHeight();\n  int frameWidth=(int)Math.round(frame.getWidth() * xScale);\n  int frameHeight=(int)Math.round(frame.getHeight() * yScale);\n  int xOffset=(int)(frame.getXOffset() * xScale);\n  int yOffset=(int)(frame.getYOffset() * yScale);\nsynchronized (this) {\n    int renderedWidth=mRenderedBounds.width();\n    int renderedHeight=mRenderedBounds.height();\n    prepareTempBitmapForThisSize(renderedWidth,renderedHeight);\n    frame.renderFrame(frameWidth,frameHeight,mTempBitmap);\n    mRenderSrcRect.set(0,0,renderedWidth,renderedHeight);\n    mRenderDstRect.set(xOffset,yOffset,xOffset + renderedWidth,yOffset + renderedHeight);\n    canvas.drawBitmap(mTempBitmap,mRenderSrcRect,mRenderDstRect,null);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 152,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 46,
+                    "startLineNumber": 213,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 213,
+                    "endColumnNumber": 52
+                },
+                "nodeContext": "int renderedHeight=mRenderedBounds.height();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.imagepipeline.animated.impl.Rect"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 15,
+            "startLineNumber": 203,
+            "startColumnNumber": 29,
+            "endLineNumber": 203,
+            "endColumnNumber": 44
+        },
+        {
+            "charLength": 15,
+            "startLineNumber": 204,
+            "startColumnNumber": 29,
+            "endLineNumber": 204,
+            "endColumnNumber": 44
+        },
+        {
+            "charLength": 15,
+            "startLineNumber": 212,
+            "startColumnNumber": 26,
+            "endLineNumber": 212,
+            "endColumnNumber": 41
+        },
+        {
+            "charLength": 15,
+            "startLineNumber": 213,
+            "startColumnNumber": 27,
+            "endLineNumber": 213,
+            "endColumnNumber": 42
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 5
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 5
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 3,
+            "layout": 5
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 5
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 5
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 3,
+            "layout": 5
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 5
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 5
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 0,
+            "layout": 5
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 1,
+            "layout": 5
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 2,
+            "layout": 3
+        }
+    ]
+}

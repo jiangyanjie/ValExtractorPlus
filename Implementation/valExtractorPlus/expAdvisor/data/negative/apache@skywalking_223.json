@@ -1,0 +1,256 @@
+{
+    "id": 223,
+    "expression": "IndexController.INSTANCE",
+    "projectName": "apache@skywalking",
+    "commitID": "fd1d21021f8f3abd66f957ff8484a0e2c29ceb36",
+    "filePath": "oap-server/server-storage-plugin/storage-elasticsearch-plugin/src/main/java/org/apache/skywalking/oap/server/storage/plugin/elasticsearch/base/MetricsEsDAO.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "IndexController.INSTANCE",
+            "nodeType": "QualifiedName",
+            "nodePosition": {
+                "charLength": 24,
+                "startLineNumber": 70,
+                "startColumnNumber": 12,
+                "endLineNumber": 70,
+                "endColumnNumber": 36
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 95,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 107
+                    },
+                    "nodeContext": "IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 10,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 121,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 34,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 108
+                    },
+                    "nodeContext": "map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 131,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 108
+                    },
+                    "nodeContext": "builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)))",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 148,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 109
+                    },
+                    "nodeContext": "XContentBuilder builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)));\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 402,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  XContentBuilder builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)));\n  String modelName=TimeSeriesUtils.writeIndexName(model,metrics.getTimeBucket());\n  String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n  return getClient().prepareUpdate(modelName,id,builder);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 52,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 505,
+                        "startLineNumber": 67,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public UpdateRequest prepareBatchUpdate(Model model,Metrics metrics) throws IOException {\n  XContentBuilder builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)));\n  String modelName=TimeSeriesUtils.writeIndexName(model,metrics.getTimeBucket());\n  String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n  return getClient().prepareUpdate(modelName,id,builder);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 69,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                "nodePosition": {
+                    "charLength": 95,
+                    "startLineNumber": 70,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 70,
+                    "endColumnNumber": 107
+                },
+                "nodeContext": "IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics))",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 10,
+                "astHeight": 3
+            },
+            "tokenLength": 2,
+            "type": "org.apache.skywalking.oap.server.storage.plugin.elasticsearch.base.IndexController"
+        },
+        {
+            "nodeContext": "IndexController.INSTANCE",
+            "nodeType": "QualifiedName",
+            "nodePosition": {
+                "charLength": 24,
+                "startLineNumber": 72,
+                "startColumnNumber": 20,
+                "endLineNumber": 72,
+                "endColumnNumber": 44
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 59,
+                        "startLineNumber": 72,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 72,
+                        "endColumnNumber": 79
+                    },
+                    "nodeContext": "IndexController.INSTANCE.generateDocId(model,metrics.id())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 9,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 64,
+                        "startLineNumber": 72,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 72,
+                        "endColumnNumber": 79
+                    },
+                    "nodeContext": "id=IndexController.INSTANCE.generateDocId(model,metrics.id())",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 72,
+                        "startLineNumber": 72,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 72,
+                        "endColumnNumber": 80
+                    },
+                    "nodeContext": "String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 402,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  XContentBuilder builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)));\n  String modelName=TimeSeriesUtils.writeIndexName(model,metrics.getTimeBucket());\n  String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n  return getClient().prepareUpdate(modelName,id,builder);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 52,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 505,
+                        "startLineNumber": 67,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public UpdateRequest prepareBatchUpdate(Model model,Metrics metrics) throws IOException {\n  XContentBuilder builder=map2builder(IndexController.INSTANCE.appendMetricTableColumn(model,storageBuilder.entity2Storage(metrics)));\n  String modelName=TimeSeriesUtils.writeIndexName(model,metrics.getTimeBucket());\n  String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n  return getClient().prepareUpdate(modelName,id,builder);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 69,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 72,
+                    "startLineNumber": 72,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 72,
+                    "endColumnNumber": 80
+                },
+                "nodeContext": "String id=IndexController.INSTANCE.generateDocId(model,metrics.id());\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 14,
+                "astHeight": 5
+            },
+            "tokenLength": 2,
+            "type": "org.apache.skywalking.oap.server.storage.plugin.elasticsearch.base.IndexController"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 24,
+            "startLineNumber": 70,
+            "startColumnNumber": 12,
+            "endLineNumber": 70,
+            "endColumnNumber": 36
+        },
+        {
+            "charLength": 24,
+            "startLineNumber": 72,
+            "startColumnNumber": 20,
+            "endLineNumber": 72,
+            "endColumnNumber": 44
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 4
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        }
+    ]
+}

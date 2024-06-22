@@ -1,0 +1,123 @@
+{
+    "id": 146,
+    "expression": "true",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "51af44f843ceaa58c55860fb35a30a5524887904",
+    "filePath": "Ghidra/Features/Base/src/main/java/ghidra/app/util/viewer/field/PlateFieldFactory.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "true",
+            "nodeType": "BooleanLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 185,
+                "startColumnNumber": 49,
+                "endLineNumber": 185,
+                "endColumnNumber": 53
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 185,
+                        "startColumnNumber": 25,
+                        "endLineNumber": 185,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "getNumberBlankLines(cu,true)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 185,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 185,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "numberBlankLines=getNumberBlankLines(cu,true)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 53,
+                        "startLineNumber": 185,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 185,
+                        "endColumnNumber": 55
+                    },
+                    "nodeContext": "int numberBlankLines=getNumberBlankLines(cu,true);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 256,
+                        "startLineNumber": 183,
+                        "startColumnNumber": 80,
+                        "endLineNumber": 192,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int numberBlankLines=getNumberBlankLines(cu,true);\n  addBlankLines(elements,numberBlankLines,cu);\n  String defaultComment=getDefaultComment(cu);\n  if (defaultComment != null) {\n    generateDefaultPlate(elements,defaultComment);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 33,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 335,
+                        "startLineNumber": 183,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 192,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private void getDefaultFieldElements(CodeUnit cu,List<FieldElement> elements){\n  int numberBlankLines=getNumberBlankLines(cu,true);\n  addBlankLines(elements,numberBlankLines,cu);\n  String defaultComment=getDefaultComment(cu);\n  if (defaultComment != null) {\n    generateDefaultPlate(elements,defaultComment);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 48,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 53,
+                    "startLineNumber": 185,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 185,
+                    "endColumnNumber": 55
+                },
+                "nodeContext": "int numberBlankLines=getNumberBlankLines(cu,true);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 185,
+            "startColumnNumber": 49,
+            "endLineNumber": 185,
+            "endColumnNumber": 53
+        }
+    ],
+    "layoutRelationDataList": []
+}

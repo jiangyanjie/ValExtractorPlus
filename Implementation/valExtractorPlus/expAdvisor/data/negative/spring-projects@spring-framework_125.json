@@ -1,0 +1,95 @@
+{
+    "id": 125,
+    "expression": "(statusCode != null ? hasError(statusCode) : hasError(rawStatusCode))",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "738097def2407166ff9d58c25836180f95eda77d",
+    "filePath": "spring-web/src/main/java/org/springframework/web/client/DefaultResponseErrorHandler.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "(statusCode != null ? hasError(statusCode) : hasError(rawStatusCode))",
+            "nodeType": "ParenthesizedExpression",
+            "nodePosition": {
+                "charLength": 69,
+                "startLineNumber": 53,
+                "startColumnNumber": 9,
+                "endLineNumber": 53,
+                "endColumnNumber": 78
+            },
+            "astNodeNumber": 11,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 77,
+                        "startLineNumber": 53,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 53,
+                        "endColumnNumber": 79
+                    },
+                    "nodeContext": "return (statusCode != null ? hasError(statusCode) : hasError(rawStatusCode));\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 196,
+                        "startLineNumber": 50,
+                        "startColumnNumber": 73,
+                        "endLineNumber": 54,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int rawStatusCode=response.getRawStatusCode();\n  HttpStatus statusCode=HttpStatus.resolve(rawStatusCode);\n  return (statusCode != null ? hasError(statusCode) : hasError(rawStatusCode));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 29,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 367,
+                        "startLineNumber": 46,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 54,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Delegates to  {@link #hasError(HttpStatus)} with the response status code.\n */\n@Override public boolean hasError(ClientHttpResponse response) throws IOException {\n  int rawStatusCode=response.getRawStatusCode();\n  HttpStatus statusCode=HttpStatus.resolve(rawStatusCode);\n  return (statusCode != null ? hasError(statusCode) : hasError(rawStatusCode));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 42,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 77,
+                    "startLineNumber": 53,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 53,
+                    "endColumnNumber": 79
+                },
+                "nodeContext": "return (statusCode != null ? hasError(statusCode) : hasError(rawStatusCode));\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 12,
+                "astHeight": 5
+            },
+            "tokenLength": 7,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 69,
+            "startLineNumber": 53,
+            "startColumnNumber": 9,
+            "endLineNumber": 53,
+            "endColumnNumber": 78
+        }
+    ],
+    "layoutRelationDataList": []
+}

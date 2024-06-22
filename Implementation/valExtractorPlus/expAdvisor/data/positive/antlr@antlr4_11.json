@@ -1,0 +1,243 @@
+{
+  "id" : 11,
+  "expression" : "c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null",
+  "projectName" : "antlr@antlr4",
+  "commitID" : "d59d1932521fff0564e84d9afebb780e6500ec6c",
+  "filePath" : "tool/src/org/antlr/v4/misc/CharSupport.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 78,
+      "startLineNumber" : 49,
+      "startColumnNumber" : 7,
+      "endLineNumber" : 49,
+      "endColumnNumber" : 85
+    },
+    "astNodeNumber" : 10,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 86,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 49,
+        "endColumnNumber" : 93
+      },
+      "nodeContext" : "c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 563,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 68,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n  result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n}\n else if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n  if (c == '\\\\') {\n    result=\"\\\\\\\\\";\n  }\n else   if (c == '\\'') {\n    result=\"\\\\'\";\n  }\n else {\n    result=Character.toString((char)c);\n  }\n}\n else if (c <= 0xFFFF) {\n  result=String.format(\"\\\\u%04X\",c);\n}\n else {\n  result=String.format(\"\\\\u{%06X}\",c);\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 92,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 771,
+        "startLineNumber" : 47,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 69,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n    result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  }\n else   if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n    if (c == '\\\\') {\n      result=\"\\\\\\\\\";\n    }\n else     if (c == '\\'') {\n      result=\"\\\\'\";\n    }\n else {\n      result=Character.toString((char)c);\n    }\n  }\n else   if (c <= 0xFFFF) {\n    result=String.format(\"\\\\u%04X\",c);\n  }\n else {\n    result=String.format(\"\\\\u{%06X}\",c);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 108,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 833,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 69,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (c < Lexer.MIN_CHAR_VALUE) {\n  result=\"<INVALID>\";\n}\n else {\n  String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n    result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  }\n else   if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n    if (c == '\\\\') {\n      result=\"\\\\\\\\\";\n    }\n else     if (c == '\\'') {\n      result=\"\\\\'\";\n    }\n else {\n      result=Character.toString((char)c);\n    }\n  }\n else   if (c <= 0xFFFF) {\n    result=String.format(\"\\\\u%04X\",c);\n  }\n else {\n    result=String.format(\"\\\\u{%06X}\",c);\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 119,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 931,
+        "startLineNumber" : 42,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  String result;\n  if (c < Lexer.MIN_CHAR_VALUE) {\n    result=\"<INVALID>\";\n  }\n else {\n    String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n      result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    }\n else     if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n      if (c == '\\\\') {\n        result=\"\\\\\\\\\";\n      }\n else       if (c == '\\'') {\n        result=\"\\\\'\";\n      }\n else {\n        result=Character.toString((char)c);\n      }\n    }\n else     if (c <= 0xFFFF) {\n      result=String.format(\"\\\\u%04X\",c);\n    }\n else {\n      result=String.format(\"\\\\u{%06X}\",c);\n    }\n  }\n  return '\\'' + result + '\\'';\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 130,
+      "astHeight" : 14
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1231,
+        "startLineNumber" : 37,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return a string representing the escaped char for code c.  E.g., If c has value 0x100, you will get \"\\\\u0100\".  ASCII gets the usual char (non-hex) representation.  Non-ASCII characters are spit out as \\\\uXXXX or \\\\u{XXXXXX} escapes.\n */\npublic static String getANTLRCharLiteralForChar(int c){\n  String result;\n  if (c < Lexer.MIN_CHAR_VALUE) {\n    result=\"<INVALID>\";\n  }\n else {\n    String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n      result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    }\n else     if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n      if (c == '\\\\') {\n        result=\"\\\\\\\\\";\n      }\n else       if (c == '\\'') {\n        result=\"\\\\'\";\n      }\n else {\n        result=Character.toString((char)c);\n      }\n    }\n else     if (c <= 0xFFFF) {\n      result=String.format(\"\\\\u%04X\",c);\n    }\n else {\n      result=String.format(\"\\\\u{%06X}\",c);\n    }\n  }\n  return '\\'' + result + '\\'';\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 140,
+      "astHeight" : 15
+    } ],
+    "tokenLength" : 7,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 78,
+      "startLineNumber" : 50,
+      "startColumnNumber" : 13,
+      "endLineNumber" : 50,
+      "endColumnNumber" : 91
+    },
+    "astNodeNumber" : 10,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 85,
+        "startLineNumber" : 50,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 50,
+        "endColumnNumber" : 89
+      },
+      "nodeContext" : "result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 87,
+        "startLineNumber" : 50,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 50,
+        "endColumnNumber" : 91
+      },
+      "nodeContext" : "result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 93,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 32,
+        "endLineNumber" : 51,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "{\n  result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 14,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 563,
+        "startLineNumber" : 49,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 68,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n  result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n}\n else if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n  if (c == '\\\\') {\n    result=\"\\\\\\\\\";\n  }\n else   if (c == '\\'') {\n    result=\"\\\\'\";\n  }\n else {\n    result=Character.toString((char)c);\n  }\n}\n else if (c <= 0xFFFF) {\n  result=String.format(\"\\\\u%04X\",c);\n}\n else {\n  result=String.format(\"\\\\u{%06X}\",c);\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 92,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 771,
+        "startLineNumber" : 47,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 69,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n    result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  }\n else   if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n    if (c == '\\\\') {\n      result=\"\\\\\\\\\";\n    }\n else     if (c == '\\'') {\n      result=\"\\\\'\";\n    }\n else {\n      result=Character.toString((char)c);\n    }\n  }\n else   if (c <= 0xFFFF) {\n    result=String.format(\"\\\\u%04X\",c);\n  }\n else {\n    result=String.format(\"\\\\u{%06X}\",c);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 108,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 833,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 69,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (c < Lexer.MIN_CHAR_VALUE) {\n  result=\"<INVALID>\";\n}\n else {\n  String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n    result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n  }\n else   if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n    if (c == '\\\\') {\n      result=\"\\\\\\\\\";\n    }\n else     if (c == '\\'') {\n      result=\"\\\\'\";\n    }\n else {\n      result=Character.toString((char)c);\n    }\n  }\n else   if (c <= 0xFFFF) {\n    result=String.format(\"\\\\u%04X\",c);\n  }\n else {\n    result=String.format(\"\\\\u{%06X}\",c);\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 119,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 931,
+        "startLineNumber" : 42,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  String result;\n  if (c < Lexer.MIN_CHAR_VALUE) {\n    result=\"<INVALID>\";\n  }\n else {\n    String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n      result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    }\n else     if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n      if (c == '\\\\') {\n        result=\"\\\\\\\\\";\n      }\n else       if (c == '\\'') {\n        result=\"\\\\'\";\n      }\n else {\n        result=Character.toString((char)c);\n      }\n    }\n else     if (c <= 0xFFFF) {\n      result=String.format(\"\\\\u%04X\",c);\n    }\n else {\n      result=String.format(\"\\\\u{%06X}\",c);\n    }\n  }\n  return '\\'' + result + '\\'';\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 130,
+      "astHeight" : 14
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1231,
+        "startLineNumber" : 37,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 71,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return a string representing the escaped char for code c.  E.g., If c has value 0x100, you will get \"\\\\u0100\".  ASCII gets the usual char (non-hex) representation.  Non-ASCII characters are spit out as \\\\uXXXX or \\\\u{XXXXXX} escapes.\n */\npublic static String getANTLRCharLiteralForChar(int c){\n  String result;\n  if (c < Lexer.MIN_CHAR_VALUE) {\n    result=\"<INVALID>\";\n  }\n else {\n    String c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    if (c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null != null) {\n      result=c < ANTLRLiteralCharValueEscape.length ? ANTLRLiteralCharValueEscape[c] : null;\n    }\n else     if (Character.UnicodeBlock.of((char)c) == Character.UnicodeBlock.BASIC_LATIN && !Character.isISOControl((char)c)) {\n      if (c == '\\\\') {\n        result=\"\\\\\\\\\";\n      }\n else       if (c == '\\'') {\n        result=\"\\\\'\";\n      }\n else {\n        result=Character.toString((char)c);\n      }\n    }\n else     if (c <= 0xFFFF) {\n      result=String.format(\"\\\\u%04X\",c);\n    }\n else {\n      result=String.format(\"\\\\u{%06X}\",c);\n    }\n  }\n  return '\\'' + result + '\\'';\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 140,
+      "astHeight" : 15
+    } ],
+    "tokenLength" : 7,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 78,
+    "startLineNumber" : 49,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 49,
+    "endColumnNumber" : 85
+  }, {
+    "charLength" : 78,
+    "startLineNumber" : 50,
+    "startColumnNumber" : 13,
+    "endLineNumber" : 50,
+    "endColumnNumber" : 91
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "charValueEscape",
+  "nodePosition" : {
+    "charLength" : 15,
+    "startLineNumber" : 48,
+    "startColumnNumber" : 10,
+    "endLineNumber" : 48,
+    "endColumnNumber" : 25
+  }
+}

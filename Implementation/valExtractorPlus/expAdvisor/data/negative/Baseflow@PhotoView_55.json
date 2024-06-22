@@ -1,0 +1,123 @@
+{
+    "id": 55,
+    "expression": "(ImageView)v",
+    "projectName": "Baseflow@PhotoView",
+    "commitID": "602959a5c50c17c1b94f000d6915be0da982155c",
+    "filePath": "library/src/uk/co/senab/photoview/PhotoViewAttacher.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "(ImageView)v",
+            "nodeType": "CastExpression",
+            "nodePosition": {
+                "charLength": 13,
+                "startLineNumber": 400,
+                "startColumnNumber": 40,
+                "endLineNumber": 400,
+                "endColumnNumber": 53
+            },
+            "astNodeNumber": 4,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 400,
+                        "startColumnNumber": 28,
+                        "endLineNumber": 400,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "hasDrawable((ImageView)v)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 42,
+                        "startLineNumber": 400,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 400,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "mZoomEnabled && hasDrawable((ImageView)v)",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 8,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 1556,
+                        "startLineNumber": 400,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 437,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:    ViewParent parent=v.getParent();\n  if (parent != null)   parent.requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 114,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1631,
+                        "startLineNumber": 397,
+                        "startColumnNumber": 57,
+                        "endLineNumber": 440,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent parent=v.getParent();\n    if (parent != null)     parent.requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 122,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1698,
+                        "startLineNumber": 396,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 440,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public final boolean onTouch(View v,MotionEvent ev){\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent parent=v.getParent();\n    if (parent != null)     parent.requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 137,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 42,
+                    "startLineNumber": 400,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 400,
+                    "endColumnNumber": 54
+                },
+                "nodeContext": "mZoomEnabled && hasDrawable((ImageView)v)",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 8,
+                "astHeight": 5
+            },
+            "tokenLength": 2,
+            "type": "uk.co.senab.photoview.ImageView"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 13,
+            "startLineNumber": 400,
+            "startColumnNumber": 40,
+            "endLineNumber": 400,
+            "endColumnNumber": 53
+        }
+    ],
+    "layoutRelationDataList": []
+}

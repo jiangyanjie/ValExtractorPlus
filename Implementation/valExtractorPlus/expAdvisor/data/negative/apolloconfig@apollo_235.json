@@ -1,0 +1,109 @@
+{
+    "id": 235,
+    "expression": "appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName())",
+    "projectName": "apolloconfig@apollo",
+    "commitID": "7f6ed42bef207b514dcaf9fae8a0fc8554ca1b35",
+    "filePath": "apollo-portal/src/main/java/com/ctrip/framework/apollo/portal/service/NamespaceService.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName())",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 96,
+                "startLineNumber": 145,
+                "startColumnNumber": 8,
+                "endLineNumber": 145,
+                "endColumnNumber": 104
+            },
+            "astNodeNumber": 9,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 119,
+                        "startLineNumber": 144,
+                        "startColumnNumber": 17,
+                        "endLineNumber": 145,
+                        "endColumnNumber": 104
+                    },
+                    "nodeContext": "appNamespace=appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName())",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 133,
+                        "startLineNumber": 144,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 145,
+                        "endColumnNumber": 105
+                    },
+                    "nodeContext": "AppNamespace appNamespace=appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName());\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 775,
+                        "startLineNumber": 140,
+                        "startColumnNumber": 77,
+                        "endLineNumber": 163,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  NamespaceDTO namespaceDTO=namespace.getNamespace();\n  AppNamespace appNamespace=appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName());\n  if (appNamespace == null) {\n    appNamespace=appNamespaceService.findPublicAppNamespace(namespaceDTO.getNamespaceName());\n  }\n  String format;\n  boolean isPublic;\n  if (appNamespace == null) {\n    format=ConfigFileFormat.Properties.getValue();\n    isPublic=false;\n  }\n else {\n    format=appNamespace.getFormat();\n    isPublic=appNamespace.isPublic();\n    namespace.setParentAppId(appNamespace.getAppId());\n  }\n  namespace.setFormat(format);\n  namespace.setPublic(isPublic);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 93,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 850,
+                        "startLineNumber": 140,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 163,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void fillFormatAndIsPublicAndParentAppField(NamespaceVO namespace){\n  NamespaceDTO namespaceDTO=namespace.getNamespace();\n  AppNamespace appNamespace=appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName());\n  if (appNamespace == null) {\n    appNamespace=appNamespaceService.findPublicAppNamespace(namespaceDTO.getNamespaceName());\n  }\n  String format;\n  boolean isPublic;\n  if (appNamespace == null) {\n    format=ConfigFileFormat.Properties.getValue();\n    isPublic=false;\n  }\n else {\n    format=appNamespace.getFormat();\n    isPublic=appNamespace.isPublic();\n    namespace.setParentAppId(appNamespace.getAppId());\n  }\n  namespace.setFormat(format);\n  namespace.setPublic(isPublic);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 101,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                "nodePosition": {
+                    "charLength": 119,
+                    "startLineNumber": 144,
+                    "startColumnNumber": 17,
+                    "endLineNumber": 145,
+                    "endColumnNumber": 104
+                },
+                "nodeContext": "appNamespace=appNamespaceService.findByAppIdAndName(namespaceDTO.getAppId(),namespaceDTO.getNamespaceName())",
+                "nodeType": "VariableDeclarationFragment",
+                "astNodeNumber": 11,
+                "astHeight": 4
+            },
+            "tokenLength": 6,
+            "type": "com.ctrip.framework.apollo.common.entity.AppNamespace"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 96,
+            "startLineNumber": 145,
+            "startColumnNumber": 8,
+            "endLineNumber": 145,
+            "endColumnNumber": 104
+        }
+    ],
+    "layoutRelationDataList": []
+}

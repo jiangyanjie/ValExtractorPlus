@@ -1,0 +1,178 @@
+{
+  "id" : 11,
+  "expression" : "ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())",
+  "projectName" : "apache@shardingsphere",
+  "commitID" : "d91ffcb5a9489e0e02d9a2230f9cdd2cf9e69381",
+  "filePath" : "shardingsphere-jdbc/shardingsphere-jdbc-core/src/main/java/org/apache/shardingsphere/driver/config/datasource/ShardingSphereJDBCDataSourceCreator.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 97,
+      "startLineNumber" : 42,
+      "startColumnNumber" : 34,
+      "endLineNumber" : 42,
+      "endColumnNumber" : 131
+    },
+    "astNodeNumber" : 6,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 124,
+        "startLineNumber" : 42,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 42,
+        "endColumnNumber" : 132
+      },
+      "nodeContext" : "enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 126,
+        "startLineNumber" : 42,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 42,
+        "endColumnNumber" : 134
+      },
+      "nodeContext" : "enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 9,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 738,
+        "startLineNumber" : 39,
+        "startColumnNumber" : 90,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  YamlRootConfiguration rootConfig=(YamlRootConfiguration)dataSourceConfig;\n  ShardingRuleConfiguration ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())=ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules());\n  enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()));\n  return ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 50,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 834,
+        "startLineNumber" : 38,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public DataSource createDataSource(final Object dataSourceConfig) throws SQLException {\n  YamlRootConfiguration rootConfig=(YamlRootConfiguration)dataSourceConfig;\n  ShardingRuleConfiguration ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())=ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules());\n  enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()));\n  return ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 64,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 4,
+    "type" : "org.apache.shardingsphere.sharding.api.config.ShardingRuleConfiguration"
+  }, {
+    "nodeContext" : "ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 97,
+      "startLineNumber" : 44,
+      "startColumnNumber" : 42,
+      "endLineNumber" : 44,
+      "endColumnNumber" : 139
+    },
+    "astNodeNumber" : 6,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 124,
+        "startLineNumber" : 44,
+        "startColumnNumber" : 16,
+        "endLineNumber" : 44,
+        "endColumnNumber" : 140
+      },
+      "nodeContext" : "Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 294,
+        "startLineNumber" : 43,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 44,
+        "endColumnNumber" : 68
+      },
+      "nodeContext" : "ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 24,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 303,
+        "startLineNumber" : 43,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 44,
+        "endColumnNumber" : 69
+      },
+      "nodeContext" : "return ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 25,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 738,
+        "startLineNumber" : 39,
+        "startColumnNumber" : 90,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  YamlRootConfiguration rootConfig=(YamlRootConfiguration)dataSourceConfig;\n  ShardingRuleConfiguration ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())=ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules());\n  enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()));\n  return ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 50,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 834,
+        "startLineNumber" : 38,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 45,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public DataSource createDataSource(final Object dataSourceConfig) throws SQLException {\n  YamlRootConfiguration rootConfig=(YamlRootConfiguration)dataSourceConfig;\n  ShardingRuleConfiguration ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())=ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules());\n  enableRangeQueryForInline(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules()));\n  return ShardingSphereDataSourceFactory.createDataSource(rootConfig.getSchemaName(),new YamlDataSourceConfigurationSwapper().swapToDataSources(rootConfig.getDataSources()),Collections.singletonList(ShardingRuleConfigurationConverter.findAndConvertShardingRuleConfiguration(rootConfig.getRules())),null);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 64,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 4,
+    "type" : "org.apache.shardingsphere.sharding.api.config.ShardingRuleConfiguration"
+  } ],
+  "positionList" : [ {
+    "charLength" : 97,
+    "startLineNumber" : 42,
+    "startColumnNumber" : 34,
+    "endLineNumber" : 42,
+    "endColumnNumber" : 131
+  }, {
+    "charLength" : 97,
+    "startLineNumber" : 44,
+    "startColumnNumber" : 42,
+    "endLineNumber" : 44,
+    "endColumnNumber" : 139
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "shardingRuleConfig",
+  "nodePosition" : {
+    "charLength" : 18,
+    "startLineNumber" : 41,
+    "startColumnNumber" : 34,
+    "endLineNumber" : 41,
+    "endColumnNumber" : 52
+  }
+}

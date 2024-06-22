@@ -1,0 +1,131 @@
+{
+  "id" : 23,
+  "expression" : "CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage() + \"/\" + getLanguage() + STGroup.GROUP_FILE_EXTENSION",
+  "projectName" : "antlr@antlr4",
+  "commitID" : "1672bc073983b7f4281ea7e2fab19406a3b29a2d",
+  "filePath" : "tool/src/org/antlr/v4/codegen/Target.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 99,
+      "startLineNumber" : 454,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 454,
+      "endColumnNumber" : 127
+    },
+    "astNodeNumber" : 13,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+      "nodePosition" : {
+        "charLength" : 116,
+        "startLineNumber" : 454,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 454,
+        "endColumnNumber" : 128
+      },
+      "nodeContext" : "new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION)",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 16,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 123,
+        "startLineNumber" : 454,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 454,
+        "endColumnNumber" : 126
+      },
+      "nodeContext" : "result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION)",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 18,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 125,
+        "startLineNumber" : 454,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 454,
+        "endColumnNumber" : 128
+      },
+      "nodeContext" : "result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 19,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 131,
+        "startLineNumber" : 453,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 455,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 20,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 257,
+        "startLineNumber" : 453,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 460,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "try {\n  result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION);\n}\n catch (IllegalArgumentException iae) {\n  gen.tool.errMgr.toolError(ErrorType.MISSING_CODE_GEN_TEMPLATES,iae,language);\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 40,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1255,
+        "startLineNumber" : 450,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 491,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  String CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION=CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION;\n  STGroup result=null;\n  try {\n    result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION);\n  }\n catch (  IllegalArgumentException iae) {\n    gen.tool.errMgr.toolError(ErrorType.MISSING_CODE_GEN_TEMPLATES,iae,language);\n  }\n  if (result == null)   return null;\n  result.registerRenderer(Integer.class,new NumberRenderer());\n  result.registerRenderer(String.class,new StringRenderer());\n  result.setListener(new STErrorListener(){\n    @Override public void compileTimeError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void runTimeError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void IOError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void internalError(    STMessage msg){\n      reportError(msg);\n    }\n    private void reportError(    STMessage msg){\n      getCodeGenerator().tool.errMgr.toolError(ErrorType.STRING_TEMPLATE_WARNING,msg.cause,msg.toString());\n    }\n  }\n);\n  return result;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 188,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1288,
+        "startLineNumber" : 450,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 491,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "protected STGroup loadTemplates(){\n  String CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION=CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION;\n  STGroup result=null;\n  try {\n    result=new STGroupFile(CodeGenerator.TEMPLATE_ROOT + \"/\" + getLanguage()+ \"/\"+ getLanguage()+ STGroup.GROUP_FILE_EXTENSION);\n  }\n catch (  IllegalArgumentException iae) {\n    gen.tool.errMgr.toolError(ErrorType.MISSING_CODE_GEN_TEMPLATES,iae,language);\n  }\n  if (result == null)   return null;\n  result.registerRenderer(Integer.class,new NumberRenderer());\n  result.registerRenderer(String.class,new StringRenderer());\n  result.setListener(new STErrorListener(){\n    @Override public void compileTimeError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void runTimeError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void IOError(    STMessage msg){\n      reportError(msg);\n    }\n    @Override public void internalError(    STMessage msg){\n      reportError(msg);\n    }\n    private void reportError(    STMessage msg){\n      getCodeGenerator().tool.errMgr.toolError(ErrorType.STRING_TEMPLATE_WARNING,msg.cause,msg.toString());\n    }\n  }\n);\n  return result;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 193,
+      "astHeight" : 14
+    } ],
+    "tokenLength" : 16,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 99,
+    "startLineNumber" : 454,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 454,
+    "endColumnNumber" : 127
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "groupFileName",
+  "nodePosition" : {
+    "charLength" : 13,
+    "startLineNumber" : 451,
+    "startColumnNumber" : 9,
+    "endLineNumber" : 451,
+    "endColumnNumber" : 22
+  }
+}

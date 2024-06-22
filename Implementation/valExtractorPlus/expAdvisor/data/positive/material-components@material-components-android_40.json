@@ -1,0 +1,105 @@
+{
+  "id" : 40,
+  "expression" : "(SnackbarContentLayout)mView.getChildAt(0)",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "b241ff5785463453bcd3176b22e783ddb103835c",
+  "filePath" : "lib/src/android/support/design/widget/Snackbar.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "(SnackbarContentLayout)mView.getChildAt(0)",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 42,
+      "startLineNumber" : 232,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 232,
+      "endColumnNumber" : 70
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 58,
+        "startLineNumber" : 232,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 232,
+        "endColumnNumber" : 86
+      },
+      "nodeContext" : "(SnackbarContentLayout)mView.getChildAt(0).getActionView()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 61,
+        "startLineNumber" : 232,
+        "startColumnNumber" : 23,
+        "endLineNumber" : 232,
+        "endColumnNumber" : 84
+      },
+      "nodeContext" : "tv=(SnackbarContentLayout)mView.getChildAt(0).getActionView()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 78,
+        "startLineNumber" : 232,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 232,
+        "endColumnNumber" : 86
+      },
+      "nodeContext" : "final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getActionView();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 242,
+        "startLineNumber" : 230,
+        "startColumnNumber" : 60,
+        "endLineNumber" : 235,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final SnackbarContentLayout (SnackbarContentLayout)mView.getChildAt(0)=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getActionView();\n  tv.setTextColor(color);\n  return this;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 420,
+        "startLineNumber" : 225,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 235,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * Sets the text color of the action specified in {@link #setAction(CharSequence,View.OnClickListener)}.\n */\n@NonNull public Snackbar setActionTextColor(@ColorInt int color){\n  final SnackbarContentLayout (SnackbarContentLayout)mView.getChildAt(0)=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getActionView();\n  tv.setTextColor(color);\n  return this;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 49,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 4,
+    "type" : "android.support.design.internal.SnackbarContentLayout"
+  } ],
+  "positionList" : [ {
+    "charLength" : 42,
+    "startLineNumber" : 232,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 232,
+    "endColumnNumber" : 70
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "contentLayout",
+  "nodePosition" : {
+    "charLength" : 13,
+    "startLineNumber" : 231,
+    "startColumnNumber" : 36,
+    "endLineNumber" : 231,
+    "endColumnNumber" : 49
+  }
+}

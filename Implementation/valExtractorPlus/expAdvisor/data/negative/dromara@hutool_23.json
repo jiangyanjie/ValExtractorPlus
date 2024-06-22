@@ -1,0 +1,228 @@
+{
+    "id": 23,
+    "expression": "value",
+    "projectName": "dromara@hutool",
+    "commitID": "8aec62a59be74b00c05f543736554a1b568c8ada",
+    "filePath": "hutool-poi/src/main/java/cn/hutool/poi/excel/cell/CellUtil.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "value",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 136,
+                "startColumnNumber": 30,
+                "endLineNumber": 136,
+                "endColumnNumber": 35
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "null == cellEditor ? value : cellEditor.edit(cell,value)",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 10,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 65,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 67
+                    },
+                    "nodeContext": "return null == cellEditor ? value : cellEditor.edit(cell,value);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 980,
+                        "startLineNumber": 98,
+                        "startColumnNumber": 88,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (null == cell) {\n    return null;\n  }\n  if (null == cellType) {\n    cellType=cell.getCellTypeEnum();\n  }\n  final Cell mergedCell=getMergedRegionCell(cell);\n  if (mergedCell != cell) {\n    cell=mergedCell;\n    cellType=cell.getCellTypeEnum();\n  }\n  Object value;\nswitch (cellType) {\ncase NUMERIC:    value=getNumericValue(cell);\n  break;\ncase BOOLEAN:value=cell.getBooleanCellValue();\nbreak;\ncase FORMULA:value=getCellValue(cell,cell.getCachedFormulaResultTypeEnum(),cellEditor);\nbreak;\ncase BLANK:value=StrUtil.EMPTY;\nbreak;\ncase ERROR:final FormulaError error=FormulaError.forInt(cell.getErrorCellValue());\nvalue=(null == error) ? StrUtil.EMPTY : error.getString();\nbreak;\ndefault:value=cell.getStringCellValue();\n}\nreturn null == cellEditor ? value : cellEditor.edit(cell,value);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 137,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1369,
+                        "startLineNumber": 89,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * 获取单元格值<br> 如果单元格值为数字格式，则判断其格式中是否有小数部分，无则返回Long类型，否则返回Double类型\n * @param cell       {@link Cell}单元格\n * @param cellType   单元格值类型{@link CellType}枚举，如果为 {@code null}默认使用cell的类型\n * @param cellEditor 单元格值编辑器。可以通过此编辑器对单元格值做自定义操作\n * @return 值，类型可能为：Date、Double、Boolean、String\n */\npublic static Object getCellValue(Cell cell,CellType cellType,CellEditor cellEditor){\n  if (null == cell) {\n    return null;\n  }\n  if (null == cellType) {\n    cellType=cell.getCellTypeEnum();\n  }\n  final Cell mergedCell=getMergedRegionCell(cell);\n  if (mergedCell != cell) {\n    cell=mergedCell;\n    cellType=cell.getCellTypeEnum();\n  }\n  Object value;\nswitch (cellType) {\ncase NUMERIC:    value=getNumericValue(cell);\n  break;\ncase BOOLEAN:value=cell.getBooleanCellValue();\nbreak;\ncase FORMULA:value=getCellValue(cell,cell.getCachedFormulaResultTypeEnum(),cellEditor);\nbreak;\ncase BLANK:value=StrUtil.EMPTY;\nbreak;\ncase ERROR:final FormulaError error=FormulaError.forInt(cell.getErrorCellValue());\nvalue=(null == error) ? StrUtil.EMPTY : error.getString();\nbreak;\ndefault:value=cell.getStringCellValue();\n}\nreturn null == cellEditor ? value : cellEditor.edit(cell,value);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 156,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 65,
+                    "startLineNumber": 136,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 136,
+                    "endColumnNumber": 67
+                },
+                "nodeContext": "return null == cellEditor ? value : cellEditor.edit(cell,value);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 11,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Object"
+        },
+        {
+            "nodeContext": "value",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 136,
+                "startColumnNumber": 60,
+                "endLineNumber": 136,
+                "endColumnNumber": 65
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,elseExpression]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 38,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "cellEditor.edit(cell,value)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "null == cellEditor ? value : cellEditor.edit(cell,value)",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 10,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 65,
+                        "startLineNumber": 136,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 136,
+                        "endColumnNumber": 67
+                    },
+                    "nodeContext": "return null == cellEditor ? value : cellEditor.edit(cell,value);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 980,
+                        "startLineNumber": 98,
+                        "startColumnNumber": 88,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (null == cell) {\n    return null;\n  }\n  if (null == cellType) {\n    cellType=cell.getCellTypeEnum();\n  }\n  final Cell mergedCell=getMergedRegionCell(cell);\n  if (mergedCell != cell) {\n    cell=mergedCell;\n    cellType=cell.getCellTypeEnum();\n  }\n  Object value;\nswitch (cellType) {\ncase NUMERIC:    value=getNumericValue(cell);\n  break;\ncase BOOLEAN:value=cell.getBooleanCellValue();\nbreak;\ncase FORMULA:value=getCellValue(cell,cell.getCachedFormulaResultTypeEnum(),cellEditor);\nbreak;\ncase BLANK:value=StrUtil.EMPTY;\nbreak;\ncase ERROR:final FormulaError error=FormulaError.forInt(cell.getErrorCellValue());\nvalue=(null == error) ? StrUtil.EMPTY : error.getString();\nbreak;\ndefault:value=cell.getStringCellValue();\n}\nreturn null == cellEditor ? value : cellEditor.edit(cell,value);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 137,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1369,
+                        "startLineNumber": 89,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 137,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * 获取单元格值<br> 如果单元格值为数字格式，则判断其格式中是否有小数部分，无则返回Long类型，否则返回Double类型\n * @param cell       {@link Cell}单元格\n * @param cellType   单元格值类型{@link CellType}枚举，如果为 {@code null}默认使用cell的类型\n * @param cellEditor 单元格值编辑器。可以通过此编辑器对单元格值做自定义操作\n * @return 值，类型可能为：Date、Double、Boolean、String\n */\npublic static Object getCellValue(Cell cell,CellType cellType,CellEditor cellEditor){\n  if (null == cell) {\n    return null;\n  }\n  if (null == cellType) {\n    cellType=cell.getCellTypeEnum();\n  }\n  final Cell mergedCell=getMergedRegionCell(cell);\n  if (mergedCell != cell) {\n    cell=mergedCell;\n    cellType=cell.getCellTypeEnum();\n  }\n  Object value;\nswitch (cellType) {\ncase NUMERIC:    value=getNumericValue(cell);\n  break;\ncase BOOLEAN:value=cell.getBooleanCellValue();\nbreak;\ncase FORMULA:value=getCellValue(cell,cell.getCachedFormulaResultTypeEnum(),cellEditor);\nbreak;\ncase BLANK:value=StrUtil.EMPTY;\nbreak;\ncase ERROR:final FormulaError error=FormulaError.forInt(cell.getErrorCellValue());\nvalue=(null == error) ? StrUtil.EMPTY : error.getString();\nbreak;\ndefault:value=cell.getStringCellValue();\n}\nreturn null == cellEditor ? value : cellEditor.edit(cell,value);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 156,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 65,
+                    "startLineNumber": 136,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 136,
+                    "endColumnNumber": 67
+                },
+                "nodeContext": "return null == cellEditor ? value : cellEditor.edit(cell,value);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 11,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Object"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 5,
+            "startLineNumber": 136,
+            "startColumnNumber": 30,
+            "endLineNumber": 136,
+            "endColumnNumber": 35
+        },
+        {
+            "charLength": 5,
+            "startLineNumber": 136,
+            "startColumnNumber": 60,
+            "endLineNumber": 136,
+            "endColumnNumber": 65
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 0
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 1
+        }
+    ]
+}

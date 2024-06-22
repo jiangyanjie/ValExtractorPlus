@@ -1,0 +1,95 @@
+{
+    "id": 74,
+    "expression": "unmappedColumnNames",
+    "projectName": "mybatis@mybatis-3",
+    "commitID": "1d22423edab4c52181ae30abb4715d570bf171ef",
+    "filePath": "src/main/java/org/apache/ibatis/executor/resultset/FastResultSetHandler.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "unmappedColumnNames",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 19,
+                "startLineNumber": 274,
+                "startColumnNumber": 29,
+                "endLineNumber": 274,
+                "endColumnNumber": 48
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 704,
+                        "startLineNumber": 274,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 288,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "for (String columnName : unmappedColumnNames) {\n  final String propertyName=useCamelCaseMapping ? columnName.replace(\"_\",\"\") : columnName;\n  final String property=metaObject.findProperty(propertyName);\n  if (property != null) {\n    final Class propertyType=metaObject.getSetterType(property);\n    if (typeHandlerRegistry.hasTypeHandler(propertyType)) {\n      final TypeHandler typeHandler=typeHandlerRegistry.getTypeHandler(propertyType);\n      final Object value=typeHandler.getResult(rs,columnName);\n      if (value != null) {\n        metaObject.setValue(property,value);\n        foundValues=true;\n      }\n    }\n  }\n}\n",
+                    "nodeType": "EnhancedForStatement",
+                    "astNodeNumber": 88,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 775,
+                        "startLineNumber": 272,
+                        "startColumnNumber": 163,
+                        "endLineNumber": 290,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  boolean foundValues=false;\n  for (  String columnName : unmappedColumnNames) {\n    final String propertyName=useCamelCaseMapping ? columnName.replace(\"_\",\"\") : columnName;\n    final String property=metaObject.findProperty(propertyName);\n    if (property != null) {\n      final Class propertyType=metaObject.getSetterType(property);\n      if (typeHandlerRegistry.hasTypeHandler(propertyType)) {\n        final TypeHandler typeHandler=typeHandlerRegistry.getTypeHandler(propertyType);\n        final Object value=typeHandler.getResult(rs,columnName);\n        if (value != null) {\n          metaObject.setValue(property,value);\n          foundValues=true;\n        }\n      }\n    }\n  }\n  return foundValues;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 96,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 936,
+                        "startLineNumber": 272,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 290,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "protected boolean applyAutomaticMappings(ResultSet rs,List<String> unmappedColumnNames,MetaObject metaObject,boolean useCamelCaseMapping) throws SQLException {\n  boolean foundValues=false;\n  for (  String columnName : unmappedColumnNames) {\n    final String propertyName=useCamelCaseMapping ? columnName.replace(\"_\",\"\") : columnName;\n    final String property=metaObject.findProperty(propertyName);\n    if (property != null) {\n      final Class propertyType=metaObject.getSetterType(property);\n      if (typeHandlerRegistry.hasTypeHandler(propertyType)) {\n        final TypeHandler typeHandler=typeHandlerRegistry.getTypeHandler(propertyType);\n        final Object value=typeHandler.getResult(rs,columnName);\n        if (value != null) {\n          metaObject.setValue(property,value);\n          foundValues=true;\n        }\n      }\n    }\n  }\n  return foundValues;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 120,
+                    "astHeight": 13
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 704,
+                    "startLineNumber": 274,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 288,
+                    "endColumnNumber": 5
+                },
+                "nodeContext": "for (String columnName : unmappedColumnNames) {\n  final String propertyName=useCamelCaseMapping ? columnName.replace(\"_\",\"\") : columnName;\n  final String property=metaObject.findProperty(propertyName);\n  if (property != null) {\n    final Class propertyType=metaObject.getSetterType(property);\n    if (typeHandlerRegistry.hasTypeHandler(propertyType)) {\n      final TypeHandler typeHandler=typeHandlerRegistry.getTypeHandler(propertyType);\n      final Object value=typeHandler.getResult(rs,columnName);\n      if (value != null) {\n        metaObject.setValue(property,value);\n        foundValues=true;\n      }\n    }\n  }\n}\n",
+                "nodeType": "EnhancedForStatement",
+                "astNodeNumber": 88,
+                "astHeight": 11
+            },
+            "tokenLength": 1,
+            "type": "java.util.List<java.lang.String>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 19,
+            "startLineNumber": 274,
+            "startColumnNumber": 29,
+            "endLineNumber": 274,
+            "endColumnNumber": 48
+        }
+    ],
+    "layoutRelationDataList": []
+}

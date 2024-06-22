@@ -1,0 +1,412 @@
+{
+    "id": 398,
+    "expression": "i",
+    "projectName": "antlr@antlr4",
+    "commitID": "f2b93e550cd912be3973743d09206db98f4092c9",
+    "filePath": "tool/src/org/antlr/v4/tool/Grammar.java",
+    "occurrences": 3,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "i",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 791,
+                "startColumnNumber": 18,
+                "endLineNumber": 791,
+                "endColumnNumber": 19
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 65,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 791,
+                        "endColumnNumber": 83
+                    },
+                    "nodeContext": "i < Math.min(literalNames.length,typeToStringLiteralList.size())",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 148,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 793,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n  literalNames[i]=typeToStringLiteralList.get(i);\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 29,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 527,
+                        "startLineNumber": 788,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 101,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 643,
+                        "startLineNumber": 784,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Gets the literal names assigned to tokens in the grammar.\n */\npublic String[] getTokenLiteralNames(){\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 109,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,expression]",
+                "nodePosition": {
+                    "charLength": 65,
+                    "startLineNumber": 791,
+                    "startColumnNumber": 18,
+                    "endLineNumber": 791,
+                    "endColumnNumber": 83
+                },
+                "nodeContext": "i < Math.min(literalNames.length,typeToStringLiteralList.size())",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 11,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        },
+        {
+            "nodeContext": "i",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 792,
+                "startColumnNumber": 16,
+                "endLineNumber": 792,
+                "endColumnNumber": 17
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,leftHandSide]",
+                    "nodePosition": {
+                        "charLength": 15,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 18
+                    },
+                    "nodeContext": "literalNames[i]",
+                    "nodeType": "ArrayAccess",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 49,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 60,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 90,
+                        "endLineNumber": 793,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  literalNames[i]=typeToStringLiteralList.get(i);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 148,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 793,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n  literalNames[i]=typeToStringLiteralList.get(i);\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 29,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 527,
+                        "startLineNumber": 788,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 101,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 643,
+                        "startLineNumber": 784,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Gets the literal names assigned to tokens in the grammar.\n */\npublic String[] getTokenLiteralNames(){\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 109,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 49,
+                    "startLineNumber": 792,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 792,
+                    "endColumnNumber": 52
+                },
+                "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        },
+        {
+            "nodeContext": "i",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 792,
+                "startColumnNumber": 49,
+                "endLineNumber": 792,
+                "endColumnNumber": 50
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+                    "nodePosition": {
+                        "charLength": 30,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "typeToStringLiteralList.get(i)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 51
+                    },
+                    "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 49,
+                        "startLineNumber": 792,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 792,
+                        "endColumnNumber": 52
+                    },
+                    "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 60,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 90,
+                        "endLineNumber": 793,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  literalNames[i]=typeToStringLiteralList.get(i);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 148,
+                        "startLineNumber": 791,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 793,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n  literalNames[i]=typeToStringLiteralList.get(i);\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 29,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 527,
+                        "startLineNumber": 788,
+                        "startColumnNumber": 40,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 101,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 643,
+                        "startLineNumber": 784,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 803,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Gets the literal names assigned to tokens in the grammar.\n */\npublic String[] getTokenLiteralNames(){\n  int numTokens=getMaxTokenType();\n  String[] literalNames=new String[numTokens + 1];\n  for (int i=0; i < Math.min(literalNames.length,typeToStringLiteralList.size()); i++) {\n    literalNames[i]=typeToStringLiteralList.get(i);\n  }\n  for (  Map.Entry<String,Integer> entry : stringLiteralToTypeMap.entrySet()) {\n    int value=entry.getValue();\n    if (value >= 0 && value < literalNames.length && literalNames[value] == null) {\n      literalNames[value]=entry.getKey();\n    }\n  }\n  return literalNames;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 109,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 49,
+                    "startLineNumber": 792,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 792,
+                    "endColumnNumber": 52
+                },
+                "nodeContext": "literalNames[i]=typeToStringLiteralList.get(i);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 791,
+            "startColumnNumber": 18,
+            "endLineNumber": 791,
+            "endColumnNumber": 19
+        },
+        {
+            "charLength": 1,
+            "startLineNumber": 792,
+            "startColumnNumber": 16,
+            "endLineNumber": 792,
+            "endColumnNumber": 17
+        },
+        {
+            "charLength": 1,
+            "startLineNumber": 792,
+            "startColumnNumber": 49,
+            "endLineNumber": 792,
+            "endColumnNumber": 50
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 1
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 1
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 4
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 1
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 4
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 1
+        }
+    ]
+}

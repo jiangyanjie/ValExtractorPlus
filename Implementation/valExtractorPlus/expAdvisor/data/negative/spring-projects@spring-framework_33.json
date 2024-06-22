@@ -1,0 +1,109 @@
+{
+    "id": 33,
+    "expression": "new ArrayList<>()",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "46a5fb7a9133a0c4a392ce23597623c64a16aa3c",
+    "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new ArrayList<>()",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 17,
+                "startLineNumber": 190,
+                "startColumnNumber": 39,
+                "endLineNumber": 190,
+                "endColumnNumber": 56
+            },
+            "astNodeNumber": 4,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 190,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 190,
+                        "endColumnNumber": 56
+                    },
+                    "nodeContext": "readers=new ArrayList<>()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 55,
+                        "startLineNumber": 190,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 190,
+                        "endColumnNumber": 57
+                    },
+                    "nodeContext": "List<HttpMessageReader<?>> readers=new ArrayList<>();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 574,
+                        "startLineNumber": 186,
+                        "startColumnNumber": 53,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (!this.registerDefaults) {\n    return Collections.emptyList();\n  }\n  List<HttpMessageReader<?>> readers=new ArrayList<>();\n  if (jackson2Present) {\n    readers.add(new DecoderHttpMessageReader<>(getJackson2JsonDecoder()));\n  }\n  if (jackson2SmilePresent) {\n    readers.add(new DecoderHttpMessageReader<>(new Jackson2SmileDecoder()));\n  }\n  if (jaxb2Present) {\n    Decoder<?> decoder=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n    readers.add(new DecoderHttpMessageReader<>(decoder));\n  }\n  extendObjectReaders(readers);\n  return readers;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 89,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 680,
+                        "startLineNumber": 183,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 203,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Return Object readers (JSON, XML, SSE).\n */\nfinal List<HttpMessageReader<?>> getObjectReaders(){\n  if (!this.registerDefaults) {\n    return Collections.emptyList();\n  }\n  List<HttpMessageReader<?>> readers=new ArrayList<>();\n  if (jackson2Present) {\n    readers.add(new DecoderHttpMessageReader<>(getJackson2JsonDecoder()));\n  }\n  if (jackson2SmilePresent) {\n    readers.add(new DecoderHttpMessageReader<>(new Jackson2SmileDecoder()));\n  }\n  if (jaxb2Present) {\n    Decoder<?> decoder=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n    readers.add(new DecoderHttpMessageReader<>(decoder));\n  }\n  extendObjectReaders(readers);\n  return readers;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 100,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 55,
+                    "startLineNumber": 190,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 190,
+                    "endColumnNumber": 57
+                },
+                "nodeContext": "List<HttpMessageReader<?>> readers=new ArrayList<>();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 14,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "java.util.ArrayList<org.springframework.http.codec.HttpMessageReader<?>>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 17,
+            "startLineNumber": 190,
+            "startColumnNumber": 39,
+            "endLineNumber": 190,
+            "endColumnNumber": 56
+        }
+    ],
+    "layoutRelationDataList": []
+}

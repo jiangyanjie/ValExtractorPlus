@@ -1,0 +1,109 @@
+{
+    "id": 229,
+    "expression": "(Entry<?,?>)o",
+    "projectName": "google@gson",
+    "commitID": "751c69c655c9317a7169e24e452d3931ec956761",
+    "filePath": "gson/src/main/java/com/google/gson/internal/StringMap.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "(Entry<?,?>)o",
+            "nodeType": "CastExpression",
+            "nodePosition": {
+                "charLength": 15,
+                "startLineNumber": 325,
+                "startColumnNumber": 22,
+                "endLineNumber": 325,
+                "endColumnNumber": 37
+            },
+            "astNodeNumber": 7,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 325,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 325,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "e=(Entry<?,?>)o",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 325,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 325,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "Entry<?,?> e=(Entry<?,?>)o;\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 253,
+                        "startLineNumber": 321,
+                        "startColumnNumber": 52,
+                        "endLineNumber": 329,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (!(o instanceof Entry)) {\n    return false;\n  }\n  Entry<?,?> e=(Entry<?,?>)o;\n  Object eValue=e.getValue();\n  return key.equals(e.getKey()) && (value == null ? eValue == null : value.equals(eValue));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 54,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 301,
+                        "startLineNumber": 321,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 329,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public final boolean equals(Object o){\n  if (!(o instanceof Entry)) {\n    return false;\n  }\n  Entry<?,?> e=(Entry<?,?>)o;\n  Object eValue=e.getValue();\n  return key.equals(e.getKey()) && (value == null ? eValue == null : value.equals(eValue));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 65,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 32,
+                    "startLineNumber": 325,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 325,
+                    "endColumnNumber": 38
+                },
+                "nodeContext": "Entry<?,?> e=(Entry<?,?>)o;\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 15,
+                "astHeight": 6
+            },
+            "tokenLength": 3,
+            "type": "java.util.Map.Entry<,>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 15,
+            "startLineNumber": 325,
+            "startColumnNumber": 22,
+            "endLineNumber": 325,
+            "endColumnNumber": 37
+        }
+    ],
+    "layoutRelationDataList": []
+}

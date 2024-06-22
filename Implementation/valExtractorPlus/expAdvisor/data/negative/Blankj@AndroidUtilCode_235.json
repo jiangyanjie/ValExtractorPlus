@@ -1,0 +1,242 @@
+{
+    "id": 235,
+    "expression": "dir",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "e3eb3cbf4cec5beb57019a56c2945b70c90344a6",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/util/FileUtils.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "dir",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 537,
+                "startColumnNumber": 19,
+                "endLineNumber": 537,
+                "endColumnNumber": 22
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.PrefixExpression,operand]",
+                    "nodePosition": {
+                        "charLength": 10,
+                        "startLineNumber": 537,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 537,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "isDir(dir)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 11,
+                        "startLineNumber": 537,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 537,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "!isDir(dir)",
+                    "nodeType": "PrefixExpression",
+                    "astNodeNumber": 4,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 537,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 537,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "if (!isDir(dir)) return null;\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 548,
+                        "startLineNumber": 536,
+                        "startColumnNumber": 54,
+                        "endLineNumber": 552,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (!isDir(dir))   return null;\n  List<File> list=new ArrayList<>();\n  File[] files=dir.listFiles();\n  if (files != null && files.length != 0) {\n    for (    File file : files) {\n      list.add(file);\n      if (file.isDirectory()) {\n        List<File> fileList=listFilesInDir(file);\n        if (fileList != null) {\n          list.addAll(fileList);\n        }\n      }\n    }\n  }\n  return list;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 81,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 690,
+                        "startLineNumber": 530,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 552,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 获取目录下所有文件包括子目录\n * @param dir 目录\n * @return 文件链表\n */\npublic static List<File> listFilesInDir(File dir){\n  if (!isDir(dir))   return null;\n  List<File> list=new ArrayList<>();\n  File[] files=dir.listFiles();\n  if (files != null && files.length != 0) {\n    for (    File file : files) {\n      list.add(file);\n      if (file.isDirectory()) {\n        List<File> fileList=listFilesInDir(file);\n        if (fileList != null) {\n          list.addAll(fileList);\n        }\n      }\n    }\n  }\n  return list;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 95,
+                    "astHeight": 13
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 29,
+                    "startLineNumber": 537,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 537,
+                    "endColumnNumber": 37
+                },
+                "nodeContext": "if (!isDir(dir)) return null;\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.io.File"
+        },
+        {
+            "nodeContext": "dir",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 3,
+                "startLineNumber": 539,
+                "startColumnNumber": 23,
+                "endLineNumber": 539,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 15,
+                        "startLineNumber": 539,
+                        "startColumnNumber": 23,
+                        "endLineNumber": 539,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "dir.listFiles()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 23,
+                        "startLineNumber": 539,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 539,
+                        "endColumnNumber": 38
+                    },
+                    "nodeContext": "files=dir.listFiles()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 31,
+                        "startLineNumber": 539,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 539,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "File[] files=dir.listFiles();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 548,
+                        "startLineNumber": 536,
+                        "startColumnNumber": 54,
+                        "endLineNumber": 552,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (!isDir(dir))   return null;\n  List<File> list=new ArrayList<>();\n  File[] files=dir.listFiles();\n  if (files != null && files.length != 0) {\n    for (    File file : files) {\n      list.add(file);\n      if (file.isDirectory()) {\n        List<File> fileList=listFilesInDir(file);\n        if (fileList != null) {\n          list.addAll(fileList);\n        }\n      }\n    }\n  }\n  return list;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 81,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 690,
+                        "startLineNumber": 530,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 552,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 获取目录下所有文件包括子目录\n * @param dir 目录\n * @return 文件链表\n */\npublic static List<File> listFilesInDir(File dir){\n  if (!isDir(dir))   return null;\n  List<File> list=new ArrayList<>();\n  File[] files=dir.listFiles();\n  if (files != null && files.length != 0) {\n    for (    File file : files) {\n      list.add(file);\n      if (file.isDirectory()) {\n        List<File> fileList=listFilesInDir(file);\n        if (fileList != null) {\n          list.addAll(fileList);\n        }\n      }\n    }\n  }\n  return list;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 95,
+                    "astHeight": 13
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 31,
+                    "startLineNumber": 539,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 539,
+                    "endColumnNumber": 39
+                },
+                "nodeContext": "File[] files=dir.listFiles();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.io.File"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 3,
+            "startLineNumber": 537,
+            "startColumnNumber": 19,
+            "endLineNumber": 537,
+            "endColumnNumber": 22
+        },
+        {
+            "charLength": 3,
+            "startLineNumber": 539,
+            "startColumnNumber": 23,
+            "endLineNumber": 539,
+            "endColumnNumber": 26
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+  "id" : 24,
+  "expression" : "new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\")",
+  "projectName" : "apache@skywalking",
+  "commitID" : "03824477496910c39ded204f03697126ab990838",
+  "filePath" : "test/e2e/e2e-test/src/test/java/org/apache/skywalking/e2e/storage/StorageE2E.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\")",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 92,
+      "startLineNumber" : 154,
+      "startColumnNumber" : 50,
+      "endLineNumber" : 154,
+      "endColumnNumber" : 142
+    },
+    "astNodeNumber" : 16,
+    "astHeight" : 7,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 108,
+        "startLineNumber" : 154,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 154,
+        "endColumnNumber" : 143
+      },
+      "nodeContext" : "graphql.traces(new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\"))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 19,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 115,
+        "startLineNumber" : 154,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 154,
+        "endColumnNumber" : 141
+      },
+      "nodeContext" : "traces=graphql.traces(new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\"))",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 21,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 135,
+        "startLineNumber" : 154,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 154,
+        "endColumnNumber" : 143
+      },
+      "nodeContext" : "final List<Trace> traces=graphql.traces(new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\"));\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 28,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 149,
+        "startColumnNumber" : 35,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final TracesQuery new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\")=new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\");\n  final List<Trace> traces=graphql.traces(new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\"));\n  LOGGER.info(\"traces: {}\",traces);\n  load(\"expected/storage/traces.yml\").as(TracesMatcher.class).verifyLoosely(traces);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 69,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 515,
+        "startLineNumber" : 148,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 159,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@RetryableTest void traces() throws Exception {\n  final TracesQuery new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\")=new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\");\n  final List<Trace> traces=graphql.traces(new TracesQuery().start(startTime).end(now()).orderByDuration().addTag(\"http.method\",\"POST\"));\n  LOGGER.info(\"traces: {}\",traces);\n  load(\"expected/storage/traces.yml\").as(TracesMatcher.class).verifyLoosely(traces);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 76,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 10,
+    "type" : "org.apache.skywalking.e2e.trace.TracesQuery"
+  } ],
+  "positionList" : [ {
+    "charLength" : 92,
+    "startLineNumber" : 154,
+    "startColumnNumber" : 50,
+    "endLineNumber" : 154,
+    "endColumnNumber" : 142
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "query",
+  "nodePosition" : {
+    "charLength" : 5,
+    "startLineNumber" : 150,
+    "startColumnNumber" : 26,
+    "endLineNumber" : 150,
+    "endColumnNumber" : 31
+  }
+}

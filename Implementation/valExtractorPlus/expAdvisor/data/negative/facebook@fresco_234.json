@@ -1,0 +1,109 @@
+{
+    "id": 234,
+    "expression": "FrescoVitoProvider.getConfig()",
+    "projectName": "facebook@fresco",
+    "commitID": "22468d5b520df9b51572a6388a34e7f6bd5a22c1",
+    "filePath": "vito/litho/src/main/java/com/facebook/fresco/vito/litho/FrescoVitoImage2Spec.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "FrescoVitoProvider.getConfig()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 30,
+                "startLineNumber": 88,
+                "startColumnNumber": 30,
+                "endLineNumber": 88,
+                "endColumnNumber": 60
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 39,
+                        "startLineNumber": 88,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 60
+                    },
+                    "nodeContext": "config=FrescoVitoProvider.getConfig()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 88,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 88,
+                        "endColumnNumber": 61
+                    },
+                    "nodeContext": "FrescoVitoConfig config=FrescoVitoProvider.getConfig();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 277,
+                        "startLineNumber": 87,
+                        "startColumnNumber": 51,
+                        "endLineNumber": 94,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  FrescoVitoConfig config=FrescoVitoProvider.getConfig();\n  if (config.prefetchInOnPrepare()) {\n    prefetchDataSource.set(FrescoVitoProvider.getPrefetcher().prefetch(config.prefetchTargetOnPrepare(),imageRequest,callerContext));\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 28,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 507,
+                        "startLineNumber": 82,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 94,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@OnPrepare static void onPrepare(ComponentContext c,@Prop(optional=true) final @Nullable Object callerContext,@CachedValue VitoImageRequest imageRequest,Output<DataSource<Void>> prefetchDataSource){\n  FrescoVitoConfig config=FrescoVitoProvider.getConfig();\n  if (config.prefetchInOnPrepare()) {\n    prefetchDataSource.set(FrescoVitoProvider.getPrefetcher().prefetch(config.prefetchTargetOnPrepare(),imageRequest,callerContext));\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 66,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 57,
+                    "startLineNumber": 88,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 88,
+                    "endColumnNumber": 61
+                },
+                "nodeContext": "FrescoVitoConfig config=FrescoVitoProvider.getConfig();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 2,
+            "type": "com.facebook.fresco.vito.core.FrescoVitoConfig"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 30,
+            "startLineNumber": 88,
+            "startColumnNumber": 30,
+            "endLineNumber": 88,
+            "endColumnNumber": 60
+        }
+    ],
+    "layoutRelationDataList": []
+}

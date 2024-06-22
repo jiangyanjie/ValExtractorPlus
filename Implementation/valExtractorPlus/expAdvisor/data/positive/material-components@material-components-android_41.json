@@ -1,0 +1,105 @@
+{
+  "id" : 41,
+  "expression" : "(SnackbarContentLayout)mView.getChildAt(0)",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "b241ff5785463453bcd3176b22e783ddb103835c",
+  "filePath" : "lib/src/android/support/design/widget/Snackbar.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "(SnackbarContentLayout)mView.getChildAt(0)",
+    "nodeType" : "CastExpression",
+    "nodePosition" : {
+      "charLength" : 42,
+      "startLineNumber" : 158,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 158,
+      "endColumnNumber" : 70
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 158,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 158,
+        "endColumnNumber" : 87
+      },
+      "nodeContext" : "(SnackbarContentLayout)mView.getChildAt(0).getMessageView()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 62,
+        "startLineNumber" : 158,
+        "startColumnNumber" : 23,
+        "endLineNumber" : 158,
+        "endColumnNumber" : 85
+      },
+      "nodeContext" : "tv=(SnackbarContentLayout)mView.getChildAt(0).getMessageView()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 79,
+        "startLineNumber" : 158,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 158,
+        "endColumnNumber" : 87
+      },
+      "nodeContext" : "final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getMessageView();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 240,
+        "startLineNumber" : 156,
+        "startColumnNumber" : 59,
+        "endLineNumber" : 161,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final SnackbarContentLayout (SnackbarContentLayout)mView.getChildAt(0)=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 430,
+        "startLineNumber" : 150,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 161,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * Update the text in this  {@link Snackbar}.\n * @param message The new text for this {@link BaseTransientBottomBar}.\n */\n@NonNull public Snackbar setText(@NonNull CharSequence message){\n  final SnackbarContentLayout (SnackbarContentLayout)mView.getChildAt(0)=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=(SnackbarContentLayout)mView.getChildAt(0).getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 50,
+      "astHeight" : 8
+    } ],
+    "tokenLength" : 4,
+    "type" : "android.support.design.internal.SnackbarContentLayout"
+  } ],
+  "positionList" : [ {
+    "charLength" : 42,
+    "startLineNumber" : 158,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 158,
+    "endColumnNumber" : 70
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "contentLayout",
+  "nodePosition" : {
+    "charLength" : 13,
+    "startLineNumber" : 157,
+    "startColumnNumber" : 36,
+    "endLineNumber" : 157,
+    "endColumnNumber" : 49
+  }
+}

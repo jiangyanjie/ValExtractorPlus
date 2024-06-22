@@ -1,0 +1,217 @@
+{
+  "id" : 2,
+  "expression" : "chipDrawable != null ? chipDrawable.getChipText() : \"\"",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "79bf9d0e8e62eea9c2f2620d4e1a0a2ca0e12017",
+  "filePath" : "lib/java/com/google/android/material/chip/Chip.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "chipDrawable != null ? chipDrawable.getChipText() : \"\"",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 54,
+      "startLineNumber" : 665,
+      "startColumnNumber" : 21,
+      "endLineNumber" : 665,
+      "endColumnNumber" : 75
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 68,
+        "startLineNumber" : 665,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 665,
+        "endColumnNumber" : 76
+      },
+      "nodeContext" : "node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 70,
+        "startLineNumber" : 665,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 665,
+        "endColumnNumber" : 78
+      },
+      "nodeContext" : "node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 76,
+        "startLineNumber" : 664,
+        "startColumnNumber" : 46,
+        "endLineNumber" : 666,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 212,
+        "startLineNumber" : 664,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 670,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (VERSION.SDK_INT >= VERSION_CODES.M) {\n  node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n else {\n  node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 468,
+        "startLineNumber" : 660,
+        "startColumnNumber" : 75,
+        "endLineNumber" : 671,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipDrawable != null ? chipDrawable.getChipText() : \"\"=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n else {\n    node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 548,
+        "startLineNumber" : 659,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 671,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override protected void onPopulateNodeForHost(AccessibilityNodeInfoCompat node){\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipDrawable != null ? chipDrawable.getChipText() : \"\"=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n else {\n    node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 71,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.CharSequence"
+  }, {
+    "nodeContext" : "chipDrawable != null ? chipDrawable.getChipText() : \"\"",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 54,
+      "startLineNumber" : 669,
+      "startColumnNumber" : 35,
+      "endLineNumber" : 669,
+      "endColumnNumber" : 89
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 82,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 669,
+        "endColumnNumber" : 90
+      },
+      "nodeContext" : "node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 84,
+        "startLineNumber" : 669,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 669,
+        "endColumnNumber" : 92
+      },
+      "nodeContext" : "node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 90,
+        "startLineNumber" : 666,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 670,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 212,
+        "startLineNumber" : 664,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 670,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (VERSION.SDK_INT >= VERSION_CODES.M) {\n  node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n else {\n  node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 27,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 468,
+        "startLineNumber" : 660,
+        "startColumnNumber" : 75,
+        "endLineNumber" : 671,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipDrawable != null ? chipDrawable.getChipText() : \"\"=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n else {\n    node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 548,
+        "startLineNumber" : 659,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 671,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override protected void onPopulateNodeForHost(AccessibilityNodeInfoCompat node){\n  node.setCheckable(chipDrawable != null && chipDrawable.isCheckable());\n  node.setClassName(Chip.class.getName());\n  CharSequence chipDrawable != null ? chipDrawable.getChipText() : \"\"=chipDrawable != null ? chipDrawable.getChipText() : \"\";\n  if (VERSION.SDK_INT >= VERSION_CODES.M) {\n    node.setText(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n else {\n    node.setContentDescription(chipDrawable != null ? chipDrawable.getChipText() : \"\");\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 71,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.CharSequence"
+  } ],
+  "positionList" : [ {
+    "charLength" : 54,
+    "startLineNumber" : 665,
+    "startColumnNumber" : 21,
+    "endLineNumber" : 665,
+    "endColumnNumber" : 75
+  }, {
+    "charLength" : 54,
+    "startLineNumber" : 669,
+    "startColumnNumber" : 35,
+    "endLineNumber" : 669,
+    "endColumnNumber" : 89
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "chipText",
+  "nodePosition" : {
+    "charLength" : 8,
+    "startLineNumber" : 663,
+    "startColumnNumber" : 19,
+    "endLineNumber" : 663,
+    "endColumnNumber" : 27
+  }
+}

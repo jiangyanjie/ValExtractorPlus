@@ -1,0 +1,426 @@
+{
+    "id": 17,
+    "expression": "clazz",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "a15d9c90335b7e9e533b81774b506155a47aba17",
+    "filePath": "src/main/java/io/vertx/core/logging/LoggerFactory.java",
+    "occurrences": 3,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "clazz",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 69,
+                "startColumnNumber": 18,
+                "endLineNumber": 69,
+                "endColumnNumber": 23
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,expression]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 69,
+                        "endColumnNumber": 42
+                    },
+                    "nodeContext": "clazz.isAnonymousClass()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 110,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 117,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 125,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 163,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 55,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 22,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 216,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static Logger getLogger(final Class<?> clazz){\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 35,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,expression]",
+                "nodePosition": {
+                    "charLength": 24,
+                    "startLineNumber": 69,
+                    "startColumnNumber": 18,
+                    "endLineNumber": 69,
+                    "endColumnNumber": 42
+                },
+                "nodeContext": "clazz.isAnonymousClass()",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<>"
+        },
+        {
+            "nodeContext": "clazz",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 70,
+                "startColumnNumber": 6,
+                "endLineNumber": 70,
+                "endColumnNumber": 11
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 25,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "clazz.getEnclosingClass()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,thenExpression]",
+                    "nodePosition": {
+                        "charLength": 44,
+                        "startLineNumber": 70,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 70,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "clazz.getEnclosingClass().getCanonicalName()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 110,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 117,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 125,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 163,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 55,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 22,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 216,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static Logger getLogger(final Class<?> clazz){\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 35,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,thenExpression]",
+                "nodePosition": {
+                    "charLength": 44,
+                    "startLineNumber": 70,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 70,
+                    "endColumnNumber": 50
+                },
+                "nodeContext": "clazz.getEnclosingClass().getCanonicalName()",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<>"
+        },
+        {
+            "nodeContext": "clazz",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 5,
+                "startLineNumber": 71,
+                "startColumnNumber": 6,
+                "endLineNumber": 71,
+                "endColumnNumber": 11
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,elseExpression]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "clazz.getCanonicalName()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 110,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "ConditionalExpression",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 117,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 14,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 125,
+                        "startLineNumber": 69,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 71,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 163,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 55,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 22,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 216,
+                        "startLineNumber": 68,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static Logger getLogger(final Class<?> clazz){\n  String name=clazz.isAnonymousClass() ? clazz.getEnclosingClass().getCanonicalName() : clazz.getCanonicalName();\n  return getLogger(name);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 35,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,elseExpression]",
+                "nodePosition": {
+                    "charLength": 24,
+                    "startLineNumber": 71,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 71,
+                    "endColumnNumber": 30
+                },
+                "nodeContext": "clazz.getCanonicalName()",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 5,
+            "startLineNumber": 69,
+            "startColumnNumber": 18,
+            "endLineNumber": 69,
+            "endColumnNumber": 23
+        },
+        {
+            "charLength": 5,
+            "startLineNumber": 70,
+            "startColumnNumber": 6,
+            "endLineNumber": 70,
+            "endColumnNumber": 11
+        },
+        {
+            "charLength": 5,
+            "startLineNumber": 71,
+            "startColumnNumber": 6,
+            "endLineNumber": 71,
+            "endColumnNumber": 11
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 1
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 1
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 1
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 1
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+  "id" : 46,
+  "expression" : "getAnimatedFactory()",
+  "projectName" : "facebook@fresco",
+  "commitID" : "029fe6be57e4117a4d18634d4d439c3de7661030",
+  "filePath" : "imagepipeline/src/main/java/com/facebook/imagepipeline/core/ImagePipelineFactory.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getAnimatedFactory()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 20,
+      "startLineNumber" : 142,
+      "startColumnNumber" : 11,
+      "endLineNumber" : 142,
+      "endColumnNumber" : 31
+    },
+    "astNodeNumber" : 2,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,expression]",
+      "nodePosition" : {
+        "charLength" : 28,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 39
+      },
+      "nodeContext" : "getAnimatedFactory() == null",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 4,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 94,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 105
+      },
+      "nodeContext" : "getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context)",
+      "nodeType" : "ConditionalExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 103,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 107
+      },
+      "nodeContext" : "return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 170,
+        "startLineNumber" : 140,
+        "startColumnNumber" : 69,
+        "endLineNumber" : 143,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  AnimatedFactory getAnimatedFactory()=getAnimatedFactory();\n  return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 19,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 246,
+        "startLineNumber" : 139,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 143,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Nullable public DrawableFactory getAnimatedDrawableFactory(Context context){\n  AnimatedFactory getAnimatedFactory()=getAnimatedFactory();\n  return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 30,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 1,
+    "type" : "com.facebook.imagepipeline.animated.factory.AnimatedFactory"
+  }, {
+    "nodeContext" : "getAnimatedFactory()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 20,
+      "startLineNumber" : 142,
+      "startColumnNumber" : 44,
+      "endLineNumber" : 142,
+      "endColumnNumber" : 64
+    },
+    "astNodeNumber" : 2,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ConditionalExpression,elseExpression]",
+      "nodePosition" : {
+        "charLength" : 56,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 44,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 100
+      },
+      "nodeContext" : "getAnimatedFactory().getAnimatedDrawableFactory(context)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 5,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 94,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 11,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 105
+      },
+      "nodeContext" : "getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context)",
+      "nodeType" : "ConditionalExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 103,
+        "startLineNumber" : 142,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 142,
+        "endColumnNumber" : 107
+      },
+      "nodeContext" : "return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 170,
+        "startLineNumber" : 140,
+        "startColumnNumber" : 69,
+        "endLineNumber" : 143,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  AnimatedFactory getAnimatedFactory()=getAnimatedFactory();\n  return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 19,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 246,
+        "startLineNumber" : 139,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 143,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "@Nullable public DrawableFactory getAnimatedDrawableFactory(Context context){\n  AnimatedFactory getAnimatedFactory()=getAnimatedFactory();\n  return getAnimatedFactory() == null ? null : getAnimatedFactory().getAnimatedDrawableFactory(context);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 30,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 1,
+    "type" : "com.facebook.imagepipeline.animated.factory.AnimatedFactory"
+  } ],
+  "positionList" : [ {
+    "charLength" : 20,
+    "startLineNumber" : 142,
+    "startColumnNumber" : 11,
+    "endLineNumber" : 142,
+    "endColumnNumber" : 31
+  }, {
+    "charLength" : 20,
+    "startLineNumber" : 142,
+    "startColumnNumber" : 44,
+    "endLineNumber" : 142,
+    "endColumnNumber" : 64
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "animatedFactory",
+  "nodePosition" : {
+    "charLength" : 15,
+    "startLineNumber" : 141,
+    "startColumnNumber" : 20,
+    "endLineNumber" : 141,
+    "endColumnNumber" : 35
+  }
+}

@@ -1,0 +1,123 @@
+{
+    "id": 173,
+    "expression": "JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType())",
+    "projectName": "apache@shardingsphere",
+    "commitID": "d91ffcb5a9489e0e02d9a2230f9cdd2cf9e69381",
+    "filePath": "shardingsphere-kernel/shardingsphere-data-pipeline/shardingsphere-data-pipeline-core/src/main/java/org/apache/shardingsphere/data/pipeline/core/datasource/DataSourceFactory.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType())",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 68,
+                "startLineNumber": 41,
+                "startColumnNumber": 32,
+                "endLineNumber": 41,
+                "endColumnNumber": 100
+            },
+            "astNodeNumber": 6,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 132,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 32,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 164
+                    },
+                    "nodeContext": "JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 145,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 19,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 164
+                    },
+                    "nodeContext": "dataSource=JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration())",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 13,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 157,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 165
+                    },
+                    "nodeContext": "DataSource dataSource=JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration());\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 16,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 314,
+                        "startLineNumber": 39,
+                        "startColumnNumber": 93,
+                        "endLineNumber": 43,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  DataSource dataSource=JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration());\n  return new DataSourceWrapper(dataSource,dataSourceConfig.getDatabaseType());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 25,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 601,
+                        "startLineNumber": 32,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 43,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * New instance data source wrapper.\n * @param dataSourceConfig data source configuration\n * @return new data source wrapper\n */\n@SneakyThrows(SQLException.class) public DataSourceWrapper newInstance(final JDBCDataSourceConfiguration dataSourceConfig){\n  DataSource dataSource=JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration());\n  return new DataSourceWrapper(dataSource,dataSourceConfig.getDatabaseType());\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 41,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 157,
+                    "startLineNumber": 41,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 41,
+                    "endColumnNumber": 165
+                },
+                "nodeContext": "DataSource dataSource=JDBCDataSourceCreatorFactory.getInstance(dataSourceConfig.getType()).createDataSource(dataSourceConfig.getDataSourceConfiguration());\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 16,
+                "astHeight": 6
+            },
+            "tokenLength": 4,
+            "type": "org.apache.shardingsphere.infra.config.datasource.jdbc.creator.JDBCDataSourceCreator"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 68,
+            "startLineNumber": 41,
+            "startColumnNumber": 32,
+            "endLineNumber": 41,
+            "endColumnNumber": 100
+        }
+    ],
+    "layoutRelationDataList": []
+}

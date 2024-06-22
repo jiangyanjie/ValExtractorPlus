@@ -1,0 +1,123 @@
+{
+    "id": 216,
+    "expression": "new IllegalStateException(\"JsonWriter is closed.\")",
+    "projectName": "google@gson",
+    "commitID": "2c8bec27d48d0d9ba9d99ff5fb7a9bae36906c48",
+    "filePath": "gson/src/main/java/com/google/gson/stream/JsonWriter.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new IllegalStateException(\"JsonWriter is closed.\")",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 50,
+                "startLineNumber": 319,
+                "startColumnNumber": 12,
+                "endLineNumber": 319,
+                "endColumnNumber": 62
+            },
+            "astNodeNumber": 4,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 57,
+                        "startLineNumber": 319,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 319,
+                        "endColumnNumber": 63
+                    },
+                    "nodeContext": "throw new IllegalStateException(\"JsonWriter is closed.\");\n",
+                    "nodeType": "ThrowStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 71,
+                        "startLineNumber": 318,
+                        "startColumnNumber": 19,
+                        "endLineNumber": 320,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  throw new IllegalStateException(\"JsonWriter is closed.\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 6,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 86,
+                        "startLineNumber": 318,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 320,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (size == 0) {\n  throw new IllegalStateException(\"JsonWriter is closed.\");\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 157,
+                        "startLineNumber": 316,
+                        "startColumnNumber": 27,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  int size=stack.size();\n  if (size == 0) {\n    throw new IllegalStateException(\"JsonWriter is closed.\");\n  }\n  return stack.get(size - 1);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 25,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 242,
+                        "startLineNumber": 313,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 322,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "/** \n * Returns the value on the top of the stack.\n */\nprivate JsonScope peek(){\n  int size=stack.size();\n  if (size == 0) {\n    throw new IllegalStateException(\"JsonWriter is closed.\");\n  }\n  return stack.get(size - 1);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 31,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 57,
+                    "startLineNumber": 319,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 319,
+                    "endColumnNumber": 63
+                },
+                "nodeContext": "throw new IllegalStateException(\"JsonWriter is closed.\");\n",
+                "nodeType": "ThrowStatement",
+                "astNodeNumber": 5,
+                "astHeight": 4
+            },
+            "tokenLength": 4,
+            "type": "java.lang.IllegalStateException"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 50,
+            "startLineNumber": 319,
+            "startColumnNumber": 12,
+            "endLineNumber": 319,
+            "endColumnNumber": 62
+        }
+    ],
+    "layoutRelationDataList": []
+}

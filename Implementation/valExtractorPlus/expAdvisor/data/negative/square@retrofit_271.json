@@ -1,0 +1,242 @@
+{
+    "id": 271,
+    "expression": "statusLine",
+    "projectName": "square@retrofit",
+    "commitID": "fe43ab0b5c3541fb33b8fddc6a1db60260ff52b3",
+    "filePath": "retrofit/src/main/java/retrofit/http/client/ApacheClient.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "statusLine",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 10,
+                "startLineNumber": 73,
+                "startColumnNumber": 17,
+                "endLineNumber": 73,
+                "endColumnNumber": 27
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 17,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "statusLine.getStatusCode()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "status=statusLine.getStatusCode()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 40,
+                        "startLineNumber": 73,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 73,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "int status=statusLine.getStatusCode();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 825,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 139,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 897,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "static Response parseResponse(HttpResponse response) throws IOException {\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 150,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 40,
+                    "startLineNumber": 73,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 73,
+                    "endColumnNumber": 44
+                },
+                "nodeContext": "int status=statusLine.getStatusCode();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "retrofit.http.client.StatusLine"
+        },
+        {
+            "nodeContext": "statusLine",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 10,
+                "startLineNumber": 74,
+                "startColumnNumber": 20,
+                "endLineNumber": 74,
+                "endColumnNumber": 30
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 28,
+                        "startLineNumber": 74,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "statusLine.getReasonPhrase()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 37,
+                        "startLineNumber": 74,
+                        "startColumnNumber": 11,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "reason=statusLine.getReasonPhrase()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 45,
+                        "startLineNumber": 74,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 74,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "String reason=statusLine.getReasonPhrase();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 825,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 74,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 139,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 897,
+                        "startLineNumber": 71,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 95,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "static Response parseResponse(HttpResponse response) throws IOException {\n  StatusLine statusLine=response.getStatusLine();\n  int status=statusLine.getStatusCode();\n  String reason=statusLine.getReasonPhrase();\n  List<Header> headers=new ArrayList<Header>();\n  String contentType=\"application/octet-stream\";\n  for (  org.apache.http.Header header : response.getAllHeaders()) {\n    String name=header.getName();\n    String value=header.getValue();\n    if (name.equalsIgnoreCase(HEADER_CONTENT_TYPE)) {\n      contentType=value;\n    }\n    headers.add(new Header(name,value));\n  }\n  TypedByteArray body=null;\n  HttpEntity entity=response.getEntity();\n  if (entity != null) {\n    byte[] bytes=EntityUtils.toByteArray(entity);\n    body=new TypedByteArray(contentType,bytes);\n  }\n  return new Response(status,reason,headers,body);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 150,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 45,
+                    "startLineNumber": 74,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 74,
+                    "endColumnNumber": 49
+                },
+                "nodeContext": "String reason=statusLine.getReasonPhrase();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "retrofit.http.client.StatusLine"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 10,
+            "startLineNumber": 73,
+            "startColumnNumber": 17,
+            "endLineNumber": 73,
+            "endColumnNumber": 27
+        },
+        {
+            "charLength": 10,
+            "startLineNumber": 74,
+            "startColumnNumber": 20,
+            "endLineNumber": 74,
+            "endColumnNumber": 30
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        }
+    ]
+}

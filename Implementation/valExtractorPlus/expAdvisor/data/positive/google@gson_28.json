@@ -1,0 +1,92 @@
+{
+  "id" : 28,
+  "expression" : "value.floatValue()",
+  "projectName" : "google@gson",
+  "commitID" : "9db0c5321710f1cebb6ae297b2d7c35ef15b56ce",
+  "filePath" : "gson/src/main/java/com/google/gson/Gson.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "value.floatValue()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 18,
+      "startLineNumber" : 287,
+      "startColumnNumber" : 32,
+      "endLineNumber" : 287,
+      "endColumnNumber" : 50
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 43,
+        "startLineNumber" : 287,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 287,
+        "endColumnNumber" : 51
+      },
+      "nodeContext" : "checkValidFloatingPoint(value.floatValue())",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 5,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 45,
+        "startLineNumber" : 287,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 287,
+        "endColumnNumber" : 53
+      },
+      "nodeContext" : "checkValidFloatingPoint(value.floatValue());\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 6,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 129,
+        "startLineNumber" : 285,
+        "startColumnNumber" : 86,
+        "endLineNumber" : 289,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  float value.floatValue()=value.value.floatValue()();\n  checkValidFloatingPoint(value.floatValue());\n  writer.value(value);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 19,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 208,
+        "startLineNumber" : 285,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 289,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "@Override public void write(JsonWriter writer,Number value) throws IOException {\n  float value.floatValue()=value.value.floatValue()();\n  checkValidFloatingPoint(value.floatValue());\n  writer.value(value);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 35,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "float"
+  } ],
+  "positionList" : [ {
+    "charLength" : 18,
+    "startLineNumber" : 287,
+    "startColumnNumber" : 32,
+    "endLineNumber" : 287,
+    "endColumnNumber" : 50
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "floatValue",
+  "nodePosition" : {
+    "charLength" : 10,
+    "startLineNumber" : 286,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 286,
+    "endColumnNumber" : 24
+  }
+}

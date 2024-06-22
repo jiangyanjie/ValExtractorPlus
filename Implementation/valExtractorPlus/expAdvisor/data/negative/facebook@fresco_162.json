@@ -1,0 +1,137 @@
+{
+    "id": 162,
+    "expression": "CloseableReference",
+    "projectName": "facebook@fresco",
+    "commitID": "f0893ea8ab2da7942309360342d18b9123c76420",
+    "filePath": "samples/showcase/src/main/java/com/facebook/fresco/samples/showcase/imagepipeline/ImagePipelineRegionDecodingFragment.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "CloseableReference",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 18,
+                "startLineNumber": 171,
+                "startColumnNumber": 8,
+                "endLineNumber": 171,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 54,
+                        "startLineNumber": 171,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 171,
+                        "endColumnNumber": 62
+                    },
+                    "nodeContext": "CloseableReference.closeSafely(decodedBitmapReference)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 55,
+                        "startLineNumber": 171,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 171,
+                        "endColumnNumber": 63
+                    },
+                    "nodeContext": "CloseableReference.closeSafely(decodedBitmapReference);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,finally]",
+                    "nodePosition": {
+                        "charLength": 73,
+                        "startLineNumber": 170,
+                        "startColumnNumber": 16,
+                        "endLineNumber": 172,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  CloseableReference.closeSafely(decodedBitmapReference);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 177,
+                        "startLineNumber": 168,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 172,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "try {\n  return new CloseableStaticBitmap(decodedBitmapReference,qualityInfo,0);\n}\n  finally {\n  CloseableReference.closeSafely(decodedBitmapReference);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 15,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 372,
+                        "startLineNumber": 164,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 173,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  CloseableReference<Bitmap> decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(decodedBitmapReference,qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(decodedBitmapReference);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 33,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 540,
+                        "startLineNumber": 159,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 173,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public CloseableImage decode(EncodedImage encodedImage,int length,QualityInfo qualityInfo,ImageDecodeOptions options){\n  CloseableReference<Bitmap> decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(decodedBitmapReference,qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(decodedBitmapReference);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 55,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 55,
+                    "startLineNumber": 171,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 171,
+                    "endColumnNumber": 63
+                },
+                "nodeContext": "CloseableReference.closeSafely(decodedBitmapReference);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.common.references.CloseableReference"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 18,
+            "startLineNumber": 171,
+            "startColumnNumber": 8,
+            "endLineNumber": 171,
+            "endColumnNumber": 26
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,131 @@
+{
+  "id" : 8,
+  "expression" : "this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()",
+  "projectName" : "spring-projects@spring-framework",
+  "commitID" : "46a5fb7a9133a0c4a392ce23597623c64a16aa3c",
+  "filePath" : "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 69,
+      "startLineNumber" : 199,
+      "startColumnNumber" : 46,
+      "endLineNumber" : 199,
+      "endColumnNumber" : 115
+    },
+    "astNodeNumber" : 12,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 101,
+        "startLineNumber" : 199,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 199,
+        "endColumnNumber" : 116
+      },
+      "nodeContext" : "new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder())",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 16,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 114,
+        "startLineNumber" : 199,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 199,
+        "endColumnNumber" : 117
+      },
+      "nodeContext" : "readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 19,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 116,
+        "startLineNumber" : 199,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 199,
+        "endColumnNumber" : 119
+      },
+      "nodeContext" : "readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 20,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 276,
+        "startLineNumber" : 197,
+        "startColumnNumber" : 20,
+        "endLineNumber" : 200,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  Decoder<?> this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n  readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 40,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 294,
+        "startLineNumber" : 197,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 200,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (jaxb2Present) {\n  Decoder<?> this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n  readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()));\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 42,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 699,
+        "startLineNumber" : 186,
+        "startColumnNumber" : 53,
+        "endLineNumber" : 203,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  if (!this.registerDefaults) {\n    return Collections.emptyList();\n  }\n  List<HttpMessageReader<?>> readers=new ArrayList<>();\n  if (jackson2Present) {\n    readers.add(new DecoderHttpMessageReader<>(getJackson2JsonDecoder()));\n  }\n  if (jackson2SmilePresent) {\n    readers.add(new DecoderHttpMessageReader<>(new Jackson2SmileDecoder()));\n  }\n  if (jaxb2Present) {\n    Decoder<?> this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n    readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()));\n  }\n  extendObjectReaders(readers);\n  return readers;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 100,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 802,
+        "startLineNumber" : 183,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 203,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return Object readers (JSON, XML, SSE).\n */\nfinal List<HttpMessageReader<?>> getObjectReaders(){\n  if (!this.registerDefaults) {\n    return Collections.emptyList();\n  }\n  List<HttpMessageReader<?>> readers=new ArrayList<>();\n  if (jackson2Present) {\n    readers.add(new DecoderHttpMessageReader<>(getJackson2JsonDecoder()));\n  }\n  if (jackson2SmilePresent) {\n    readers.add(new DecoderHttpMessageReader<>(new Jackson2SmileDecoder()));\n  }\n  if (jaxb2Present) {\n    Decoder<?> this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()=this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder();\n    readers.add(new DecoderHttpMessageReader<>(this.jaxb2Decoder != null ? this.jaxb2Decoder : new Jaxb2XmlDecoder()));\n  }\n  extendObjectReaders(readers);\n  return readers;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 111,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 5,
+    "type" : "org.springframework.core.codec.Decoder<>"
+  } ],
+  "positionList" : [ {
+    "charLength" : 69,
+    "startLineNumber" : 199,
+    "startColumnNumber" : 46,
+    "endLineNumber" : 199,
+    "endColumnNumber" : 115
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "decoder",
+  "nodePosition" : {
+    "charLength" : 7,
+    "startLineNumber" : 198,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 198,
+    "endColumnNumber" : 21
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "id" : 22,
+  "expression" : "mEditText != null && mEditText.hasFocus()",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "3b57d0908a83890321acbd90a91a41b8d25041bd",
+  "filePath" : "lib/src/android/support/design/widget/TextInputLayout.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "mEditText != null && mEditText.hasFocus()",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 41,
+      "startLineNumber" : 1751,
+      "startColumnNumber" : 28,
+      "endLineNumber" : 1751,
+      "endColumnNumber" : 69
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+      "nodePosition" : {
+        "charLength" : 95,
+        "startLineNumber" : 1751,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 1751,
+        "endColumnNumber" : 123
+      },
+      "nodeContext" : "mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx",
+      "nodeType" : "ConditionalExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 113,
+        "startLineNumber" : 1751,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 1751,
+        "endColumnNumber" : 121
+      },
+      "nodeContext" : "mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx",
+      "nodeType" : "Assignment",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 115,
+        "startLineNumber" : 1751,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 1751,
+        "endColumnNumber" : 123
+      },
+      "nodeContext" : "mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 195,
+        "startLineNumber" : 1749,
+        "startColumnNumber" : 63,
+        "endLineNumber" : 1752,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n  mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 20,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 486,
+        "startLineNumber" : 1749,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 1760,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (indicatorViewController.errorShouldBeShown()) {\n  mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n  mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n}\n else if (mEditText != null && mEditText.hasFocus()) {\n  mBoxStrokeColor=mBoxStrokeColorFromUser;\n  mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n}\n else {\n  mBoxStrokeColor=mDefaultStrokeColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 44,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 594,
+        "startLineNumber" : 1745,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 1760,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (!isEnabled()) {\n  mBoxStrokeColor=mDisabledColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n else if (indicatorViewController.errorShouldBeShown()) {\n  mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n  mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n}\n else if (mEditText != null && mEditText.hasFocus()) {\n  mBoxStrokeColor=mBoxStrokeColorFromUser;\n  mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n}\n else {\n  mBoxStrokeColor=mDefaultStrokeColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 57,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 652,
+        "startLineNumber" : 1744,
+        "startColumnNumber" : 54,
+        "endLineNumber" : 1762,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (!isEnabled()) {\n    mBoxStrokeColor=mDisabledColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n else   if (indicatorViewController.errorShouldBeShown()) {\n    mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n    mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n  }\n else   if (mEditText != null && mEditText.hasFocus()) {\n    mBoxStrokeColor=mBoxStrokeColorFromUser;\n    mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n  }\n else {\n    mBoxStrokeColor=mDefaultStrokeColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n  applyBoxAttributes();\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 702,
+        "startLineNumber" : 1744,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 1762,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n  if (!isEnabled()) {\n    mBoxStrokeColor=mDisabledColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n else   if (indicatorViewController.errorShouldBeShown()) {\n    mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n    mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n  }\n else   if (mEditText != null && mEditText.hasFocus()) {\n    mBoxStrokeColor=mBoxStrokeColorFromUser;\n    mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n  }\n else {\n    mBoxStrokeColor=mDefaultStrokeColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n  applyBoxAttributes();\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 65,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 969,
+        "startLineNumber" : 1736,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 1763,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (mBoxBackground == null || mBoxBackgroundMode == BOX_BACKGROUND_NONE) {\n    return;\n  }\n  final boolean mEditText != null && mEditText.hasFocus()=mEditText != null && mEditText.mEditText != null && mEditText.hasFocus()();\n  if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n    if (!isEnabled()) {\n      mBoxStrokeColor=mDisabledColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n else     if (indicatorViewController.errorShouldBeShown()) {\n      mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n      mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n    }\n else     if (mEditText != null && mEditText.hasFocus()) {\n      mBoxStrokeColor=mBoxStrokeColorFromUser;\n      mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n    }\n else {\n      mBoxStrokeColor=mDefaultStrokeColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n    applyBoxAttributes();\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 88,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 999,
+        "startLineNumber" : 1736,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 1763,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "void updateTextInputBoxState(){\n  if (mBoxBackground == null || mBoxBackgroundMode == BOX_BACKGROUND_NONE) {\n    return;\n  }\n  final boolean mEditText != null && mEditText.hasFocus()=mEditText != null && mEditText.mEditText != null && mEditText.hasFocus()();\n  if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n    if (!isEnabled()) {\n      mBoxStrokeColor=mDisabledColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n else     if (indicatorViewController.errorShouldBeShown()) {\n      mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n      mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n    }\n else     if (mEditText != null && mEditText.hasFocus()) {\n      mBoxStrokeColor=mBoxStrokeColorFromUser;\n      mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n    }\n else {\n      mBoxStrokeColor=mDefaultStrokeColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n    applyBoxAttributes();\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 91,
+      "astHeight" : 13
+    } ],
+    "tokenLength" : 6,
+    "type" : "boolean"
+  }, {
+    "nodeContext" : "mEditText != null && mEditText.hasFocus()",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 41,
+      "startLineNumber" : 1752,
+      "startColumnNumber" : 17,
+      "endLineNumber" : 1752,
+      "endColumnNumber" : 58
+    },
+    "astNodeNumber" : 7,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 235,
+        "startLineNumber" : 1752,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 1760,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (mEditText != null && mEditText.hasFocus()) {\n  mBoxStrokeColor=mBoxStrokeColorFromUser;\n  mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n}\n else {\n  mBoxStrokeColor=mDefaultStrokeColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 26,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,elseStatement]",
+      "nodePosition" : {
+        "charLength" : 486,
+        "startLineNumber" : 1749,
+        "startColumnNumber" : 13,
+        "endLineNumber" : 1760,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (indicatorViewController.errorShouldBeShown()) {\n  mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n  mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n}\n else if (mEditText != null && mEditText.hasFocus()) {\n  mBoxStrokeColor=mBoxStrokeColorFromUser;\n  mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n}\n else {\n  mBoxStrokeColor=mDefaultStrokeColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 44,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 594,
+        "startLineNumber" : 1745,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 1760,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (!isEnabled()) {\n  mBoxStrokeColor=mDisabledColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n else if (indicatorViewController.errorShouldBeShown()) {\n  mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n  mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n}\n else if (mEditText != null && mEditText.hasFocus()) {\n  mBoxStrokeColor=mBoxStrokeColorFromUser;\n  mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n}\n else {\n  mBoxStrokeColor=mDefaultStrokeColor;\n  mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 57,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 652,
+        "startLineNumber" : 1744,
+        "startColumnNumber" : 54,
+        "endLineNumber" : 1762,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (!isEnabled()) {\n    mBoxStrokeColor=mDisabledColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n else   if (indicatorViewController.errorShouldBeShown()) {\n    mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n    mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n  }\n else   if (mEditText != null && mEditText.hasFocus()) {\n    mBoxStrokeColor=mBoxStrokeColorFromUser;\n    mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n  }\n else {\n    mBoxStrokeColor=mDefaultStrokeColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n  applyBoxAttributes();\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 61,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 702,
+        "startLineNumber" : 1744,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 1762,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n  if (!isEnabled()) {\n    mBoxStrokeColor=mDisabledColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n else   if (indicatorViewController.errorShouldBeShown()) {\n    mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n    mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n  }\n else   if (mEditText != null && mEditText.hasFocus()) {\n    mBoxStrokeColor=mBoxStrokeColorFromUser;\n    mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n  }\n else {\n    mBoxStrokeColor=mDefaultStrokeColor;\n    mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n  }\n  applyBoxAttributes();\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 65,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 969,
+        "startLineNumber" : 1736,
+        "startColumnNumber" : 33,
+        "endLineNumber" : 1763,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (mBoxBackground == null || mBoxBackgroundMode == BOX_BACKGROUND_NONE) {\n    return;\n  }\n  final boolean mEditText != null && mEditText.hasFocus()=mEditText != null && mEditText.mEditText != null && mEditText.hasFocus()();\n  if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n    if (!isEnabled()) {\n      mBoxStrokeColor=mDisabledColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n else     if (indicatorViewController.errorShouldBeShown()) {\n      mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n      mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n    }\n else     if (mEditText != null && mEditText.hasFocus()) {\n      mBoxStrokeColor=mBoxStrokeColorFromUser;\n      mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n    }\n else {\n      mBoxStrokeColor=mDefaultStrokeColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n    applyBoxAttributes();\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 88,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 999,
+        "startLineNumber" : 1736,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 1763,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "void updateTextInputBoxState(){\n  if (mBoxBackground == null || mBoxBackgroundMode == BOX_BACKGROUND_NONE) {\n    return;\n  }\n  final boolean mEditText != null && mEditText.hasFocus()=mEditText != null && mEditText.mEditText != null && mEditText.hasFocus()();\n  if (mBoxBackgroundMode == BOX_BACKGROUND_OUTLINE) {\n    if (!isEnabled()) {\n      mBoxStrokeColor=mDisabledColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n else     if (indicatorViewController.errorShouldBeShown()) {\n      mBoxStrokeColor=indicatorViewController.getErrorViewCurrentTextColor();\n      mBoxStrokeWidthPx=mEditText != null && mEditText.hasFocus() ? mBoxStrokeWidthFocusedPx : mBoxStrokeWidthDefaultPx;\n    }\n else     if (mEditText != null && mEditText.hasFocus()) {\n      mBoxStrokeColor=mBoxStrokeColorFromUser;\n      mBoxStrokeWidthPx=mBoxStrokeWidthFocusedPx;\n    }\n else {\n      mBoxStrokeColor=mDefaultStrokeColor;\n      mBoxStrokeWidthPx=mBoxStrokeWidthDefaultPx;\n    }\n    applyBoxAttributes();\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 91,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 6,
+    "type" : "boolean"
+  } ],
+  "positionList" : [ {
+    "charLength" : 41,
+    "startLineNumber" : 1751,
+    "startColumnNumber" : 28,
+    "endLineNumber" : 1751,
+    "endColumnNumber" : 69
+  }, {
+    "charLength" : 41,
+    "startLineNumber" : 1752,
+    "startColumnNumber" : 17,
+    "endLineNumber" : 1752,
+    "endColumnNumber" : 58
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "hasFocus",
+  "nodePosition" : {
+    "charLength" : 8,
+    "startLineNumber" : 1741,
+    "startColumnNumber" : 18,
+    "endLineNumber" : 1741,
+    "endColumnNumber" : 26
+  }
+}

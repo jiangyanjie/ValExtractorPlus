@@ -1,0 +1,217 @@
+{
+  "id" : 35,
+  "expression" : "mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+  "projectName" : "facebook@fresco",
+  "commitID" : "f0893ea8ab2da7942309360342d18b9123c76420",
+  "filePath" : "samples/showcase/src/main/java/com/facebook/fresco/samples/showcase/imagepipeline/ImagePipelineRegionDecodingFragment.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 93,
+      "startLineNumber" : 169,
+      "startColumnNumber" : 41,
+      "endLineNumber" : 169,
+      "endColumnNumber" : 134
+    },
+    "astNodeNumber" : 9,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 134,
+        "startLineNumber" : 169,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 149
+      },
+      "nodeContext" : "new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0)",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 14,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 143,
+        "startLineNumber" : 169,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 169,
+        "endColumnNumber" : 151
+      },
+      "nodeContext" : "return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 15,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+      "nodePosition" : {
+        "charLength" : 149,
+        "startLineNumber" : 168,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 170,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 16,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 296,
+        "startLineNumber" : 168,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 172,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "try {\n  return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n}\n  finally {\n  CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 23,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 528,
+        "startLineNumber" : 164,
+        "startColumnNumber" : 36,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  CloseableReference<Bitmap> mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 41,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 655,
+        "startLineNumber" : 159,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public CloseableImage decode(EncodedImage encodedImage,int length,QualityInfo qualityInfo,ImageDecodeOptions options){\n  CloseableReference<Bitmap> mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 63,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 7,
+    "type" : "com.facebook.common.references.CloseableReference<com.facebook.fresco.samples.showcase.imagepipeline.Bitmap>"
+  }, {
+    "nodeContext" : "mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 93,
+      "startLineNumber" : 171,
+      "startColumnNumber" : 39,
+      "endLineNumber" : 171,
+      "endColumnNumber" : 132
+    },
+    "astNodeNumber" : 9,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 125,
+        "startLineNumber" : 171,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 133
+      },
+      "nodeContext" : "CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 12,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 127,
+        "startLineNumber" : 171,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 171,
+        "endColumnNumber" : 135
+      },
+      "nodeContext" : "CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,finally]",
+      "nodePosition" : {
+        "charLength" : 133,
+        "startLineNumber" : 170,
+        "startColumnNumber" : 16,
+        "endLineNumber" : 172,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "{\n  CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 296,
+        "startLineNumber" : 168,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 172,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "try {\n  return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n}\n  finally {\n  CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n}\n",
+      "nodeType" : "TryStatement",
+      "astNodeNumber" : 23,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 528,
+        "startLineNumber" : 164,
+        "startColumnNumber" : 36,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  CloseableReference<Bitmap> mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 41,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 655,
+        "startLineNumber" : 159,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public CloseableImage decode(EncodedImage encodedImage,int length,QualityInfo qualityInfo,ImageDecodeOptions options){\n  CloseableReference<Bitmap> mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length),qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length));\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 63,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 7,
+    "type" : "com.facebook.common.references.CloseableReference<com.facebook.fresco.samples.showcase.imagepipeline.Bitmap>"
+  } ],
+  "positionList" : [ {
+    "charLength" : 93,
+    "startLineNumber" : 169,
+    "startColumnNumber" : 41,
+    "endLineNumber" : 169,
+    "endColumnNumber" : 134
+  }, {
+    "charLength" : 93,
+    "startLineNumber" : 171,
+    "startColumnNumber" : 39,
+    "endLineNumber" : 171,
+    "endColumnNumber" : 132
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "decodedBitmapReference",
+  "nodePosition" : {
+    "charLength" : 22,
+    "startLineNumber" : 165,
+    "startColumnNumber" : 33,
+    "endLineNumber" : 165,
+    "endColumnNumber" : 55
+  }
+}

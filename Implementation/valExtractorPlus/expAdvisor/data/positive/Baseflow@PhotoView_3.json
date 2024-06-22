@@ -1,0 +1,256 @@
+{
+  "id" : 3,
+  "expression" : "v.getParent()",
+  "projectName" : "Baseflow@PhotoView",
+  "commitID" : "602959a5c50c17c1b94f000d6915be0da982155c",
+  "filePath" : "library/src/uk/co/senab/photoview/PhotoViewAttacher.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "v.getParent()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 13,
+      "startLineNumber" : 406,
+      "startColumnNumber" : 24,
+      "endLineNumber" : 406,
+      "endColumnNumber" : 37
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 21,
+        "startLineNumber" : 406,
+        "startColumnNumber" : 24,
+        "endLineNumber" : 406,
+        "endColumnNumber" : 45
+      },
+      "nodeContext" : "v.getParent() != null",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 5,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.SwitchStatement,statements]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 406,
+        "startColumnNumber" : 20,
+        "endLineNumber" : 407,
+        "endColumnNumber" : 72
+      },
+      "nodeContext" : "if (v.getParent() != null) v.getParent().requestDisallowInterceptTouchEvent(true);\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 452,
+        "startLineNumber" : 401,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 426,
+        "endColumnNumber" : 13
+      },
+      "nodeContext" : "switch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:  ViewParent v.getParent()=v.getParent();\nif (v.getParent() != null) v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\n",
+      "nodeType" : "SwitchStatement",
+      "astNodeNumber" : 78,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 636,
+        "startLineNumber" : 400,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 437,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:    ViewParent v.getParent()=v.getParent();\n  if (v.getParent() != null)   v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 107,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 683,
+        "startLineNumber" : 400,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 437,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:    ViewParent v.getParent()=v.getParent();\n  if (v.getParent() != null)   v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 116,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 742,
+        "startLineNumber" : 397,
+        "startColumnNumber" : 57,
+        "endLineNumber" : 440,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent v.getParent()=v.getParent();\n    if (v.getParent() != null)     v.getParent().requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 124,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 803,
+        "startLineNumber" : 396,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 440,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public final boolean onTouch(View v,MotionEvent ev){\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent v.getParent()=v.getParent();\n    if (v.getParent() != null)     v.getParent().requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 139,
+      "astHeight" : 14
+    } ],
+    "tokenLength" : 2,
+    "type" : "uk.co.senab.photoview.ViewParent"
+  }, {
+    "nodeContext" : "v.getParent()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 13,
+      "startLineNumber" : 407,
+      "startColumnNumber" : 24,
+      "endLineNumber" : 407,
+      "endColumnNumber" : 37
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 54,
+        "startLineNumber" : 407,
+        "startColumnNumber" : 24,
+        "endLineNumber" : 407,
+        "endColumnNumber" : 78
+      },
+      "nodeContext" : "v.getParent().requestDisallowInterceptTouchEvent(true)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 56,
+        "startLineNumber" : 407,
+        "startColumnNumber" : 24,
+        "endLineNumber" : 407,
+        "endColumnNumber" : 80
+      },
+      "nodeContext" : "v.getParent().requestDisallowInterceptTouchEvent(true);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 7,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.SwitchStatement,statements]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 406,
+        "startColumnNumber" : 20,
+        "endLineNumber" : 407,
+        "endColumnNumber" : 72
+      },
+      "nodeContext" : "if (v.getParent() != null) v.getParent().requestDisallowInterceptTouchEvent(true);\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 11,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 452,
+        "startLineNumber" : 401,
+        "startColumnNumber" : 12,
+        "endLineNumber" : 426,
+        "endColumnNumber" : 13
+      },
+      "nodeContext" : "switch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:  ViewParent v.getParent()=v.getParent();\nif (v.getParent() != null) v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\n",
+      "nodeType" : "SwitchStatement",
+      "astNodeNumber" : 78,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 636,
+        "startLineNumber" : 400,
+        "startColumnNumber" : 56,
+        "endLineNumber" : 437,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "{\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:    ViewParent v.getParent()=v.getParent();\n  if (v.getParent() != null)   v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 107,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 683,
+        "startLineNumber" : 400,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 437,
+        "endColumnNumber" : 9
+      },
+      "nodeContext" : "if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:    ViewParent v.getParent()=v.getParent();\n  if (v.getParent() != null)   v.getParent().requestDisallowInterceptTouchEvent(true);\ncancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\nv.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\nhandled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 116,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 742,
+        "startLineNumber" : 397,
+        "startColumnNumber" : 57,
+        "endLineNumber" : 440,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent v.getParent()=v.getParent();\n    if (v.getParent() != null)     v.getParent().requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 124,
+      "astHeight" : 13
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 803,
+        "startLineNumber" : 396,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 440,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public final boolean onTouch(View v,MotionEvent ev){\n  boolean handled=false;\n  if (mZoomEnabled && hasDrawable((ImageView)v)) {\nswitch (ev.getAction()) {\ncase MotionEvent.ACTION_DOWN:      ViewParent v.getParent()=v.getParent();\n    if (v.getParent() != null)     v.getParent().requestDisallowInterceptTouchEvent(true);\n  cancelFling();\nbreak;\ncase MotionEvent.ACTION_CANCEL:case MotionEvent.ACTION_UP:if (getScale() < mMinScale) {\nRectF rect=getDisplayRect();\nif (null != rect) {\n  v.post(new AnimatedZoomRunnable(getScale(),mMinScale,rect.centerX(),rect.centerY()));\n  handled=true;\n}\n}\nbreak;\n}\nif (null != mGestureDetector && mGestureDetector.onTouchEvent(ev)) {\nhandled=true;\n}\nif (null != mScaleDragDetector && mScaleDragDetector.onTouchEvent(ev)) {\nhandled=true;\n}\n}\nreturn handled;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 139,
+      "astHeight" : 14
+    } ],
+    "tokenLength" : 2,
+    "type" : "uk.co.senab.photoview.ViewParent"
+  } ],
+  "positionList" : [ {
+    "charLength" : 13,
+    "startLineNumber" : 406,
+    "startColumnNumber" : 24,
+    "endLineNumber" : 406,
+    "endColumnNumber" : 37
+  }, {
+    "charLength" : 13,
+    "startLineNumber" : 407,
+    "startColumnNumber" : 24,
+    "endLineNumber" : 407,
+    "endColumnNumber" : 37
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "parent",
+  "nodePosition" : {
+    "charLength" : 6,
+    "startLineNumber" : 405,
+    "startColumnNumber" : 31,
+    "endLineNumber" : 405,
+    "endColumnNumber" : 37
+  }
+}

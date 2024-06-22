@@ -1,0 +1,95 @@
+{
+    "id": 163,
+    "expression": "t < this.typeArguments.length",
+    "projectName": "google@gson",
+    "commitID": "c3d0f200b352f411b9ebe45c3bf49d4328b2c51f",
+    "filePath": "gson/src/main/java/com/google/gson/internal/$Gson$Types.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "t < this.typeArguments.length",
+            "nodeType": "InfixExpression",
+            "nodePosition": {
+                "charLength": 29,
+                "startLineNumber": 453,
+                "startColumnNumber": 22,
+                "endLineNumber": 453,
+                "endColumnNumber": 51
+            },
+            "astNodeNumber": 7,
+            "astHeight": 4,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 225,
+                        "startLineNumber": 453,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 457,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "for (int t=0; t < this.typeArguments.length; t++) {\n  checkNotNull(this.typeArguments[t]);\n  checkNotPrimitive(this.typeArguments[t]);\n  this.typeArguments[t]=canonicalize(this.typeArguments[t]);\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 46,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 857,
+                        "startLineNumber": 440,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 458,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (rawType instanceof Class<?>) {\n    Class<?> rawTypeAsClass=(Class<?>)rawType;\n    boolean isStaticOrTopLevelClass=Modifier.isStatic(rawTypeAsClass.getModifiers()) || rawTypeAsClass.getEnclosingClass() == null;\n    checkArgument(ownerType != null || isStaticOrTopLevelClass);\n    checkArgument(ownerType == null || !isStaticOrTopLevelClass);\n  }\n  this.ownerType=ownerType == null ? null : canonicalize(ownerType);\n  this.rawType=canonicalize(rawType);\n  this.typeArguments=typeArguments.clone();\n  for (int t=0; t < this.typeArguments.length; t++) {\n    checkNotNull(this.typeArguments[t]);\n    checkNotPrimitive(this.typeArguments[t]);\n    this.typeArguments[t]=canonicalize(this.typeArguments[t]);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 130,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 939,
+                        "startLineNumber": 440,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 458,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "public ParameterizedTypeImpl(Type ownerType,Type rawType,Type... typeArguments){\n  if (rawType instanceof Class<?>) {\n    Class<?> rawTypeAsClass=(Class<?>)rawType;\n    boolean isStaticOrTopLevelClass=Modifier.isStatic(rawTypeAsClass.getModifiers()) || rawTypeAsClass.getEnclosingClass() == null;\n    checkArgument(ownerType != null || isStaticOrTopLevelClass);\n    checkArgument(ownerType == null || !isStaticOrTopLevelClass);\n  }\n  this.ownerType=ownerType == null ? null : canonicalize(ownerType);\n  this.rawType=canonicalize(rawType);\n  this.typeArguments=typeArguments.clone();\n  for (int t=0; t < this.typeArguments.length; t++) {\n    checkNotNull(this.typeArguments[t]);\n    checkNotPrimitive(this.typeArguments[t]);\n    this.typeArguments[t]=canonicalize(this.typeArguments[t]);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 145,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 225,
+                    "startLineNumber": 453,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 457,
+                    "endColumnNumber": 7
+                },
+                "nodeContext": "for (int t=0; t < this.typeArguments.length; t++) {\n  checkNotNull(this.typeArguments[t]);\n  checkNotPrimitive(this.typeArguments[t]);\n  this.typeArguments[t]=canonicalize(this.typeArguments[t]);\n}\n",
+                "nodeType": "ForStatement",
+                "astNodeNumber": 46,
+                "astHeight": 8
+            },
+            "tokenLength": 4,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 29,
+            "startLineNumber": 453,
+            "startColumnNumber": 22,
+            "endLineNumber": 453,
+            "endColumnNumber": 51
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,828 @@
+{
+    "id": 183,
+    "expression": "cursorLoc",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "f24e969c2a5d168b6df3303d1f91ad0e695b2a72",
+    "filePath": "Ghidra/Framework/Docking/src/main/java/docking/widgets/fieldpanel/support/RowLayout.java",
+    "occurrences": 6,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 211,
+                "startColumnNumber": 2,
+                "endLineNumber": 211,
+                "endColumnNumber": 11
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,leftHandSide]",
+                    "nodePosition": {
+                        "charLength": 18,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 20
+                    },
+                    "nodeContext": "cursorLoc.fieldNum",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "cursorLoc.fieldNum=index",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 211,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "cursorLoc.fieldNum=index;\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 27,
+                    "startLineNumber": 211,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 211,
+                    "endColumnNumber": 29
+                },
+                "nodeContext": "cursorLoc.fieldNum=index;\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 6,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        },
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 212,
+                "startColumnNumber": 2,
+                "endLineNumber": 212,
+                "endColumnNumber": 11
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,leftHandSide]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 15
+                    },
+                    "nodeContext": "cursorLoc.row",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 37,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 39
+                    },
+                    "nodeContext": "cursorLoc.row=field.getRow(offsetY)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 212,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 212,
+                        "endColumnNumber": 40
+                    },
+                    "nodeContext": "cursorLoc.row=field.getRow(offsetY);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 38,
+                    "startLineNumber": 212,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 212,
+                    "endColumnNumber": 40
+                },
+                "nodeContext": "cursorLoc.row=field.getRow(offsetY);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        },
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 213,
+                "startColumnNumber": 2,
+                "endLineNumber": 213,
+                "endColumnNumber": 11
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,leftHandSide]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 15
+                    },
+                    "nodeContext": "cursorLoc.col",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 46,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 47,
+                    "startLineNumber": 213,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 213,
+                    "endColumnNumber": 49
+                },
+                "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 12,
+                "astHeight": 5
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        },
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 213,
+                "startColumnNumber": 31,
+                "endLineNumber": 213,
+                "endColumnNumber": 40
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "cursorLoc.row",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+                    "nodePosition": {
+                        "charLength": 30,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "field.getCol(cursorLoc.row,x)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 46,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 47,
+                        "startLineNumber": 213,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 213,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 47,
+                    "startLineNumber": 213,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 213,
+                    "endColumnNumber": 49
+                },
+                "nodeContext": "cursorLoc.col=field.getCol(cursorLoc.row,x);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 12,
+                "astHeight": 5
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        },
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 214,
+                "startColumnNumber": 20,
+                "endLineNumber": 214,
+                "endColumnNumber": 29
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 20,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 33
+                    },
+                    "nodeContext": "cursorLoc.row",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 40,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "field.getX(cursorLoc.row,cursorLoc.col)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 9,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "return field.getX(cursorLoc.row,cursorLoc.col);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 48,
+                    "startLineNumber": 214,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 214,
+                    "endColumnNumber": 50
+                },
+                "nodeContext": "return field.getX(cursorLoc.row,cursorLoc.col);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        },
+        {
+            "nodeContext": "cursorLoc",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 214,
+                "startColumnNumber": 35,
+                "endLineNumber": 214,
+                "endColumnNumber": 44
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 35,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "cursorLoc.col",
+                    "nodeType": "QualifiedName",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 40,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 9,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "field.getX(cursorLoc.row,cursorLoc.col)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 9,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 214,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 214,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "return field.getX(cursorLoc.row,cursorLoc.col);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 542,
+                        "startLineNumber": 198,
+                        "startColumnNumber": 61,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 71,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 614,
+                        "startLineNumber": 197,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 215,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int setCursor(FieldLocation cursorLoc,int x,int y){\n  int index=this.findAppropriateFieldIndex(x,y);\n  if (index < 0) {\n    index=0;\n  }\n  Field field=fields[index];\n  int offsetY=y - heightAbove;\n  cursorLoc.fieldNum=index;\n  cursorLoc.row=field.getRow(offsetY);\n  cursorLoc.col=field.getCol(cursorLoc.row,x);\n  return field.getX(cursorLoc.row,cursorLoc.col);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 48,
+                    "startLineNumber": 214,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 214,
+                    "endColumnNumber": 50
+                },
+                "nodeContext": "return field.getX(cursorLoc.row,cursorLoc.col);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "docking.widgets.fieldpanel.support.FieldLocation"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 9,
+            "startLineNumber": 211,
+            "startColumnNumber": 2,
+            "endLineNumber": 211,
+            "endColumnNumber": 11
+        },
+        {
+            "charLength": 9,
+            "startLineNumber": 212,
+            "startColumnNumber": 2,
+            "endLineNumber": 212,
+            "endColumnNumber": 11
+        },
+        {
+            "charLength": 9,
+            "startLineNumber": 213,
+            "startColumnNumber": 2,
+            "endLineNumber": 213,
+            "endColumnNumber": 11
+        },
+        {
+            "charLength": 9,
+            "startLineNumber": 213,
+            "startColumnNumber": 31,
+            "endLineNumber": 213,
+            "endColumnNumber": 40
+        },
+        {
+            "charLength": 9,
+            "startLineNumber": 214,
+            "startColumnNumber": 20,
+            "endLineNumber": 214,
+            "endColumnNumber": 29
+        },
+        {
+            "charLength": 9,
+            "startLineNumber": 214,
+            "startColumnNumber": 35,
+            "endLineNumber": 214,
+            "endColumnNumber": 44
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 4,
+            "layout": 3
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 5,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 4,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 5,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 3,
+            "layout": 1
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 4,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 5,
+            "layout": 3
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 0,
+            "layout": 4
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 1,
+            "layout": 4
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 4,
+            "layout": 4
+        },
+        {
+            "firstKey": 3,
+            "secondKey": 5,
+            "layout": 4
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 4,
+            "secondKey": 5,
+            "layout": 1
+        },
+        {
+            "firstKey": 5,
+            "secondKey": 0,
+            "layout": 3
+        },
+        {
+            "firstKey": 5,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 5,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 5,
+            "secondKey": 3,
+            "layout": 3
+        },
+        {
+            "firstKey": 5,
+            "secondKey": 4,
+            "layout": 1
+        }
+    ]
+}

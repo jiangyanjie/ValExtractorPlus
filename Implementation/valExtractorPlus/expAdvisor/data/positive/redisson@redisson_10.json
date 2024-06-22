@@ -1,0 +1,178 @@
+{
+  "id" : 10,
+  "expression" : "getName(key)",
+  "projectName" : "redisson@redisson",
+  "commitID" : "62b5e68c05b7475e1e0f98b4161aacb35d376b97",
+  "filePath" : "redisson/src/main/java/org/redisson/RedissonMap.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 900,
+      "startColumnNumber" : 46,
+      "endLineNumber" : 900,
+      "endColumnNumber" : 58
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 275,
+        "startLineNumber" : 900,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 904,
+        "endColumnNumber" : 90
+      },
+      "nodeContext" : "commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 24,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 284,
+        "startLineNumber" : 900,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 904,
+        "endColumnNumber" : 91
+      },
+      "nodeContext" : "return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 25,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 326,
+        "startLineNumber" : 898,
+        "startColumnNumber" : 59,
+        "endLineNumber" : 905,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 34,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 379,
+        "startLineNumber" : 898,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 905,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<V> putOperationAsync(K key,V value){\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 50,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 904,
+      "startColumnNumber" : 42,
+      "endLineNumber" : 904,
+      "endColumnNumber" : 54
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 39,
+        "startLineNumber" : 904,
+        "startColumnNumber" : 16,
+        "endLineNumber" : 904,
+        "endColumnNumber" : 55
+      },
+      "nodeContext" : "Collections.singletonList(getName(key))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 275,
+        "startLineNumber" : 900,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 904,
+        "endColumnNumber" : 90
+      },
+      "nodeContext" : "commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 24,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 284,
+        "startLineNumber" : 900,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 904,
+        "endColumnNumber" : 91
+      },
+      "nodeContext" : "return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 25,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 326,
+        "startLineNumber" : 898,
+        "startColumnNumber" : 59,
+        "endLineNumber" : 905,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 34,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 379,
+        "startLineNumber" : 898,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 905,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<V> putOperationAsync(K key,V value){\n  String getName(key)=getName(key);\n  return commandExecutor.evalWriteAsync(getName(key),codec,RedisCommands.EVAL_MAP_VALUE,\"local v = redis.call('hget', KEYS[1], ARGV[1]); \" + \"redis.call('hset', KEYS[1], ARGV[1], ARGV[2]); \" + \"return v\",Collections.singletonList(getName(key)),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 50,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 12,
+    "startLineNumber" : 900,
+    "startColumnNumber" : 46,
+    "endLineNumber" : 900,
+    "endColumnNumber" : 58
+  }, {
+    "charLength" : 12,
+    "startLineNumber" : 904,
+    "startColumnNumber" : 42,
+    "endLineNumber" : 904,
+    "endColumnNumber" : 54
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "name",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 899,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 899,
+    "endColumnNumber" : 19
+  }
+}

@@ -1,0 +1,242 @@
+{
+    "id": 155,
+    "expression": "consumerGroupInfo",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/ClientManageProcessorTest.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "consumerGroupInfo",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 17,
+                "startLineNumber": 102,
+                "startColumnNumber": 19,
+                "endLineNumber": 102,
+                "endColumnNumber": 36
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 102,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 102,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 102,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 102,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo).isNotNull()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 42,
+                        "startLineNumber": 102,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 102,
+                        "endColumnNumber": 50
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo).isNotNull();\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 729,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 84,
+                        "endLineNumber": 112,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  ConsumerGroupInfo consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNotNull();\n  RemotingCommand request=createUnRegisterConsumerCommand();\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNull();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 76,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 819,
+                        "startLineNumber": 99,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 112,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void processRequest_UnRegisterConsumer() throws RemotingCommandException {\n  ConsumerGroupInfo consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNotNull();\n  RemotingCommand request=createUnRegisterConsumerCommand();\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNull();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 84,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 42,
+                    "startLineNumber": 102,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 102,
+                    "endColumnNumber": 50
+                },
+                "nodeContext": "assertThat(consumerGroupInfo).isNotNull();\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 6,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.broker.client.ConsumerGroupInfo"
+        },
+        {
+            "nodeContext": "consumerGroupInfo",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 17,
+                "startLineNumber": 111,
+                "startColumnNumber": 19,
+                "endLineNumber": 111,
+                "endColumnNumber": 36
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 29,
+                        "startLineNumber": 111,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 111,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 111,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 111,
+                        "endColumnNumber": 46
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo).isNull()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 39,
+                        "startLineNumber": 111,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 111,
+                        "endColumnNumber": 47
+                    },
+                    "nodeContext": "assertThat(consumerGroupInfo).isNull();\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 6,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 729,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 84,
+                        "endLineNumber": 112,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  ConsumerGroupInfo consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNotNull();\n  RemotingCommand request=createUnRegisterConsumerCommand();\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNull();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 76,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 819,
+                        "startLineNumber": 99,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 112,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void processRequest_UnRegisterConsumer() throws RemotingCommandException {\n  ConsumerGroupInfo consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNotNull();\n  RemotingCommand request=createUnRegisterConsumerCommand();\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=clientManageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n  consumerGroupInfo=brokerController.getConsumerManager().getConsumerGroupInfo(group);\n  assertThat(consumerGroupInfo).isNull();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 84,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 39,
+                    "startLineNumber": 111,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 111,
+                    "endColumnNumber": 47
+                },
+                "nodeContext": "assertThat(consumerGroupInfo).isNull();\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 6,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "org.apache.rocketmq.broker.client.ConsumerGroupInfo"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 17,
+            "startLineNumber": 102,
+            "startColumnNumber": 19,
+            "endLineNumber": 102,
+            "endColumnNumber": 36
+        },
+        {
+            "charLength": 17,
+            "startLineNumber": 111,
+            "startColumnNumber": 19,
+            "endLineNumber": 111,
+            "endColumnNumber": 36
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 3
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 3
+        }
+    ]
+}

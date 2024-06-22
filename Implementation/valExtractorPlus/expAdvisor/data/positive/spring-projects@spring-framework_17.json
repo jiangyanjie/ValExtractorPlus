@@ -1,0 +1,204 @@
+{
+  "id" : 17,
+  "expression" : "getFileForLastModifiedCheck()",
+  "projectName" : "spring-projects@spring-framework",
+  "commitID" : "cf3635b42df3a8a0a14c5f12f2b2846155ce4bb1",
+  "filePath" : "spring-core/src/main/java/org/springframework/core/io/AbstractResource.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getFileForLastModifiedCheck()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 29,
+      "startLineNumber" : 173,
+      "startColumnNumber" : 22,
+      "endLineNumber" : 173,
+      "endColumnNumber" : 51
+    },
+    "astNodeNumber" : 2,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 44,
+        "startLineNumber" : 173,
+        "startColumnNumber" : 22,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 66
+      },
+      "nodeContext" : "getFileForLastModifiedCheck().lastModified()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 4,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 57,
+        "startLineNumber" : 173,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 64
+      },
+      "nodeContext" : "lastModified=getFileForLastModifiedCheck().lastModified()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 6,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 64,
+        "startLineNumber" : 173,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 173,
+        "endColumnNumber" : 66
+      },
+      "nodeContext" : "long lastModified=getFileForLastModifiedCheck().lastModified();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 8,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 375,
+        "startLineNumber" : 171,
+        "startColumnNumber" : 47,
+        "endLineNumber" : 179,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  File getFileForLastModifiedCheck()=getFileForLastModifiedCheck();\n  long lastModified=getFileForLastModifiedCheck().lastModified();\n  if (lastModified == 0L && !getFileForLastModifiedCheck().exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 561,
+        "startLineNumber" : 165,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 179,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * This implementation checks the timestamp of the underlying File, if available.\n * @see #getFileForLastModifiedCheck()\n */\n@Override public long lastModified() throws IOException {\n  File getFileForLastModifiedCheck()=getFileForLastModifiedCheck();\n  long lastModified=getFileForLastModifiedCheck().lastModified();\n  if (lastModified == 0L && !getFileForLastModifiedCheck().exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 45,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 1,
+    "type" : "java.io.File"
+  }, {
+    "nodeContext" : "getFileForLastModifiedCheck()",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 29,
+      "startLineNumber" : 174,
+      "startColumnNumber" : 29,
+      "endLineNumber" : 174,
+      "endColumnNumber" : 58
+    },
+    "astNodeNumber" : 2,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.PrefixExpression,operand]",
+      "nodePosition" : {
+        "charLength" : 38,
+        "startLineNumber" : 174,
+        "startColumnNumber" : 29,
+        "endLineNumber" : 174,
+        "endColumnNumber" : 67
+      },
+      "nodeContext" : "getFileForLastModifiedCheck().exists()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 4,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+      "nodePosition" : {
+        "charLength" : 39,
+        "startLineNumber" : 174,
+        "startColumnNumber" : 28,
+        "endLineNumber" : 174,
+        "endColumnNumber" : 67
+      },
+      "nodeContext" : "!getFileForLastModifiedCheck().exists()",
+      "nodeType" : "PrefixExpression",
+      "astNodeNumber" : 5,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 61,
+        "startLineNumber" : 174,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 174,
+        "endColumnNumber" : 67
+      },
+      "nodeContext" : "lastModified == 0L && !getFileForLastModifiedCheck().exists()",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 9,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 208,
+        "startLineNumber" : 174,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 177,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (lastModified == 0L && !getFileForLastModifiedCheck().exists()) {\n  throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 19,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 375,
+        "startLineNumber" : 171,
+        "startColumnNumber" : 47,
+        "endLineNumber" : 179,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  File getFileForLastModifiedCheck()=getFileForLastModifiedCheck();\n  long lastModified=getFileForLastModifiedCheck().lastModified();\n  if (lastModified == 0L && !getFileForLastModifiedCheck().exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 36,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 561,
+        "startLineNumber" : 165,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 179,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * This implementation checks the timestamp of the underlying File, if available.\n * @see #getFileForLastModifiedCheck()\n */\n@Override public long lastModified() throws IOException {\n  File getFileForLastModifiedCheck()=getFileForLastModifiedCheck();\n  long lastModified=getFileForLastModifiedCheck().lastModified();\n  if (lastModified == 0L && !getFileForLastModifiedCheck().exists()) {\n    throw new FileNotFoundException(getDescription() + \" cannot be resolved in the file system for checking its last-modified timestamp\");\n  }\n  return lastModified;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 45,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 1,
+    "type" : "java.io.File"
+  } ],
+  "positionList" : [ {
+    "charLength" : 29,
+    "startLineNumber" : 173,
+    "startColumnNumber" : 22,
+    "endLineNumber" : 173,
+    "endColumnNumber" : 51
+  }, {
+    "charLength" : 29,
+    "startLineNumber" : 174,
+    "startColumnNumber" : 29,
+    "endLineNumber" : 174,
+    "endColumnNumber" : 58
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "fileToCheck",
+  "nodePosition" : {
+    "charLength" : 11,
+    "startLineNumber" : 172,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 172,
+    "endColumnNumber" : 18
+  }
+}

@@ -1,0 +1,81 @@
+{
+    "id": 125,
+    "expression": "columnPositionSegment",
+    "projectName": "apache@shardingsphere",
+    "commitID": "2e33b07fd41a1e5fd64e83334ae8cfbcc69c9563",
+    "filePath": "shardingsphere-features/shardingsphere-encrypt/shardingsphere-encrypt-core/src/main/java/org/apache/shardingsphere/encrypt/rewrite/token/generator/impl/EncryptAlterTableTokenGenerator.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "columnPositionSegment",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 21,
+                "startLineNumber": 189,
+                "startColumnNumber": 104,
+                "endLineNumber": 189,
+                "endColumnNumber": 125
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.LambdaExpression,body]",
+                    "nodePosition": {
+                        "charLength": 56,
+                        "startLineNumber": 189,
+                        "startColumnNumber": 70,
+                        "endLineNumber": 189,
+                        "endColumnNumber": 126
+                    },
+                    "nodeContext": "getColumnPositionToken(tableName,columnPositionSegment)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 81,
+                        "startLineNumber": 189,
+                        "startColumnNumber": 45,
+                        "endLineNumber": 189,
+                        "endColumnNumber": 126
+                    },
+                    "nodeContext": "columnPositionSegment -> getColumnPositionToken(tableName,columnPositionSegment)",
+                    "nodeType": "LambdaExpression",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                "nodePosition": {
+                    "charLength": 81,
+                    "startLineNumber": 189,
+                    "startColumnNumber": 45,
+                    "endLineNumber": 189,
+                    "endColumnNumber": 126
+                },
+                "nodeContext": "columnPositionSegment -> getColumnPositionToken(tableName,columnPositionSegment)",
+                "nodeType": "LambdaExpression",
+                "astNodeNumber": 7,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "org.apache.shardingsphere.sql.parser.sql.common.segment.ddl.column.position.ColumnPositionSegment"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 21,
+            "startLineNumber": 189,
+            "startColumnNumber": 104,
+            "endLineNumber": 189,
+            "endColumnNumber": 125
+        }
+    ],
+    "layoutRelationDataList": []
+}

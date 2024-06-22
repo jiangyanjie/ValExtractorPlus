@@ -1,0 +1,109 @@
+{
+    "id": 19,
+    "expression": "tv",
+    "projectName": "material-components@material-components-android",
+    "commitID": "b241ff5785463453bcd3176b22e783ddb103835c",
+    "filePath": "lib/src/android/support/design/widget/Snackbar.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "tv",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 159,
+                "startColumnNumber": 8,
+                "endLineNumber": 159,
+                "endColumnNumber": 10
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 159,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 159,
+                        "endColumnNumber": 27
+                    },
+                    "nodeContext": "tv.setText(message)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 159,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 159,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "tv.setText(message);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 214,
+                        "startLineNumber": 156,
+                        "startColumnNumber": 59,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 30,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 430,
+                        "startLineNumber": 150,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 161,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Update the text in this  {@link Snackbar}.\n * @param message The new text for this {@link BaseTransientBottomBar}.\n */\n@NonNull public Snackbar setText(@NonNull CharSequence message){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getMessageView();\n  tv.setText(message);\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 44,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 20,
+                    "startLineNumber": 159,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 159,
+                    "endColumnNumber": 28
+                },
+                "nodeContext": "tv.setText(message);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.TextView"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 2,
+            "startLineNumber": 159,
+            "startColumnNumber": 8,
+            "endLineNumber": 159,
+            "endColumnNumber": 10
+        }
+    ],
+    "layoutRelationDataList": []
+}

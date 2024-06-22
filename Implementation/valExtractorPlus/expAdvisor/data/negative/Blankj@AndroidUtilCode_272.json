@@ -1,0 +1,109 @@
+{
+    "id": 272,
+    "expression": "CacheHelper",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "c1bad4d11e13e88bd40a03463c96d3266c2fd957",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/util/CacheUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "CacheHelper",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 11,
+                "startLineNumber": 453,
+                "startColumnNumber": 15,
+                "endLineNumber": 453,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 33,
+                        "startLineNumber": 453,
+                        "startColumnNumber": 15,
+                        "endLineNumber": 453,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "CacheHelper.bytes2Drawable(bytes)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 453,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 453,
+                        "endColumnNumber": 49
+                    },
+                    "nodeContext": "return CacheHelper.bytes2Drawable(bytes);\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 135,
+                        "startLineNumber": 450,
+                        "startColumnNumber": 44,
+                        "endLineNumber": 454,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  byte[] bytes=getBytes(key);\n  if (bytes == null)   return null;\n  return CacheHelper.bytes2Drawable(bytes);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 21,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 261,
+                        "startLineNumber": 444,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 454,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 缓存中读取drawable\n * @param key 键\n * @return bitmap\n */\npublic Drawable getDrawable(String key){\n  byte[] bytes=getBytes(key);\n  if (bytes == null)   return null;\n  return CacheHelper.bytes2Drawable(bytes);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 31,
+                    "astHeight": 6
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 41,
+                    "startLineNumber": 453,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 453,
+                    "endColumnNumber": 49
+                },
+                "nodeContext": "return CacheHelper.bytes2Drawable(bytes);\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "com.blankj.utilcode.util.CacheUtils.CacheHelper"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 11,
+            "startLineNumber": 453,
+            "startColumnNumber": 15,
+            "endLineNumber": 453,
+            "endColumnNumber": 26
+        }
+    ],
+    "layoutRelationDataList": []
+}

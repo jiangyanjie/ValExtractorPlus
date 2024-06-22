@@ -1,0 +1,151 @@
+{
+    "id": 101,
+    "expression": "new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n",
+    "projectName": "Baseflow@PhotoView",
+    "commitID": "8d1b662b5b148f67f6ff5267b55d2db320cb1547",
+    "filePath": "library/src/uk/co/senab/photoview/PhotoViewAttacher.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 424,
+                "startLineNumber": 148,
+                "startColumnNumber": 20,
+                "endLineNumber": 157,
+                "endColumnNumber": 21
+            },
+            "astNodeNumber": 29,
+            "astHeight": 10,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+                    "nodePosition": {
+                        "charLength": 489,
+                        "startLineNumber": 147,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n)",
+                    "nodeType": "ClassInstanceCreation",
+                    "astNodeNumber": 35,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 508,
+                        "startLineNumber": 147,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n)",
+                    "nodeType": "Assignment",
+                    "astNodeNumber": 37,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 509,
+                        "startLineNumber": 147,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 157,
+                        "endColumnNumber": 23
+                    },
+                    "nodeContext": "mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 38,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 831,
+                        "startLineNumber": 143,
+                        "startColumnNumber": 39,
+                        "endLineNumber": 163,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "{\n  mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n  mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n    @Override public void onLongPress(    MotionEvent e){\n      if (null != mLongClickListener) {\n        mLongClickListener.onLongClick(mImageView.get());\n      }\n    }\n  }\n);\n  mGestureDetector.setOnDoubleTapListener(this);\n  setZoomable(true);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 58,
+                    "astHeight": 14
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 862,
+                        "startLineNumber": 143,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 163,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (!imageView.isInEditMode()) {\n  mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n  mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n    @Override public void onLongPress(    MotionEvent e){\n      if (null != mLongClickListener) {\n        mLongClickListener.onLongClick(mImageView.get());\n      }\n    }\n  }\n);\n  mGestureDetector.setOnDoubleTapListener(this);\n  setZoomable(true);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 63,
+                    "astHeight": 15
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1237,
+                        "startLineNumber": 131,
+                        "startColumnNumber": 50,
+                        "endLineNumber": 164,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  mImageView=new WeakReference<ImageView>(imageView);\n  imageView.setOnTouchListener(this);\n  ViewTreeObserver observer=imageView.getViewTreeObserver();\n  if (null != observer)   observer.addOnGlobalLayoutListener(this);\n  setImageViewScaleTypeMatrix(imageView);\n  if (!imageView.isInEditMode()) {\n    mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n    mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n      @Override public void onLongPress(      MotionEvent e){\n        if (null != mLongClickListener) {\n          mLongClickListener.onLongClick(mImageView.get());\n        }\n      }\n    }\n);\n    mGestureDetector.setOnDoubleTapListener(this);\n    setZoomable(true);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 100,
+                    "astHeight": 16
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1283,
+                        "startLineNumber": 131,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 164,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "public PhotoViewAttacher(ImageView imageView){\n  mImageView=new WeakReference<ImageView>(imageView);\n  imageView.setOnTouchListener(this);\n  ViewTreeObserver observer=imageView.getViewTreeObserver();\n  if (null != observer)   observer.addOnGlobalLayoutListener(this);\n  setImageViewScaleTypeMatrix(imageView);\n  if (!imageView.isInEditMode()) {\n    mScaleDragDetector=VersionedGestureDetector.newInstance(imageView.getContext(),this);\n    mGestureDetector=new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n      @Override public void onLongPress(      MotionEvent e){\n        if (null != mLongClickListener) {\n          mLongClickListener.onLongClick(mImageView.get());\n        }\n      }\n    }\n);\n    mGestureDetector.setOnDoubleTapListener(this);\n    setZoomable(true);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 107,
+                    "astHeight": 17
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.Assignment,rightHandSide]",
+                "nodePosition": {
+                    "charLength": 489,
+                    "startLineNumber": 147,
+                    "startColumnNumber": 31,
+                    "endLineNumber": 157,
+                    "endColumnNumber": 22
+                },
+                "nodeContext": "new GestureDetector(imageView.getContext(),new GestureDetector.SimpleOnGestureListener(){\n  @Override public void onLongPress(  MotionEvent e){\n    if (null != mLongClickListener) {\n      mLongClickListener.onLongClick(mImageView.get());\n    }\n  }\n}\n)",
+                "nodeType": "ClassInstanceCreation",
+                "astNodeNumber": 35,
+                "astHeight": 11
+            },
+            "tokenLength": 13,
+            "type": ""
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 424,
+            "startLineNumber": 148,
+            "startColumnNumber": 20,
+            "endLineNumber": 157,
+            "endColumnNumber": 21
+        }
+    ],
+    "layoutRelationDataList": []
+}

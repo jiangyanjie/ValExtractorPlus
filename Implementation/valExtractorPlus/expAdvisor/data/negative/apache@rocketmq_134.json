@@ -1,0 +1,151 @@
+{
+    "id": 134,
+    "expression": "EndTransactionRequestHeader.class",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/EndTransactionProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "EndTransactionRequestHeader.class",
+            "nodeType": "TypeLiteral",
+            "nodePosition": {
+                "charLength": 33,
+                "startLineNumber": 90,
+                "startColumnNumber": 53,
+                "endLineNumber": 90,
+                "endColumnNumber": 86
+            },
+            "astNodeNumber": 3,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 49,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 87
+                    },
+                    "nodeContext": "any(EndTransactionRequestHeader.class)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 75,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 88
+                    },
+                    "nodeContext": "transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 81,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 89
+                    },
+                    "nodeContext": "when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class)))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 10,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 130,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 138
+                    },
+                    "nodeContext": "when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 17,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 131,
+                        "startLineNumber": 90,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 90,
+                        "endColumnNumber": 139
+                    },
+                    "nodeContext": "when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 18,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 762,
+                        "startLineNumber": 89,
+                        "startColumnNumber": 69,
+                        "endLineNumber": 98,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n  when(messageStore.putMessage(any(MessageExtBrokerInner.class))).thenReturn(new PutMessageResult(PutMessageStatus.PUT_OK,new AppendMessageResult(AppendMessageStatus.PUT_OK)));\n  RemotingCommand request=createEndTransactionMsgCommand(MessageSysFlag.TRANSACTION_COMMIT_TYPE,false);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 85,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 837,
+                        "startLineNumber": 88,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 98,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest() throws RemotingCommandException {\n  when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n  when(messageStore.putMessage(any(MessageExtBrokerInner.class))).thenReturn(new PutMessageResult(PutMessageStatus.PUT_OK,new AppendMessageResult(AppendMessageStatus.PUT_OK)));\n  RemotingCommand request=createEndTransactionMsgCommand(MessageSysFlag.TRANSACTION_COMMIT_TYPE,false);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=endTransactionProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 93,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 131,
+                    "startLineNumber": 90,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 90,
+                    "endColumnNumber": 139
+                },
+                "nodeContext": "when(transactionMsgService.commitMessage(any(EndTransactionRequestHeader.class))).thenReturn(createResponse(ResponseCode.SUCCESS));\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 18,
+                "astHeight": 8
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<org.apache.rocketmq.common.protocol.header.EndTransactionRequestHeader>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 33,
+            "startLineNumber": 90,
+            "startColumnNumber": 53,
+            "endLineNumber": 90,
+            "endColumnNumber": 86
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,179 @@
+{
+    "id": 20,
+    "expression": "Class.class",
+    "projectName": "mybatis@mybatis-3",
+    "commitID": "8e939972d2ecd8c3cde5328053f0f61b0401832e",
+    "filePath": "src/main/java/org/apache/ibatis/logging/LogFactory.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "Class.class",
+            "nodeType": "TypeLiteral",
+            "nodePosition": {
+                "charLength": 11,
+                "startLineNumber": 85,
+                "startColumnNumber": 82,
+                "endLineNumber": 85,
+                "endColumnNumber": 93
+            },
+            "astNodeNumber": 3,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ArrayCreation,initializer]",
+                    "nodePosition": {
+                        "charLength": 13,
+                        "startLineNumber": 85,
+                        "startColumnNumber": 81,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 94
+                    },
+                    "nodeContext": "{Class.class}",
+                    "nodeType": "ArrayInitializer",
+                    "astNodeNumber": 4,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 24,
+                        "startLineNumber": 85,
+                        "startColumnNumber": 70,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 94
+                    },
+                    "nodeContext": "new Class[]{Class.class}",
+                    "nodeType": "ArrayCreation",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 50,
+                        "startLineNumber": 85,
+                        "startColumnNumber": 45,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 95
+                    },
+                    "nodeContext": "implClass.getConstructor(new Class[]{Class.class})",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 62,
+                        "startLineNumber": 85,
+                        "startColumnNumber": 33,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 95
+                    },
+                    "nodeContext": "candidate=implClass.getConstructor(new Class[]{Class.class})",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 14,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 90,
+                        "startLineNumber": 85,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 85,
+                        "endColumnNumber": 96
+                    },
+                    "nodeContext": "Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 21,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.TryStatement,body]",
+                    "nodePosition": {
+                        "charLength": 433,
+                        "startLineNumber": 82,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 89,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  @SuppressWarnings(\"unchecked\") Class<? extends Log> implClass=(Class<? extends Log>)Resources.classForName(implClassName);\n  Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n  Log log=candidate.newInstance(new Object[]{LogFactory.class});\n  log.debug(\"Logging initialized using '\" + implClassName + \"' adapter.\");\n  logConstructor=candidate;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 74,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 550,
+                        "startLineNumber": 82,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 91,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "try {\n  @SuppressWarnings(\"unchecked\") Class<? extends Log> implClass=(Class<? extends Log>)Resources.classForName(implClassName);\n  Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n  Log log=candidate.newInstance(new Object[]{LogFactory.class});\n  log.debug(\"Logging initialized using '\" + implClassName + \"' adapter.\");\n  logConstructor=candidate;\n}\n catch (Throwable t) {\n  throw new LogException(\"Error setting Log implementation.  Cause: \" + t,t);\n}\n",
+                    "nodeType": "TryStatement",
+                    "astNodeNumber": 89,
+                    "astHeight": 10
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 562,
+                        "startLineNumber": 81,
+                        "startColumnNumber": 62,
+                        "endLineNumber": 92,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  try {\n    @SuppressWarnings(\"unchecked\") Class<? extends Log> implClass=(Class<? extends Log>)Resources.classForName(implClassName);\n    Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n    Log log=candidate.newInstance(new Object[]{LogFactory.class});\n    log.debug(\"Logging initialized using '\" + implClassName + \"' adapter.\");\n    logConstructor=candidate;\n  }\n catch (  Throwable t) {\n    throw new LogException(\"Error setting Log implementation.  Cause: \" + t,t);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 90,
+                    "astHeight": 11
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 622,
+                        "startLineNumber": 81,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 92,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private static void setImplementation(String implClassName){\n  try {\n    @SuppressWarnings(\"unchecked\") Class<? extends Log> implClass=(Class<? extends Log>)Resources.classForName(implClassName);\n    Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n    Log log=candidate.newInstance(new Object[]{LogFactory.class});\n    log.debug(\"Logging initialized using '\" + implClassName + \"' adapter.\");\n    logConstructor=candidate;\n  }\n catch (  Throwable t) {\n    throw new LogException(\"Error setting Log implementation.  Cause: \" + t,t);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 99,
+                    "astHeight": 12
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 90,
+                    "startLineNumber": 85,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 85,
+                    "endColumnNumber": 96
+                },
+                "nodeContext": "Constructor<? extends Log> candidate=implClass.getConstructor(new Class[]{Class.class});\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 21,
+                "astHeight": 8
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<java.lang.Class>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 11,
+            "startLineNumber": 85,
+            "startColumnNumber": 82,
+            "endLineNumber": 85,
+            "endColumnNumber": 93
+        }
+    ],
+    "layoutRelationDataList": []
+}

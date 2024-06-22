@@ -1,0 +1,92 @@
+{
+  "id" : 7,
+  "expression" : "getElementForView(child)",
+  "projectName" : "facebook@stetho",
+  "commitID" : "969c823b3c1a2e8e1347a220013416d57fae3eb2",
+  "filePath" : "stetho/src/main/java/com/facebook/stetho/inspector/elements/android/ViewGroupDescriptor.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "getElementForView(child)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 24,
+      "startLineNumber" : 148,
+      "startColumnNumber" : 39,
+      "endLineNumber" : 148,
+      "endColumnNumber" : 63
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 57,
+        "startLineNumber" : 148,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 148,
+        "endColumnNumber" : 63
+      },
+      "nodeContext" : "getHost().onChildRemoved(parent,getElementForView(child))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 59,
+        "startLineNumber" : 148,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 148,
+        "endColumnNumber" : 65
+      },
+      "nodeContext" : "getHost().onChildRemoved(parent,getElementForView(child));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 9,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 291,
+        "startLineNumber" : 138,
+        "startColumnNumber" : 60,
+        "endLineNumber" : 151,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  if (mElement == null) {\n    return;\n  }\n  if (mInnerListener != null) {\n    mInnerListener.onChildViewRemoved(parent,child);\n  }\n  Object getElementForView(child)=getElementForView(child);\n  getHost().onChildRemoved(parent,getElementForView(child));\n  mViewToElementMap.remove(child);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 40,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 355,
+        "startLineNumber" : 137,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 151,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "@Override public void onChildViewRemoved(View parent,View child){\n  if (mElement == null) {\n    return;\n  }\n  if (mInnerListener != null) {\n    mInnerListener.onChildViewRemoved(parent,child);\n  }\n  Object getElementForView(child)=getElementForView(child);\n  getHost().onChildRemoved(parent,getElementForView(child));\n  mViewToElementMap.remove(child);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 54,
+      "astHeight" : 7
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.Object"
+  } ],
+  "positionList" : [ {
+    "charLength" : 24,
+    "startLineNumber" : 148,
+    "startColumnNumber" : 39,
+    "endLineNumber" : 148,
+    "endColumnNumber" : 63
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "childElement",
+  "nodePosition" : {
+    "charLength" : 12,
+    "startLineNumber" : 147,
+    "startColumnNumber" : 13,
+    "endLineNumber" : 147,
+    "endColumnNumber" : 25
+  }
+}

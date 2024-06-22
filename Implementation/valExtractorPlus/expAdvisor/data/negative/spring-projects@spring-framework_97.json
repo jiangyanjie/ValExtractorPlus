@@ -1,0 +1,426 @@
+{
+    "id": 97,
+    "expression": "script",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "24ed6de6aaece130fa38e758712cedf6987212d0",
+    "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/datasource/init/ScriptUtils.java",
+    "occurrences": 3,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "script",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 347,
+                "startColumnNumber": 22,
+                "endLineNumber": 347,
+                "endColumnNumber": 28
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+                    "nodePosition": {
+                        "charLength": 15,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 22,
+                        "endLineNumber": 347,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "script.length()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 18,
+                        "endLineNumber": 347,
+                        "endColumnNumber": 37
+                    },
+                    "nodeContext": "i < script.length()",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 336,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 365,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < script.length(); i++) {\n  char c=script.charAt(i);\n  if (c == '\\\\') {\n    inEscape=!inEscape;\n    continue;\n  }\n else   if (inEscape) {\n    inEscape=false;\n    continue;\n  }\n  if (c == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && script.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 63,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 416,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 80,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 686,
+                        "startLineNumber": 339,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Does the provided SQL script contain the specified delimiter?\n * @param script the SQL script\n * @param delim the string delimiting each statement - typically a ';' character\n */\npublic static boolean containsSqlScriptDelimiters(String script,String delim){\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 90,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,expression]",
+                "nodePosition": {
+                    "charLength": 19,
+                    "startLineNumber": 347,
+                    "startColumnNumber": 18,
+                    "endLineNumber": 347,
+                    "endColumnNumber": 37
+                },
+                "nodeContext": "i < script.length()",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        },
+        {
+            "nodeContext": "script",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 349,
+                "startColumnNumber": 12,
+                "endLineNumber": 349,
+                "endColumnNumber": 18
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 349,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 349,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "script.charAt(i)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 349,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 349,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "c=script.charAt(i)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 349,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 349,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "char c=script.charAt(i);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 294,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 44,
+                        "endLineNumber": 365,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  char c=script.charAt(i);\n  if (c == '\\\\') {\n    inEscape=!inEscape;\n    continue;\n  }\n else   if (inEscape) {\n    inEscape=false;\n    continue;\n  }\n  if (c == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && script.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 50,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 336,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 365,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < script.length(); i++) {\n  char c=script.charAt(i);\n  if (c == '\\\\') {\n    inEscape=!inEscape;\n    continue;\n  }\n else   if (inEscape) {\n    inEscape=false;\n    continue;\n  }\n  if (c == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && script.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 63,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 416,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 80,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 686,
+                        "startLineNumber": 339,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Does the provided SQL script contain the specified delimiter?\n * @param script the SQL script\n * @param delim the string delimiting each statement - typically a ';' character\n */\npublic static boolean containsSqlScriptDelimiters(String script,String delim){\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 90,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 26,
+                    "startLineNumber": 349,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 349,
+                    "endColumnNumber": 29
+                },
+                "nodeContext": "char c=script.charAt(i);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        },
+        {
+            "nodeContext": "script",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 362,
+                "startColumnNumber": 21,
+                "endLineNumber": 362,
+                "endColumnNumber": 27
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 362,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 362,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "script.startsWith(delim,i)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 362,
+                        "startColumnNumber": 7,
+                        "endLineNumber": 362,
+                        "endColumnNumber": 48
+                    },
+                    "nodeContext": "!inLiteral && script.startsWith(delim,i)",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 70,
+                        "startLineNumber": 362,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 364,
+                        "endColumnNumber": 4
+                    },
+                    "nodeContext": "if (!inLiteral && script.startsWith(delim,i)) {\n  return true;\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+                    "nodePosition": {
+                        "charLength": 294,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 44,
+                        "endLineNumber": 365,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  char c=script.charAt(i);\n  if (c == '\\\\') {\n    inEscape=!inEscape;\n    continue;\n  }\n else   if (inEscape) {\n    inEscape=false;\n    continue;\n  }\n  if (c == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && script.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 50,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 336,
+                        "startLineNumber": 347,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 365,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "for (int i=0; i < script.length(); i++) {\n  char c=script.charAt(i);\n  if (c == '\\\\') {\n    inEscape=!inEscape;\n    continue;\n  }\n else   if (inEscape) {\n    inEscape=false;\n    continue;\n  }\n  if (c == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && script.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+                    "nodeType": "ForStatement",
+                    "astNodeNumber": 63,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 416,
+                        "startLineNumber": 344,
+                        "startColumnNumber": 80,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 686,
+                        "startLineNumber": 339,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 367,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Does the provided SQL script contain the specified delimiter?\n * @param script the SQL script\n * @param delim the string delimiting each statement - typically a ';' character\n */\npublic static boolean containsSqlScriptDelimiters(String script,String delim){\n  boolean inLiteral=false;\n  boolean inEscape=false;\n  for (int i=0; i < script.length(); i++) {\n    char c=script.charAt(i);\n    if (c == '\\\\') {\n      inEscape=!inEscape;\n      continue;\n    }\n else     if (inEscape) {\n      inEscape=false;\n      continue;\n    }\n    if (c == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && script.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 90,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 41,
+                    "startLineNumber": 362,
+                    "startColumnNumber": 7,
+                    "endLineNumber": 362,
+                    "endColumnNumber": 48
+                },
+                "nodeContext": "!inLiteral && script.startsWith(delim,i)",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 8,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 6,
+            "startLineNumber": 347,
+            "startColumnNumber": 22,
+            "endLineNumber": 347,
+            "endColumnNumber": 28
+        },
+        {
+            "charLength": 6,
+            "startLineNumber": 349,
+            "startColumnNumber": 12,
+            "endLineNumber": 349,
+            "endColumnNumber": 18
+        },
+        {
+            "charLength": 6,
+            "startLineNumber": 362,
+            "startColumnNumber": 21,
+            "endLineNumber": 362,
+            "endColumnNumber": 27
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 2
+        },
+        {
+            "firstKey": 0,
+            "secondKey": 2,
+            "layout": 2
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 4
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 2,
+            "layout": 3
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 0,
+            "layout": 4
+        },
+        {
+            "firstKey": 2,
+            "secondKey": 1,
+            "layout": 3
+        }
+    ]
+}

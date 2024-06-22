@@ -1,0 +1,109 @@
+{
+    "id": 223,
+    "expression": "new Geocoder(mContext,Locale.getDefault())",
+    "projectName": "Blankj@AndroidUtilCode",
+    "commitID": "ad1c09b9949851472eee54f876ae4bc00bf29eb1",
+    "filePath": "utilcode/src/main/java/com/blankj/utilcode/utils/LocationUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "new Geocoder(mContext,Locale.getDefault())",
+            "nodeType": "ClassInstanceCreation",
+            "nodePosition": {
+                "charLength": 43,
+                "startLineNumber": 135,
+                "startColumnNumber": 28,
+                "endLineNumber": 135,
+                "endColumnNumber": 71
+            },
+            "astNodeNumber": 7,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 54,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 17,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 71
+                    },
+                    "nodeContext": "geocoder=new Geocoder(mContext,Locale.getDefault())",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 64,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 72
+                    },
+                    "nodeContext": "Geocoder geocoder=new Geocoder(mContext,Locale.getDefault());\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 343,
+                        "startLineNumber": 134,
+                        "startColumnNumber": 65,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  Geocoder geocoder=new Geocoder(mContext,Locale.getDefault());\n  try {\n    List<Address> addresses=geocoder.getFromLocation(latitude,longitude,1);\n    if (addresses.size() > 0)     return addresses.get(0);\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n  return null;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 52,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 531,
+                        "startLineNumber": 127,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * 根据经纬度获取地理位置\n * @param latitude  纬度\n * @param longitude 经度\n * @return {@link Address}\n */\npublic Address getAddress(double latitude,double longitude){\n  Geocoder geocoder=new Geocoder(mContext,Locale.getDefault());\n  try {\n    List<Address> addresses=geocoder.getFromLocation(latitude,longitude,1);\n    if (addresses.size() > 0)     return addresses.get(0);\n  }\n catch (  IOException e) {\n    e.printStackTrace();\n  }\n  return null;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 64,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 64,
+                    "startLineNumber": 135,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 135,
+                    "endColumnNumber": 72
+                },
+                "nodeContext": "Geocoder geocoder=new Geocoder(mContext,Locale.getDefault());\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 12,
+                "astHeight": 5
+            },
+            "tokenLength": 4,
+            "type": "com.blankj.utilcode.utils.Geocoder"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 43,
+            "startLineNumber": 135,
+            "startColumnNumber": 28,
+            "endLineNumber": 135,
+            "endColumnNumber": 71
+        }
+    ],
+    "layoutRelationDataList": []
+}

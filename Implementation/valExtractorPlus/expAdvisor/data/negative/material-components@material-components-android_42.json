@@ -1,0 +1,123 @@
+{
+    "id": 42,
+    "expression": "listener",
+    "projectName": "material-components@material-components-android",
+    "commitID": "b241ff5785463453bcd3176b22e783ddb103835c",
+    "filePath": "lib/src/android/support/design/widget/Snackbar.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "listener",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 8,
+                "startLineNumber": 195,
+                "startColumnNumber": 39,
+                "endLineNumber": 195,
+                "endColumnNumber": 47
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.InfixExpression,rightOperand]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 39,
+                        "endLineNumber": 195,
+                        "endColumnNumber": 55
+                    },
+                    "nodeContext": "listener == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 43,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 195,
+                        "endColumnNumber": 55
+                    },
+                    "nodeContext": "TextUtils.isEmpty(text) || listener == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 569,
+                        "startLineNumber": 195,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 209,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (TextUtils.isEmpty(text) || listener == null) {\n  tv.setVisibility(View.GONE);\n  tv.setOnClickListener(null);\n}\n else {\n  tv.setVisibility(View.VISIBLE);\n  tv.setText(text);\n  tv.setOnClickListener(new View.OnClickListener(){\n    @Override public void onClick(    View view){\n      listener.onClick(view);\n      dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n    }\n  }\n);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 67,
+                    "astHeight": 12
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 763,
+                        "startLineNumber": 191,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 92,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1086,
+                        "startLineNumber": 184,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 211,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "/** \n * Set the action to be displayed in this  {@link BaseTransientBottomBar}.\n * @param text     Text to display for the action\n * @param listener callback to be invoked when the action is clicked\n */\n@NonNull public Snackbar setAction(CharSequence text,final View.OnClickListener listener){\n  final SnackbarContentLayout contentLayout=(SnackbarContentLayout)mView.getChildAt(0);\n  final TextView tv=contentLayout.getActionView();\n  if (TextUtils.isEmpty(text) || listener == null) {\n    tv.setVisibility(View.GONE);\n    tv.setOnClickListener(null);\n  }\n else {\n    tv.setVisibility(View.VISIBLE);\n    tv.setText(text);\n    tv.setOnClickListener(new View.OnClickListener(){\n      @Override public void onClick(      View view){\n        listener.onClick(view);\n        dispatchDismiss(BaseCallback.DISMISS_EVENT_ACTION);\n      }\n    }\n);\n  }\n  return this;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 111,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 43,
+                    "startLineNumber": 195,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 195,
+                    "endColumnNumber": 55
+                },
+                "nodeContext": "TextUtils.isEmpty(text) || listener == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 8,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "View.OnClickListener"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 8,
+            "startLineNumber": 195,
+            "startColumnNumber": 39,
+            "endLineNumber": 195,
+            "endColumnNumber": 47
+        }
+    ],
+    "layoutRelationDataList": []
+}

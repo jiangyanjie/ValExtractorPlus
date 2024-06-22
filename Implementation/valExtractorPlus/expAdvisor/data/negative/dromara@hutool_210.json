@@ -1,0 +1,95 @@
+{
+    "id": 210,
+    "expression": "0",
+    "projectName": "dromara@hutool",
+    "commitID": "dbcca73dc2de3b60155933e1f71066907a0d4a60",
+    "filePath": "hutool-core/src/main/java/cn/hutool/core/lang/tree/Tree.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "0",
+            "nodeType": "NumberLiteral",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 119,
+                "startColumnNumber": 9,
+                "endLineNumber": 119,
+                "endColumnNumber": 10
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 9,
+                        "startLineNumber": 119,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 119,
+                        "endColumnNumber": 11
+                    },
+                    "nodeContext": "return 0;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 2,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 183,
+                        "startLineNumber": 113,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 120,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  final Comparable weight=this.getWeight();\n  if (null != weight) {\n    final Comparable weightOther=tree.getWeight();\n    return weight.compareTo(weightOther);\n  }\n  return 0;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 31,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 295,
+                        "startLineNumber": 111,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 120,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@SuppressWarnings({\"rawtypes\",\"unchecked\",\"NullableProblems\"}) @Override public int compareTo(Tree<T> tree){\n  final Comparable weight=this.getWeight();\n  if (null != weight) {\n    final Comparable weightOther=tree.getWeight();\n    return weight.compareTo(weightOther);\n  }\n  return 0;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 50,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 9,
+                    "startLineNumber": 119,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 119,
+                    "endColumnNumber": 11
+                },
+                "nodeContext": "return 0;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 2,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "int"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 119,
+            "startColumnNumber": 9,
+            "endLineNumber": 119,
+            "endColumnNumber": 10
+        }
+    ],
+    "layoutRelationDataList": []
+}

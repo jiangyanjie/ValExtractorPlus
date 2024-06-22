@@ -1,0 +1,109 @@
+{
+    "id": 93,
+    "expression": "true",
+    "projectName": "material-components@material-components-android",
+    "commitID": "fec5119b47f3168af649e2a78652d9f45820df82",
+    "filePath": "demos/codelabs/building-beautiful-apps/starter/app/src/main/java/io/material/demo/codelab/buildingbeautifulapps/MainActivity.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "true",
+            "nodeType": "BooleanLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 59,
+                "startColumnNumber": 37,
+                "endLineNumber": 59,
+                "endColumnNumber": 41
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 59,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 59,
+                        "endColumnNumber": 42
+                    },
+                    "nodeContext": "recyclerView.setHasFixedSize(true)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 59,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 59,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "recyclerView.setHasFixedSize(true);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 611,
+                        "startLineNumber": 48,
+                        "startColumnNumber": 65,
+                        "endLineNumber": 62,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  super.onCreate(savedInstanceState);\n  setContentView(R.layout.shr_main);\n  Toolbar appBar=(Toolbar)findViewById(R.id.app_bar);\n  setSupportActionBar(appBar);\n  ArrayList<ProductEntry> products=readProductsList();\n  ImageRequester imageRequester=ImageRequester.getInstance(this);\n  RecyclerView recyclerView=(RecyclerView)findViewById(R.id.product_list);\n  recyclerView.setHasFixedSize(true);\n  recyclerView.setLayoutManager(new LinearLayoutManager(this));\n  recyclerView.setAdapter(new ProductAdapter(products,imageRequester));\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 88,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 686,
+                        "startLineNumber": 47,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 62,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override protected void onCreate(@Nullable Bundle savedInstanceState){\n  super.onCreate(savedInstanceState);\n  setContentView(R.layout.shr_main);\n  Toolbar appBar=(Toolbar)findViewById(R.id.app_bar);\n  setSupportActionBar(appBar);\n  ArrayList<ProductEntry> products=readProductsList();\n  ImageRequester imageRequester=ImageRequester.getInstance(this);\n  RecyclerView recyclerView=(RecyclerView)findViewById(R.id.product_list);\n  recyclerView.setHasFixedSize(true);\n  recyclerView.setLayoutManager(new LinearLayoutManager(this));\n  recyclerView.setAdapter(new ProductAdapter(products,imageRequester));\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 100,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 35,
+                    "startLineNumber": 59,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 59,
+                    "endColumnNumber": 43
+                },
+                "nodeContext": "recyclerView.setHasFixedSize(true);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 59,
+            "startColumnNumber": 37,
+            "endLineNumber": 59,
+            "endColumnNumber": 41
+        }
+    ],
+    "layoutRelationDataList": []
+}

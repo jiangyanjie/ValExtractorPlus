@@ -1,0 +1,109 @@
+{
+    "id": 252,
+    "expression": "null",
+    "projectName": "apache@skywalking",
+    "commitID": "9a3e8357cc2a7f700232efdd93914d971432cc45",
+    "filePath": "apm-sniffer/apm-sdk-plugin/spring-plugins/mvc-annotation-commons/src/main/java/org/apache/skywalking/apm/plugin/spring/mvc/commons/ReactiveRequestHolder.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "null",
+            "nodeType": "NullLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 42,
+                "startColumnNumber": 22,
+                "endLineNumber": 42,
+                "endColumnNumber": 26
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 14,
+                        "startLineNumber": 42,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 42,
+                        "endColumnNumber": 26
+                    },
+                    "nodeContext": "values == null",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 99,
+                        "startLineNumber": 42,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 44,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (values == null) {\n  return Collections.enumeration(Collections.EMPTY_LIST);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 246,
+                        "startLineNumber": 40,
+                        "startColumnNumber": 67,
+                        "endLineNumber": 46,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n  if (values == null) {\n    return Collections.enumeration(Collections.EMPTY_LIST);\n  }\n  return Collections.enumeration(values);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 34,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 323,
+                        "startLineNumber": 39,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 46,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public Enumeration<String> getHeaders(final String headerName){\n  List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n  if (values == null) {\n    return Collections.enumeration(Collections.EMPTY_LIST);\n  }\n  return Collections.enumeration(values);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 49,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+                "nodePosition": {
+                    "charLength": 14,
+                    "startLineNumber": 42,
+                    "startColumnNumber": 12,
+                    "endLineNumber": 42,
+                    "endColumnNumber": 26
+                },
+                "nodeContext": "values == null",
+                "nodeType": "InfixExpression",
+                "astNodeNumber": 3,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "null"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 42,
+            "startColumnNumber": 22,
+            "endLineNumber": 42,
+            "endColumnNumber": 26
+        }
+    ],
+    "layoutRelationDataList": []
+}

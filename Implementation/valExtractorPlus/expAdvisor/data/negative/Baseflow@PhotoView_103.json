@@ -1,0 +1,151 @@
+{
+    "id": 103,
+    "expression": "mImageView",
+    "projectName": "Baseflow@PhotoView",
+    "commitID": "8d1b662b5b148f67f6ff5267b55d2db320cb1547",
+    "filePath": "library/src/uk/co/senab/photoview/PhotoViewAttacher.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mImageView",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 10,
+                "startLineNumber": 154,
+                "startColumnNumber": 63,
+                "endLineNumber": 154,
+                "endColumnNumber": 73
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 16,
+                        "startLineNumber": 154,
+                        "startColumnNumber": 63,
+                        "endLineNumber": 154,
+                        "endColumnNumber": 79
+                    },
+                    "nodeContext": "mImageView.get()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 48,
+                        "startLineNumber": 154,
+                        "startColumnNumber": 32,
+                        "endLineNumber": 154,
+                        "endColumnNumber": 80
+                    },
+                    "nodeContext": "mLongClickListener.onLongClick(mImageView.get())",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 6,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 49,
+                        "startLineNumber": 154,
+                        "startColumnNumber": 32,
+                        "endLineNumber": 154,
+                        "endColumnNumber": 81
+                    },
+                    "nodeContext": "mLongClickListener.onLongClick(mImageView.get());\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 113,
+                        "startLineNumber": 153,
+                        "startColumnNumber": 60,
+                        "endLineNumber": 155,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "{\n  mLongClickListener.onLongClick(mImageView.get());\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 8,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 145,
+                        "startLineNumber": 153,
+                        "startColumnNumber": 28,
+                        "endLineNumber": 155,
+                        "endColumnNumber": 29
+                    },
+                    "nodeContext": "if (null != mLongClickListener) {\n  mLongClickListener.onLongClick(mImageView.get());\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 201,
+                        "startLineNumber": 152,
+                        "startColumnNumber": 63,
+                        "endLineNumber": 156,
+                        "endColumnNumber": 25
+                    },
+                    "nodeContext": "{\n  if (null != mLongClickListener) {\n    mLongClickListener.onLongClick(mImageView.get());\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 13,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 274,
+                        "startLineNumber": 151,
+                        "startColumnNumber": 24,
+                        "endLineNumber": 156,
+                        "endColumnNumber": 25
+                    },
+                    "nodeContext": "@Override public void onLongPress(MotionEvent e){\n  if (null != mLongClickListener) {\n    mLongClickListener.onLongClick(mImageView.get());\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 23,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 49,
+                    "startLineNumber": 154,
+                    "startColumnNumber": 32,
+                    "endLineNumber": 154,
+                    "endColumnNumber": 81
+                },
+                "nodeContext": "mLongClickListener.onLongClick(mImageView.get());\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 7,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.ref.WeakReference<uk.co.senab.photoview.ImageView>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 10,
+            "startLineNumber": 154,
+            "startColumnNumber": 63,
+            "endLineNumber": 154,
+            "endColumnNumber": 73
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,571 @@
+{
+  "id" : 17,
+  "expression" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))",
+  "projectName" : "antlr@antlr4",
+  "commitID" : "2cb02d9b4375f4d1752ec88070edd8acad5b7e91",
+  "filePath" : "runtime-testsuite/test/org/antlr/v4/test/runtime/java/BaseJavaTest.java",
+  "occurrences" : 4,
+  "expressionList" : [ {
+    "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 61,
+      "startLineNumber" : 696,
+      "startColumnNumber" : 14,
+      "endLineNumber" : 696,
+      "endColumnNumber" : 75
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 79,
+        "startLineNumber" : 696,
+        "startColumnNumber" : 14,
+        "endLineNumber" : 696,
+        "endColumnNumber" : 93
+      },
+      "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\"",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 90,
+        "startLineNumber" : 696,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 696,
+        "endColumnNumber" : 94
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 92,
+        "startLineNumber" : 696,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 696,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 196,
+        "startLineNumber" : 695,
+        "startColumnNumber" : 45,
+        "endLineNumber" : 698,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "{\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 22,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 238,
+        "startLineNumber" : 695,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 698,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (!optionsSet.contains(\"-no-listener\")) {\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 28,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 733,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 87,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (parserName != null) {\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 91,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1130,
+        "startLineNumber" : 680,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 158,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1341,
+        "startLineNumber" : 673,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return true if all is well \n */\nprotected boolean rawGenerateAndBuildRecognizer(String grammarFileName,String grammarStr,String parserName,String lexerName,boolean defaultListener,String... extraOptions){\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 186,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 61,
+      "startLineNumber" : 697,
+      "startColumnNumber" : 14,
+      "endLineNumber" : 697,
+      "endColumnNumber" : 75
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 697,
+        "startColumnNumber" : 14,
+        "endLineNumber" : 697,
+        "endColumnNumber" : 97
+      },
+      "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\"",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 94,
+        "startLineNumber" : 697,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 697,
+        "endColumnNumber" : 98
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 96,
+        "startLineNumber" : 697,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 697,
+        "endColumnNumber" : 100
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 196,
+        "startLineNumber" : 695,
+        "startColumnNumber" : 45,
+        "endLineNumber" : 698,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "{\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 22,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 238,
+        "startLineNumber" : 695,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 698,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (!optionsSet.contains(\"-no-listener\")) {\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 28,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 733,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 87,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (parserName != null) {\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 91,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1130,
+        "startLineNumber" : 680,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 158,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1341,
+        "startLineNumber" : 673,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return true if all is well \n */\nprotected boolean rawGenerateAndBuildRecognizer(String grammarFileName,String grammarStr,String parserName,String lexerName,boolean defaultListener,String... extraOptions){\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 186,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 61,
+      "startLineNumber" : 700,
+      "startColumnNumber" : 14,
+      "endLineNumber" : 700,
+      "endColumnNumber" : 75
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 78,
+        "startLineNumber" : 700,
+        "startColumnNumber" : 14,
+        "endLineNumber" : 700,
+        "endColumnNumber" : 92
+      },
+      "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\"",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 89,
+        "startLineNumber" : 700,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 700,
+        "endColumnNumber" : 93
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 91,
+        "startLineNumber" : 700,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 700,
+        "endColumnNumber" : 95
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 194,
+        "startLineNumber" : 699,
+        "startColumnNumber" : 40,
+        "endLineNumber" : 702,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "{\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 22,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 231,
+        "startLineNumber" : 699,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 702,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (optionsSet.contains(\"-visitor\")) {\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 27,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 733,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 87,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (parserName != null) {\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 91,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1130,
+        "startLineNumber" : 680,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 158,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1341,
+        "startLineNumber" : 673,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return true if all is well \n */\nprotected boolean rawGenerateAndBuildRecognizer(String grammarFileName,String grammarStr,String parserName,String lexerName,boolean defaultListener,String... extraOptions){\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 186,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 61,
+      "startLineNumber" : 701,
+      "startColumnNumber" : 14,
+      "endLineNumber" : 701,
+      "endColumnNumber" : 75
+    },
+    "astNodeNumber" : 8,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 82,
+        "startLineNumber" : 701,
+        "startColumnNumber" : 14,
+        "endLineNumber" : 701,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\"",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 10,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 93,
+        "startLineNumber" : 701,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 701,
+        "endColumnNumber" : 97
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\")",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 95,
+        "startLineNumber" : 701,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 701,
+        "endColumnNumber" : 99
+      },
+      "nodeContext" : "files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 194,
+        "startLineNumber" : 699,
+        "startColumnNumber" : 40,
+        "endLineNumber" : 702,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "{\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 22,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 231,
+        "startLineNumber" : 699,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 702,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (optionsSet.contains(\"-visitor\")) {\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n  files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 27,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 733,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 87,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 757,
+        "startLineNumber" : 691,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 703,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "if (parserName != null) {\n  files.add(parserName + \".java\");\n  Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n  String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n  if (!optionsSet.contains(\"-no-listener\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n  }\n  if (optionsSet.contains(\"-visitor\")) {\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n    files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n  }\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 91,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 1130,
+        "startLineNumber" : 680,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 158,
+      "astHeight" : 11
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1341,
+        "startLineNumber" : 673,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 706,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Return true if all is well \n */\nprotected boolean rawGenerateAndBuildRecognizer(String grammarFileName,String grammarStr,String parserName,String lexerName,boolean defaultListener,String... extraOptions){\n  ErrorQueue equeue=antlr(grammarFileName,grammarStr,defaultListener,extraOptions);\n  if (!equeue.errors.isEmpty()) {\n    return false;\n  }\n  List<String> files=new ArrayList<String>();\n  if (lexerName != null) {\n    files.add(lexerName + \".java\");\n  }\n  if (parserName != null) {\n    files.add(parserName + \".java\");\n    Set<String> optionsSet=new HashSet<String>(Arrays.asList(extraOptions));\n    String grammarFileName.substring(0,grammarFileName.lastIndexOf('.'))=grammarFileName.substring(0,grammarFileName.lastIndexOf('.'));\n    if (!optionsSet.contains(\"-no-listener\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Listener.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseListener.java\");\n    }\n    if (optionsSet.contains(\"-visitor\")) {\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"Visitor.java\");\n      files.add(grammarFileName.substring(0,grammarFileName.lastIndexOf('.')) + \"BaseVisitor.java\");\n    }\n  }\n  boolean allIsWell=compile(files.toArray(new String[files.size()]));\n  return allIsWell;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 186,
+      "astHeight" : 12
+    } ],
+    "tokenLength" : 5,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 61,
+    "startLineNumber" : 696,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 696,
+    "endColumnNumber" : 75
+  }, {
+    "charLength" : 61,
+    "startLineNumber" : 697,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 697,
+    "endColumnNumber" : 75
+  }, {
+    "charLength" : 61,
+    "startLineNumber" : 700,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 700,
+    "endColumnNumber" : 75
+  }, {
+    "charLength" : 61,
+    "startLineNumber" : 701,
+    "startColumnNumber" : 14,
+    "endLineNumber" : 701,
+    "endColumnNumber" : 75
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "grammarName",
+  "nodePosition" : {
+    "charLength" : 11,
+    "startLineNumber" : 694,
+    "startColumnNumber" : 10,
+    "endLineNumber" : 694,
+    "endColumnNumber" : 21
+  }
+}

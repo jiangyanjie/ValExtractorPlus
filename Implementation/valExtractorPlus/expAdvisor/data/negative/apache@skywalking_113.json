@@ -1,0 +1,95 @@
+{
+    "id": 113,
+    "expression": "allArguments[0] instanceof EnhancedInstance",
+    "projectName": "apache@skywalking",
+    "commitID": "16b51d55baec4f779f312e07081d1397addbcfe9",
+    "filePath": "apm-sniffer/apm-toolkit-activation/apm-toolkit-log4j-2.x-activation/src/main/java/org/apache/skywalking/apm/toolkit/activation/log/log4j/v2/x/async/AsyncLoggerConfigMethodInterceptor.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "allArguments[0] instanceof EnhancedInstance",
+            "nodeType": "InstanceofExpression",
+            "nodePosition": {
+                "charLength": 43,
+                "startLineNumber": 38,
+                "startColumnNumber": 12,
+                "endLineNumber": 38,
+                "endColumnNumber": 55
+            },
+            "astNodeNumber": 6,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 393,
+                        "startLineNumber": 38,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 44,
+                        "endColumnNumber": 9
+                    },
+                    "nodeContext": "if (allArguments[0] instanceof EnhancedInstance) {\n  SkyWalkingContext skyWalkingContext=new SkyWalkingContext(ContextManager.getGlobalTraceId(),ContextManager.getSegmentId(),ContextManager.getSpanId());\n  EnhancedInstance instances=(EnhancedInstance)allArguments[0];\n  instances.setSkyWalkingDynamicField(skyWalkingContext);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 41,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 409,
+                        "startLineNumber": 37,
+                        "startColumnNumber": 55,
+                        "endLineNumber": 45,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  if (allArguments[0] instanceof EnhancedInstance) {\n    SkyWalkingContext skyWalkingContext=new SkyWalkingContext(ContextManager.getGlobalTraceId(),ContextManager.getSegmentId(),ContextManager.getSpanId());\n    EnhancedInstance instances=(EnhancedInstance)allArguments[0];\n    instances.setSkyWalkingDynamicField(skyWalkingContext);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 42,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 594,
+                        "startLineNumber": 35,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 45,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public void beforeMethod(EnhancedInstance objInst,Method method,Object[] allArguments,Class<?>[] argumentsTypes,MethodInterceptResult result) throws Throwable {\n  if (allArguments[0] instanceof EnhancedInstance) {\n    SkyWalkingContext skyWalkingContext=new SkyWalkingContext(ContextManager.getGlobalTraceId(),ContextManager.getSegmentId(),ContextManager.getSpanId());\n    EnhancedInstance instances=(EnhancedInstance)allArguments[0];\n    instances.setSkyWalkingDynamicField(skyWalkingContext);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 76,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 393,
+                    "startLineNumber": 38,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 44,
+                    "endColumnNumber": 9
+                },
+                "nodeContext": "if (allArguments[0] instanceof EnhancedInstance) {\n  SkyWalkingContext skyWalkingContext=new SkyWalkingContext(ContextManager.getGlobalTraceId(),ContextManager.getSegmentId(),ContextManager.getSpanId());\n  EnhancedInstance instances=(EnhancedInstance)allArguments[0];\n  instances.setSkyWalkingDynamicField(skyWalkingContext);\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 41,
+                "astHeight": 7
+            },
+            "tokenLength": 3,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 43,
+            "startLineNumber": 38,
+            "startColumnNumber": 12,
+            "endLineNumber": 38,
+            "endColumnNumber": 55
+        }
+    ],
+    "layoutRelationDataList": []
+}

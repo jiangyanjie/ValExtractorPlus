@@ -1,0 +1,217 @@
+{
+  "id" : 34,
+  "expression" : "script.charAt(i)",
+  "projectName" : "spring-projects@spring-framework",
+  "commitID" : "24ed6de6aaece130fa38e758712cedf6987212d0",
+  "filePath" : "spring-jdbc/src/main/java/org/springframework/jdbc/datasource/init/ScriptUtils.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "script.charAt(i)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 16,
+      "startLineNumber" : 350,
+      "startColumnNumber" : 7,
+      "endLineNumber" : 350,
+      "endColumnNumber" : 23
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 24,
+        "startLineNumber" : 350,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 350,
+        "endColumnNumber" : 31
+      },
+      "nodeContext" : "script.charAt(i) == '\\\\'",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 212,
+        "startLineNumber" : 350,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 357,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (script.charAt(i) == '\\\\') {\n  inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n  script.charAt(i)ontinue;\n}\n else if (inEsscript.charAt(i)ape) {\n  inEsscript.charAt(i)ape=false;\n  script.charAt(i)ontinue;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 22,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 347,
+        "startColumnNumber" : 44,
+        "endLineNumber" : 365,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n  if (script.charAt(i) == '\\\\') {\n    inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n    script.charAt(i)ontinue;\n  }\n else   if (inEsscript.charAt(i)ape) {\n    inEsscript.charAt(i)ape=false;\n    script.charAt(i)ontinue;\n  }\n  if (script.charAt(i) == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 53,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 524,
+        "startLineNumber" : 347,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 365,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n  script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n  if (script.charAt(i) == '\\\\') {\n    inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n    script.charAt(i)ontinue;\n  }\n else   if (inEsscript.charAt(i)ape) {\n    inEsscript.charAt(i)ape=false;\n    script.charAt(i)ontinue;\n  }\n  if (script.charAt(i) == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+      "nodeType" : "ForStatement",
+      "astNodeNumber" : 66,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 646,
+        "startLineNumber" : 344,
+        "startColumnNumber" : 80,
+        "endLineNumber" : 367,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  boolean inLiteral=false;\n  boolean inEsscript.charAt(i)ape=false;\n  for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n    script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n    if (script.charAt(i) == '\\\\') {\n      inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n      script.charAt(i)ontinue;\n    }\n else     if (inEsscript.charAt(i)ape) {\n      inEsscript.charAt(i)ape=false;\n      script.charAt(i)ontinue;\n    }\n    if (script.charAt(i) == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 79,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1120,
+        "startLineNumber" : 339,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 367,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Does the provided SQL sscript.charAt(i)ript script.charAt(i)ontain the spescript.charAt(i)ified delimiter?\n * @param sscript.charAt(i)ript the SQL sscript.charAt(i)ript\n * @param delim the string delimiting eascript.charAt(i)h statement - typiscript.charAt(i)ally a ';' script.charAt(i)harascript.charAt(i)ter\n */\npubliscript.charAt(i) statiscript.charAt(i) boolean script.charAt(i)ontainsSqlSscript.charAt(i)riptDelimiters(String sscript.charAt(i)ript,String delim){\n  boolean inLiteral=false;\n  boolean inEsscript.charAt(i)ape=false;\n  for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n    script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n    if (script.charAt(i) == '\\\\') {\n      inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n      script.charAt(i)ontinue;\n    }\n else     if (inEsscript.charAt(i)ape) {\n      inEsscript.charAt(i)ape=false;\n      script.charAt(i)ontinue;\n    }\n    if (script.charAt(i) == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 93,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 3,
+    "type" : "char"
+  }, {
+    "nodeContext" : "script.charAt(i)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 16,
+      "startLineNumber" : 359,
+      "startColumnNumber" : 7,
+      "endLineNumber" : 359,
+      "endColumnNumber" : 23
+    },
+    "astNodeNumber" : 4,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 24,
+        "startLineNumber" : 359,
+        "startColumnNumber" : 7,
+        "endLineNumber" : 359,
+        "endColumnNumber" : 31
+      },
+      "nodeContext" : "script.charAt(i) == '\\''",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 6,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 58,
+        "startLineNumber" : 359,
+        "startColumnNumber" : 3,
+        "endLineNumber" : 361,
+        "endColumnNumber" : 4
+      },
+      "nodeContext" : "if (script.charAt(i) == '\\'') {\n  inLiteral=!inLiteral;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 13,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ForStatement,body]",
+      "nodePosition" : {
+        "charLength" : 469,
+        "startLineNumber" : 347,
+        "startColumnNumber" : 44,
+        "endLineNumber" : 365,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n  if (script.charAt(i) == '\\\\') {\n    inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n    script.charAt(i)ontinue;\n  }\n else   if (inEsscript.charAt(i)ape) {\n    inEsscript.charAt(i)ape=false;\n    script.charAt(i)ontinue;\n  }\n  if (script.charAt(i) == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 53,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 524,
+        "startLineNumber" : 347,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 365,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n  script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n  if (script.charAt(i) == '\\\\') {\n    inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n    script.charAt(i)ontinue;\n  }\n else   if (inEsscript.charAt(i)ape) {\n    inEsscript.charAt(i)ape=false;\n    script.charAt(i)ontinue;\n  }\n  if (script.charAt(i) == '\\'') {\n    inLiteral=!inLiteral;\n  }\n  if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n    return true;\n  }\n}\n",
+      "nodeType" : "ForStatement",
+      "astNodeNumber" : 66,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 646,
+        "startLineNumber" : 344,
+        "startColumnNumber" : 80,
+        "endLineNumber" : 367,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "{\n  boolean inLiteral=false;\n  boolean inEsscript.charAt(i)ape=false;\n  for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n    script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n    if (script.charAt(i) == '\\\\') {\n      inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n      script.charAt(i)ontinue;\n    }\n else     if (inEsscript.charAt(i)ape) {\n      inEsscript.charAt(i)ape=false;\n      script.charAt(i)ontinue;\n    }\n    if (script.charAt(i) == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 79,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 1120,
+        "startLineNumber" : 339,
+        "startColumnNumber" : 1,
+        "endLineNumber" : 367,
+        "endColumnNumber" : 2
+      },
+      "nodeContext" : "/** \n * Does the provided SQL sscript.charAt(i)ript script.charAt(i)ontain the spescript.charAt(i)ified delimiter?\n * @param sscript.charAt(i)ript the SQL sscript.charAt(i)ript\n * @param delim the string delimiting eascript.charAt(i)h statement - typiscript.charAt(i)ally a ';' script.charAt(i)harascript.charAt(i)ter\n */\npubliscript.charAt(i) statiscript.charAt(i) boolean script.charAt(i)ontainsSqlSscript.charAt(i)riptDelimiters(String sscript.charAt(i)ript,String delim){\n  boolean inLiteral=false;\n  boolean inEsscript.charAt(i)ape=false;\n  for (int i=0; i < sscript.charAt(i)ript.length(); i++) {\n    script.charAt(i)har script.charAt(i)=sscript.charAt(i)ript.script.charAt(i)harAt(i);\n    if (script.charAt(i) == '\\\\') {\n      inEsscript.charAt(i)ape=!inEsscript.charAt(i)ape;\n      script.charAt(i)ontinue;\n    }\n else     if (inEsscript.charAt(i)ape) {\n      inEsscript.charAt(i)ape=false;\n      script.charAt(i)ontinue;\n    }\n    if (script.charAt(i) == '\\'') {\n      inLiteral=!inLiteral;\n    }\n    if (!inLiteral && sscript.charAt(i)ript.startsWith(delim,i)) {\n      return true;\n    }\n  }\n  return false;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 93,
+      "astHeight" : 10
+    } ],
+    "tokenLength" : 3,
+    "type" : "char"
+  } ],
+  "positionList" : [ {
+    "charLength" : 16,
+    "startLineNumber" : 350,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 350,
+    "endColumnNumber" : 23
+  }, {
+    "charLength" : 16,
+    "startLineNumber" : 359,
+    "startColumnNumber" : 7,
+    "endLineNumber" : 359,
+    "endColumnNumber" : 23
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "c",
+  "nodePosition" : {
+    "charLength" : 1,
+    "startLineNumber" : 349,
+    "startColumnNumber" : 8,
+    "endLineNumber" : 349,
+    "endColumnNumber" : 9
+  }
+}

@@ -1,0 +1,123 @@
+{
+    "id": 158,
+    "expression": "mRegion",
+    "projectName": "facebook@fresco",
+    "commitID": "f0893ea8ab2da7942309360342d18b9123c76420",
+    "filePath": "samples/showcase/src/main/java/com/facebook/fresco/samples/showcase/imagepipeline/ImagePipelineRegionDecodingFragment.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mRegion",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 7,
+                "startLineNumber": 167,
+                "startColumnNumber": 50,
+                "endLineNumber": 167,
+                "endColumnNumber": 57
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 111,
+                        "startLineNumber": 166,
+                        "startColumnNumber": 10,
+                        "endLineNumber": 167,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 9,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 146,
+                        "startLineNumber": 165,
+                        "startColumnNumber": 33,
+                        "endLineNumber": 167,
+                        "endColumnNumber": 66
+                    },
+                    "nodeContext": "decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 174,
+                        "startLineNumber": 165,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 167,
+                        "endColumnNumber": 67
+                    },
+                    "nodeContext": "CloseableReference<Bitmap> decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 17,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 372,
+                        "startLineNumber": 164,
+                        "startColumnNumber": 36,
+                        "endLineNumber": 173,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  CloseableReference<Bitmap> decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(decodedBitmapReference,qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(decodedBitmapReference);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 33,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 540,
+                        "startLineNumber": 159,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 173,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public CloseableImage decode(EncodedImage encodedImage,int length,QualityInfo qualityInfo,ImageDecodeOptions options){\n  CloseableReference<Bitmap> decodedBitmapReference=mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length);\n  try {\n    return new CloseableStaticBitmap(decodedBitmapReference,qualityInfo,0);\n  }\n  finally {\n    CloseableReference.closeSafely(decodedBitmapReference);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 55,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                "nodePosition": {
+                    "charLength": 111,
+                    "startLineNumber": 166,
+                    "startColumnNumber": 10,
+                    "endLineNumber": 167,
+                    "endColumnNumber": 66
+                },
+                "nodeContext": "mPlatformDecoder.decodeJPEGFromEncodedImage(encodedImage,options.bitmapConfig,mRegion,length)",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 9,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.fresco.samples.showcase.imagepipeline.Rect"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 7,
+            "startLineNumber": 167,
+            "startColumnNumber": 50,
+            "endLineNumber": 167,
+            "endColumnNumber": 57
+        }
+    ],
+    "layoutRelationDataList": []
+}

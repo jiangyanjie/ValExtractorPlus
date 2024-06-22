@@ -1,0 +1,92 @@
+{
+  "id" : 29,
+  "expression" : "Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048)",
+  "projectName" : "apache@skywalking",
+  "commitID" : "cd920e274fb415e23a10e8b7302065547c3ba3fa",
+  "filePath" : "apm-sniffer/apm-toolkit-activation/apm-toolkit-log4j-1.x-activation/src/main/java/org/apache/skywalking/apm/toolkit/activation/log/log4j/v1/x/log/GRPCLogAppenderInterceptor.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048)",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 152,
+      "startLineNumber" : 108,
+      "startColumnNumber" : 43,
+      "endLineNumber" : 108,
+      "endColumnNumber" : 195
+    },
+    "astNodeNumber" : 19,
+    "astHeight" : 5,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 180,
+        "startLineNumber" : 108,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 108,
+        "endColumnNumber" : 195
+      },
+      "nodeContext" : "event.getMessage() + \"\\n\" + Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048)",
+      "nodeType" : "InfixExpression",
+      "astNodeNumber" : 24,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 189,
+        "startLineNumber" : 108,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 108,
+        "endColumnNumber" : 197
+      },
+      "nodeContext" : "return event.getMessage() + \"\\n\" + Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048);\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 25,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 517,
+        "startLineNumber" : 105,
+        "startColumnNumber" : 62,
+        "endLineNumber" : 109,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  final String Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048)=Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048);\n  return event.getMessage() + \"\\n\" + Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 51,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 574,
+        "startLineNumber" : 105,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 109,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "private String transformLogText(final LoggingEvent event){\n  final String Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048)=Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048);\n  return event.getMessage() + \"\\n\" + Objects.isNull(event.getThrowableInformation()) ? \"\" : ThrowableTransformer.INSTANCE.convert2String(event.getThrowableInformation().getThrowable(),2048);\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 61,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 11,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 152,
+    "startLineNumber" : 108,
+    "startColumnNumber" : 43,
+    "endLineNumber" : 108,
+    "endColumnNumber" : 195
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "throwableString",
+  "nodePosition" : {
+    "charLength" : 15,
+    "startLineNumber" : 106,
+    "startColumnNumber" : 21,
+    "endLineNumber" : 106,
+    "endColumnNumber" : 36
+  }
+}

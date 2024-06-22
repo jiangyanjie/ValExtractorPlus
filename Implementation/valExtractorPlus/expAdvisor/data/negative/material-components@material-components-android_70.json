@@ -1,0 +1,109 @@
+{
+    "id": 70,
+    "expression": "mContentViewCallback",
+    "projectName": "material-components@material-components-android",
+    "commitID": "39daf4d00247e1a2d36204397793145760d07319",
+    "filePath": "lib/src/android/support/design/widget/BaseTransientBottomBar.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "mContentViewCallback",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 20,
+                "startLineNumber": 497,
+                "startColumnNumber": 14,
+                "endLineNumber": 497,
+                "endColumnNumber": 34
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 127,
+                        "startLineNumber": 497,
+                        "startColumnNumber": 14,
+                        "endLineNumber": 498,
+                        "endColumnNumber": 88
+                    },
+                    "nodeContext": "mContentViewCallback.animateContentIn(ANIMATION_DURATION - ANIMATION_FADE_DURATION,ANIMATION_FADE_DURATION)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 128,
+                        "startLineNumber": 497,
+                        "startColumnNumber": 14,
+                        "endLineNumber": 498,
+                        "endColumnNumber": 89
+                    },
+                    "nodeContext": "mContentViewCallback.animateContentIn(ANIMATION_DURATION - ANIMATION_FADE_DURATION,ANIMATION_FADE_DURATION);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 158,
+                        "startLineNumber": 496,
+                        "startColumnNumber": 71,
+                        "endLineNumber": 499,
+                        "endColumnNumber": 13
+                    },
+                    "nodeContext": "{\n  mContentViewCallback.animateContentIn(ANIMATION_DURATION - ANIMATION_FADE_DURATION,ANIMATION_FADE_DURATION);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 9,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 239,
+                        "startLineNumber": 495,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 499,
+                        "endColumnNumber": 13
+                    },
+                    "nodeContext": "@Override public void onAnimationStart(ValueAnimatorCompat animator){\n  mContentViewCallback.animateContentIn(ANIMATION_DURATION - ANIMATION_FADE_DURATION,ANIMATION_FADE_DURATION);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 19,
+                    "astHeight": 6
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                "nodePosition": {
+                    "charLength": 127,
+                    "startLineNumber": 497,
+                    "startColumnNumber": 14,
+                    "endLineNumber": 498,
+                    "endColumnNumber": 88
+                },
+                "nodeContext": "mContentViewCallback.animateContentIn(ANIMATION_DURATION - ANIMATION_FADE_DURATION,ANIMATION_FADE_DURATION)",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 7,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "android.support.design.widget.BaseTransientBottomBar.ContentViewCallback"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 20,
+            "startLineNumber": 497,
+            "startColumnNumber": 14,
+            "endLineNumber": 497,
+            "endColumnNumber": 34
+        }
+    ],
+    "layoutRelationDataList": []
+}

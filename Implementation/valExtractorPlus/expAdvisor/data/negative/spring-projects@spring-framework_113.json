@@ -1,0 +1,109 @@
+{
+    "id": 113,
+    "expression": "testContext.getApplicationContext().getAutowireCapableBeanFactory()",
+    "projectName": "spring-projects@spring-framework",
+    "commitID": "9614817e884367da0c20539da5391968d74a0b51",
+    "filePath": "spring-test/src/main/java/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "testContext.getApplicationContext().getAutowireCapableBeanFactory()",
+            "nodeType": "MethodInvocation",
+            "nodePosition": {
+                "charLength": 67,
+                "startLineNumber": 118,
+                "startColumnNumber": 43,
+                "endLineNumber": 118,
+                "endColumnNumber": 110
+            },
+            "astNodeNumber": 5,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 81,
+                        "startLineNumber": 118,
+                        "startColumnNumber": 29,
+                        "endLineNumber": 118,
+                        "endColumnNumber": 110
+                    },
+                    "nodeContext": "beanFactory=testContext.getApplicationContext().getAutowireCapableBeanFactory()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 7,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 109,
+                        "startLineNumber": 118,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 118,
+                        "endColumnNumber": 111
+                    },
+                    "nodeContext": "AutowireCapableBeanFactory beanFactory=testContext.getApplicationContext().getAutowireCapableBeanFactory();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 472,
+                        "startLineNumber": 115,
+                        "startColumnNumber": 77,
+                        "endLineNumber": 122,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  Object bean=testContext.getTestInstance();\n  Class<?> clazz=testContext.getTestClass();\n  AutowireCapableBeanFactory beanFactory=testContext.getApplicationContext().getAutowireCapableBeanFactory();\n  beanFactory.autowireBeanProperties(bean,AutowireCapableBeanFactory.AUTOWIRE_NO,false);\n  beanFactory.initializeBean(bean,clazz.getName() + AutowireCapableBeanFactory.ORIGINAL_INSTANCE_SUFFIX);\n  testContext.removeAttribute(REINJECT_DEPENDENCIES_ATTRIBUTE);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 55,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1130,
+                        "startLineNumber": 103,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 122,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "/** \n * Performs dependency injection and bean initialization for the supplied {@link TestContext} as described in{@link #prepareTestInstance(TestContext) prepareTestInstance()}. <p>The  {@link #REINJECT_DEPENDENCIES_ATTRIBUTE} will be subsequently removedfrom the test context, regardless of its value.\n * @param testContext the test context for which dependency injection shouldbe performed (never  {@code null})\n * @throws Exception allows any exception to propagate\n * @see #prepareTestInstance(TestContext)\n * @see #beforeTestMethod(TestContext)\n */\nprotected void injectDependencies(TestContext testContext) throws Exception {\n  Object bean=testContext.getTestInstance();\n  Class<?> clazz=testContext.getTestClass();\n  AutowireCapableBeanFactory beanFactory=testContext.getApplicationContext().getAutowireCapableBeanFactory();\n  beanFactory.autowireBeanProperties(bean,AutowireCapableBeanFactory.AUTOWIRE_NO,false);\n  beanFactory.initializeBean(bean,clazz.getName() + AutowireCapableBeanFactory.ORIGINAL_INSTANCE_SUFFIX);\n  testContext.removeAttribute(REINJECT_DEPENDENCIES_ATTRIBUTE);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 66,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 109,
+                    "startLineNumber": 118,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 118,
+                    "endColumnNumber": 111
+                },
+                "nodeContext": "AutowireCapableBeanFactory beanFactory=testContext.getApplicationContext().getAutowireCapableBeanFactory();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 10,
+                "astHeight": 5
+            },
+            "tokenLength": 3,
+            "type": "org.springframework.beans.factory.config.AutowireCapableBeanFactory"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 67,
+            "startLineNumber": 118,
+            "startColumnNumber": 43,
+            "endLineNumber": 118,
+            "endColumnNumber": 110
+        }
+    ],
+    "layoutRelationDataList": []
+}

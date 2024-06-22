@@ -1,0 +1,137 @@
+{
+    "id": 108,
+    "expression": "\"Ignore \"",
+    "projectName": "antlr@antlr4",
+    "commitID": "518ec01c6912bd6044eedc6cb9b80a9102a68959",
+    "filePath": "runtime-testsuite/test/org/antlr/v4/test/runtime/BaseRuntimeTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "\"Ignore \"",
+            "nodeType": "StringLiteral",
+            "nodePosition": {
+                "charLength": 9,
+                "startLineNumber": 101,
+                "startColumnNumber": 21,
+                "endLineNumber": 101,
+                "endColumnNumber": 30
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 22,
+                        "startLineNumber": 101,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 43
+                    },
+                    "nodeContext": "\"Ignore \" + descriptor",
+                    "nodeType": "InfixExpression",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 41,
+                        "startLineNumber": 101,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 44
+                    },
+                    "nodeContext": "System.out.printf(\"Ignore \" + descriptor)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 42,
+                        "startLineNumber": 101,
+                        "startColumnNumber": 3,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 45
+                    },
+                    "nodeContext": "System.out.printf(\"Ignore \" + descriptor);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 9,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 58,
+                        "startLineNumber": 100,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 101,
+                        "endColumnNumber": 45
+                    },
+                    "nodeContext": "if (ignored) System.out.printf(\"Ignore \" + descriptor);\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 11,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 333,
+                        "startLineNumber": 96,
+                        "startColumnNumber": 38,
+                        "endLineNumber": 104,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  boolean ignored=descriptor.ignore(descriptor.getTarget());\n  if (ignored)   System.out.printf(\"Ignore \" + descriptor);\n  assumeFalse(ignored);\n  delegate.testSetUp();\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 30,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 380,
+                        "startLineNumber": 95,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 104,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Before public void setUp() throws Exception {\n  boolean ignored=descriptor.ignore(descriptor.getTarget());\n  if (ignored)   System.out.printf(\"Ignore \" + descriptor);\n  assumeFalse(ignored);\n  delegate.testSetUp();\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 38,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                "nodePosition": {
+                    "charLength": 42,
+                    "startLineNumber": 101,
+                    "startColumnNumber": 3,
+                    "endLineNumber": 101,
+                    "endColumnNumber": 45
+                },
+                "nodeContext": "System.out.printf(\"Ignore \" + descriptor);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 9,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 9,
+            "startLineNumber": 101,
+            "startColumnNumber": 21,
+            "endLineNumber": 101,
+            "endColumnNumber": 30
+        }
+    ],
+    "layoutRelationDataList": []
+}

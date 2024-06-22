@@ -1,0 +1,118 @@
+{
+  "id" : 26,
+  "expression" : "len % 2 != 0 ? hexString : (\"0\" + hexString)",
+  "projectName" : "Blankj@AndroidUtilCode",
+  "commitID" : "8abb3627185decb67f5a4384f75822d7b99a27e6",
+  "filePath" : "utilcode/src/main/java/com/blankj/utilcode/utils/ConvertUtils.java",
+  "occurrences" : 1,
+  "expressionList" : [ {
+    "nodeContext" : "len % 2 != 0 ? hexString : (\"0\" + hexString)",
+    "nodeType" : "ConditionalExpression",
+    "nodePosition" : {
+      "charLength" : 44,
+      "startLineNumber" : 70,
+      "startColumnNumber" : 26,
+      "endLineNumber" : 70,
+      "endColumnNumber" : 70
+    },
+    "astNodeNumber" : 11,
+    "astHeight" : 4,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+      "nodePosition" : {
+        "charLength" : 58,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 84
+      },
+      "nodeContext" : "len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+      "nodePosition" : {
+        "charLength" : 72,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 26,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 98
+      },
+      "nodeContext" : "len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase().toCharArray()",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 15,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+      "nodePosition" : {
+        "charLength" : 81,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 96
+      },
+      "nodeContext" : "hexBytes=len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase().toCharArray()",
+      "nodeType" : "VariableDeclarationFragment",
+      "astNodeNumber" : 17,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 90,
+        "startLineNumber" : 70,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 70,
+        "endColumnNumber" : 98
+      },
+      "nodeContext" : "char[] hexBytes=len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase().toCharArray();\n",
+      "nodeType" : "VariableDeclarationStatement",
+      "astNodeNumber" : 21,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 392,
+        "startLineNumber" : 67,
+        "startColumnNumber" : 59,
+        "endLineNumber" : 76,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  int len=hexString.length() + 1;\n  String len % 2 != 0 ? hexString : (\"0\" + hexString)=len % 2 != 0 ? hexString : (\"0\" + hexString);\n  char[] hexBytes=len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase().toCharArray();\n  byte[] ret=new byte[len >> 1];\n  for (int i=0; i < len; i+=2) {\n    ret[i >> 1]=(byte)(hex2Dec(hexBytes[i]) << 4 | hex2Dec(hexBytes[i + 1]));\n  }\n  return ret;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 100,
+      "astHeight" : 12
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 582,
+        "startLineNumber" : 59,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 76,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "/** \n * hexString转byteArr <p>例如：</p> hexString2Bytes(\"00A8\") returns { 0, (byte) 0xA8 }\n * @param hexString 十六进制字符串\n * @return 字节数组\n */\npublic static byte[] hexString2Bytes(String hexString){\n  int len=hexString.length() + 1;\n  String len % 2 != 0 ? hexString : (\"0\" + hexString)=len % 2 != 0 ? hexString : (\"0\" + hexString);\n  char[] hexBytes=len % 2 != 0 ? hexString : (\"0\" + hexString).toUpperCase().toCharArray();\n  byte[] ret=new byte[len >> 1];\n  for (int i=0; i < len; i+=2) {\n    ret[i >> 1]=(byte)(hex2Dec(hexBytes[i]) << 4 | hex2Dec(hexBytes[i + 1]));\n  }\n  return ret;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 112,
+      "astHeight" : 13
+    } ],
+    "tokenLength" : 9,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 44,
+    "startLineNumber" : 70,
+    "startColumnNumber" : 26,
+    "endLineNumber" : 70,
+    "endColumnNumber" : 70
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "evenHex",
+  "nodePosition" : {
+    "charLength" : 7,
+    "startLineNumber" : 69,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 69,
+    "endColumnNumber" : 22
+  }
+}

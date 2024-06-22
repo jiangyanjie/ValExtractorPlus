@@ -1,0 +1,95 @@
+{
+    "id": 98,
+    "expression": "value instanceof Scalar",
+    "projectName": "NationalSecurityAgency@ghidra",
+    "commitID": "a54d0e28d652c48502551a88278808549aed5f98",
+    "filePath": "Ghidra/Features/Base/src/main/java/ghidra/app/util/DisplayableEol.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "value instanceof Scalar",
+            "nodeType": "InstanceofExpression",
+            "nodePosition": {
+                "charLength": 23,
+                "startLineNumber": 238,
+                "startColumnNumber": 6,
+                "endLineNumber": 238,
+                "endColumnNumber": 29
+            },
+            "astNodeNumber": 4,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 130,
+                        "startLineNumber": 238,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 243,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "if (value instanceof Scalar) {\n  Scalar scalar=(Scalar)value;\n  if (scalar.getSignedValue() == 0) {\n    return;\n  }\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 23,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 358,
+                        "startLineNumber": 235,
+                        "startColumnNumber": 95,
+                        "endLineNumber": 249,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  Object value=data.getValue();\n  if (value instanceof Scalar) {\n    Scalar scalar=(Scalar)value;\n    if (scalar.getSignedValue() == 0) {\n      return;\n    }\n  }\n  String dataRepresentation=getDataValueRepresentation(dataAccessAddress,data);\n  if (!StringUtils.isBlank(dataRepresentation)) {\n    set.add(\"= \" + dataRepresentation);\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 55,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 452,
+                        "startLineNumber": 235,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 249,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "private void handleDirectDataReference(Set<String> set,Address dataAccessAddress,Data data){\n  Object value=data.getValue();\n  if (value instanceof Scalar) {\n    Scalar scalar=(Scalar)value;\n    if (scalar.getSignedValue() == 0) {\n      return;\n    }\n  }\n  String dataRepresentation=getDataValueRepresentation(dataAccessAddress,data);\n  if (!StringUtils.isBlank(dataRepresentation)) {\n    set.add(\"= \" + dataRepresentation);\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 74,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 130,
+                    "startLineNumber": 238,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 243,
+                    "endColumnNumber": 3
+                },
+                "nodeContext": "if (value instanceof Scalar) {\n  Scalar scalar=(Scalar)value;\n  if (scalar.getSignedValue() == 0) {\n    return;\n  }\n}\n",
+                "nodeType": "IfStatement",
+                "astNodeNumber": 23,
+                "astHeight": 7
+            },
+            "tokenLength": 2,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 23,
+            "startLineNumber": 238,
+            "startColumnNumber": 6,
+            "endLineNumber": 238,
+            "endColumnNumber": 29
+        }
+    ],
+    "layoutRelationDataList": []
+}

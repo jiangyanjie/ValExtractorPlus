@@ -1,0 +1,109 @@
+{
+    "id": 41,
+    "expression": "true",
+    "projectName": "eclipse-vertx@vert.x",
+    "commitID": "8965822c11828b4e69baee911f315901c2e073ec",
+    "filePath": "src/test/java/io/vertx/test/core/HttpTLSTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "true",
+            "nodeType": "BooleanLiteral",
+            "nodePosition": {
+                "charLength": 4,
+                "startLineNumber": 556,
+                "startColumnNumber": 25,
+                "endLineNumber": 556,
+                "endColumnNumber": 29
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 26,
+                        "startLineNumber": 556,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 556,
+                        "endColumnNumber": 30
+                    },
+                    "nodeContext": "serverOptions.setSsl(true)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 27,
+                        "startLineNumber": 556,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 556,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "serverOptions.setSsl(true);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1150,
+                        "startLineNumber": 555,
+                        "startColumnNumber": 120,
+                        "endLineNumber": 585,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  serverOptions.setSsl(true);\n  serverOptions.setPort(4043);\n  HttpServer server=vertx.createHttpServer(serverOptions);\n  server.requestHandler(req -> {\n  }\n);\n  try {\n    server.listen();\n    fail(\"Was expecting a failure\");\n  }\n catch (  VertxException e) {\n    Throwable cause=e.getCause();\n    if (expectedSuffix == null) {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=expectedPossiblePrefix.equals(cause.getMessage());\n      }\n      if (!ok) {\n        fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n      }\n    }\n else {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n      }\n      if (!ok) {\n        fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n      }\n      assertTrue(cause.getMessage().endsWith(expectedSuffix));\n    }\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 137,
+                    "astHeight": 13
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1268,
+                        "startLineNumber": 555,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 585,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "private void testStore(HttpServerOptions serverOptions,List<String> expectedPossiblePrefixes,String expectedSuffix){\n  serverOptions.setSsl(true);\n  serverOptions.setPort(4043);\n  HttpServer server=vertx.createHttpServer(serverOptions);\n  server.requestHandler(req -> {\n  }\n);\n  try {\n    server.listen();\n    fail(\"Was expecting a failure\");\n  }\n catch (  VertxException e) {\n    Throwable cause=e.getCause();\n    if (expectedSuffix == null) {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=expectedPossiblePrefix.equals(cause.getMessage());\n      }\n      if (!ok) {\n        fail(\"Was expecting <\" + cause.getMessage() + \">  to be equals to one of \"+ expectedPossiblePrefixes);\n      }\n    }\n else {\n      boolean ok=expectedPossiblePrefixes.isEmpty();\n      for (      String expectedPossiblePrefix : expectedPossiblePrefixes) {\n        ok|=cause.getMessage().startsWith(expectedPossiblePrefix);\n      }\n      if (!ok) {\n        fail(\"Was expecting e.getCause().getMessage() to be prefixed by one of \" + expectedPossiblePrefixes);\n      }\n      assertTrue(cause.getMessage().endsWith(expectedSuffix));\n    }\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 156,
+                    "astHeight": 14
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 27,
+                    "startLineNumber": 556,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 556,
+                    "endColumnNumber": 31
+                },
+                "nodeContext": "serverOptions.setSsl(true);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "boolean"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 4,
+            "startLineNumber": 556,
+            "startColumnNumber": 25,
+            "endLineNumber": 556,
+            "endColumnNumber": 29
+        }
+    ],
+    "layoutRelationDataList": []
+}

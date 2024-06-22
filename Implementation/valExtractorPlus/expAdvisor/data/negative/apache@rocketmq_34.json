@@ -1,0 +1,151 @@
+{
+    "id": 34,
+    "expression": "ExpressionMessageFilter.class",
+    "projectName": "apache@rocketmq",
+    "commitID": "f84239ef03d057a6f309187c21c3097d3ccb504e",
+    "filePath": "broker/src/test/java/org/apache/rocketmq/broker/processor/PullMessageProcessorTest.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "ExpressionMessageFilter.class",
+            "nodeType": "TypeLiteral",
+            "nodePosition": {
+                "charLength": 29,
+                "startLineNumber": 135,
+                "startColumnNumber": 98,
+                "endLineNumber": 135,
+                "endColumnNumber": 127
+            },
+            "astNodeNumber": 3,
+            "astHeight": 3,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 34,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 94,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 128
+                    },
+                    "nodeContext": "any(ExpressionMessageFilter.class)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 116,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 129
+                    },
+                    "nodeContext": "messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 18,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 122,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 130
+                    },
+                    "nodeContext": "when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class)))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 20,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 151,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 159
+                    },
+                    "nodeContext": "when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 23,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 152,
+                        "startLineNumber": 135,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 135,
+                        "endColumnNumber": 160
+                    },
+                    "nodeContext": "when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 24,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 671,
+                        "startLineNumber": 133,
+                        "startColumnNumber": 75,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  GetMessageResult getMessageResult=createGetMessageResult();\n  when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 79,
+                    "astHeight": 9
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 752,
+                        "startLineNumber": 132,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 143,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Test public void testProcessRequest_Found() throws RemotingCommandException {\n  GetMessageResult getMessageResult=createGetMessageResult();\n  when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n  final RemotingCommand request=createPullMsgCommand(RequestCode.PULL_MESSAGE);\n  NettyChannelHandlerContextImpl nettyChannelHandlerContext=new NettyChannelHandlerContextImpl(handlerContext);\n  RemotingCommand response=pullMessageProcessor.processRequest(nettyChannelHandlerContext,request);\n  assertThat(response).isNotNull();\n  assertThat(response.getCode()).isEqualTo(ResponseCode.SUCCESS);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 87,
+                    "astHeight": 10
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 152,
+                    "startLineNumber": 135,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 135,
+                    "endColumnNumber": 160
+                },
+                "nodeContext": "when(messageStore.getMessage(anyString(),anyString(),anyInt(),anyLong(),anyInt(),any(ExpressionMessageFilter.class))).thenReturn(getMessageResult);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 24,
+                "astHeight": 8
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class<org.apache.rocketmq.broker.filter.ExpressionMessageFilter>"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 29,
+            "startLineNumber": 135,
+            "startColumnNumber": 98,
+            "endLineNumber": 135,
+            "endColumnNumber": 127
+        }
+    ],
+    "layoutRelationDataList": []
+}

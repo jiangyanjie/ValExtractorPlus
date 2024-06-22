@@ -1,0 +1,109 @@
+{
+    "id": 185,
+    "expression": "writer",
+    "projectName": "google@gson",
+    "commitID": "9db0c5321710f1cebb6ae297b2d7c35ef15b56ce",
+    "filePath": "gson/src/main/java/com/google/gson/Gson.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "writer",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 6,
+                "startLineNumber": 272,
+                "startColumnNumber": 8,
+                "endLineNumber": 272,
+                "endColumnNumber": 14
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 19,
+                        "startLineNumber": 272,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 272,
+                        "endColumnNumber": 27
+                    },
+                    "nodeContext": "writer.value(value)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 4,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 20,
+                        "startLineNumber": 272,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 272,
+                        "endColumnNumber": 28
+                    },
+                    "nodeContext": "writer.value(value);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 134,
+                        "startLineNumber": 269,
+                        "startColumnNumber": 86,
+                        "endLineNumber": 273,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "{\n  double doubleValue=value.doubleValue();\n  checkValidFloatingPoint(doubleValue);\n  writer.value(value);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 17,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.AnonymousClassDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 214,
+                        "startLineNumber": 269,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 273,
+                        "endColumnNumber": 7
+                    },
+                    "nodeContext": "@Override public void write(JsonWriter writer,Number value) throws IOException {\n  double doubleValue=value.doubleValue();\n  checkValidFloatingPoint(doubleValue);\n  writer.value(value);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 33,
+                    "astHeight": 6
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 20,
+                    "startLineNumber": 272,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 272,
+                    "endColumnNumber": 28
+                },
+                "nodeContext": "writer.value(value);\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 5,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "com.google.gson.stream.JsonWriter"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 6,
+            "startLineNumber": 272,
+            "startColumnNumber": 8,
+            "endLineNumber": 272,
+            "endColumnNumber": 14
+        }
+    ],
+    "layoutRelationDataList": []
+}

@@ -1,0 +1,165 @@
+{
+  "id" : 4,
+  "expression" : "getName(key)",
+  "projectName" : "redisson@redisson",
+  "commitID" : "62b5e68c05b7475e1e0f98b4161aacb35d376b97",
+  "filePath" : "redisson/src/main/java/org/redisson/RedissonMap.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 574,
+      "startColumnNumber" : 42,
+      "endLineNumber" : 574,
+      "endColumnNumber" : 54
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 120,
+        "startLineNumber" : 574,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 574,
+        "endColumnNumber" : 135
+      },
+      "nodeContext" : "commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 17,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 129,
+        "startLineNumber" : 574,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 574,
+        "endColumnNumber" : 137
+      },
+      "nodeContext" : "return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 18,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 171,
+        "startLineNumber" : 572,
+        "startColumnNumber" : 77,
+        "endLineNumber" : 575,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 27,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 242,
+        "startLineNumber" : 572,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 575,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<Boolean> fastPutIfAbsentOperationAsync(K key,V value){\n  String getName(key)=getName(key);\n  return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 43,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "getName(key)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 12,
+      "startLineNumber" : 574,
+      "startColumnNumber" : 77,
+      "endLineNumber" : 574,
+      "endColumnNumber" : 89
+    },
+    "astNodeNumber" : 3,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ReturnStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 120,
+        "startLineNumber" : 574,
+        "startColumnNumber" : 15,
+        "endLineNumber" : 574,
+        "endColumnNumber" : 135
+      },
+      "nodeContext" : "commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 17,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 129,
+        "startLineNumber" : 574,
+        "startColumnNumber" : 8,
+        "endLineNumber" : 574,
+        "endColumnNumber" : 137
+      },
+      "nodeContext" : "return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n",
+      "nodeType" : "ReturnStatement",
+      "astNodeNumber" : 18,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 171,
+        "startLineNumber" : 572,
+        "startColumnNumber" : 77,
+        "endLineNumber" : 575,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  String getName(key)=getName(key);\n  return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 27,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 242,
+        "startLineNumber" : 572,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 575,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "protected RFuture<Boolean> fastPutIfAbsentOperationAsync(K key,V value){\n  String getName(key)=getName(key);\n  return commandExecutor.writeAsync(getName(key),codec,RedisCommands.HSETNX,getName(key),encodeMapKey(key),encodeMapValue(value));\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 43,
+      "astHeight" : 6
+    } ],
+    "tokenLength" : 2,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 12,
+    "startLineNumber" : 574,
+    "startColumnNumber" : 42,
+    "endLineNumber" : 574,
+    "endColumnNumber" : 54
+  }, {
+    "charLength" : 12,
+    "startLineNumber" : 574,
+    "startColumnNumber" : 77,
+    "endLineNumber" : 574,
+    "endColumnNumber" : 89
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "name",
+  "nodePosition" : {
+    "charLength" : 4,
+    "startLineNumber" : 573,
+    "startColumnNumber" : 15,
+    "endLineNumber" : 573,
+    "endColumnNumber" : 19
+  }
+}

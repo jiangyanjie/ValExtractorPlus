@@ -1,0 +1,123 @@
+{
+    "id": 86,
+    "expression": "this.clusterName",
+    "projectName": "alibaba@spring-cloud-alibaba",
+    "commitID": "7cc5a13260e7e50ebf47413cb66f5fa09561b77b",
+    "filePath": "spring-cloud-alibaba-nacos-config/src/main/java/org/springframework/cloud/alibaba/nacos/NacosConfigProperties.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "this.clusterName",
+            "nodeType": "FieldAccess",
+            "nodePosition": {
+                "charLength": 16,
+                "startLineNumber": 330,
+                "startColumnNumber": 48,
+                "endLineNumber": 330,
+                "endColumnNumber": 64
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+                    "nodePosition": {
+                        "charLength": 38,
+                        "startLineNumber": 330,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 330,
+                        "endColumnNumber": 69
+                    },
+                    "nodeContext": "Objects.toString(this.clusterName,\"\")",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 7,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 68,
+                        "startLineNumber": 330,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 330,
+                        "endColumnNumber": 70
+                    },
+                    "nodeContext": "properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"))",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 11,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 69,
+                        "startLineNumber": 330,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 330,
+                        "endColumnNumber": 71
+                    },
+                    "nodeContext": "properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 12,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 1115,
+                        "startLineNumber": 317,
+                        "startColumnNumber": 46,
+                        "endLineNumber": 350,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String endpoint=Objects.toString(this.endpoint,\"\");\n  if (endpoint.contains(\":\")) {\n    int index=endpoint.indexOf(\":\");\n    properties.put(ENDPOINT,endpoint.substring(0,index));\n    properties.put(ENDPOINT_PORT,endpoint.substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,endpoint);\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 180,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 1160,
+                        "startLineNumber": 317,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 350,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "public ConfigService configServiceInstance(){\n  if (null != configService) {\n    return configService;\n  }\n  Properties properties=new Properties();\n  properties.put(SERVER_ADDR,Objects.toString(this.serverAddr,\"\"));\n  properties.put(ENCODE,Objects.toString(this.encode,\"\"));\n  properties.put(NAMESPACE,Objects.toString(this.namespace,\"\"));\n  properties.put(ACCESS_KEY,Objects.toString(this.accessKey,\"\"));\n  properties.put(SECRET_KEY,Objects.toString(this.secretKey,\"\"));\n  properties.put(CONTEXT_PATH,Objects.toString(this.contextPath,\"\"));\n  properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n  String endpoint=Objects.toString(this.endpoint,\"\");\n  if (endpoint.contains(\":\")) {\n    int index=endpoint.indexOf(\":\");\n    properties.put(ENDPOINT,endpoint.substring(0,index));\n    properties.put(ENDPOINT_PORT,endpoint.substring(index + 1));\n  }\n else {\n    properties.put(ENDPOINT,endpoint);\n  }\n  try {\n    configService=NacosFactory.createConfigService(properties);\n    return configService;\n  }\n catch (  Exception e) {\n    log.error(\"create config service error!properties={},e=,\",this,e);\n    return null;\n  }\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 185,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 69,
+                    "startLineNumber": 330,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 330,
+                    "endColumnNumber": 71
+                },
+                "nodeContext": "properties.put(CLUSTER_NAME,Objects.toString(this.clusterName,\"\"));\n",
+                "nodeType": "ExpressionStatement",
+                "astNodeNumber": 12,
+                "astHeight": 5
+            },
+            "tokenLength": 1,
+            "type": "java.lang.String"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 16,
+            "startLineNumber": 330,
+            "startColumnNumber": 48,
+            "endLineNumber": 330,
+            "endColumnNumber": 64
+        }
+    ],
+    "layoutRelationDataList": []
+}

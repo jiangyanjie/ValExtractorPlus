@@ -1,0 +1,228 @@
+{
+    "id": 168,
+    "expression": "controller",
+    "projectName": "facebook@fresco",
+    "commitID": "1686a16cdada04333ec88aaf77f2657bbf7e00df",
+    "filePath": "drawee-backends/drawee-pipeline/src/main/java/com/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder.java",
+    "occurrences": 2,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "controller",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 10,
+                "startLineNumber": 110,
+                "startColumnNumber": 6,
+                "endLineNumber": 110,
+                "endColumnNumber": 16
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                    "nodePosition": {
+                        "charLength": 219,
+                        "startLineNumber": 110,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 116,
+                        "endColumnNumber": 31
+                    },
+                    "nodeContext": "controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 13,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 220,
+                        "startLineNumber": 110,
+                        "startColumnNumber": 6,
+                        "endLineNumber": 116,
+                        "endColumnNumber": 32
+                    },
+                    "nodeContext": "controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n",
+                    "nodeType": "ExpressionStatement",
+                    "astNodeNumber": 14,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+                    "nodePosition": {
+                        "charLength": 295,
+                        "startLineNumber": 108,
+                        "startColumnNumber": 59,
+                        "endLineNumber": 117,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  controller=(PipelineDraweeController)oldController;\n  controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 22,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 662,
+                        "startLineNumber": 108,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 126,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "if (oldController instanceof PipelineDraweeController) {\n  controller=(PipelineDraweeController)oldController;\n  controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n}\n else {\n  controller=mPipelineDraweeControllerFactory.newController(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n}\n",
+                    "nodeType": "IfStatement",
+                    "astNodeNumber": 44,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 855,
+                        "startLineNumber": 104,
+                        "startColumnNumber": 56,
+                        "endLineNumber": 128,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  DraweeController oldController=getOldController();\n  PipelineDraweeController controller;\n  final String controllerId=generateUniqueControllerId();\n  if (oldController instanceof PipelineDraweeController) {\n    controller=(PipelineDraweeController)oldController;\n    controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n else {\n    controller=mPipelineDraweeControllerFactory.newController(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n  return controller;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 67,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 921,
+                        "startLineNumber": 103,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 128,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override protected PipelineDraweeController obtainController(){\n  DraweeController oldController=getOldController();\n  PipelineDraweeController controller;\n  final String controllerId=generateUniqueControllerId();\n  if (oldController instanceof PipelineDraweeController) {\n    controller=(PipelineDraweeController)oldController;\n    controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n else {\n    controller=mPipelineDraweeControllerFactory.newController(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n  return controller;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 74,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+                "nodePosition": {
+                    "charLength": 219,
+                    "startLineNumber": 110,
+                    "startColumnNumber": 6,
+                    "endLineNumber": 116,
+                    "endColumnNumber": 31
+                },
+                "nodeContext": "controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener)",
+                "nodeType": "MethodInvocation",
+                "astNodeNumber": 13,
+                "astHeight": 3
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.drawee.backends.pipeline.PipelineDraweeController"
+        },
+        {
+            "nodeContext": "controller",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 10,
+                "startLineNumber": 127,
+                "startColumnNumber": 11,
+                "endLineNumber": 127,
+                "endColumnNumber": 21
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 18,
+                        "startLineNumber": 127,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 127,
+                        "endColumnNumber": 22
+                    },
+                    "nodeContext": "return controller;\n",
+                    "nodeType": "ReturnStatement",
+                    "astNodeNumber": 2,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 855,
+                        "startLineNumber": 104,
+                        "startColumnNumber": 56,
+                        "endLineNumber": 128,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  DraweeController oldController=getOldController();\n  PipelineDraweeController controller;\n  final String controllerId=generateUniqueControllerId();\n  if (oldController instanceof PipelineDraweeController) {\n    controller=(PipelineDraweeController)oldController;\n    controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n else {\n    controller=mPipelineDraweeControllerFactory.newController(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n  return controller;\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 67,
+                    "astHeight": 8
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 921,
+                        "startLineNumber": 103,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 128,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "@Override protected PipelineDraweeController obtainController(){\n  DraweeController oldController=getOldController();\n  PipelineDraweeController controller;\n  final String controllerId=generateUniqueControllerId();\n  if (oldController instanceof PipelineDraweeController) {\n    controller=(PipelineDraweeController)oldController;\n    controller.initialize(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n else {\n    controller=mPipelineDraweeControllerFactory.newController(obtainDataSourceSupplier(controllerId),controllerId,getCacheKey(),getCallerContext(),mCustomDrawableFactories,mImageOriginListener);\n  }\n  return controller;\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 74,
+                    "astHeight": 9
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 18,
+                    "startLineNumber": 127,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 127,
+                    "endColumnNumber": 22
+                },
+                "nodeContext": "return controller;\n",
+                "nodeType": "ReturnStatement",
+                "astNodeNumber": 2,
+                "astHeight": 2
+            },
+            "tokenLength": 1,
+            "type": "com.facebook.drawee.backends.pipeline.PipelineDraweeController"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 10,
+            "startLineNumber": 110,
+            "startColumnNumber": 6,
+            "endLineNumber": 110,
+            "endColumnNumber": 16
+        },
+        {
+            "charLength": 10,
+            "startLineNumber": 127,
+            "startColumnNumber": 11,
+            "endLineNumber": 127,
+            "endColumnNumber": 21
+        }
+    ],
+    "layoutRelationDataList": [
+        {
+            "firstKey": 0,
+            "secondKey": 1,
+            "layout": 4
+        },
+        {
+            "firstKey": 1,
+            "secondKey": 0,
+            "layout": 1
+        }
+    ]
+}

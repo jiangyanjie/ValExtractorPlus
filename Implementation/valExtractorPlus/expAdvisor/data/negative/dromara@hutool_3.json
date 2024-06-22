@@ -1,0 +1,123 @@
+{
+    "id": 3,
+    "expression": "o2",
+    "projectName": "dromara@hutool",
+    "commitID": "a98f518c6fb5acd7293531c72fd64e34f861940a",
+    "filePath": "hutool-core/src/main/java/cn/hutool/core/comparator/IndexedComparator.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "o2",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 2,
+                "startLineNumber": 47,
+                "startColumnNumber": 30,
+                "endLineNumber": 47,
+                "endColumnNumber": 32
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 12,
+                        "startLineNumber": 47,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 47,
+                        "endColumnNumber": 33
+                    },
+                    "nodeContext": "getOrder(o2)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 21,
+                        "startLineNumber": 47,
+                        "startColumnNumber": 12,
+                        "endLineNumber": 47,
+                        "endColumnNumber": 33
+                    },
+                    "nodeContext": "index2=getOrder(o2)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 32,
+                        "startLineNumber": 47,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 47,
+                        "endColumnNumber": 34
+                    },
+                    "nodeContext": "final int index2=getOrder(o2);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 122,
+                        "startLineNumber": 45,
+                        "startColumnNumber": 32,
+                        "endLineNumber": 50,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "{\n  final int index1=getOrder(o1);\n  final int index2=getOrder(o2);\n  return Integer.compare(index1,index2);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 23,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 165,
+                        "startLineNumber": 44,
+                        "startColumnNumber": 1,
+                        "endLineNumber": 50,
+                        "endColumnNumber": 2
+                    },
+                    "nodeContext": "@Override public int compare(T o1,T o2){\n  final int index1=getOrder(o1);\n  final int index2=getOrder(o2);\n  return Integer.compare(index1,index2);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 37,
+                    "astHeight": 6
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 32,
+                    "startLineNumber": 47,
+                    "startColumnNumber": 2,
+                    "endLineNumber": 47,
+                    "endColumnNumber": 34
+                },
+                "nodeContext": "final int index2=getOrder(o2);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 8,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "T"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 2,
+            "startLineNumber": 47,
+            "startColumnNumber": 30,
+            "endLineNumber": 47,
+            "endColumnNumber": 32
+        }
+    ],
+    "layoutRelationDataList": []
+}

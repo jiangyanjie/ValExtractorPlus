@@ -1,0 +1,123 @@
+{
+    "id": 90,
+    "expression": "c",
+    "projectName": "square@retrofit",
+    "commitID": "46598adb1da0f6d2498d9f8b815b170bf95fe1f8",
+    "filePath": "retrofit/src/test/java/retrofit/TestingUtils.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "c",
+            "nodeType": "SimpleName",
+            "nodePosition": {
+                "charLength": 1,
+                "startLineNumber": 15,
+                "startColumnNumber": 31,
+                "endLineNumber": 15,
+                "endColumnNumber": 32
+            },
+            "astNodeNumber": 1,
+            "astHeight": 1,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 22,
+                        "startLineNumber": 15,
+                        "startColumnNumber": 31,
+                        "endLineNumber": 15,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "c.getDeclaredMethods()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 3,
+                    "astHeight": 2
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 40,
+                        "startLineNumber": 15,
+                        "startColumnNumber": 13,
+                        "endLineNumber": 15,
+                        "endColumnNumber": 53
+                    },
+                    "nodeContext": "declaredMethods=c.getDeclaredMethods()",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 50,
+                        "startLineNumber": 15,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 15,
+                        "endColumnNumber": 54
+                    },
+                    "nodeContext": "Method[] declaredMethods=c.getDeclaredMethods();\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 10,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 212,
+                        "startLineNumber": 14,
+                        "startColumnNumber": 43,
+                        "endLineNumber": 20,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "{\n  Method[] declaredMethods=c.getDeclaredMethods();\n  if (declaredMethods.length == 1) {\n    return declaredMethods[0];\n  }\n  throw new IllegalArgumentException(\"More than one method declared.\");\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 27,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 253,
+                        "startLineNumber": 14,
+                        "startColumnNumber": 2,
+                        "endLineNumber": 20,
+                        "endColumnNumber": 3
+                    },
+                    "nodeContext": "public static Method onlyMethod(Class c){\n  Method[] declaredMethods=c.getDeclaredMethods();\n  if (declaredMethods.length == 1) {\n    return declaredMethods[0];\n  }\n  throw new IllegalArgumentException(\"More than one method declared.\");\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 37,
+                    "astHeight": 7
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 50,
+                    "startLineNumber": 15,
+                    "startColumnNumber": 4,
+                    "endLineNumber": 15,
+                    "endColumnNumber": 54
+                },
+                "nodeContext": "Method[] declaredMethods=c.getDeclaredMethods();\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 10,
+                "astHeight": 4
+            },
+            "tokenLength": 1,
+            "type": "java.lang.Class"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 1,
+            "startLineNumber": 15,
+            "startColumnNumber": 31,
+            "endLineNumber": 15,
+            "endColumnNumber": 32
+        }
+    ],
+    "layoutRelationDataList": []
+}

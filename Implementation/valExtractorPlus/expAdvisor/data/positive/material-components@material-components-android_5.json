@@ -1,0 +1,217 @@
+{
+  "id" : 5,
+  "expression" : "chipCornerRadius - chipStrokeWidth / 2f",
+  "projectName" : "material-components@material-components-android",
+  "commitID" : "f93f5abe17d6ba47a8a37159e62da741fa2fd2ed",
+  "filePath" : "lib/java/android/support/design/chip/ChipDrawable.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "chipCornerRadius - chipStrokeWidth / 2f",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 39,
+      "startLineNumber" : 549,
+      "startColumnNumber" : 34,
+      "endLineNumber" : 549,
+      "endColumnNumber" : 73
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 117,
+        "startLineNumber" : 549,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 549,
+        "endColumnNumber" : 123
+      },
+      "nodeContext" : "canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 119,
+        "startLineNumber" : 549,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 549,
+        "endColumnNumber" : 125
+      },
+      "nodeContext" : "canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 502,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 29,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  chipPaint.setColor(currentChipStrokeColor);\n  chipPaint.setStyle(Style.STROKE);\n  chipPaint.setColorFilter(getTintColorFilter());\n  rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n  float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n  canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 72,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 527,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (chipStrokeWidth > 0) {\n  chipPaint.setColor(currentChipStrokeColor);\n  chipPaint.setStyle(Style.STROKE);\n  chipPaint.setColorFilter(getTintColorFilter());\n  rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n  float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n  canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 76,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 547,
+        "startLineNumber" : 536,
+        "startColumnNumber" : 67,
+        "endLineNumber" : 551,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (chipStrokeWidth > 0) {\n    chipPaint.setColor(currentChipStrokeColor);\n    chipPaint.setStyle(Style.STROKE);\n    chipPaint.setColorFilter(getTintColorFilter());\n    rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n    float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n    canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 77,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 774,
+        "startLineNumber" : 532,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 551,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "/** \n * Draws the chip stroke. Draw the stroke <code>chipStrokeWidth / 2f</code> away from the edges so that the stroke perfectly fills the bounds of the chip.\n */\nprivate void drawChipStroke(@NonNull Canvas canvas,Rect bounds){\n  if (chipStrokeWidth > 0) {\n    chipPaint.setColor(currentChipStrokeColor);\n    chipPaint.setStyle(Style.STROKE);\n    chipPaint.setColorFilter(getTintColorFilter());\n    rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n    float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n    canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 92,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 5,
+    "type" : "float"
+  }, {
+    "nodeContext" : "chipCornerRadius - chipStrokeWidth / 2f",
+    "nodeType" : "InfixExpression",
+    "nodePosition" : {
+      "charLength" : 39,
+      "startLineNumber" : 549,
+      "startColumnNumber" : 54,
+      "endLineNumber" : 549,
+      "endColumnNumber" : 93
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 3,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 117,
+        "startLineNumber" : 549,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 549,
+        "endColumnNumber" : 123
+      },
+      "nodeContext" : "canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint)",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 11,
+      "astHeight" : 4
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 119,
+        "startLineNumber" : 549,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 549,
+        "endColumnNumber" : 125
+      },
+      "nodeContext" : "canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 12,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,thenStatement]",
+      "nodePosition" : {
+        "charLength" : 502,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 29,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  chipPaint.setColor(currentChipStrokeColor);\n  chipPaint.setStyle(Style.STROKE);\n  chipPaint.setColorFilter(getTintColorFilter());\n  rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n  float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n  canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 72,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 527,
+        "startLineNumber" : 537,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 550,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "if (chipStrokeWidth > 0) {\n  chipPaint.setColor(currentChipStrokeColor);\n  chipPaint.setStyle(Style.STROKE);\n  chipPaint.setColorFilter(getTintColorFilter());\n  rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n  float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n  canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 76,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 547,
+        "startLineNumber" : 536,
+        "startColumnNumber" : 67,
+        "endLineNumber" : 551,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  if (chipStrokeWidth > 0) {\n    chipPaint.setColor(currentChipStrokeColor);\n    chipPaint.setStyle(Style.STROKE);\n    chipPaint.setColorFilter(getTintColorFilter());\n    rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n    float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n    canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n  }\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 77,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 774,
+        "startLineNumber" : 532,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 551,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "/** \n * Draws the chip stroke. Draw the stroke <code>chipStrokeWidth / 2f</code> away from the edges so that the stroke perfectly fills the bounds of the chip.\n */\nprivate void drawChipStroke(@NonNull Canvas canvas,Rect bounds){\n  if (chipStrokeWidth > 0) {\n    chipPaint.setColor(currentChipStrokeColor);\n    chipPaint.setStyle(Style.STROKE);\n    chipPaint.setColorFilter(getTintColorFilter());\n    rectF.set(bounds.left + chipStrokeWidth / 2f,bounds.top + chipStrokeWidth / 2f,bounds.right - chipStrokeWidth / 2f,bounds.bottom - chipStrokeWidth / 2f);\n    float chipCornerRadius - chipStrokeWidth / 2f=chipCornerRadius - chipStrokeWidth / 2f;\n    canvas.drawRoundRect(rectF,chipCornerRadius - chipStrokeWidth / 2f,chipCornerRadius - chipStrokeWidth / 2f,chipPaint);\n  }\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 92,
+      "astHeight" : 9
+    } ],
+    "tokenLength" : 5,
+    "type" : "float"
+  } ],
+  "positionList" : [ {
+    "charLength" : 39,
+    "startLineNumber" : 549,
+    "startColumnNumber" : 34,
+    "endLineNumber" : 549,
+    "endColumnNumber" : 73
+  }, {
+    "charLength" : 39,
+    "startLineNumber" : 549,
+    "startColumnNumber" : 54,
+    "endLineNumber" : 549,
+    "endColumnNumber" : 93
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "strokeCornerRadius",
+  "nodePosition" : {
+    "charLength" : 18,
+    "startLineNumber" : 548,
+    "startColumnNumber" : 12,
+    "endLineNumber" : 548,
+    "endColumnNumber" : 30
+  }
+}

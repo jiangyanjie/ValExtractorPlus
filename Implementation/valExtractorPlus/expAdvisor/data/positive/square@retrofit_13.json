@@ -1,0 +1,230 @@
+{
+  "id" : 13,
+  "expression" : "header.substring(0,colon)",
+  "projectName" : "square@retrofit",
+  "commitID" : "34d84ec3985cfd7b374bb851bd0d962c8504c31c",
+  "filePath" : "retrofit/src/main/java/retrofit/RestMethodInfo.java",
+  "occurrences" : 2,
+  "expressionList" : [ {
+    "nodeContext" : "header.substring(0,colon)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 25,
+      "startLineNumber" : 235,
+      "startColumnNumber" : 42,
+      "endLineNumber" : 235,
+      "endColumnNumber" : 67
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.IfStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 58,
+        "startLineNumber" : 235,
+        "startColumnNumber" : 10,
+        "endLineNumber" : 235,
+        "endColumnNumber" : 68
+      },
+      "nodeContext" : "\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 8,
+      "astHeight" : 3
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 97,
+        "startLineNumber" : 235,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 237,
+        "endColumnNumber" : 7
+      },
+      "nodeContext" : "if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n  hasContentTypeHeader=true;\n}\n",
+      "nodeType" : "IfStatement",
+      "astNodeNumber" : 14,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+      "nodePosition" : {
+        "charLength" : 514,
+        "startLineNumber" : 227,
+        "startColumnNumber" : 34,
+        "endLineNumber" : 239,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  int colon=header.indexOf(':');\n  if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n    throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n  }\n  String header.substring(0,colon)=header.substring(0,colon);\n  String headerValue=header.substring(colon + 1).trim();\n  if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n    hasContentTypeHeader=true;\n  }\n  headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 82,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 544,
+        "startLineNumber" : 227,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 239,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "for (String header : headers) {\n  int colon=header.indexOf(':');\n  if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n    throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n  }\n  String header.substring(0,colon)=header.substring(0,colon);\n  String headerValue=header.substring(colon + 1).trim();\n  if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n    hasContentTypeHeader=true;\n  }\n  headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n}\n",
+      "nodeType" : "EnhancedForStatement",
+      "astNodeNumber" : 88,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 678,
+        "startLineNumber" : 225,
+        "startColumnNumber" : 62,
+        "endLineNumber" : 241,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  List<retrofit.client.Header> headerList=new ArrayList<retrofit.client.Header>();\n  for (  String header : headers) {\n    int colon=header.indexOf(':');\n    if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n      throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n    }\n    String header.substring(0,colon)=header.substring(0,colon);\n    String headerValue=header.substring(colon + 1).trim();\n    if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n      hasContentTypeHeader=true;\n    }\n    headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n  }\n  return headerList;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 113,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 737,
+        "startLineNumber" : 225,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 241,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "List<retrofit.client.Header> parseHeaders(String[] headers){\n  List<retrofit.client.Header> headerList=new ArrayList<retrofit.client.Header>();\n  for (  String header : headers) {\n    int colon=header.indexOf(':');\n    if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n      throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n    }\n    String header.substring(0,colon)=header.substring(0,colon);\n    String headerValue=header.substring(colon + 1).trim();\n    if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n      hasContentTypeHeader=true;\n    }\n    headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n  }\n  return headerList;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 130,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 4,
+    "type" : "java.lang.String"
+  }, {
+    "nodeContext" : "header.substring(0,colon)",
+    "nodeType" : "MethodInvocation",
+    "nodePosition" : {
+      "charLength" : 25,
+      "startLineNumber" : 238,
+      "startColumnNumber" : 48,
+      "endLineNumber" : 238,
+      "endColumnNumber" : 73
+    },
+    "astNodeNumber" : 5,
+    "astHeight" : 2,
+    "parentDataList" : [ {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.MethodInvocation,arguments]",
+      "nodePosition" : {
+        "charLength" : 65,
+        "startLineNumber" : 238,
+        "startColumnNumber" : 21,
+        "endLineNumber" : 238,
+        "endColumnNumber" : 86
+      },
+      "nodeContext" : "new retrofit.client.Header(header.substring(0,colon),headerValue)",
+      "nodeType" : "ClassInstanceCreation",
+      "astNodeNumber" : 13,
+      "astHeight" : 5
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.ExpressionStatement,expression]",
+      "nodePosition" : {
+        "charLength" : 81,
+        "startLineNumber" : 238,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 238,
+        "endColumnNumber" : 87
+      },
+      "nodeContext" : "headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue))",
+      "nodeType" : "MethodInvocation",
+      "astNodeNumber" : 16,
+      "astHeight" : 6
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 83,
+        "startLineNumber" : 238,
+        "startColumnNumber" : 6,
+        "endLineNumber" : 238,
+        "endColumnNumber" : 89
+      },
+      "nodeContext" : "headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n",
+      "nodeType" : "ExpressionStatement",
+      "astNodeNumber" : 17,
+      "astHeight" : 7
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.EnhancedForStatement,body]",
+      "nodePosition" : {
+        "charLength" : 514,
+        "startLineNumber" : 227,
+        "startColumnNumber" : 34,
+        "endLineNumber" : 239,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "{\n  int colon=header.indexOf(':');\n  if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n    throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n  }\n  String header.substring(0,colon)=header.substring(0,colon);\n  String headerValue=header.substring(colon + 1).trim();\n  if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n    hasContentTypeHeader=true;\n  }\n  headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 82,
+      "astHeight" : 8
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+      "nodePosition" : {
+        "charLength" : 544,
+        "startLineNumber" : 227,
+        "startColumnNumber" : 4,
+        "endLineNumber" : 239,
+        "endColumnNumber" : 5
+      },
+      "nodeContext" : "for (String header : headers) {\n  int colon=header.indexOf(':');\n  if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n    throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n  }\n  String header.substring(0,colon)=header.substring(0,colon);\n  String headerValue=header.substring(colon + 1).trim();\n  if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n    hasContentTypeHeader=true;\n  }\n  headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n}\n",
+      "nodeType" : "EnhancedForStatement",
+      "astNodeNumber" : 88,
+      "astHeight" : 9
+    }, {
+      "locationInParent" : "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+      "nodePosition" : {
+        "charLength" : 678,
+        "startLineNumber" : 225,
+        "startColumnNumber" : 62,
+        "endLineNumber" : 241,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "{\n  List<retrofit.client.Header> headerList=new ArrayList<retrofit.client.Header>();\n  for (  String header : headers) {\n    int colon=header.indexOf(':');\n    if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n      throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n    }\n    String header.substring(0,colon)=header.substring(0,colon);\n    String headerValue=header.substring(colon + 1).trim();\n    if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n      hasContentTypeHeader=true;\n    }\n    headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n  }\n  return headerList;\n}\n",
+      "nodeType" : "Block",
+      "astNodeNumber" : 113,
+      "astHeight" : 10
+    }, {
+      "locationInParent" : "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+      "nodePosition" : {
+        "charLength" : 737,
+        "startLineNumber" : 225,
+        "startColumnNumber" : 2,
+        "endLineNumber" : 241,
+        "endColumnNumber" : 3
+      },
+      "nodeContext" : "List<retrofit.client.Header> parseHeaders(String[] headers){\n  List<retrofit.client.Header> headerList=new ArrayList<retrofit.client.Header>();\n  for (  String header : headers) {\n    int colon=header.indexOf(':');\n    if (colon == -1 || colon == 0 || colon == header.length() - 1) {\n      throw methodError(\"@Headers value must be in the form \\\"Name: Value\\\". Found: \\\"%s\\\"\",header);\n    }\n    String header.substring(0,colon)=header.substring(0,colon);\n    String headerValue=header.substring(colon + 1).trim();\n    if (\"Content-Type\".equalsIgnoreCase(header.substring(0,colon))) {\n      hasContentTypeHeader=true;\n    }\n    headerList.add(new retrofit.client.Header(header.substring(0,colon),headerValue));\n  }\n  return headerList;\n}\n",
+      "nodeType" : "MethodDeclaration",
+      "astNodeNumber" : 130,
+      "astHeight" : 11
+    } ],
+    "tokenLength" : 4,
+    "type" : "java.lang.String"
+  } ],
+  "positionList" : [ {
+    "charLength" : 25,
+    "startLineNumber" : 235,
+    "startColumnNumber" : 42,
+    "endLineNumber" : 235,
+    "endColumnNumber" : 67
+  }, {
+    "charLength" : 25,
+    "startLineNumber" : 238,
+    "startColumnNumber" : 48,
+    "endLineNumber" : 238,
+    "endColumnNumber" : 73
+  } ],
+  "layoutRelationDataList" : [ ],
+  "name" : "headerName",
+  "nodePosition" : {
+    "charLength" : 10,
+    "startLineNumber" : 233,
+    "startColumnNumber" : 13,
+    "endLineNumber" : 233,
+    "endColumnNumber" : 23
+  }
+}

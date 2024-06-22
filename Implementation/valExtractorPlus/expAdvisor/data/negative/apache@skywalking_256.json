@@ -1,0 +1,137 @@
+{
+    "id": 256,
+    "expression": "this.serverHttpRequest",
+    "projectName": "apache@skywalking",
+    "commitID": "9a3e8357cc2a7f700232efdd93914d971432cc45",
+    "filePath": "apm-sniffer/apm-sdk-plugin/spring-plugins/mvc-annotation-commons/src/main/java/org/apache/skywalking/apm/plugin/spring/mvc/commons/ReactiveRequestHolder.java",
+    "occurrences": 1,
+    "isArithmeticExpression": 0,
+    "isGetTypeMethod": 0,
+    "expressionList": [
+        {
+            "nodeContext": "this.serverHttpRequest",
+            "nodeType": "FieldAccess",
+            "nodePosition": {
+                "charLength": 22,
+                "startLineNumber": 41,
+                "startColumnNumber": 30,
+                "endLineNumber": 41,
+                "endColumnNumber": 52
+            },
+            "astNodeNumber": 3,
+            "astHeight": 2,
+            "parentDataList": [
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodInvocation,expression]",
+                    "nodePosition": {
+                        "charLength": 35,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 30,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 65
+                    },
+                    "nodeContext": "this.serverHttpRequest.getHeaders()",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 5,
+                    "astHeight": 3
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.VariableDeclarationFragment,initializer]",
+                    "nodePosition": {
+                        "charLength": 51,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 30,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 81
+                    },
+                    "nodeContext": "this.serverHttpRequest.getHeaders().get(headerName)",
+                    "nodeType": "MethodInvocation",
+                    "astNodeNumber": 8,
+                    "astHeight": 4
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.VariableDeclarationStatement,fragments]",
+                    "nodePosition": {
+                        "charLength": 60,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 21,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 81
+                    },
+                    "nodeContext": "values=this.serverHttpRequest.getHeaders().get(headerName)",
+                    "nodeType": "VariableDeclarationFragment",
+                    "astNodeNumber": 10,
+                    "astHeight": 5
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                    "nodePosition": {
+                        "charLength": 74,
+                        "startLineNumber": 41,
+                        "startColumnNumber": 8,
+                        "endLineNumber": 41,
+                        "endColumnNumber": 82
+                    },
+                    "nodeContext": "List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n",
+                    "nodeType": "VariableDeclarationStatement",
+                    "astNodeNumber": 16,
+                    "astHeight": 6
+                },
+                {
+                    "locationInParent": "ChildProperty[org.eclipse.jdt.core.dom.MethodDeclaration,body]",
+                    "nodePosition": {
+                        "charLength": 246,
+                        "startLineNumber": 40,
+                        "startColumnNumber": 67,
+                        "endLineNumber": 46,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "{\n  List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n  if (values == null) {\n    return Collections.enumeration(Collections.EMPTY_LIST);\n  }\n  return Collections.enumeration(values);\n}\n",
+                    "nodeType": "Block",
+                    "astNodeNumber": 34,
+                    "astHeight": 7
+                },
+                {
+                    "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.TypeDeclaration,bodyDeclarations]",
+                    "nodePosition": {
+                        "charLength": 323,
+                        "startLineNumber": 39,
+                        "startColumnNumber": 4,
+                        "endLineNumber": 46,
+                        "endColumnNumber": 5
+                    },
+                    "nodeContext": "@Override public Enumeration<String> getHeaders(final String headerName){\n  List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n  if (values == null) {\n    return Collections.enumeration(Collections.EMPTY_LIST);\n  }\n  return Collections.enumeration(values);\n}\n",
+                    "nodeType": "MethodDeclaration",
+                    "astNodeNumber": 49,
+                    "astHeight": 8
+                }
+            ],
+            "currentLineData": {
+                "locationInParent": "ChildListProperty[org.eclipse.jdt.core.dom.Block,statements]",
+                "nodePosition": {
+                    "charLength": 74,
+                    "startLineNumber": 41,
+                    "startColumnNumber": 8,
+                    "endLineNumber": 41,
+                    "endColumnNumber": 82
+                },
+                "nodeContext": "List<String> values=this.serverHttpRequest.getHeaders().get(headerName);\n",
+                "nodeType": "VariableDeclarationStatement",
+                "astNodeNumber": 16,
+                "astHeight": 6
+            },
+            "tokenLength": 1,
+            "type": "org.apache.skywalking.apm.plugin.spring.mvc.commons.ServerHttpRequest"
+        }
+    ],
+    "positionList": [
+        {
+            "charLength": 22,
+            "startLineNumber": 41,
+            "startColumnNumber": 30,
+            "endLineNumber": 41,
+            "endColumnNumber": 52
+        }
+    ],
+    "layoutRelationDataList": []
+}
